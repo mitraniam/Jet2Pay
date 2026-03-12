@@ -84,7 +84,7 @@ const Hero = () => {
         <div className="hero__images">
           <div className="hero__image-wrapper">
             <img
-              src="https://www.skycop.com/wp-content/uploads/2024/05/hero-img.png"
+              src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=800&fit=crop&crop=faces"
               alt="Happy travelers using Jet2Pay"
               className="hero__image"
             />
