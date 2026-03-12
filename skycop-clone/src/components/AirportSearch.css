@@ -1,0 +1,210 @@
+.airport-search {
+  position: relative;
+  flex: 1;
+}
+
+.airport-search__input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.airport-search__icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.airport-search__input {
+  width: 100%;
+  height: 56px;
+  padding: 0 36px 0 44px;
+  border: 1.5px solid var(--Silver);
+  border-radius: 12px;
+  font-size: 14px;
+  color: var(--TextSecond);
+  background: var(--white-color);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: inherit;
+}
+
+.airport-search__input:focus {
+  border-color: var(--PrimaryOrange);
+  box-shadow: 0 0 0 3px rgba(232, 103, 44, 0.1);
+  outline: none;
+}
+
+.airport-search__input::placeholder {
+  color: var(--TextSilverDark);
+}
+
+.airport-search__clear {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--Silver);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+
+.airport-search__clear:hover {
+  background: var(--TextSilverDark);
+}
+
+/* Dropdown */
+.airport-search__dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--white-color);
+  border: 1px solid #e8e8e8;
+  border-radius: 14px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+  z-index: 1000;
+  max-height: 360px;
+  overflow-y: auto;
+  padding: 6px;
+  list-style: none;
+  animation: airportDropdownIn 0.15s ease-out;
+}
+
+@keyframes airportDropdownIn {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.airport-search__dropdown::-webkit-scrollbar {
+  width: 6px;
+}
+
+.airport-search__dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.airport-search__dropdown::-webkit-scrollbar-thumb {
+  background: var(--Silver);
+  border-radius: 3px;
+}
+
+/* Dropdown items */
+.airport-search__item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.12s;
+}
+
+.airport-search__item:hover,
+.airport-search__item--active {
+  background: var(--OrangeHoverBg, #fef0e8);
+}
+
+.airport-search__item-flag {
+  font-size: 22px;
+  line-height: 1;
+  flex-shrink: 0;
+  width: 30px;
+  text-align: center;
+}
+
+.airport-search__item-info {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.airport-search__item-city {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--black-color);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.airport-search__item-name {
+  font-size: 12px;
+  color: var(--TextSilverDark);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.airport-search__item-iata {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--PrimaryOrange);
+  background: var(--OrangeHoverBg, #fef0e8);
+  padding: 3px 8px;
+  border-radius: 6px;
+  flex-shrink: 0;
+  letter-spacing: 0.5px;
+}
+
+.airport-search__item--active .airport-search__item-iata {
+  background: rgba(232, 103, 44, 0.15);
+}
+
+.airport-search__item-country {
+  font-size: 12px;
+  color: var(--TextSilverDark);
+  flex-shrink: 0;
+  white-space: nowrap;
+}
+
+/* Highlight matches */
+.airport-search__item mark {
+  background: rgba(232, 103, 44, 0.18);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 1px;
+}
+
+/* Size variant for compensation calculator */
+.airport-search--small .airport-search__input {
+  height: 48px;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .airport-search__dropdown {
+    max-height: 280px;
+  }
+
+  .airport-search__item-country {
+    display: none;
+  }
+
+  .airport-search__item {
+    padding: 10px 12px;
+    gap: 10px;
+  }
+}

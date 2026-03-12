@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 80" width="300" height="80">
+  <defs>
+    <linearGradient id="jet2pay-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8672C;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#C94488;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B2D8E;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="plane-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E8672C;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B2D8E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <!-- Airplane swoosh -->
+  <path d="M60 18 Q90 8, 140 12 Q170 14, 185 8" stroke="url(#plane-gradient)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+  <!-- Airplane icon -->
+  <g transform="translate(178,2) rotate(335) scale(0.55)">
+    <path d="M25 12 L15 20 L5 17 L15 12 L5 7 L15 4 Z" fill="url(#plane-gradient)"/>
+  </g>
+  <!-- Text: Jet -->
+  <text x="12" y="62" font-family="'Noto Sans', Arial, sans-serif" font-weight="800" font-size="48" fill="#E8672C" letter-spacing="-1">Jet</text>
+  <!-- Text: 2 -->
+  <text x="108" y="62" font-family="'Noto Sans', Arial, sans-serif" font-weight="800" font-size="48" fill="#C94488" letter-spacing="-1">2</text>
+  <!-- Text: Pay -->
+  <text x="138" y="62" font-family="'Noto Sans', Arial, sans-serif" font-weight="800" font-size="48" fill="#7B2D8E" letter-spacing="-1">Pay</text>
+</svg>

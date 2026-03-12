@@ -1,0 +1,84 @@
+.flight-problems {
+  padding: 80px 0;
+  background: var(--white-color);
+}
+
+.flight-problems .container {
+  max-width: 1400px;
+}
+
+.flight-problems__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 48px;
+}
+
+.flight-problems__card {
+  background: var(--white-color);
+  border: 1px solid #f0f0f0;
+  border-radius: 20px;
+  padding: 28px;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.flight-problems__card:hover {
+  box-shadow: 0 8px 32px rgba(232, 103, 44, 0.1);
+  transform: translateY(-4px);
+}
+
+.flight-problems__card-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.flight-problems__card-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--black-color);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+.flight-problems__card-desc {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--TextSilverDark);
+  margin-bottom: 20px;
+}
+
+.flight-problems__card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--PrimaryOrange);
+  transition: gap 0.2s;
+}
+
+.flight-problems__card-link:hover {
+  gap: 8px;
+}
+
+@media (max-width: 1024px) {
+  .flight-problems__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .flight-problems__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flight-problems {
+    padding: 48px 0;
+  }
+}
