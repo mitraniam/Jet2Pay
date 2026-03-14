@@ -8,7 +8,7 @@ const Header = () => {
     <header className="header">
       <div className="header__inner container">
         <a href="/" className="header__logo">
-          <img src="/logo.svg" alt="Jet2Pay" className="header__logo-img" />
+          <img src="/logo.webp" alt="Jet2Pay" className="header__logo-img" />
         </a>
 
         <nav className={`header__nav ${mobileOpen ? 'open' : ''}`}>

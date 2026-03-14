@@ -22,9 +22,10 @@
 }
 
 .header__logo-img {
-  height: 40px;
-  width: auto;
-  object-fit: contain;
+  height: 60px;
+  width: 180px;
+  object-fit: cover;
+  object-position: center 47%;
 }
 
 .header__nav {
@@ -160,6 +161,7 @@
   }
 
   .header__logo-img {
-    height: 32px;
+    height: 42px;
+    width: 126px;
   }
 }
