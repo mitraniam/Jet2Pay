@@ -117,7 +117,8 @@
 }
 
 .hero__form-inputs {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 12px;
   align-items: stretch;
 }
@@ -160,7 +161,9 @@
   border-radius: 12px;
   font-size: 15px;
   white-space: nowrap;
-  flex-shrink: 0;
+  grid-column: 1 / -1;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .hero__trust {
@@ -288,7 +291,7 @@
   }
 
   .hero__form-inputs {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 
   .hero__submit {
