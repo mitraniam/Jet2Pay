@@ -1,5 +1,6 @@
 {
-  "buildCommand": "cd skycop-clone && npm install && npm run build",
-  "outputDirectory": "skycop-clone/dist",
-  "framework": "vite"
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rootDirectory": "skycop-clone"
 }
