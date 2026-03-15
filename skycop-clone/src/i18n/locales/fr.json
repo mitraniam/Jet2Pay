@@ -1,0 +1,112 @@
+{
+  "header": {
+    "checkCompensation": "Vérifier l'indemnisation",
+    "knowYourRights": "Vos droits",
+    "aboutCompany": "À propos",
+    "news": "Actualités",
+    "referAFriend": "Parrainer un ami",
+    "checkClaimStatus": "Statut de ma demande"
+  },
+  "hero": {
+    "titleDelayed": "Retardé",
+    "titleCancelled": "Annulé",
+    "titleFlight": "Vol",
+    "titleOr": "ou",
+    "subtitle": "Réclamez jusqu'à <strong>€600</strong> pour un vol retardé ou annulé",
+    "whatHappened": "Que s'est-il passé avec votre vol ?",
+    "delayed": "Retardé",
+    "cancelled": "Annulé / Surbooking",
+    "otherDisruptions": "Autres perturbations",
+    "departurePlaceholder": "Aéroport de départ",
+    "arrivalPlaceholder": "Aéroport d'arrivée",
+    "checkCompensation": "Vérifier l'indemnisation",
+    "freeCheck": "Vérification gratuite",
+    "hassleFree": "Sans tracas",
+    "claimsUpTo": "Réclamations jusqu'à 3 ans",
+    "compensatedCustomers": "clients indemnisés",
+    "airlines": "compagnies aériennes",
+    "yearsTrusted": "ans de confiance"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Vérification d'éligibilité",
+      "waitTime": "Temps d'attente",
+      "done": "Terminé !",
+      "flightItinerary": "Itinéraire du vol",
+      "disruptionType": "Type de perturbation",
+      "timing": "Durée",
+      "reason": "Raison",
+      "howLong": "Combien de temps avez-vous attendu ?"
+    },
+    "step1": {
+      "title": "Où avez-vous volé ?",
+      "departedFrom": "Départ de",
+      "finalDestination": "Aéroport de destination finale",
+      "airportPlaceholder": "Entrez la ville ou l'aéroport",
+      "directFlight": "Était-ce un vol direct ?",
+      "yesDirect": "Oui, c'était un vol direct",
+      "noConnecting": "Non, j'avais des correspondances"
+    },
+    "step2": {
+      "title": "Type de perturbation",
+      "question": "Quelle était la nature de la perturbation de votre vol ?",
+      "delayed": "Vol retardé",
+      "cancelled": "Vol annulé",
+      "denied": "Embarquement refusé / Surbooking"
+    },
+    "step3": {
+      "title": "Combien de temps de retard ?",
+      "question": "Combien de temps avez-vous été retardé pour atteindre votre destination finale ?",
+      "less3": "Moins de 3 heures",
+      "more3": "Plus de 3 heures",
+      "missed": "Correspondance manquée"
+    },
+    "step4": {
+      "title": "Raison de la perturbation",
+      "question1": "La compagnie aérienne vous a-t-elle expliqué la raison de la perturbation ?",
+      "yes": "Oui",
+      "no": "Non",
+      "dontRemember": "Je ne me souviens pas",
+      "question2": "Quelle était la raison fournie par la compagnie ?",
+      "technical": "Problème technique de l'avion",
+      "weather": "Mauvaises conditions météo",
+      "strike": "Grève",
+      "airport": "Problèmes d'aéroport",
+      "other": "Autres raisons"
+    },
+    "step5": {
+      "title": "Parlez-nous de votre situation",
+      "question": "Combien de temps avez-vous attendu un vol de remplacement ou une solution ?",
+      "less2": "Moins de 2 heures",
+      "2to4": "2 à 4 heures",
+      "4to8": "4 à 8 heures",
+      "overnight": "Toute la nuit (8h+)",
+      "none": "Aucune alternative n'a été proposée",
+      "describeLabel": "Décrivez brièvement ce qui s'est passé",
+      "describeOptional": "(facultatif)",
+      "describePlaceholder": "Ex. Mon vol de Paris à Madrid a eu 4 heures de retard en raison d'un problème technique...",
+      "infoText": "Partager des détails sur votre expérience peut considérablement améliorer vos chances de succès. Plus vous êtes précis, meilleures sont vos chances."
+    },
+    "back": "Retour",
+    "continue": "Continuer",
+    "submitClaim": "Soumettre la demande",
+    "checkAnotherFlight": "← Vérifier un autre vol",
+    "freeCheck": "Vérifiez votre indemnisation — <strong>100% gratuit</strong>, sans risque.",
+    "eligible": {
+      "title": "Bonne nouvelle — vous pourriez être éligible !",
+      "description": "D'après vos réponses, vous pourriez avoir droit à jusqu'à <strong>€600</strong> d'indemnisation selon le Règlement UE 261/2004. Démarrez votre demande gratuite maintenant !",
+      "startClaim": "Démarrer ma demande gratuite →"
+    },
+    "notEligible": {
+      "title": "Malheureusement, vous ne semblez pas éligible",
+      "description": "D'après vos réponses, votre retard semble inférieur au seuil de 3 heures requis pour une indemnisation UE selon le Règlement 261/2004."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

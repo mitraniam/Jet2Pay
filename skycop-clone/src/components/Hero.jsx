@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import './Hero.css'
 import AirportSearch from './AirportSearch'
 
@@ -10,6 +11,7 @@ const SearchIcon = () => (
 )
 
 const Hero = ({ onCheckCompensation }) => {
+  const { t } = useTranslation()
   const [departure, setDeparture] = useState(null)
   const [arrival, setArrival] = useState(null)
 
@@ -19,40 +21,40 @@ const Hero = ({ onCheckCompensation }) => {
       <div className="hero__inner container">
         <div className="hero__content">
           <h1 className="hero__title">
-            Flight <span className="hero__title--green">Delayed</span> or <span className="hero__title--green">Cancelled</span>?
+            {t('hero.titleFlight')} <span className="hero__title--green">{t('hero.titleDelayed')}</span> {t('hero.titleOr')} <span className="hero__title--green">{t('hero.titleCancelled')}</span>?
           </h1>
-          <p className="hero__subtitle">
-            Claim up to <strong>€600</strong> for a delayed or cancelled flight
-          </p>
+          <p className="hero__subtitle"
+            dangerouslySetInnerHTML={{ __html: t('hero.subtitle') }}
+          />
 
           <div className="hero__form">
-            <p className="hero__form-label">What happened with your flight?</p>
+            <p className="hero__form-label">{t('hero.whatHappened')}</p>
             <div className="hero__form-options">
               <label className="hero__radio">
                 <input type="radio" name="flightIssue" defaultChecked />
                 <span className="hero__radio-custom"></span>
-                <span>Delayed</span>
+                <span>{t('hero.delayed')}</span>
               </label>
               <label className="hero__radio">
                 <input type="radio" name="flightIssue" />
                 <span className="hero__radio-custom"></span>
-                <span>Cancelled / Overbooked</span>
+                <span>{t('hero.cancelled')}</span>
               </label>
               <label className="hero__radio">
                 <input type="radio" name="flightIssue" />
                 <span className="hero__radio-custom"></span>
-                <span>Other disruptions</span>
+                <span>{t('hero.otherDisruptions')}</span>
               </label>
             </div>
 
             <div className="hero__form-inputs">
               <AirportSearch
-                placeholder="Departure airport"
+                placeholder={t('hero.departurePlaceholder')}
                 icon={<SearchIcon />}
                 onChange={setDeparture}
               />
               <AirportSearch
-                placeholder="Arrival airport"
+                placeholder={t('hero.arrivalPlaceholder')}
                 icon={<SearchIcon />}
                 onChange={setArrival}
               />
@@ -60,7 +62,7 @@ const Hero = ({ onCheckCompensation }) => {
                 className="hero__submit btn-primary"
                 onClick={onCheckCompensation}
               >
-                Check Compensation
+                {t('hero.checkCompensation')}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                 </svg>
@@ -71,15 +73,15 @@ const Hero = ({ onCheckCompensation }) => {
           <div className="hero__trust">
             <div className="hero__trust-item">
               <span className="hero__trust-check">&#10003;</span>
-              <span>Free compensation check</span>
+              <span>{t('hero.freeCheck')}</span>
             </div>
             <div className="hero__trust-item">
               <span className="hero__trust-check">&#10003;</span>
-              <span>Hassle-free</span>
+              <span>{t('hero.hassleFree')}</span>
             </div>
             <div className="hero__trust-item">
               <span className="hero__trust-check">&#10003;</span>
-              <span>Claims up to 3 years old</span>
+              <span>{t('hero.claimsUpTo')}</span>
             </div>
           </div>
         </div>
@@ -104,17 +106,17 @@ const Hero = ({ onCheckCompensation }) => {
           <div className="hero__stat-divider"></div>
           <div className="hero__stat">
             <span className="hero__stat-value">1M+</span>
-            <span className="hero__stat-label">compensated customers</span>
+            <span className="hero__stat-label">{t('hero.compensatedCustomers')}</span>
           </div>
           <div className="hero__stat-divider"></div>
           <div className="hero__stat">
             <span className="hero__stat-value">250+</span>
-            <span className="hero__stat-label">airlines</span>
+            <span className="hero__stat-label">{t('hero.airlines')}</span>
           </div>
           <div className="hero__stat-divider"></div>
           <div className="hero__stat">
             <span className="hero__stat-value">10+</span>
-            <span className="hero__stat-label">years trusted</span>
+            <span className="hero__stat-label">{t('hero.yearsTrusted')}</span>
           </div>
         </div>
       </div>

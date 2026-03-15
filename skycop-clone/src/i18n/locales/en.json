@@ -1,0 +1,112 @@
+{
+  "header": {
+    "checkCompensation": "Check Compensation",
+    "knowYourRights": "Know Your Rights",
+    "aboutCompany": "About Company",
+    "news": "News",
+    "referAFriend": "Refer a Friend",
+    "checkClaimStatus": "Check Claim Status"
+  },
+  "hero": {
+    "titleDelayed": "Delayed",
+    "titleCancelled": "Cancelled",
+    "titleFlight": "Flight",
+    "titleOr": "or",
+    "subtitle": "Claim up to <strong>€600</strong> for a delayed or cancelled flight",
+    "whatHappened": "What happened with your flight?",
+    "delayed": "Delayed",
+    "cancelled": "Cancelled / Overbooked",
+    "otherDisruptions": "Other disruptions",
+    "departurePlaceholder": "Departure airport",
+    "arrivalPlaceholder": "Arrival airport",
+    "checkCompensation": "Check Compensation",
+    "freeCheck": "Free compensation check",
+    "hassleFree": "Hassle-free",
+    "claimsUpTo": "Claims up to 3 years old",
+    "compensatedCustomers": "compensated customers",
+    "airlines": "airlines",
+    "yearsTrusted": "years trusted"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Eligibility check",
+      "waitTime": "Wait time",
+      "done": "Done!",
+      "flightItinerary": "Flight itinerary",
+      "disruptionType": "Disruption type",
+      "timing": "Timing",
+      "reason": "Reason",
+      "howLong": "How long did you wait?"
+    },
+    "step1": {
+      "title": "Where did you fly?",
+      "departedFrom": "Departed from",
+      "finalDestination": "Final destination airport",
+      "airportPlaceholder": "Enter the city or airport name",
+      "directFlight": "Was it a direct flight?",
+      "yesDirect": "Yes, it was a direct flight",
+      "noConnecting": "No, I had connecting flights"
+    },
+    "step2": {
+      "title": "Type of disruption",
+      "question": "What was the nature of the flight disruption you encountered?",
+      "delayed": "Flight delayed",
+      "cancelled": "Flight cancelled",
+      "denied": "Denied boarding / Overbooked"
+    },
+    "step3": {
+      "title": "How long were you delayed?",
+      "question": "How long were you delayed to reach your final destination?",
+      "less3": "Less than 3 hours",
+      "more3": "More than 3 hours",
+      "missed": "Missed connecting flight"
+    },
+    "step4": {
+      "title": "Reason for disruption",
+      "question1": "Did the airline tell you why the flight was disrupted?",
+      "yes": "Yes",
+      "no": "No",
+      "dontRemember": "Don't remember",
+      "question2": "What was the reason provided by the airline?",
+      "technical": "Aircraft technical problem",
+      "weather": "Bad weather conditions",
+      "strike": "Strike",
+      "airport": "Airport issues",
+      "other": "Other reasons"
+    },
+    "step5": {
+      "title": "Tell us more about your situation",
+      "question": "How long did you wait for a replacement flight or solution?",
+      "less2": "Less than 2 hours",
+      "2to4": "2 to 4 hours",
+      "4to8": "4 to 8 hours",
+      "overnight": "Overnight (8+ hours)",
+      "none": "No alternative was offered",
+      "describeLabel": "Briefly describe what happened",
+      "describeOptional": "(optional)",
+      "describePlaceholder": "E.g. My flight from London to Paris was delayed by 4 hours due to a technical issue with the aircraft...",
+      "infoText": "Sharing details about your experience can greatly improve your chances of a successful claim. The more specific you are, the higher your chances of approval."
+    },
+    "back": "Back",
+    "continue": "Continue",
+    "submitClaim": "Submit Claim",
+    "checkAnotherFlight": "← Check another flight",
+    "freeCheck": "Check your compensation — <strong>100% free</strong>, no risk.",
+    "eligible": {
+      "title": "Great news — you may be eligible!",
+      "description": "Based on your answers, you could be entitled to up to <strong>€600</strong> in compensation under EU Regulation 261/2004. Start your free claim now!",
+      "startClaim": "Start My Free Claim →"
+    },
+    "notEligible": {
+      "title": "Unfortunately, you may not qualify",
+      "description": "Based on your answers, your delay appears to be under the 3-hour threshold required for EU compensation under Regulation 261/2004."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

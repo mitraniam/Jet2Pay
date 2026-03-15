@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 import AirportSearch from './AirportSearch'
 import './CheckCompensationForm.css'
 
@@ -19,30 +20,6 @@ const PlaneSmIcon = () => (
   </svg>
 )
 
-/* ── Sidebar config ─────────────────────────────────────── */
-const SIDEBAR = [
-  {
-    id: 1,
-    label: 'Eligibility check',
-    substeps: [
-      { id: 1, label: 'Flight itinerary' },
-      { id: 2, label: 'Disruption type' },
-      { id: 3, label: 'Timing' },
-      { id: 4, label: 'Reason' },
-    ],
-  },
-  {
-    id: 2,
-    label: 'Wait time',
-    substeps: [{ id: 5, label: 'How long did you wait?' }],
-  },
-  {
-    id: 3,
-    label: 'Done!',
-    substeps: [],
-  },
-]
-
 /* ── Reusable option button ─────────────────────────────── */
 const Option = ({ selected, onClick, children }) => (
   <button
@@ -61,6 +38,7 @@ const Option = ({ selected, onClick, children }) => (
    MAIN COMPONENT
 ══════════════════════════════════════════════════════════ */
 const CheckCompensationForm = ({ onBack }) => {
+  const { t } = useTranslation()
   const [step, setStep] = useState(1)
   const [done, setDone] = useState(false)
   const [data, setData] = useState({
@@ -95,6 +73,30 @@ const CheckCompensationForm = ({ onBack }) => {
     if (step > 1) setStep(s => s - 1)
     else onBack?.()
   }
+
+  /* ── Sidebar config (translated) ── */
+  const SIDEBAR = [
+    {
+      id: 1,
+      label: t('form.sidebar.eligibilityCheck'),
+      substeps: [
+        { id: 1, label: t('form.sidebar.flightItinerary') },
+        { id: 2, label: t('form.sidebar.disruptionType') },
+        { id: 3, label: t('form.sidebar.timing') },
+        { id: 4, label: t('form.sidebar.reason') },
+      ],
+    },
+    {
+      id: 2,
+      label: t('form.sidebar.waitTime'),
+      substeps: [{ id: 5, label: t('form.sidebar.howLong') }],
+    },
+    {
+      id: 3,
+      label: t('form.sidebar.done'),
+      substeps: [],
+    },
+  ]
 
   if (done) {
     return <Result data={data} onReset={() => { setDone(false); setStep(1); onBack?.() }} />
@@ -144,23 +146,23 @@ const CheckCompensationForm = ({ onBack }) => {
         {/* ── Main Card ── */}
         <div className="ccf__card">
           <div className="ccf__card-body">
-            {step === 1 && <Step1 data={data} set={set} />}
-            {step === 2 && <Step2 data={data} set={set} />}
-            {step === 3 && <Step3 data={data} set={set} />}
-            {step === 4 && <Step4 data={data} set={set} />}
-            {step === 5 && <Step5 data={data} set={set} />}
+            {step === 1 && <Step1 data={data} set={set} t={t} />}
+            {step === 2 && <Step2 data={data} set={set} t={t} />}
+            {step === 3 && <Step3 data={data} set={set} t={t} />}
+            {step === 4 && <Step4 data={data} set={set} t={t} />}
+            {step === 5 && <Step5 data={data} set={set} t={t} />}
           </div>
 
           {/* Actions */}
           <div className="ccf__actions">
             <button className="ccf__btn-back" onClick={handleBack}>
-              Back
+              {t('form.back')}
             </button>
             <button
               className={`ccf__btn-continue${canContinue() ? '' : ' ccf__btn-continue--off'}`}
               onClick={handleContinue}
             >
-              {step === 5 ? 'Submit Claim' : 'Continue'}
+              {step === 5 ? t('form.submitClaim') : t('form.continue')}
               {step < 5 && <ArrowIcon />}
             </button>
           </div>
@@ -170,7 +172,7 @@ const CheckCompensationForm = ({ onBack }) => {
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--PrimaryOrange)" strokeWidth="2">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
               </svg>
-              Check your compensation — <strong>100% free</strong>, no risk.
+              <span dangerouslySetInnerHTML={{ __html: t('form.freeCheck') }} />
             </div>
           )}
         </div>
@@ -180,17 +182,17 @@ const CheckCompensationForm = ({ onBack }) => {
 }
 
 /* ── Step 1: Route ──────────────────────────────────────── */
-const Step1 = ({ data, set }) => (
+const Step1 = ({ data, set, t }) => (
   <div className="ccf__step">
-    <h2 className="ccf__h2">Where did you fly?</h2>
+    <h2 className="ccf__h2">{t('form.step1.title')}</h2>
 
     <div className="ccf__route-grid">
       <div className="ccf__field">
         <label className="ccf__lbl">
-          Departed from <span className="ccf__req">*</span>
+          {t('form.step1.departedFrom')} <span className="ccf__req">*</span>
         </label>
         <AirportSearch
-          placeholder="Enter the city or airport name"
+          placeholder={t('form.step1.airportPlaceholder')}
           icon={<PlaneSmIcon />}
           onChange={a => set('from', a)}
           value={data.from ? `${data.from.city} (${data.from.iata})` : ''}
@@ -199,10 +201,10 @@ const Step1 = ({ data, set }) => (
 
       <div className="ccf__field">
         <label className="ccf__lbl">
-          Final destination airport <span className="ccf__req">*</span>
+          {t('form.step1.finalDestination')} <span className="ccf__req">*</span>
         </label>
         <AirportSearch
-          placeholder="Enter the city or airport name"
+          placeholder={t('form.step1.airportPlaceholder')}
           icon={<PlaneSmIcon />}
           onChange={a => set('to', a)}
           value={data.to ? `${data.to.city} (${data.to.iata})` : ''}
@@ -212,95 +214,95 @@ const Step1 = ({ data, set }) => (
 
     <hr className="ccf__divider" />
 
-    <h3 className="ccf__h3">Was it a direct flight?</h3>
+    <h3 className="ccf__h3">{t('form.step1.directFlight')}</h3>
     <div className="ccf__opts-row">
       <Option selected={data.isDirect === true} onClick={() => set('isDirect', true)}>
-        Yes, it was a direct flight
+        {t('form.step1.yesDirect')}
       </Option>
       <Option selected={data.isDirect === false} onClick={() => set('isDirect', false)}>
-        No, I had connecting flights
+        {t('form.step1.noConnecting')}
       </Option>
     </div>
   </div>
 )
 
 /* ── Step 2: Disruption type ────────────────────────────── */
-const Step2 = ({ data, set }) => (
+const Step2 = ({ data, set, t }) => (
   <div className="ccf__step">
-    <h2 className="ccf__h2">Type of disruption</h2>
+    <h2 className="ccf__h2">{t('form.step2.title')}</h2>
     <p className="ccf__p">
-      What was the nature of the flight disruption you encountered?{' '}
+      {t('form.step2.question')}{' '}
       <span className="ccf__req">*</span>
     </p>
     <div className="ccf__opts-col">
       <Option selected={data.disruption === 'delayed'} onClick={() => set('disruption', 'delayed')}>
-        Flight delayed
+        {t('form.step2.delayed')}
       </Option>
       <Option selected={data.disruption === 'cancelled'} onClick={() => set('disruption', 'cancelled')}>
-        Flight cancelled
+        {t('form.step2.cancelled')}
       </Option>
       <Option selected={data.disruption === 'denied'} onClick={() => set('disruption', 'denied')}>
-        Denied boarding / Overbooked
+        {t('form.step2.denied')}
       </Option>
     </div>
   </div>
 )
 
 /* ── Step 3: Timing ─────────────────────────────────────── */
-const Step3 = ({ data, set }) => (
+const Step3 = ({ data, set, t }) => (
   <div className="ccf__step">
-    <h2 className="ccf__h2">How long were you delayed?</h2>
+    <h2 className="ccf__h2">{t('form.step3.title')}</h2>
     <p className="ccf__p">
-      How long were you delayed to reach your final destination?{' '}
+      {t('form.step3.question')}{' '}
       <span className="ccf__req">*</span>
     </p>
     <div className="ccf__opts-col">
       <Option selected={data.timing === 'less3'} onClick={() => set('timing', 'less3')}>
-        Less than 3 hours
+        {t('form.step3.less3')}
       </Option>
       <Option selected={data.timing === 'more3'} onClick={() => set('timing', 'more3')}>
-        More than 3 hours
+        {t('form.step3.more3')}
       </Option>
       <Option selected={data.timing === 'missed'} onClick={() => set('timing', 'missed')}>
-        Missed connecting flight
+        {t('form.step3.missed')}
       </Option>
     </div>
   </div>
 )
 
 /* ── Step 4: Reason ─────────────────────────────────────── */
-const Step4 = ({ data, set }) => (
+const Step4 = ({ data, set, t }) => (
   <div className="ccf__step">
-    <h2 className="ccf__h2">Reason for disruption</h2>
+    <h2 className="ccf__h2">{t('form.step4.title')}</h2>
     <p className="ccf__p">
-      Did the airline tell you why the flight was disrupted?{' '}
+      {t('form.step4.question1')}{' '}
       <span className="ccf__req">*</span>
     </p>
     <div className="ccf__opts-col">
       <Option selected={data.airlineTold === 'yes'} onClick={() => set('airlineTold', 'yes')}>
-        Yes
+        {t('form.step4.yes')}
       </Option>
       <Option selected={data.airlineTold === 'no'} onClick={() => set('airlineTold', 'no')}>
-        No
+        {t('form.step4.no')}
       </Option>
       <Option selected={data.airlineTold === 'dontremember'} onClick={() => set('airlineTold', 'dontremember')}>
-        Don't remember
+        {t('form.step4.dontRemember')}
       </Option>
     </div>
 
     {data.airlineTold === 'yes' && (
       <>
         <p className="ccf__p" style={{ marginTop: 28 }}>
-          What was the reason provided by the airline?{' '}
+          {t('form.step4.question2')}{' '}
           <span className="ccf__req">*</span>
         </p>
         <div className="ccf__reasons-grid">
           {[
-            { v: 'technical', icon: '🔧', label: 'Aircraft technical problem' },
-            { v: 'weather',   icon: '⛈️', label: 'Bad weather conditions' },
-            { v: 'strike',    icon: '📢', label: 'Strike' },
-            { v: 'airport',   icon: '🛬', label: 'Airport issues' },
-            { v: 'other',     icon: '•••', label: 'Other reasons' },
+            { v: 'technical', icon: '🔧', labelKey: 'form.step4.technical' },
+            { v: 'weather',   icon: '⛈️', labelKey: 'form.step4.weather' },
+            { v: 'strike',    icon: '📢', labelKey: 'form.step4.strike' },
+            { v: 'airport',   icon: '🛬', labelKey: 'form.step4.airport' },
+            { v: 'other',     icon: '•••', labelKey: 'form.step4.other' },
           ].map(r => (
             <button
               key={r.v}
@@ -309,7 +311,7 @@ const Step4 = ({ data, set }) => (
               onClick={() => set('reason', r.v)}
             >
               <span className="ccf__reason-ic">{r.icon}</span>
-              <span className="ccf__reason-lbl">{r.label}</span>
+              <span className="ccf__reason-lbl">{t(r.labelKey)}</span>
             </button>
           ))}
         </div>
@@ -319,23 +321,23 @@ const Step4 = ({ data, set }) => (
 )
 
 /* ── Step 5: Wait time ──────────────────────────────────── */
-const Step5 = ({ data, set }) => (
+const Step5 = ({ data, set, t }) => (
   <div className="ccf__step">
-    <h2 className="ccf__h2">Tell us more about your situation</h2>
+    <h2 className="ccf__h2">{t('form.step5.title')}</h2>
     <p className="ccf__p">
-      How long did you wait for a replacement flight or solution?{' '}
+      {t('form.step5.question')}{' '}
       <span className="ccf__req">*</span>
     </p>
     <div className="ccf__opts-col">
       {[
-        { v: 'less2',       l: 'Less than 2 hours' },
-        { v: '2to4',        l: '2 to 4 hours' },
-        { v: '4to8',        l: '4 to 8 hours' },
-        { v: 'overnight',   l: 'Overnight (8+ hours)' },
-        { v: 'none',        l: 'No alternative was offered' },
+        { v: 'less2',     lKey: 'form.step5.less2' },
+        { v: '2to4',      lKey: 'form.step5.2to4' },
+        { v: '4to8',      lKey: 'form.step5.4to8' },
+        { v: 'overnight', lKey: 'form.step5.overnight' },
+        { v: 'none',      lKey: 'form.step5.none' },
       ].map(o => (
         <Option key={o.v} selected={data.waitTime === o.v} onClick={() => set('waitTime', o.v)}>
-          {o.l}
+          {t(o.lKey)}
         </Option>
       ))}
     </div>
@@ -343,28 +345,26 @@ const Step5 = ({ data, set }) => (
     <hr className="ccf__divider" />
 
     <p className="ccf__p">
-      Briefly describe what happened{' '}
-      <span style={{ color: 'var(--TextSilverDark)', fontSize: 13 }}>(optional)</span>
+      {t('form.step5.describeLabel')}{' '}
+      <span style={{ color: 'var(--TextSilverDark)', fontSize: 13 }}>{t('form.step5.describeOptional')}</span>
     </p>
     <textarea
       className="ccf__textarea"
-      placeholder="E.g. My flight from London to Paris was delayed by 4 hours due to a technical issue with the aircraft..."
+      placeholder={t('form.step5.describePlaceholder')}
       value={data.description}
       onChange={e => set('description', e.target.value)}
       rows={4}
     />
     <div className="ccf__infobox">
       <span style={{ fontSize: 18 }}>ℹ️</span>
-      <p>
-        Sharing details about your experience can greatly improve your chances of a successful claim.
-        The more specific you are, the higher your chances of approval.
-      </p>
+      <p>{t('form.step5.infoText')}</p>
     </div>
   </div>
 )
 
 /* ── Result screen ──────────────────────────────────────── */
 const Result = ({ data, onReset }) => {
+  const { t } = useTranslation()
   const eligible = data.timing === 'more3' || data.timing === 'missed'
 
   return (
@@ -376,7 +376,7 @@ const Result = ({ data, onReset }) => {
 
           {eligible ? (
             <>
-              <h2 className="ccf__result-h2">Great news — you may be eligible!</h2>
+              <h2 className="ccf__result-h2">{t('form.eligible.title')}</h2>
               {data.from && data.to && (
                 <div className="ccf__result-route">
                   <span className="ccf__result-iata">{data.from.iata}</span>
@@ -384,27 +384,22 @@ const Result = ({ data, onReset }) => {
                   <span className="ccf__result-iata">{data.to.iata}</span>
                 </div>
               )}
-              <p className="ccf__result-p">
-                Based on your answers, you could be entitled to up to{' '}
-                <strong>€600</strong> in compensation under EU Regulation 261/2004.
-                Start your free claim now!
-              </p>
+              <p className="ccf__result-p"
+                dangerouslySetInnerHTML={{ __html: t('form.eligible.description') }}
+              />
               <button className="ccf__btn-continue" style={{ marginBottom: 0 }}>
-                Start My Free Claim →
+                {t('form.eligible.startClaim')}
               </button>
             </>
           ) : (
             <>
-              <h2 className="ccf__result-h2">Unfortunately, you may not qualify</h2>
-              <p className="ccf__result-p">
-                Based on your answers, your delay appears to be under the 3-hour threshold
-                required for EU compensation under Regulation 261/2004.
-              </p>
+              <h2 className="ccf__result-h2">{t('form.notEligible.title')}</h2>
+              <p className="ccf__result-p">{t('form.notEligible.description')}</p>
             </>
           )}
 
           <button className="ccf__btn-back" style={{ marginTop: 16 }} onClick={onReset}>
-            ← Check another flight
+            {t('form.checkAnotherFlight')}
           </button>
         </div>
       </div>

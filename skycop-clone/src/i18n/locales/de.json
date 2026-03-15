@@ -1,0 +1,112 @@
+{
+  "header": {
+    "checkCompensation": "Entschädigung prüfen",
+    "knowYourRights": "Ihre Rechte",
+    "aboutCompany": "Über uns",
+    "news": "Neuigkeiten",
+    "referAFriend": "Freund empfehlen",
+    "checkClaimStatus": "Antragsstatus prüfen"
+  },
+  "hero": {
+    "titleDelayed": "Verspätet",
+    "titleCancelled": "Gestrichen",
+    "titleFlight": "Flug",
+    "titleOr": "oder",
+    "subtitle": "Fordern Sie bis zu <strong>€600</strong> für einen verspäteten oder gestrichenen Flug",
+    "whatHappened": "Was ist mit Ihrem Flug passiert?",
+    "delayed": "Verspätet",
+    "cancelled": "Gestrichen / Überbuchung",
+    "otherDisruptions": "Andere Störungen",
+    "departurePlaceholder": "Abflughafen",
+    "arrivalPlaceholder": "Ankunftsflughafen",
+    "checkCompensation": "Entschädigung prüfen",
+    "freeCheck": "Kostenlose Prüfung",
+    "hassleFree": "Unkompliziert",
+    "claimsUpTo": "Ansprüche bis zu 3 Jahre rückwirkend",
+    "compensatedCustomers": "entschädigte Kunden",
+    "airlines": "Fluggesellschaften",
+    "yearsTrusted": "Jahre Erfahrung"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Berechtigungsprüfung",
+      "waitTime": "Wartezeit",
+      "done": "Fertig!",
+      "flightItinerary": "Flugroute",
+      "disruptionType": "Art der Störung",
+      "timing": "Dauer",
+      "reason": "Grund",
+      "howLong": "Wie lange haben Sie gewartet?"
+    },
+    "step1": {
+      "title": "Wohin haben Sie geflogen?",
+      "departedFrom": "Abgeflogen von",
+      "finalDestination": "Zielflughafen",
+      "airportPlaceholder": "Stadt oder Flughafen eingeben",
+      "directFlight": "War es ein Direktflug?",
+      "yesDirect": "Ja, es war ein Direktflug",
+      "noConnecting": "Nein, ich hatte Anschlussflüge"
+    },
+    "step2": {
+      "title": "Art der Störung",
+      "question": "Was ist mit Ihrem Flug passiert?",
+      "delayed": "Flug verspätet",
+      "cancelled": "Flug gestrichen",
+      "denied": "Beförderung verweigert / Überbuchung"
+    },
+    "step3": {
+      "title": "Wie lange war die Verspätung?",
+      "question": "Wie lange waren Sie verspätet, bis Sie Ihr Ziel erreichten?",
+      "less3": "Weniger als 3 Stunden",
+      "more3": "Mehr als 3 Stunden",
+      "missed": "Anschlussflug verpasst"
+    },
+    "step4": {
+      "title": "Grund der Störung",
+      "question1": "Hat die Fluggesellschaft den Grund für die Störung mitgeteilt?",
+      "yes": "Ja",
+      "no": "Nein",
+      "dontRemember": "Ich erinnere mich nicht",
+      "question2": "Was war der genannte Grund?",
+      "technical": "Technisches Problem mit dem Flugzeug",
+      "weather": "Schlechte Wetterbedingungen",
+      "strike": "Streik",
+      "airport": "Flughafenprobleme",
+      "other": "Andere Gründe"
+    },
+    "step5": {
+      "title": "Erzählen Sie uns mehr",
+      "question": "Wie lange haben Sie auf einen Ersatzflug oder eine Lösung gewartet?",
+      "less2": "Weniger als 2 Stunden",
+      "2to4": "2 bis 4 Stunden",
+      "4to8": "4 bis 8 Stunden",
+      "overnight": "Über Nacht (8+ Stunden)",
+      "none": "Es wurde keine Alternative angeboten",
+      "describeLabel": "Beschreiben Sie kurz, was passiert ist",
+      "describeOptional": "(optional)",
+      "describePlaceholder": "Z.B. Mein Flug von Berlin nach Paris hatte 4 Stunden Verspätung wegen eines technischen Problems...",
+      "infoText": "Details über Ihre Erfahrung können Ihre Chancen auf eine erfolgreiche Entschädigung erheblich verbessern."
+    },
+    "back": "Zurück",
+    "continue": "Weiter",
+    "submitClaim": "Antrag einreichen",
+    "checkAnotherFlight": "← Anderen Flug prüfen",
+    "freeCheck": "Prüfen Sie Ihre Entschädigung — <strong>100% kostenlos</strong>, kein Risiko.",
+    "eligible": {
+      "title": "Gute Nachrichten — Sie könnten berechtigt sein!",
+      "description": "Basierend auf Ihren Angaben könnten Sie bis zu <strong>€600</strong> Entschädigung gemäß EU-Verordnung 261/2004 erhalten. Starten Sie jetzt Ihren kostenlosen Antrag!",
+      "startClaim": "Kostenlosen Antrag starten →"
+    },
+    "notEligible": {
+      "title": "Leider erfüllen Sie möglicherweise nicht die Voraussetzungen",
+      "description": "Basierend auf Ihren Angaben liegt Ihre Verspätung unter der 3-Stunden-Schwelle, die für eine EU-Entschädigung gemäß Verordnung 261/2004 erforderlich ist."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

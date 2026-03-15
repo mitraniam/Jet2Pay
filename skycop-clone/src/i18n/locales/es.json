@@ -1,0 +1,112 @@
+{
+  "header": {
+    "checkCompensation": "Verificar Compensación",
+    "knowYourRights": "Sus Derechos",
+    "aboutCompany": "Sobre Nosotros",
+    "news": "Noticias",
+    "referAFriend": "Recomendar un Amigo",
+    "checkClaimStatus": "Estado de mi Reclamación"
+  },
+  "hero": {
+    "titleDelayed": "Retrasado",
+    "titleCancelled": "Cancelado",
+    "titleFlight": "Vuelo",
+    "titleOr": "o",
+    "subtitle": "Reclame hasta <strong>€600</strong> por un vuelo retrasado o cancelado",
+    "whatHappened": "¿Qué pasó con su vuelo?",
+    "delayed": "Retrasado",
+    "cancelled": "Cancelado / Sobrevendido",
+    "otherDisruptions": "Otras interrupciones",
+    "departurePlaceholder": "Aeropuerto de salida",
+    "arrivalPlaceholder": "Aeropuerto de llegada",
+    "checkCompensation": "Verificar Compensación",
+    "freeCheck": "Verificación gratuita",
+    "hassleFree": "Sin complicaciones",
+    "claimsUpTo": "Reclamaciones hasta 3 años",
+    "compensatedCustomers": "clientes compensados",
+    "airlines": "aerolíneas",
+    "yearsTrusted": "años de confianza"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Verificación de elegibilidad",
+      "waitTime": "Tiempo de espera",
+      "done": "¡Listo!",
+      "flightItinerary": "Itinerario del vuelo",
+      "disruptionType": "Tipo de interrupción",
+      "timing": "Duración",
+      "reason": "Motivo",
+      "howLong": "¿Cuánto tiempo esperó?"
+    },
+    "step1": {
+      "title": "¿A dónde voló?",
+      "departedFrom": "Salida desde",
+      "finalDestination": "Aeropuerto de destino final",
+      "airportPlaceholder": "Ingrese la ciudad o el aeropuerto",
+      "directFlight": "¿Fue un vuelo directo?",
+      "yesDirect": "Sí, fue un vuelo directo",
+      "noConnecting": "No, tuve vuelos de conexión"
+    },
+    "step2": {
+      "title": "Tipo de interrupción",
+      "question": "¿Cuál fue la naturaleza de la interrupción de su vuelo?",
+      "delayed": "Vuelo retrasado",
+      "cancelled": "Vuelo cancelado",
+      "denied": "Embarque denegado / Sobreventa"
+    },
+    "step3": {
+      "title": "¿Cuánto tiempo fue el retraso?",
+      "question": "¿Cuánto tiempo se retrasó en llegar a su destino final?",
+      "less3": "Menos de 3 horas",
+      "more3": "Más de 3 horas",
+      "missed": "Vuelo de conexión perdido"
+    },
+    "step4": {
+      "title": "Motivo de la interrupción",
+      "question1": "¿La aerolínea le explicó el motivo de la interrupción?",
+      "yes": "Sí",
+      "no": "No",
+      "dontRemember": "No lo recuerdo",
+      "question2": "¿Cuál fue el motivo proporcionado por la aerolínea?",
+      "technical": "Problema técnico del avión",
+      "weather": "Malas condiciones meteorológicas",
+      "strike": "Huelga",
+      "airport": "Problemas en el aeropuerto",
+      "other": "Otros motivos"
+    },
+    "step5": {
+      "title": "Cuéntenos más sobre su situación",
+      "question": "¿Cuánto tiempo esperó un vuelo alternativo o una solución?",
+      "less2": "Menos de 2 horas",
+      "2to4": "2 a 4 horas",
+      "4to8": "4 a 8 horas",
+      "overnight": "Toda la noche (8+ horas)",
+      "none": "No se ofreció ninguna alternativa",
+      "describeLabel": "Describa brevemente lo que ocurrió",
+      "describeOptional": "(opcional)",
+      "describePlaceholder": "Ej. Mi vuelo de Madrid a Barcelona se retrasó 4 horas por un problema técnico...",
+      "infoText": "Compartir detalles sobre su experiencia puede mejorar considerablemente sus posibilidades de éxito. Cuanto más específico sea, mayores serán sus posibilidades."
+    },
+    "back": "Atrás",
+    "continue": "Continuar",
+    "submitClaim": "Enviar reclamación",
+    "checkAnotherFlight": "← Verificar otro vuelo",
+    "freeCheck": "Verifique su compensación — <strong>100% gratis</strong>, sin riesgo.",
+    "eligible": {
+      "title": "¡Buenas noticias — podría ser elegible!",
+      "description": "Según sus respuestas, podría tener derecho a hasta <strong>€600</strong> en compensación según el Reglamento UE 261/2004. ¡Inicie su reclamación gratuita ahora!",
+      "startClaim": "Iniciar mi reclamación gratuita →"
+    },
+    "notEligible": {
+      "title": "Lamentablemente, es posible que no cumpla los requisitos",
+      "description": "Según sus respuestas, su retraso parece estar por debajo del umbral de 3 horas requerido para la compensación de la UE según el Reglamento 261/2004."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}
