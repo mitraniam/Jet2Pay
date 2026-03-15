@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "jet2pay-dev",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["skycop-clone/start-dev.js"],
+      "port": 5173
+    },
+    {
+      "name": "jet2pay-root",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["serve-root.js"],
+      "port": 3000
+    }
+  ]
+}

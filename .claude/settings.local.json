@@ -5,7 +5,14 @@
       "Bash(echo $SHELL)",
       "Bash(npx create-vite@latest skycop-clone --template react)",
       "Bash(node -e \"console.log\\(''hello''\\)\")",
-      "WebFetch(domain:www.skycop.com)"
+      "WebFetch(domain:www.skycop.com)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cmd /c copy \"C:\\\\Users\\\\homes\\\\Desktop\\\\Jet2Pay\\\\Logo\\\\jet2pay_logo_019cd36e-7f02-781b-9fc0-7f3dbe0ded65.webp\" \"C:\\\\Users\\\\homes\\\\Desktop\\\\Jet2Pay\\\\skycop-clone\\\\public\\\\logo.webp\")",
+      "Bash(node -e \"const fs=require\\(''fs''\\); fs.copyFileSync\\(''C:/Users/homes/Desktop/Jet2Pay/Logo/jet2pay_logo_019cd36e-7f02-781b-9fc0-7f3dbe0ded65.webp'', ''C:/Users/homes/Desktop/Jet2Pay/skycop-clone/public/logo.webp''\\); console.log\\(''done''\\);\")",
+      "Bash(git -C \"C:/Users/homes/Desktop/Jet2Pay\" status)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
     ]
   }
 }
