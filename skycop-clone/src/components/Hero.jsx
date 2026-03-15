@@ -9,7 +9,7 @@ const SearchIcon = () => (
   </svg>
 )
 
-const Hero = () => {
+const Hero = ({ onCheckCompensation }) => {
   const [departure, setDeparture] = useState(null)
   const [arrival, setArrival] = useState(null)
 
@@ -56,7 +56,10 @@ const Hero = () => {
                 icon={<SearchIcon />}
                 onChange={setArrival}
               />
-              <button className="hero__submit btn-primary">
+              <button
+                className="hero__submit btn-primary"
+                onClick={onCheckCompensation}
+              >
                 Check Compensation
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

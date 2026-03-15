@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './Header.css'
 
-const Header = () => {
+const Header = ({ onCheckCompensation }) => {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
@@ -14,7 +14,11 @@ const Header = () => {
         <nav className={`header__nav ${mobileOpen ? 'open' : ''}`}>
           <ul className="header__nav-list">
             <li className="header__nav-item header__nav-item--cta">
-              <a href="#" className="header__nav-link header__nav-link--brand">Check Compensation</a>
+              <a
+                href="#"
+                className="header__nav-link header__nav-link--brand"
+                onClick={e => { e.preventDefault(); onCheckCompensation?.() }}
+              >Check Compensation</a>
             </li>
             <li className="header__nav-item header__nav-item--dropdown">
               <a href="#" className="header__nav-link">Know Your Rights</a>

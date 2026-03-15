@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import PressLogos from './components/PressLogos'
@@ -13,13 +14,35 @@ import PassengerRights from './components/PassengerRights'
 import Airlines from './components/Airlines'
 import Airports from './components/Airports'
 import Footer from './components/Footer'
+import CheckCompensationForm from './components/CheckCompensationForm'
 
 function App() {
+  const [page, setPage] = useState('home')
+
+  const goToForm = () => {
+    setPage('compensation')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+  const goHome = () => {
+    setPage('home')
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  }
+
+  if (page === 'compensation') {
+    return (
+      <>
+        <Header onCheckCompensation={goToForm} />
+        <CheckCompensationForm onBack={goHome} />
+        <Footer />
+      </>
+    )
+  }
+
   return (
     <>
-      <Header />
+      <Header onCheckCompensation={goToForm} />
       <main>
-        <Hero />
+        <Hero onCheckCompensation={goToForm} />
         <PressLogos />
         <WhyChoose />
         <CompensationAmount />

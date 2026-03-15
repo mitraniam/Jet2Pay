@@ -1,0 +1,545 @@
+/* ═══════════════════════════════════════════════════════
+   Check Compensation Form — Full-page multi-step form
+═══════════════════════════════════════════════════════ */
+
+/* ── Page shell ─────────────────────────────────────── */
+.ccf {
+  min-height: calc(100vh - var(--header-height));
+  background: #f0f0f4;
+  position: relative;
+  overflow: hidden;
+  padding: 48px 0 80px;
+}
+
+/* Subtle world-map dot pattern background */
+.ccf__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle, rgba(232, 103, 44, 0.08) 1px, transparent 1px),
+    radial-gradient(circle, rgba(123, 45, 142, 0.04) 1px, transparent 1px);
+  background-size: 32px 32px, 16px 16px;
+  background-position: 0 0, 8px 8px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* ── Layout ─────────────────────────────────────────── */
+.ccf__wrap {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 20px;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+}
+
+/* ═══════════════════════════════════════════════════════
+   SIDEBAR
+═══════════════════════════════════════════════════════ */
+.ccf__sidebar {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+}
+
+/* Sidebar group */
+.ccf__sg {
+  margin-bottom: 24px;
+}
+.ccf__sg:last-child {
+  margin-bottom: 0;
+}
+
+.ccf__sg-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+/* Step number bubble */
+.ccf__sg-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 2px solid #d0d0d0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  color: #999;
+  flex-shrink: 0;
+  transition: all 0.2s;
+}
+.ccf__sg-num.active {
+  background: var(--PrimaryGradient);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(232, 103, 44, 0.35);
+}
+.ccf__sg-num.done {
+  background: var(--PrimaryGradient);
+  border-color: transparent;
+  color: #fff;
+}
+
+.ccf__sg-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  transition: color 0.2s;
+}
+.ccf__sg--active .ccf__sg-title {
+  color: var(--PrimaryOrange);
+}
+.ccf__sg--done .ccf__sg-title {
+  color: var(--TextSecond);
+}
+
+/* Sub-steps list */
+.ccf__sg-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 14px;
+  border-left: 2px solid #e8e8e8;
+  padding-left: 18px;
+}
+
+.ccf__sg-item {
+  font-size: 13px;
+  color: #aaa;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  transition: color 0.2s;
+  line-height: 1.3;
+}
+.ccf__sg-item--active {
+  color: var(--PrimaryOrange);
+  font-weight: 600;
+}
+.ccf__sg-item--done {
+  color: #888;
+}
+.ccf__sg-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #ccc;
+  flex-shrink: 0;
+}
+.ccf__sg-item--active .ccf__sg-dot {
+  background: var(--PrimaryOrange);
+}
+.ccf__sg-check {
+  color: var(--PrimaryOrange);
+  display: flex;
+  flex-shrink: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   MAIN CARD
+═══════════════════════════════════════════════════════ */
+.ccf__card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.ccf__card-body {
+  padding: 36px 40px 24px;
+  flex: 1;
+}
+
+/* ── Typography ─────────────────────────────────────── */
+.ccf__h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--black-color);
+  margin: 0 0 22px;
+}
+.ccf__h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black-color);
+  margin: 0 0 14px;
+}
+.ccf__p {
+  font-size: 14px;
+  color: var(--TextSecond);
+  margin: 0 0 14px;
+  line-height: 1.5;
+}
+.ccf__lbl {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--TextSecond);
+  margin-bottom: 8px;
+}
+.ccf__req {
+  color: #fe6050;
+}
+
+/* Divider */
+.ccf__divider {
+  border: none;
+  border-top: 1px solid #ececec;
+  margin: 28px 0 24px;
+}
+
+/* Step wrapper */
+.ccf__step {
+  min-height: 340px;
+}
+
+/* ── Step 1 ─────────────────────────────────────────── */
+.ccf__route-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 4px;
+}
+.ccf__field {
+  width: 100%;
+}
+
+/* ── Option buttons ─────────────────────────────────── */
+.ccf-opt {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 14px;
+  color: var(--TextSecond);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.ccf-opt:hover {
+  border-color: var(--PrimaryOrange);
+  background: var(--OrangeHoverBg, #fef0e8);
+}
+.ccf-opt--on {
+  border-color: var(--PrimaryOrange);
+  background: var(--OrangeHoverBg, #fef0e8);
+  color: var(--black-color);
+}
+
+/* Custom radio dot */
+.ccf-opt__radio {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color 0.15s;
+}
+.ccf-opt--on .ccf-opt__radio {
+  border-color: var(--PrimaryOrange);
+}
+.ccf-opt__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: transparent;
+  transition: background 0.15s;
+}
+.ccf-opt--on .ccf-opt__dot {
+  background: var(--PrimaryOrange);
+}
+.ccf-opt__label {
+  flex: 1;
+  font-weight: 500;
+}
+
+/* Option layout variants */
+.ccf__opts-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.ccf__opts-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Step 4 Reason cards ────────────────────────────── */
+.ccf__reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+.ccf__reason-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 10px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, background 0.15s, box-shadow 0.15s;
+}
+.ccf__reason-card:hover {
+  border-color: var(--PrimaryOrange);
+  background: var(--OrangeHoverBg, #fef0e8);
+  box-shadow: 0 2px 10px rgba(232, 103, 44, 0.1);
+}
+.ccf__reason-card--on {
+  border-color: var(--PrimaryOrange);
+  background: var(--OrangeHoverBg, #fef0e8);
+  box-shadow: 0 2px 10px rgba(232, 103, 44, 0.15);
+}
+.ccf__reason-ic {
+  font-size: 26px;
+  line-height: 1;
+}
+.ccf__reason-lbl {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--TextSecond);
+  text-align: center;
+  line-height: 1.35;
+}
+
+/* ── Step 5 Textarea & info box ─────────────────────── */
+.ccf__textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--TextSecond);
+  font-family: inherit;
+  resize: vertical;
+  background: #fafafa;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+.ccf__textarea:focus {
+  border-color: var(--PrimaryOrange);
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(232, 103, 44, 0.08);
+}
+.ccf__infobox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #f0fdf4;
+  border-radius: 10px;
+  margin-top: 12px;
+  font-size: 13px;
+  color: var(--TextSecond);
+  line-height: 1.5;
+  border: 1px solid #d1fae5;
+}
+.ccf__infobox p {
+  margin: 0;
+}
+
+/* ═══════════════════════════════════════════════════════
+   ACTION BAR
+═══════════════════════════════════════════════════════ */
+.ccf__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px 24px;
+  border-top: 1px solid #f0f0f0;
+  background: #fafafa;
+}
+
+.ccf__btn-back {
+  background: transparent;
+  border: 1.5px solid #d0d0d0;
+  border-radius: 10px;
+  padding: 11px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--TextSecond);
+  cursor: pointer;
+  font-family: inherit;
+  transition: border-color 0.15s, color 0.15s;
+}
+.ccf__btn-back:hover {
+  border-color: var(--PrimaryOrange);
+  color: var(--PrimaryOrange);
+}
+
+.ccf__btn-continue {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--PrimaryGradient);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: opacity 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 14px rgba(232, 103, 44, 0.3);
+}
+.ccf__btn-continue:hover {
+  opacity: 0.92;
+  box-shadow: 0 6px 18px rgba(232, 103, 44, 0.4);
+}
+.ccf__btn-continue--off {
+  background: #d0d0d0;
+  color: #999;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+.ccf__btn-continue--off:hover {
+  opacity: 1;
+  box-shadow: none;
+}
+
+/* Trust bar */
+.ccf__trust {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 10px 40px 20px;
+  background: #fafafa;
+  font-size: 13px;
+  color: var(--TextSecond);
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESULT SCREEN
+═══════════════════════════════════════════════════════ */
+.ccf__result-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - var(--header-height) - 128px);
+  padding: 40px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.ccf__result-card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 52px 48px;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 4px 40px rgba(0, 0, 0, 0.08);
+}
+
+.ccf__result-emoji {
+  font-size: 64px;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.ccf__result-h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--black-color);
+  margin: 0 0 14px;
+  line-height: 1.3;
+}
+
+.ccf__result-p {
+  font-size: 15px;
+  color: var(--TextSecond);
+  line-height: 1.6;
+  margin: 0 0 28px;
+}
+
+.ccf__result-route {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.ccf__result-iata {
+  font-size: 32px;
+  font-weight: 800;
+  background: var(--PrimaryGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 1px;
+}
+
+.ccf__result-arrow {
+  font-size: 22px;
+  color: #ccc;
+  font-weight: 300;
+}
+
+/* ═══════════════════════════════════════════════════════
+   RESPONSIVE
+═══════════════════════════════════════════════════════ */
+@media (max-width: 960px) {
+  .ccf__wrap {
+    grid-template-columns: 1fr;
+  }
+  .ccf__sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .ccf {
+    padding: 24px 0 60px;
+  }
+  .ccf__card-body {
+    padding: 24px 20px 16px;
+  }
+  .ccf__actions {
+    padding: 16px 20px 20px;
+  }
+  .ccf__trust {
+    padding: 8px 20px 16px;
+  }
+  .ccf__route-grid {
+    grid-template-columns: 1fr;
+  }
+  .ccf__opts-row {
+    grid-template-columns: 1fr;
+  }
+  .ccf__reasons-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .ccf__h2 {
+    font-size: 20px;
+  }
+  .ccf__result-card {
+    padding: 36px 24px;
+  }
+  .ccf__result-iata {
+    font-size: 26px;
+  }
+}
