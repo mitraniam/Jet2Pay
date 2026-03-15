@@ -6,25 +6,25 @@ const FlightProblems = () => {
       title: 'Delayed Flight Compensation',
       desc: 'Was your flight delayed by 3 hours or more? You could be entitled to up to €600 in compensation.',
       icon: '⏱️',
-      color: '#fff3e0',
+      color: 'var(--OrangeHoverBg)',
     },
     {
       title: 'Cancelled Flight Compensation',
       desc: 'If your flight was cancelled less than 14 days before departure, you may be entitled to compensation.',
       icon: '❌',
-      color: '#fce4ec',
+      color: 'var(--PurpleHoverBg)',
     },
     {
       title: 'Overbooked Flight Compensation',
       desc: 'Were you denied boarding due to overbooking? Claim up to €600 in compensation.',
       icon: '👥',
-      color: '#e8eaf6',
+      color: 'var(--BgLightOrange)',
     },
     {
       title: 'Air Passenger Rights',
       desc: 'Learn about your rights as an air passenger under EU Regulation 261/2004.',
       icon: '⚖️',
-      color: '#e0f7fa',
+      color: 'var(--BgLightPurple)',
     },
   ]
 
