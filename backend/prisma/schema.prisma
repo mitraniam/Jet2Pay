@@ -1,0 +1,268 @@
+// Jet2Pay — Prisma Schema
+// PostgreSQL + EC261 claims data model
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ──────────────────────────────────────────────
+// Enums
+// ──────────────────────────────────────────────
+
+enum DisruptionType {
+  delay
+  cancellation
+  denied_boarding
+  missed_connection
+}
+
+enum ClaimStatus {
+  submitted
+  under_review
+  approved
+  rejected
+  paid
+  legal_escalated
+}
+
+enum DocumentType {
+  boarding_pass
+  booking_confirmation
+  expense_receipts
+  delay_certificate
+  other
+  lba
+}
+
+enum PayoutStatus {
+  pending
+  awaiting_banking_details
+  initiated
+  completed
+  failed
+}
+
+// ──────────────────────────────────────────────
+// Core Models
+// ──────────────────────────────────────────────
+
+model Claim {
+  id               String         @id @default(uuid())
+  claimToken       String         @unique @default(uuid())
+  flightNumber     String
+  flightDate       DateTime       @db.Date
+  departureAirport String
+  arrivalAirport   String
+  disruptionType   DisruptionType
+  delayDuration    Int?
+  passengerCount   Int
+  bookingReference String
+  noticeGiven      Int?
+  circumstancesDescription String?
+
+  // EC261 calculated fields
+  estimatedAmount  Float
+  routeDistanceKm  Float?
+
+  // Claim lifecycle
+  status           ClaimStatus    @default(submitted)
+  consentGiven     Boolean        @default(false)
+  gdprRetainUntil  DateTime?
+
+  // Assignment
+  assignedTo       String?
+  assignedToName   String?
+
+  // Banking details for payout
+  iban             String?
+  ibanHolderName   String?
+
+  // Email tracking
+  documentReminderSent Boolean    @default(false)
+  monthlyUpdateSent    Boolean    @default(false)
+
+  // Legal escalation
+  lbaSentAt            DateTime?
+  lbaResponseDeadline  DateTime?
+  mcolReminderSent     Boolean    @default(false)
+  airlineResponseReceived Boolean @default(false)
+  airlineRejected      Boolean    @default(false)
+
+  // Timestamps
+  createdAt        DateTime       @default(now())
+  updatedAt        DateTime       @updatedAt
+  deletedAt        DateTime?
+
+  // Relations
+  passengers         Passenger[]
+  documents          Document[]
+  flightVerification FlightVerification?
+  statusHistory      ClaimStatusHistory[]
+  notes              ClaimNote[]
+  eligibility        ClaimEligibility?
+  emailLogs          EmailLog[]
+  payout             Payout?
+
+  @@index([status])
+  @@index([flightNumber, flightDate])
+  @@index([createdAt])
+  @@index([assignedTo])
+}
+
+model Passenger {
+  id          String  @id @default(uuid())
+  claimId     String
+  firstName   String
+  lastName    String
+  email       String
+  phone       String
+  nationality String
+
+  // Address (for LBA / legal correspondence)
+  addressLine1 String?
+  addressLine2 String?
+  city         String?
+  countryCode  String?
+  postalCode   String?
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+
+  @@index([claimId])
+  @@index([email])
+}
+
+model Document {
+  id           String       @id @default(uuid())
+  claimId      String
+  documentType DocumentType
+  fileName     String
+  fileSize     Int
+  mimeType     String
+  storageKey   String
+  uploadedAt   DateTime     @default(now())
+  virusScanStatus String?
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+
+  @@index([claimId])
+}
+
+// ──────────────────────────────────────────────
+// Flight Verification (Priority 2)
+// ──────────────────────────────────────────────
+
+model FlightVerification {
+  id                 String    @id @default(uuid())
+  claimId            String    @unique
+  flightNumber       String
+  flightDate         DateTime  @db.Date
+  scheduledDeparture DateTime?
+  actualDeparture    DateTime?
+  scheduledArrival   DateTime?
+  actualArrival      DateTime?
+  delayMinutes       Int?
+  flightStatus       String
+  source             String
+  rawResponse        Json?
+  verifiedAt         DateTime  @default(now())
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+}
+
+// ──────────────────────────────────────────────
+// Status Audit Trail
+// ──────────────────────────────────────────────
+
+model ClaimStatusHistory {
+  id        String      @id @default(uuid())
+  claimId   String
+  status    ClaimStatus
+  changedAt DateTime    @default(now())
+  changedBy String?
+  reason    String?
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+
+  @@index([claimId])
+}
+
+// ──────────────────────────────────────────────
+// Eligibility Assessment (Priority 3)
+// ──────────────────────────────────────────────
+
+model ClaimEligibility {
+  id                      String   @id @default(uuid())
+  claimId                 String   @unique
+  eligible                Boolean
+  refundOnly              Boolean  @default(false)
+  estimatedCompensationEur Float
+  requiresManualReview    Boolean  @default(false)
+  flags                   Json     @default("[]")
+  ineligibilityReason     String?
+  createdAt               DateTime @default(now())
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+}
+
+// ──────────────────────────────────────────────
+// Admin Notes (Priority 6)
+// ──────────────────────────────────────────────
+
+model ClaimNote {
+  id        String   @id @default(uuid())
+  claimId   String
+  content   String
+  authorId  String
+  internal  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+
+  @@index([claimId])
+}
+
+// ──────────────────────────────────────────────
+// Email Logging (Priority 5)
+// ──────────────────────────────────────────────
+
+model EmailLog {
+  id              String   @id @default(uuid())
+  claimId         String?
+  templateName    String
+  toEmail         String
+  sentAt          DateTime @default(now())
+  resendMessageId String?
+  error           String?
+
+  claim Claim? @relation(fields: [claimId], references: [id], onDelete: SetNull)
+
+  @@index([claimId])
+  @@index([templateName])
+}
+
+// ──────────────────────────────────────────────
+// Payout Records (Priority 7)
+// ──────────────────────────────────────────────
+
+model Payout {
+  id                     String       @id @default(uuid())
+  claimId                String       @unique
+  grossAmountEur         Float
+  feeAmountEur           Float
+  netAmountEur           Float
+  commissionRate         Float        @default(0.30)
+  paymentProofDocumentId String?
+  wiseTransferId         String?
+  status                 PayoutStatus @default(pending)
+  createdAt              DateTime     @default(now())
+  completedAt            DateTime?
+
+  claim Claim @relation(fields: [claimId], references: [id], onDelete: Cascade)
+
+  @@index([status])
+}
