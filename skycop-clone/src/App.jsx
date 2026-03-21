@@ -15,24 +15,35 @@ import Airlines from './components/Airlines'
 import Airports from './components/Airports'
 import Footer from './components/Footer'
 import CheckCompensationForm from './components/CheckCompensationForm'
+import KnowYourRights from './components/KnowYourRights'
 
 function App() {
   const [page, setPage] = useState('home')
 
-  const goToForm = () => {
-    setPage('compensation')
+  const navigate = (p) => {
+    setPage(p)
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
-  const goHome = () => {
-    setPage('home')
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+
+  const goToForm = () => navigate('compensation')
+  const goHome   = () => navigate('home')
+  const goRights = () => navigate('rights')
 
   if (page === 'compensation') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} />
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} />
         <CheckCompensationForm onBack={goHome} />
+        <Footer />
+      </>
+    )
+  }
+
+  if (page === 'rights') {
+    return (
+      <>
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} />
+        <KnowYourRights onCheckCompensation={goToForm} />
         <Footer />
       </>
     )
@@ -40,7 +51,7 @@ function App() {
 
   return (
     <>
-      <Header onCheckCompensation={goToForm} />
+      <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} />
       <main>
         <Hero onCheckCompensation={goToForm} />
         <PressLogos />

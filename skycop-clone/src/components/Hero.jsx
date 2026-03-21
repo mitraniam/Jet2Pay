@@ -18,6 +18,18 @@ const Hero = ({ onCheckCompensation }) => {
   return (
     <section className="hero">
       <div className="hero__bg-shape"></div>
+
+      {/* 15% Commission Banner */}
+      <div className="hero__commission-banner container">
+        <div className="hero__commission-inner">
+          <span className="hero__commission-icon">🏆</span>
+          <span className="hero__commission-text">
+            <strong>Market-leading 15% commission</strong> — Automated &amp; Fair. You keep more of your compensation.
+          </span>
+          <span className="hero__commission-badge">Industry lowest</span>
+        </div>
+      </div>
+
       <div className="hero__inner container">
         <div className="hero__content">
           <h1 className="hero__title">

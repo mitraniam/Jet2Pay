@@ -38,7 +38,7 @@ const NAV_ICONS = {
   ),
 }
 
-const Header = ({ onCheckCompensation }) => {
+const Header = ({ onCheckCompensation, onKnowYourRights, onHome }) => {
   const { t, i18n } = useTranslation()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -77,7 +77,7 @@ const Header = ({ onCheckCompensation }) => {
       <header className="header">
         <div className="header__inner container">
           {/* Logo */}
-          <a href="/" className="header__logo">
+          <a href="/" className="header__logo" onClick={e => { e.preventDefault(); onHome?.() }}>
             <img src="/logo.webp" alt="Jet2Pay" className="header__logo-img" />
           </a>
 
@@ -91,7 +91,10 @@ const Header = ({ onCheckCompensation }) => {
                 </a>
               </li>
               <li className="header__nav-item header__nav-item--dropdown">
-                <a href="#" className="header__nav-link">{t('header.knowYourRights')}</a>
+                <a href="#" className="header__nav-link"
+                  onClick={e => { e.preventDefault(); onKnowYourRights?.() }}>
+                  {t('header.knowYourRights')}
+                </a>
               </li>
               <li className="header__nav-item header__nav-item--dropdown">
                 <a href="#" className="header__nav-link">{t('header.aboutCompany')}</a>
@@ -176,7 +179,7 @@ const Header = ({ onCheckCompensation }) => {
             <span className="header__drawer-chevron">›</span>
           </a>
           <a href="#" className="header__drawer-link"
-            onClick={e => e.preventDefault()}>
+            onClick={e => { e.preventDefault(); onKnowYourRights?.(); closeMenu() }}>
             <span className="header__drawer-icon">{NAV_ICONS.knowYourRights}</span>
             {t('header.knowYourRights')}
             <span className="header__drawer-chevron">›</span>
