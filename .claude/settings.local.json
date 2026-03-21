@@ -12,7 +12,9 @@
       "Bash(git -C \"C:/Users/homes/Desktop/Jet2Pay\" status)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "Bash(npm install:*)",
+      "Bash(npm run:*)"
     ]
   }
 }

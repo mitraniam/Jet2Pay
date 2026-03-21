@@ -36,7 +36,11 @@
       "disruptionType": "Disruption type",
       "timing": "Timing",
       "reason": "Reason",
-      "howLong": "How long did you wait?"
+      "howLong": "How long did you wait?",
+      "claimDetails": "Claim details",
+      "flightInfo": "Flight info",
+      "passengerInfo": "Your details",
+      "bookingConsent": "Booking & consent"
     },
     "step1": {
       "title": "Where did you fly?",
@@ -100,6 +104,45 @@
     "notEligible": {
       "title": "Unfortunately, you may not qualify",
       "description": "Based on your answers, your delay appears to be under the 3-hour threshold required for EU compensation under Regulation 261/2004."
+    },
+    "step6": {
+      "title": "Flight details",
+      "flightNumber": "Flight number",
+      "flightNumberPlaceholder": "e.g. LS123",
+      "flightDate": "Flight date",
+      "flightDateHelp": "Date of the disrupted flight"
+    },
+    "step7": {
+      "title": "Your details",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email address",
+      "phone": "Phone number",
+      "phonePlaceholder": "+44 7700 900000",
+      "nationality": "Nationality",
+      "nationalityPlaceholder": "Select country"
+    },
+    "step8": {
+      "title": "Booking & consent",
+      "bookingReference": "Booking reference",
+      "bookingReferencePlaceholder": "e.g. ABC123",
+      "bookingReferenceHelp": "Found on your booking confirmation email",
+      "consent": "I agree to the <a href='/terms' target='_blank'>Terms & Conditions</a> and authorise Jet2Pay to act on my behalf. I understand the 30% No Win No Fee commission applies.",
+      "gdpr": "I consent to the processing of my personal data in accordance with the <a href='/privacy' target='_blank'>Privacy Policy</a> and GDPR.",
+      "submitClaim": "Submit My Claim"
+    },
+    "submitting": "Submitting your claim...",
+    "submitted": {
+      "title": "Claim submitted successfully!",
+      "claimId": "Claim reference",
+      "estimated": "Estimated compensation",
+      "emailSent": "A confirmation email has been sent to your inbox.",
+      "trackClaim": "Track your claim status anytime using your claim reference.",
+      "newClaim": "← Submit another claim"
+    },
+    "error": {
+      "submissionFailed": "Failed to submit claim. Please try again.",
+      "networkError": "Network error. Please check your connection."
     }
   },
   "languages": {

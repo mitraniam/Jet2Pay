@@ -1,1 +1,6 @@
 .vercel
+claude/dreamy-curie
+node_modules/
+.next/
+
+ main
