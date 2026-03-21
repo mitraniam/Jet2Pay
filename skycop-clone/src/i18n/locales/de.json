@@ -99,6 +99,7 @@
     "eligible": {
       "title": "Gute Nachrichten — Sie könnten berechtigt sein!",
       "description": "Basierend auf Ihren Angaben könnten Sie bis zu <strong>€600</strong> Entschädigung gemäß EU-Verordnung 261/2004 erhalten. Starten Sie jetzt Ihren kostenlosen Antrag!",
+      "descriptionDynamic": "Basierend auf Ihren Antworten könnten Sie Anspruch auf bis zu <strong>€{{amount}}</strong> Entschädigung gemäß EU-Verordnung 261/2004 haben. Starten Sie jetzt Ihren kostenlosen Antrag!",
       "startClaim": "Kostenlosen Antrag starten →"
     },
     "notEligible": {

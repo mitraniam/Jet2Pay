@@ -2,7 +2,30 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import AirportSearch from './AirportSearch'
 import { submitClaim } from '../lib/api'
+import COORDS from '../data/airportCoords'
 import './CheckCompensationForm.css'
+
+/* ── Haversine distance (km) between two airports ────── */
+function haversineKm(lat1, lon1, lat2, lon2) {
+  const R = 6371
+  const dLat = (lat2 - lat1) * Math.PI / 180
+  const dLon = (lon2 - lon1) * Math.PI / 180
+  const a = Math.sin(dLat / 2) ** 2 +
+    Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon / 2) ** 2
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
+function getEstimatedCompensation(from, to) {
+  if (!from?.iata || !to?.iata) return 600
+  const c1 = COORDS[from.iata]
+  const c2 = COORDS[to.iata]
+  if (!c1 || !c2) return 600
+  const km = haversineKm(c1[0], c1[1], c2[0], c2[1])
+  if (km < 1500) return 250
+  if (km <= 3500) return 400
+  return 600
+}
 
 /* ── Icons ─────────────────────────────────────────────── */
 const ArrowIcon = () => (
@@ -749,6 +772,7 @@ const Step8 = ({ data, set, t, error }) => (
 const Result = ({ data, onReset, onStartClaim }) => {
   const { t } = useTranslation()
   const eligible = data.timing === 'more3' || data.timing === 'missed'
+  const estimatedAmount = getEstimatedCompensation(data.from, data.to)
 
   return (
     <div className="ccf">
@@ -768,7 +792,7 @@ const Result = ({ data, onReset, onStartClaim }) => {
                 </div>
               )}
               <p className="ccf__result-p"
-                dangerouslySetInnerHTML={{ __html: t('form.eligible.description') }}
+                dangerouslySetInnerHTML={{ __html: t('form.eligible.descriptionDynamic', { amount: estimatedAmount }) }}
               />
               <button className="ccf__btn-continue" style={{ marginBottom: 0 }} onClick={onStartClaim}>
                 {t('form.eligible.startClaim')}

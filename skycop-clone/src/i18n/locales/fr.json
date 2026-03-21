@@ -99,6 +99,7 @@
     "eligible": {
       "title": "Bonne nouvelle — vous pourriez être éligible !",
       "description": "D'après vos réponses, vous pourriez avoir droit à jusqu'à <strong>€600</strong> d'indemnisation selon le Règlement UE 261/2004. Démarrez votre demande gratuite maintenant !",
+      "descriptionDynamic": "D'après vos réponses, vous pourriez avoir droit à une indemnisation allant jusqu'à <strong>€{{amount}}</strong> en vertu du Règlement UE 261/2004. Commencez votre réclamation gratuite maintenant !",
       "startClaim": "Démarrer ma demande gratuite →"
     },
     "notEligible": {

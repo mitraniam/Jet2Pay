@@ -99,6 +99,7 @@
     "eligible": {
       "title": "Great news — you may be eligible!",
       "description": "Based on your answers, you could be entitled to up to <strong>€600</strong> in compensation under EU Regulation 261/2004. Start your free claim now!",
+      "descriptionDynamic": "Based on your answers, you could be entitled to up to <strong>€{{amount}}</strong> in compensation under EU Regulation 261/2004. Start your free claim now!",
       "startClaim": "Start My Free Claim →"
     },
     "notEligible": {

@@ -99,6 +99,7 @@
     "eligible": {
       "title": "¡Buenas noticias — podría ser elegible!",
       "description": "Según sus respuestas, podría tener derecho a hasta <strong>€600</strong> en compensación según el Reglamento UE 261/2004. ¡Inicie su reclamación gratuita ahora!",
+      "descriptionDynamic": "Según sus respuestas, podría tener derecho a una compensación de hasta <strong>€{{amount}}</strong> según el Reglamento UE 261/2004. ¡Comience su reclamación gratuita ahora!",
       "startClaim": "Iniciar mi reclamación gratuita →"
     },
     "notEligible": {
