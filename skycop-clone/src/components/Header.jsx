@@ -38,7 +38,7 @@ const NAV_ICONS = {
   ),
 }
 
-const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus }) => {
+const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, onAbout, onNews }) => {
   const { t, i18n } = useTranslation()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -96,11 +96,17 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus }
                   {t('header.knowYourRights')}
                 </a>
               </li>
-              <li className="header__nav-item header__nav-item--dropdown">
-                <a href="#" className="header__nav-link">{t('header.aboutCompany')}</a>
+              <li className="header__nav-item">
+                <a href="#" className="header__nav-link"
+                  onClick={e => { e.preventDefault(); onAbout?.() }}>
+                  {t('header.aboutCompany')}
+                </a>
               </li>
-              <li className="header__nav-item header__nav-item--dropdown">
-                <a href="#" className="header__nav-link">{t('header.news')}</a>
+              <li className="header__nav-item">
+                <a href="#" className="header__nav-link"
+                  onClick={e => { e.preventDefault(); onNews?.() }}>
+                  {t('header.news')}
+                </a>
               </li>
               <li className="header__nav-item">
                 <a href="#" className="header__nav-link">{t('header.referAFriend')}</a>

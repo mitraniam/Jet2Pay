@@ -18,6 +18,8 @@ import CheckCompensationForm from './components/CheckCompensationForm'
 import KnowYourRights from './components/KnowYourRights'
 import ClaimStatusPage from './components/ClaimStatusPage'
 import AdminDashboard from './components/AdminDashboard'
+import AboutCompanyPage from './components/AboutCompanyPage'
+import NewsPage from './components/NewsPage'
 
 function App() {
   // Check if URL has ?admin or #admin
@@ -33,11 +35,13 @@ function App() {
   const goHome     = () => navigate('home')
   const goRights   = () => navigate('rights')
   const goStatus   = () => navigate('status')
+  const goAbout    = () => navigate('about')
+  const goNews     = () => navigate('news')
 
   if (page === 'compensation') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
         <CheckCompensationForm onBack={goHome} />
         <Footer />
       </>
@@ -47,7 +51,7 @@ function App() {
   if (page === 'rights') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
         <KnowYourRights onCheckCompensation={goToForm} />
         <Footer />
       </>
@@ -58,10 +62,30 @@ function App() {
     return <AdminDashboard />
   }
 
+  if (page === 'about') {
+    return (
+      <>
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <AboutCompanyPage onCheckCompensation={goToForm} />
+        <Footer />
+      </>
+    )
+  }
+
+  if (page === 'news') {
+    return (
+      <>
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <NewsPage onCheckCompensation={goToForm} />
+        <Footer />
+      </>
+    )
+  }
+
   if (page === 'status') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
         <ClaimStatusPage />
         <Footer />
       </>

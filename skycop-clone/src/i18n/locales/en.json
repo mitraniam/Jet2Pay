@@ -191,6 +191,125 @@
       "id_document": "ID Document"
     }
   },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Fighting for Your Flight Rights",
+      "subtitle": "We help passengers get the compensation they deserve when flights go wrong. No Win, No Fee — it's that simple."
+    },
+    "stats": {
+      "customers": "Compensated Passengers",
+      "airlines": "Airlines Covered",
+      "successRate": "Success Rate",
+      "recovered": "Recovered for Passengers"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "text1": "At Jet2Pay, we believe every passenger deserves fair treatment. When your flight is delayed, cancelled, or you're denied boarding, EU Regulation 261/2004 and UK261 protect your right to compensation of up to €600.",
+      "text2": "Our team of legal and aviation experts handles the entire claims process — from initial assessment to airline negotiation — so you don't have to. We only charge a 30% commission if we win your case.",
+      "cardTitle": "Your Rights, Our Priority",
+      "cardText": "We've helped thousands of passengers across Europe claim their rightful compensation. Our automated system and expert team ensure fast, hassle-free processing."
+    },
+    "values": {
+      "title": "Our Values",
+      "transparency": {
+        "title": "Full Transparency",
+        "text": "No hidden fees, no surprise charges. You only pay when we win your case — 30% commission on success."
+      },
+      "noWinNoFee": {
+        "title": "No Win, No Fee",
+        "text": "We take on all the risk. If your claim is unsuccessful, you pay absolutely nothing."
+      },
+      "speed": {
+        "title": "Fast Processing",
+        "text": "Our automated eligibility engine gives you an instant assessment. Most claims are resolved within weeks."
+      },
+      "expertise": {
+        "title": "Legal Expertise",
+        "text": "Our team has deep knowledge of EC261/UK261 regulations and extensive experience dealing with airlines."
+      }
+    },
+    "howItWorks": {
+      "title": "How It Works",
+      "step1": { "title": "Check Eligibility", "text": "Enter your flight details and we'll instantly assess your claim." },
+      "step2": { "title": "Submit Your Claim", "text": "Fill in your details and upload your documents. It takes just 5 minutes." },
+      "step3": { "title": "We Handle Everything", "text": "Our team contacts the airline and handles all legal processes on your behalf." },
+      "step4": { "title": "Get Compensated", "text": "Once we win, your compensation is transferred directly to your bank account." }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "A dedicated team of professionals committed to protecting your passenger rights.",
+      "founder": "Founder & CEO",
+      "legal": "Legal Department",
+      "claims": "Claims Processing",
+      "tech": "Technology"
+    },
+    "legal": {
+      "title": "Company Information",
+      "company": {
+        "title": "Company",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registered in Bulgaria"
+      },
+      "address": {
+        "title": "Address",
+        "text": "Sofia, Bulgaria"
+      },
+      "contact": {
+        "title": "Contact"
+      }
+    },
+    "cta": {
+      "title": "Ready to Claim Your Compensation?",
+      "text": "Check if your flight qualifies for up to €600 in compensation. It's free and takes just 2 minutes.",
+      "button": "Check Compensation →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "News & Updates",
+      "subtitle": "Stay informed about passenger rights, regulations, and Jet2Pay developments."
+    },
+    "featured": "Featured",
+    "allArticles": "All Articles",
+    "readMore": "Read more",
+    "categories": {
+      "companyNews": "Company News",
+      "regulation": "Regulation",
+      "tips": "Tips & Guides"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay Launches: Helping Passengers Claim Flight Compensation",
+        "summary": "We're excited to announce the launch of Jet2Pay — a dedicated platform helping passengers claim compensation for delayed, cancelled, or overbooked flights under EU Regulation 261/2004 and UK261."
+      },
+      "ec261Update": {
+        "title": "Understanding EC261: Your Complete Guide to Flight Compensation",
+        "summary": "EU Regulation 261/2004 entitles passengers to compensation of €250–€600 for flight disruptions. Learn about your rights and how to claim."
+      },
+      "knowYourRights": {
+        "title": "5 Things Every Air Passenger Should Know About Their Rights",
+        "summary": "Many passengers don't know they're entitled to compensation. Here are the key facts about your rights when flights are delayed or cancelled."
+      },
+      "delayTips": {
+        "title": "What to Do When Your Flight Is Delayed: A Step-by-Step Guide",
+        "summary": "Flight delayed? Don't panic. Follow our practical guide to protect your rights and maximize your compensation claim."
+      },
+      "uk261": {
+        "title": "UK261: Post-Brexit Flight Compensation Rules Explained",
+        "summary": "After Brexit, the UK adopted its own version of EC261 — known as UK261. Here's what it means for passengers flying to and from the UK."
+      },
+      "partnerships": {
+        "title": "Jet2Pay Partners with Leading Aviation Data Providers",
+        "summary": "We've partnered with top flight data providers to offer real-time flight verification and faster claim processing for our customers."
+      }
+    },
+    "cta": {
+      "title": "Had a flight disruption?",
+      "text": "Check if you're entitled to compensation — it's free and takes 2 minutes.",
+      "button": "Check Compensation →"
+    }
+  },
   "languages": {
     "en": "English",
     "bg": "Български",
