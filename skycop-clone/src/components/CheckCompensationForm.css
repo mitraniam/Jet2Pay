@@ -500,6 +500,177 @@
 }
 
 /* ═══════════════════════════════════════════════════════
+   INPUT FIELDS (Steps 6-8)
+═══════════════════════════════════════════════════════ */
+.ccf__input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 10px;
+  font-size: 14px;
+  color: var(--TextSecond);
+  font-family: inherit;
+  background: #fafafa;
+  transition: border-color 0.2s, background 0.2s;
+  box-sizing: border-box;
+}
+.ccf__input:focus {
+  border-color: var(--PrimaryOrange);
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(232, 103, 44, 0.08);
+}
+.ccf__input::placeholder {
+  color: #b0b0b0;
+}
+
+.ccf__select {
+  appearance: none;
+  cursor: pointer;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%23999' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 36px;
+}
+
+.ccf__field-help {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  margin-top: 6px;
+}
+
+/* Flight summary bar */
+.ccf__flight-summary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 16px 20px;
+  background: #f8f8fc;
+  border-radius: 12px;
+  margin-top: 24px;
+  border: 1px solid #eee;
+}
+.ccf__flight-num {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--PrimaryOrange);
+  margin-left: 8px;
+}
+
+/* Consent checkboxes */
+.ccf__consent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.ccf__checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 13px;
+  color: var(--TextSecond);
+  line-height: 1.5;
+  cursor: pointer;
+}
+.ccf__checkbox-label input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: var(--PrimaryOrange);
+  cursor: pointer;
+}
+.ccf__checkbox-label a {
+  color: var(--PrimaryOrange);
+  text-decoration: underline;
+}
+
+/* Error box */
+.ccf__error {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #fef2f2;
+  border-radius: 10px;
+  margin-bottom: 16px;
+  font-size: 13px;
+  color: #b91c1c;
+  line-height: 1.5;
+  border: 1px solid #fecaca;
+}
+.ccf__error p {
+  margin: 0;
+}
+
+/* Claim summary card */
+.ccf__claim-summary {
+  background: #f8f8fc;
+  border-radius: 12px;
+  padding: 20px;
+  border: 1px solid #eee;
+}
+.ccf__summary-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--TextSecond);
+  line-height: 1.6;
+}
+
+/* Submitted screen */
+.ccf__submitted-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 24px 0;
+  padding: 20px;
+  background: #f8f8fc;
+  border-radius: 12px;
+  border: 1px solid #eee;
+}
+.ccf__submitted-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+.ccf__submitted-label {
+  color: var(--TextSecond);
+}
+.ccf__submitted-value {
+  font-weight: 600;
+  color: var(--black-color);
+}
+.ccf__claim-id {
+  font-family: monospace;
+  font-size: 12px;
+  background: #fff;
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
+}
+.ccf__amount {
+  font-size: 22px;
+  background: var(--PrimaryGradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Spinner animation */
+@keyframes ccf-spin {
+  to { transform: rotate(360deg); }
+}
+.ccf__spinner {
+  animation: ccf-spin 0.8s linear infinite;
+}
+
+/* ═══════════════════════════════════════════════════════
    RESPONSIVE
 ═══════════════════════════════════════════════════════ */
 @media (max-width: 960px) {

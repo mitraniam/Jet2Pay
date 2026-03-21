@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import AirportSearch from './AirportSearch'
+import { submitClaim } from '../lib/api'
 import './CheckCompensationForm.css'
 
 /* ── Icons ─────────────────────────────────────────────── */
@@ -19,6 +20,55 @@ const PlaneSmIcon = () => (
     <path d="M22 16.5H2M17.5 12l2-8-2-.5-5 6.5-4.5-2L5.5 9l4 3.5L8 16.5l2 .5 2-3.5 5.5 1z"/>
   </svg>
 )
+const SpinnerIcon = () => (
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="ccf__spinner">
+    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeDasharray="50 20" />
+  </svg>
+)
+
+/* ── Nationality options ──────────────────────────────── */
+const NATIONALITIES = [
+  { code: 'GB', label: 'United Kingdom' },
+  { code: 'IE', label: 'Ireland' },
+  { code: 'DE', label: 'Germany' },
+  { code: 'FR', label: 'France' },
+  { code: 'ES', label: 'Spain' },
+  { code: 'IT', label: 'Italy' },
+  { code: 'NL', label: 'Netherlands' },
+  { code: 'BE', label: 'Belgium' },
+  { code: 'PT', label: 'Portugal' },
+  { code: 'AT', label: 'Austria' },
+  { code: 'PL', label: 'Poland' },
+  { code: 'CZ', label: 'Czech Republic' },
+  { code: 'GR', label: 'Greece' },
+  { code: 'HU', label: 'Hungary' },
+  { code: 'RO', label: 'Romania' },
+  { code: 'BG', label: 'Bulgaria' },
+  { code: 'HR', label: 'Croatia' },
+  { code: 'SE', label: 'Sweden' },
+  { code: 'DK', label: 'Denmark' },
+  { code: 'FI', label: 'Finland' },
+  { code: 'NO', label: 'Norway' },
+  { code: 'CH', label: 'Switzerland' },
+  { code: 'US', label: 'United States' },
+  { code: 'CA', label: 'Canada' },
+  { code: 'AU', label: 'Australia' },
+]
+
+/* ── Map frontend values → backend enum values ────────── */
+const DISRUPTION_MAP = {
+  delayed: 'delay',
+  cancelled: 'cancellation',
+  denied: 'denied_boarding',
+}
+
+function getDelayMinutes(timing, waitTime) {
+  if (timing === 'missed') return null
+  if (timing === 'less3') return 120
+  // more3 — use waitTime for more precision
+  const map = { less2: 120, '2to4': 180, '4to8': 360, overnight: 540, none: 240 }
+  return map[waitTime] ?? 240
+}
 
 /* ── Reusable option button ─────────────────────────────── */
 const Option = ({ selected, onClick, children }) => (
@@ -40,8 +90,13 @@ const Option = ({ selected, onClick, children }) => (
 const CheckCompensationForm = ({ onBack }) => {
   const { t } = useTranslation()
   const [step, setStep] = useState(1)
-  const [done, setDone] = useState(false)
+  const [phase, setPhase] = useState('eligibility') // 'eligibility' | 'claim' | 'submitted'
+  const [submitting, setSubmitting] = useState(false)
+  const [submitError, setSubmitError] = useState(null)
+  const [claimResult, setClaimResult] = useState(null)
+
   const [data, setData] = useState({
+    // Eligibility (steps 1-5)
     from: null,
     to: null,
     isDirect: true,
@@ -51,6 +106,17 @@ const CheckCompensationForm = ({ onBack }) => {
     reason: null,
     waitTime: null,
     description: '',
+    // Claim details (steps 6-8)
+    flightNumber: '',
+    flightDate: '',
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    nationality: '',
+    bookingReference: '',
+    consentTerms: false,
+    consentGdpr: false,
   })
 
   const set = (k, v) => setData(p => ({ ...p, [k]: v }))
@@ -60,22 +126,107 @@ const CheckCompensationForm = ({ onBack }) => {
     if (step === 2) return !!data.disruption
     if (step === 3) return !!data.timing
     if (step === 4) return !!data.airlineTold && (data.airlineTold !== 'yes' || !!data.reason)
+    if (step === 5) return !!data.waitTime
+    if (step === 6) return data.flightNumber.trim().length >= 3 && !!data.flightDate
+    if (step === 7) return data.firstName.trim() && data.lastName.trim() && data.email.includes('@') && data.phone.trim().length >= 7 && data.nationality
+    if (step === 8) return data.bookingReference.trim().length >= 4 && data.consentTerms && data.consentGdpr
     return true
   }
 
-  const handleContinue = () => {
+  const handleContinue = async () => {
     if (!canContinue()) return
-    if (step < 5) setStep(s => s + 1)
-    else setDone(true)
+
+    if (phase === 'eligibility') {
+      if (step < 5) setStep(s => s + 1)
+      else {
+        // After step 5, show eligibility result
+        setStep(0) // 0 = result screen
+      }
+    } else if (phase === 'claim') {
+      if (step < 8) {
+        setStep(s => s + 1)
+      } else {
+        // Step 8 → submit claim
+        await handleSubmitClaim()
+      }
+    }
   }
 
   const handleBack = () => {
-    if (step > 1) setStep(s => s - 1)
-    else onBack?.()
+    if (phase === 'claim' && step === 6) {
+      // Go back to eligibility result
+      setStep(0)
+      setPhase('eligibility')
+    } else if (step > 1) {
+      setStep(s => s - 1)
+    } else {
+      onBack?.()
+    }
   }
 
-  /* ── Sidebar config (translated) ── */
-  const SIDEBAR = [
+  const handleStartClaim = () => {
+    setPhase('claim')
+    setStep(6)
+  }
+
+  const handleSubmitClaim = async () => {
+    setSubmitting(true)
+    setSubmitError(null)
+
+    const disruptionType = data.timing === 'missed'
+      ? 'missed_connection'
+      : DISRUPTION_MAP[data.disruption] || 'delay'
+
+    const payload = {
+      flightNumber: data.flightNumber.toUpperCase().trim(),
+      flightDate: data.flightDate,
+      departureAirport: data.from.iata,
+      arrivalAirport: data.to.iata,
+      disruptionType,
+      delayDuration: getDelayMinutes(data.timing, data.waitTime),
+      passengerCount: 1,
+      passengerDetails: [{
+        firstName: data.firstName.trim(),
+        lastName: data.lastName.trim(),
+        email: data.email.trim().toLowerCase(),
+        phone: data.phone.trim(),
+        nationality: data.nationality,
+      }],
+      bookingReference: data.bookingReference.trim().toUpperCase(),
+      consentGiven: true,
+    }
+
+    try {
+      const result = await submitClaim(payload)
+      setClaimResult(result)
+      setPhase('submitted')
+    } catch (err) {
+      console.error('Claim submission failed:', err)
+      setSubmitError(err.data?.details
+        ? Object.values(err.data.details).flat().join('. ')
+        : err.message || t('form.error.submissionFailed'))
+    } finally {
+      setSubmitting(false)
+    }
+  }
+
+  const handleReset = () => {
+    setPhase('eligibility')
+    setStep(1)
+    setClaimResult(null)
+    setSubmitError(null)
+    setData({
+      from: null, to: null, isDirect: true, disruption: null, timing: null,
+      airlineTold: null, reason: null, waitTime: null, description: '',
+      flightNumber: '', flightDate: '', firstName: '', lastName: '',
+      email: '', phone: '', nationality: '', bookingReference: '',
+      consentTerms: false, consentGdpr: false,
+    })
+    onBack?.()
+  }
+
+  /* ── Sidebar config ── */
+  const SIDEBAR = phase === 'eligibility' ? [
     {
       id: 1,
       label: t('form.sidebar.eligibilityCheck'),
@@ -96,10 +247,31 @@ const CheckCompensationForm = ({ onBack }) => {
       label: t('form.sidebar.done'),
       substeps: [],
     },
+  ] : [
+    {
+      id: 1,
+      label: t('form.sidebar.claimDetails'),
+      substeps: [
+        { id: 6, label: t('form.sidebar.flightInfo') },
+        { id: 7, label: t('form.sidebar.passengerInfo') },
+        { id: 8, label: t('form.sidebar.bookingConsent') },
+      ],
+    },
+    {
+      id: 2,
+      label: t('form.sidebar.done'),
+      substeps: [],
+    },
   ]
 
-  if (done) {
-    return <Result data={data} onReset={() => { setDone(false); setStep(1); onBack?.() }} />
+  /* ── Submitted confirmation ── */
+  if (phase === 'submitted' && claimResult) {
+    return <SubmittedScreen result={claimResult} onReset={handleReset} />
+  }
+
+  /* ── Eligibility result screen ── */
+  if (step === 0 && phase === 'eligibility') {
+    return <Result data={data} onReset={handleReset} onStartClaim={handleStartClaim} />
   }
 
   return (
@@ -151,6 +323,9 @@ const CheckCompensationForm = ({ onBack }) => {
             {step === 3 && <Step3 data={data} set={set} t={t} />}
             {step === 4 && <Step4 data={data} set={set} t={t} />}
             {step === 5 && <Step5 data={data} set={set} t={t} />}
+            {step === 6 && <Step6 data={data} set={set} t={t} />}
+            {step === 7 && <Step7 data={data} set={set} t={t} />}
+            {step === 8 && <Step8 data={data} set={set} t={t} error={submitError} />}
           </div>
 
           {/* Actions */}
@@ -159,11 +334,19 @@ const CheckCompensationForm = ({ onBack }) => {
               {t('form.back')}
             </button>
             <button
-              className={`ccf__btn-continue${canContinue() ? '' : ' ccf__btn-continue--off'}`}
+              className={`ccf__btn-continue${canContinue() && !submitting ? '' : ' ccf__btn-continue--off'}`}
               onClick={handleContinue}
+              disabled={submitting}
             >
-              {step === 5 ? t('form.submitClaim') : t('form.continue')}
-              {step < 5 && <ArrowIcon />}
+              {submitting ? (
+                <><SpinnerIcon /> {t('form.submitting')}</>
+              ) : step === 8 ? (
+                t('form.step8.submitClaim')
+              ) : step === 5 ? (
+                t('form.submitClaim')
+              ) : (
+                <>{t('form.continue')} <ArrowIcon /></>
+              )}
             </button>
           </div>
 
@@ -362,8 +545,208 @@ const Step5 = ({ data, set, t }) => (
   </div>
 )
 
-/* ── Result screen ──────────────────────────────────────── */
-const Result = ({ data, onReset }) => {
+/* ── Step 6: Flight details ─────────────────────────────── */
+const Step6 = ({ data, set, t }) => {
+  const today = new Date().toISOString().split('T')[0]
+  const sixYearsAgo = new Date()
+  sixYearsAgo.setFullYear(sixYearsAgo.getFullYear() - 6)
+  const minDate = sixYearsAgo.toISOString().split('T')[0]
+
+  return (
+    <div className="ccf__step">
+      <h2 className="ccf__h2">{t('form.step6.title')}</h2>
+
+      <div className="ccf__route-grid">
+        <div className="ccf__field">
+          <label className="ccf__lbl">
+            {t('form.step6.flightNumber')} <span className="ccf__req">*</span>
+          </label>
+          <input
+            type="text"
+            className="ccf__input"
+            placeholder={t('form.step6.flightNumberPlaceholder')}
+            value={data.flightNumber}
+            onChange={e => set('flightNumber', e.target.value.toUpperCase())}
+            maxLength={10}
+          />
+        </div>
+
+        <div className="ccf__field">
+          <label className="ccf__lbl">
+            {t('form.step6.flightDate')} <span className="ccf__req">*</span>
+          </label>
+          <input
+            type="date"
+            className="ccf__input"
+            value={data.flightDate}
+            onChange={e => set('flightDate', e.target.value)}
+            max={today}
+            min={minDate}
+          />
+          <span className="ccf__field-help">{t('form.step6.flightDateHelp')}</span>
+        </div>
+      </div>
+
+      {data.from && data.to && (
+        <div className="ccf__flight-summary">
+          <span className="ccf__result-iata">{data.from.iata}</span>
+          <span className="ccf__result-arrow">→</span>
+          <span className="ccf__result-iata">{data.to.iata}</span>
+          {data.flightNumber && (
+            <span className="ccf__flight-num">{data.flightNumber}</span>
+          )}
+        </div>
+      )}
+    </div>
+  )
+}
+
+/* ── Step 7: Passenger details ──────────────────────────── */
+const Step7 = ({ data, set, t }) => (
+  <div className="ccf__step">
+    <h2 className="ccf__h2">{t('form.step7.title')}</h2>
+
+    <div className="ccf__route-grid">
+      <div className="ccf__field">
+        <label className="ccf__lbl">
+          {t('form.step7.firstName')} <span className="ccf__req">*</span>
+        </label>
+        <input
+          type="text"
+          className="ccf__input"
+          value={data.firstName}
+          onChange={e => set('firstName', e.target.value)}
+          maxLength={100}
+        />
+      </div>
+
+      <div className="ccf__field">
+        <label className="ccf__lbl">
+          {t('form.step7.lastName')} <span className="ccf__req">*</span>
+        </label>
+        <input
+          type="text"
+          className="ccf__input"
+          value={data.lastName}
+          onChange={e => set('lastName', e.target.value)}
+          maxLength={100}
+        />
+      </div>
+    </div>
+
+    <div className="ccf__field">
+      <label className="ccf__lbl">
+        {t('form.step7.email')} <span className="ccf__req">*</span>
+      </label>
+      <input
+        type="email"
+        className="ccf__input"
+        value={data.email}
+        onChange={e => set('email', e.target.value)}
+        maxLength={254}
+      />
+    </div>
+
+    <div className="ccf__route-grid">
+      <div className="ccf__field">
+        <label className="ccf__lbl">
+          {t('form.step7.phone')} <span className="ccf__req">*</span>
+        </label>
+        <input
+          type="tel"
+          className="ccf__input"
+          placeholder={t('form.step7.phonePlaceholder')}
+          value={data.phone}
+          onChange={e => set('phone', e.target.value)}
+          maxLength={20}
+        />
+      </div>
+
+      <div className="ccf__field">
+        <label className="ccf__lbl">
+          {t('form.step7.nationality')} <span className="ccf__req">*</span>
+        </label>
+        <select
+          className="ccf__input ccf__select"
+          value={data.nationality}
+          onChange={e => set('nationality', e.target.value)}
+        >
+          <option value="">{t('form.step7.nationalityPlaceholder')}</option>
+          {NATIONALITIES.map(n => (
+            <option key={n.code} value={n.code}>{n.label}</option>
+          ))}
+        </select>
+      </div>
+    </div>
+  </div>
+)
+
+/* ── Step 8: Booking reference & consent ────────────────── */
+const Step8 = ({ data, set, t, error }) => (
+  <div className="ccf__step">
+    <h2 className="ccf__h2">{t('form.step8.title')}</h2>
+
+    <div className="ccf__field">
+      <label className="ccf__lbl">
+        {t('form.step8.bookingReference')} <span className="ccf__req">*</span>
+      </label>
+      <input
+        type="text"
+        className="ccf__input"
+        placeholder={t('form.step8.bookingReferencePlaceholder')}
+        value={data.bookingReference}
+        onChange={e => set('bookingReference', e.target.value.toUpperCase())}
+        maxLength={20}
+      />
+      <span className="ccf__field-help">{t('form.step8.bookingReferenceHelp')}</span>
+    </div>
+
+    <hr className="ccf__divider" />
+
+    <div className="ccf__consent">
+      <label className="ccf__checkbox-label">
+        <input
+          type="checkbox"
+          checked={data.consentTerms}
+          onChange={e => set('consentTerms', e.target.checked)}
+        />
+        <span dangerouslySetInnerHTML={{ __html: t('form.step8.consent') }} />
+      </label>
+
+      <label className="ccf__checkbox-label">
+        <input
+          type="checkbox"
+          checked={data.consentGdpr}
+          onChange={e => set('consentGdpr', e.target.checked)}
+        />
+        <span dangerouslySetInnerHTML={{ __html: t('form.step8.gdpr') }} />
+      </label>
+    </div>
+
+    {error && (
+      <div className="ccf__error">
+        <span>⚠️</span>
+        <p>{error}</p>
+      </div>
+    )}
+
+    {/* Claim summary */}
+    <div className="ccf__claim-summary">
+      <h3 className="ccf__h3">Claim Summary</h3>
+      <div className="ccf__summary-grid">
+        <div><strong>Route:</strong> {data.from?.iata} → {data.to?.iata}</div>
+        <div><strong>Flight:</strong> {data.flightNumber || '—'}</div>
+        <div><strong>Date:</strong> {data.flightDate || '—'}</div>
+        <div><strong>Passenger:</strong> {data.firstName} {data.lastName}</div>
+        <div><strong>Email:</strong> {data.email}</div>
+        <div><strong>Booking:</strong> {data.bookingReference || '—'}</div>
+      </div>
+    </div>
+  </div>
+)
+
+/* ── Eligibility result screen ────────────────────────────── */
+const Result = ({ data, onReset, onStartClaim }) => {
   const { t } = useTranslation()
   const eligible = data.timing === 'more3' || data.timing === 'missed'
 
@@ -387,7 +770,7 @@ const Result = ({ data, onReset }) => {
               <p className="ccf__result-p"
                 dangerouslySetInnerHTML={{ __html: t('form.eligible.description') }}
               />
-              <button className="ccf__btn-continue" style={{ marginBottom: 0 }}>
+              <button className="ccf__btn-continue" style={{ marginBottom: 0 }} onClick={onStartClaim}>
                 {t('form.eligible.startClaim')}
               </button>
             </>
@@ -400,6 +783,46 @@ const Result = ({ data, onReset }) => {
 
           <button className="ccf__btn-back" style={{ marginTop: 16 }} onClick={onReset}>
             {t('form.checkAnotherFlight')}
+          </button>
+        </div>
+      </div>
+    </div>
+  )
+}
+
+/* ── Submitted confirmation screen ─────────────────────── */
+const SubmittedScreen = ({ result, onReset }) => {
+  const { t } = useTranslation()
+
+  return (
+    <div className="ccf">
+      <div className="ccf__bg" />
+      <div className="ccf__result-wrap container">
+        <div className="ccf__result-card">
+          <div className="ccf__result-emoji">✅</div>
+          <h2 className="ccf__result-h2">{t('form.submitted.title')}</h2>
+
+          <div className="ccf__submitted-details">
+            <div className="ccf__submitted-row">
+              <span className="ccf__submitted-label">{t('form.submitted.claimId')}</span>
+              <span className="ccf__submitted-value ccf__claim-id">{result.claimId}</span>
+            </div>
+
+            {result.estimatedAmount && (
+              <div className="ccf__submitted-row">
+                <span className="ccf__submitted-label">{t('form.submitted.estimated')}</span>
+                <span className="ccf__submitted-value ccf__amount">€{result.estimatedAmount}</span>
+              </div>
+            )}
+          </div>
+
+          <p className="ccf__result-p">{t('form.submitted.emailSent')}</p>
+          <p className="ccf__result-p" style={{ fontSize: 14, color: 'var(--TextSilverDark)' }}>
+            {t('form.submitted.trackClaim')}
+          </p>
+
+          <button className="ccf__btn-back" style={{ marginTop: 24 }} onClick={onReset}>
+            {t('form.submitted.newClaim')}
           </button>
         </div>
       </div>
