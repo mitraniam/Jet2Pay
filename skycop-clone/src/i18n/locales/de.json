@@ -36,7 +36,11 @@
       "disruptionType": "Art der Störung",
       "timing": "Dauer",
       "reason": "Grund",
-      "howLong": "Wie lange haben Sie gewartet?"
+      "howLong": "Wie lange haben Sie gewartet?",
+      "claimDetails": "Antragsdetails",
+      "flightInfo": "Flugdaten",
+      "passengerInfo": "Ihre Daten",
+      "bookingConsent": "Buchung & Einwilligung"
     },
     "step1": {
       "title": "Wohin haben Sie geflogen?",
@@ -100,6 +104,45 @@
     "notEligible": {
       "title": "Leider erfüllen Sie möglicherweise nicht die Voraussetzungen",
       "description": "Basierend auf Ihren Angaben liegt Ihre Verspätung unter der 3-Stunden-Schwelle, die für eine EU-Entschädigung gemäß Verordnung 261/2004 erforderlich ist."
+    },
+    "step6": {
+      "title": "Flugdaten",
+      "flightNumber": "Flugnummer",
+      "flightNumberPlaceholder": "z.B. LS123",
+      "flightDate": "Flugdatum",
+      "flightDateHelp": "Datum des gestörten Fluges"
+    },
+    "step7": {
+      "title": "Ihre Daten",
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail-Adresse",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+49 170 1234567",
+      "nationality": "Staatsangehörigkeit",
+      "nationalityPlaceholder": "Land auswählen"
+    },
+    "step8": {
+      "title": "Buchung & Einwilligung",
+      "bookingReference": "Buchungsreferenz",
+      "bookingReferencePlaceholder": "z.B. ABC123",
+      "bookingReferenceHelp": "Zu finden in Ihrer Buchungsbestätigungs-E-Mail",
+      "consent": "Ich stimme den <a href='/terms' target='_blank'>AGB</a> zu und ermächtige Jet2Pay, in meinem Namen zu handeln. Ich verstehe die 30% No-Win-No-Fee-Provision.",
+      "gdpr": "Ich stimme der Verarbeitung meiner personenbezogenen Daten gemäß der <a href='/privacy' target='_blank'>Datenschutzrichtlinie</a> und DSGVO zu.",
+      "submitClaim": "Antrag einreichen"
+    },
+    "submitting": "Ihr Antrag wird eingereicht...",
+    "submitted": {
+      "title": "Antrag erfolgreich eingereicht!",
+      "claimId": "Antragsreferenz",
+      "estimated": "Geschätzte Entschädigung",
+      "emailSent": "Eine Bestätigungs-E-Mail wurde an Ihr Postfach gesendet.",
+      "trackClaim": "Verfolgen Sie Ihren Antragsstatus jederzeit mit Ihrer Antragsreferenz.",
+      "newClaim": "← Weiteren Antrag einreichen"
+    },
+    "error": {
+      "submissionFailed": "Antrag konnte nicht eingereicht werden. Bitte versuchen Sie es erneut.",
+      "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung."
     }
   },
   "languages": {
