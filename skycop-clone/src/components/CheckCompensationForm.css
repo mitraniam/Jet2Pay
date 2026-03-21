@@ -418,6 +418,17 @@
   opacity: 1;
   box-shadow: none;
 }
+.ccf__btn-continue--outline {
+  background: transparent;
+  color: var(--PrimaryOrange);
+  border: 1.5px solid var(--PrimaryOrange);
+  box-shadow: none;
+}
+.ccf__btn-continue--outline:hover {
+  background: var(--PrimaryGradient);
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(232, 103, 44, 0.3);
+}
 
 /* Trust bar */
 .ccf__trust {

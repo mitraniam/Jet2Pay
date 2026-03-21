@@ -781,7 +781,7 @@ const Result = ({ data, onReset, onStartClaim }) => {
             </>
           )}
 
-          <button className="ccf__btn-back" style={{ marginTop: 16 }} onClick={onReset}>
+          <button className="ccf__btn-continue ccf__btn-continue--outline" style={{ marginTop: 16 }} onClick={onReset}>
             {t('form.checkAnotherFlight')}
           </button>
         </div>
@@ -821,7 +821,7 @@ const SubmittedScreen = ({ result, onReset }) => {
             {t('form.submitted.trackClaim')}
           </p>
 
-          <button className="ccf__btn-back" style={{ marginTop: 24 }} onClick={onReset}>
+          <button className="ccf__btn-continue" style={{ marginTop: 24 }} onClick={onReset}>
             {t('form.submitted.newClaim')}
           </button>
         </div>
