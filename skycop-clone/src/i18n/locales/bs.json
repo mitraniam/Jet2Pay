@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Provjeri kompenzaciju",
+    "knowYourRights": "Upoznaj svoja prava",
+    "aboutCompany": "O kompaniji",
+    "news": "Vijesti",
+    "referAFriend": "Preporuči prijatelju",
+    "checkClaimStatus": "Provjeri status zahtjeva"
+  },
+  "hero": {
+    "titleDelayed": "Kašnjenje",
+    "titleCancelled": "Otkazan",
+    "titleFlight": "Let",
+    "titleOr": "ili",
+    "subtitle": "Zatražite do <strong>600 €</strong> za kašnjenje ili otkazan let",
+    "whatHappened": "Šta se desilo s vašim letom?",
+    "delayed": "Kasnio",
+    "cancelled": "Otkazan / Prebukiran",
+    "otherDisruptions": "Drugi poremećaji",
+    "departurePlaceholder": "Aerodrom polaska",
+    "arrivalPlaceholder": "Aerodrom dolaska",
+    "checkCompensation": "Provjeri kompenzaciju",
+    "freeCheck": "Besplatna provjera kompenzacije",
+    "hassleFree": "Bez komplikacija",
+    "claimsUpTo": "Zahtjevi do 3 godine unazad",
+    "compensatedCustomers": "kompenziranih putnika",
+    "airlines": "avio-kompanija",
+    "yearsTrusted": "godina povjerenja"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Provjera kvalifikovanosti",
+      "waitTime": "Vrijeme čekanja",
+      "done": "Gotovo!",
+      "flightItinerary": "Plan leta",
+      "disruptionType": "Vrsta poremećaja",
+      "timing": "Vremenski okvir",
+      "reason": "Razlog",
+      "howLong": "Koliko ste čekali?",
+      "claimDetails": "Detalji zahtjeva",
+      "flightInfo": "Podaci o letu",
+      "passengerInfo": "Vaši podaci",
+      "bookingConsent": "Rezervacija i saglasnost"
+    },
+    "step1": {
+      "title": "Kuda ste letjeli?",
+      "departedFrom": "Polazište",
+      "finalDestination": "Krajnji odredišni aerodrom",
+      "airportPlaceholder": "Unesite naziv grada ili aerodroma",
+      "directFlight": "Da li je bio direktan let?",
+      "yesDirect": "Da, bio je direktan let",
+      "noConnecting": "Ne, imao/la sam presjedanje"
+    },
+    "step2": {
+      "title": "Vrsta poremećaja",
+      "question": "Kakve prirode je bio poremećaj leta koji ste doživjeli?",
+      "delayed": "Let je kasnio",
+      "cancelled": "Let je otkazan",
+      "denied": "Odbijeno ukrcavanje / Prebukiran"
+    },
+    "step3": {
+      "title": "Koliko ste kasnili?",
+      "question": "Koliko ste kasnili do dolaska na krajnje odredište?",
+      "less3": "Manje od 3 sata",
+      "more3": "Više od 3 sata",
+      "missed": "Propušteno presjedanje"
+    },
+    "step4": {
+      "title": "Razlog poremećaja",
+      "question1": "Da li vam je avio-kompanija saopštila razlog poremećaja leta?",
+      "yes": "Da",
+      "no": "Ne",
+      "dontRemember": "Ne sjećam se",
+      "question2": "Koji je bio razlog koji je navela avio-kompanija?",
+      "technical": "Tehnički problem aviona",
+      "weather": "Loši vremenski uslovi",
+      "strike": "Štrajk",
+      "airport": "Problemi na aerodromu",
+      "other": "Drugi razlozi"
+    },
+    "step5": {
+      "title": "Recite nam više o vašoj situaciji",
+      "question": "Koliko ste čekali na zamjenski let ili rješenje?",
+      "less2": "Manje od 2 sata",
+      "2to4": "2 do 4 sata",
+      "4to8": "4 do 8 sati",
+      "overnight": "Preko noći (8+ sati)",
+      "none": "Nije ponuđena alternativa",
+      "describeLabel": "Ukratko opišite šta se desilo",
+      "describeOptional": "(opcionalno)",
+      "describePlaceholder": "Npr. Moj let iz Londona za Pariz je kasnio 4 sata zbog tehničkog problema na avionu...",
+      "infoText": "Dijeljenje detalja o vašem iskustvu može znatno poboljšati vaše šanse za uspješan zahtjev. Što ste precizniji, veće su vam šanse za odobrenje."
+    },
+    "back": "Nazad",
+    "continue": "Nastavi",
+    "submitClaim": "Pošalji zahtjev",
+    "checkAnotherFlight": "← Provjeri drugi let",
+    "freeCheck": "Provjerite svoju kompenzaciju — <strong>100% besplatno</strong>, bez rizika.",
+    "eligible": {
+      "title": "Sjajne vijesti — možda ste kvalifikovani!",
+      "description": "Na osnovu vaših odgovora, mogli biste biti ovlašteni na do <strong>600 €</strong> kompenzacije prema Uredbi EU 261/2004. Pokrenite svoj besplatni zahtjev sada!",
+      "descriptionDynamic": "Na osnovu vaših odgovora, mogli biste biti ovlašteni na do <strong>{{amount}} €</strong> kompenzacije prema Uredbi EU 261/2004. Pokrenite svoj besplatni zahtjev sada!",
+      "startClaim": "Pokreni moj besplatni zahtjev →"
+    },
+    "notEligible": {
+      "title": "Nažalost, možda se ne kvalifikujete",
+      "description": "Na osnovu vaših odgovora, vaše kašnjenje je ispod praga od 3 sata potrebnog za kompenzaciju prema Uredbi EU 261/2004."
+    },
+    "step6": {
+      "title": "Detalji leta",
+      "flightNumber": "Broj leta",
+      "flightNumberPlaceholder": "npr. LS123",
+      "flightDate": "Datum leta",
+      "flightDateHelp": "Datum poremećenog leta"
+    },
+    "step7": {
+      "title": "Vaši podaci",
+      "firstName": "Ime",
+      "lastName": "Prezime",
+      "email": "E-mail adresa",
+      "phone": "Broj telefona",
+      "phonePlaceholder": "+387 61 234 567",
+      "nationality": "Državljanstvo",
+      "nationalityPlaceholder": "Odaberite državu"
+    },
+    "step8": {
+      "title": "Rezervacija i saglasnost",
+      "bookingReference": "Referentni broj rezervacije",
+      "bookingReferencePlaceholder": "npr. ABC123",
+      "bookingReferenceHelp": "Nalazi se u e-mailu potvrde rezervacije",
+      "consent": "Saglasan/na sam sa <a href='/terms' target='_blank'>Uslovima korištenja</a> i ovlašćujem Jet2Pay da postupa u moje ime. Razumijem da se primjenjuje provizija od 30% po principu bez uspjeha bez naplate.",
+      "gdpr": "Saglasan/na sam sa obradom mojih ličnih podataka u skladu sa <a href='/privacy' target='_blank'>Politikom privatnosti</a> i GDPR-om.",
+      "submitClaim": "Pošalji moj zahtjev"
+    },
+    "submitting": "Slanje vašeg zahtjeva...",
+    "submitted": {
+      "title": "Zahtjev uspješno poslan!",
+      "claimId": "Referentni broj zahtjeva",
+      "estimated": "Procijenjena kompenzacija",
+      "emailSent": "E-mail potvrde je poslan u vaše sanduče.",
+      "trackClaim": "Pratite status svog zahtjeva u bilo koje vrijeme koristeći referentni broj.",
+      "newClaim": "← Pošalji novi zahtjev"
+    },
+    "error": {
+      "submissionFailed": "Slanje zahtjeva nije uspjelo. Pokušajte ponovo.",
+      "networkError": "Greška mreže. Provjerite svoju konekciju."
+    }
+  },
+  "claimStatus": {
+    "title": "Provjeri status zahtjeva",
+    "subtitle": "Unesite referentni broj zahtjeva za praćenje napretka vašeg zahtjeva za kompenzaciju.",
+    "placeholder": "Unesite referentni broj (npr. 35073ad8-6b02...)",
+    "search": "Prati zahtjev",
+    "notFound": "Zahtjev sa ovim referentnim brojem nije pronađen. Provjerite ID i pokušajte ponovo.",
+    "error": "Nešto je pošlo po krivu. Pokušajte ponovo kasnije.",
+    "progress": "Napredak zahtjeva",
+    "flightDetails": "Detalji leta",
+    "compensation": "Kompenzacija",
+    "claimRef": "Referentni broj zahtjeva",
+    "status": "Status",
+    "flight": "Let",
+    "date": "Datum",
+    "route": "Ruta",
+    "disruption": "Vrsta poremećaja",
+    "estimatedAmount": "Procijenjena kompenzacija",
+    "distance": "Dužina rute",
+    "eligible": "Kvalifikovan za kompenzaciju",
+    "notEligible": "Nije kvalifikovan za kompenzaciju",
+    "documents": "Dokumenti",
+    "noDocs": "Dokumenti još nisu uploadani.",
+    "missingDocs": "Nedostajući dokumenti",
+    "timeline": "Vremenska linija statusa",
+    "steps": {
+      "submitted": "Poslano",
+      "under_review": "U pregledu",
+      "airline_contacted": "Avio-kompanija kontaktirana",
+      "negotiating": "U pregovorima",
+      "resolved": "Riješeno",
+      "rejected": "Odbijeno",
+      "paid": "Plaćeno"
+    },
+    "disruptionTypes": {
+      "delay": "Kašnjenje",
+      "cancellation": "Otkazivanje",
+      "denied_boarding": "Odbijeno ukrcavanje",
+      "missed_connection": "Propušteno presjedanje"
+    },
+    "docTypes": {
+      "boarding_pass": "Karta za ukrcavanje",
+      "booking_confirmation": "Potvrda rezervacije",
+      "id_document": "Lični dokument"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Borimo se za vaša prava putnika",
+      "subtitle": "Pomažemo putnicima dobiti kompenzaciju koju zaslužuju kada letovi krenu po krivu. Bez uspjeha, bez naplate — tako jednostavno."
+    },
+    "stats": {
+      "customers": "Kompenziranih putnika",
+      "airlines": "Avio-kompanija",
+      "successRate": "Stopa uspješnosti",
+      "recovered": "Vraćeno putnicima"
+    },
+    "mission": {
+      "title": "Naša misija",
+      "text1": "U Jet2Pay vjerujemo da svaki putnik zaslužuje pošteno postupanje. Kada vaš let kasni, bude otkazan ili vam bude odbijeno ukrcavanje, Uredba EU 261/2004 i UK261 štite vaše pravo na kompenzaciju do 600 €.",
+      "text2": "Naš tim pravnih i aviacionih stručnjaka vodi cijeli proces zahtjeva — od početne procjene do pregovora sa avio-kompanijom — tako da vi to ne morate. Naplaćujemo samo 30% provizije ako dobijemo vaš slučaj.",
+      "cardTitle": "Vaša prava, naš prioritet",
+      "cardText": "Pomogli smo hiljadama putnika širom Evrope da ostvare svoju zakonitu kompenzaciju. Naš automatizirani sistem i stručni tim osiguravaju brzu obradu bez komplikacija."
+    },
+    "values": {
+      "title": "Naše vrijednosti",
+      "transparency": {
+        "title": "Potpuna transparentnost",
+        "text": "Bez skrivenih naknada, bez iznenađujućih troškova. Plaćate samo kada dobijemo vaš slučaj — 30% provizije pri uspjehu."
+      },
+      "noWinNoFee": {
+        "title": "Bez uspjeha, bez naplate",
+        "text": "Preuzimamo sav rizik. Ako vaš zahtjev ne uspije, ne plaćate apsolutno ništa."
+      },
+      "speed": {
+        "title": "Brza obrada",
+        "text": "Naš automatizirani sistem kvalifikovanosti daje vam trenutnu procjenu. Većina zahtjeva se rješava u roku od nekoliko sedmica."
+      },
+      "expertise": {
+        "title": "Pravna stručnost",
+        "text": "Naš tim ima duboko znanje o propisima EC261/UK261 i bogato iskustvo u radu sa avio-kompanijama."
+      }
+    },
+    "howItWorks": {
+      "title": "Kako funkcionira",
+      "step1": { "title": "Provjerite kvalifikovanost", "text": "Unesite detalje leta i odmah ćemo procijeniti vaš zahtjev." },
+      "step2": { "title": "Pošaljite zahtjev", "text": "Popunite svoje podatke i uploadajte dokumente. Traje samo 5 minuta." },
+      "step3": { "title": "Mi se brinemo o svemu", "text": "Naš tim kontaktira avio-kompaniju i vodi sve pravne procese u vaše ime." },
+      "step4": { "title": "Dobijte kompenzaciju", "text": "Kada uspješno riješimo vaš slučaj, kompenzacija se prenosi direktno na vaš bankovni račun." }
+    },
+    "team": {
+      "title": "Naš tim",
+      "subtitle": "Posvećen tim stručnjaka posvećen zaštiti vaših prava putnika.",
+      "founder": "Osnivač i direktor",
+      "legal": "Pravni odjel",
+      "claims": "Obrada zahtjeva",
+      "tech": "Tehnologija"
+    },
+    "legal": {
+      "title": "Podaci o kompaniji",
+      "company": {
+        "title": "Kompanija",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registrovana u Bugarskoj"
+      },
+      "address": {
+        "title": "Adresa",
+        "text": "Sofija, Bugarska"
+      },
+      "contact": {
+        "title": "Kontakt"
+      }
+    },
+    "cta": {
+      "title": "Spremni ste zatražiti svoju kompenzaciju?",
+      "text": "Provjerite da li vaš let ispunjava uslove za kompenzaciju do 600 €. Besplatno je i traje samo 2 minute.",
+      "button": "Provjeri kompenzaciju →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Vijesti i ažuriranja",
+      "subtitle": "Budite informisani o pravima putnika, propisima i novostima iz Jet2Pay."
+    },
+    "featured": "Istaknuto",
+    "allArticles": "Svi članci",
+    "readMore": "Pročitaj više",
+    "categories": {
+      "companyNews": "Vijesti kompanije",
+      "regulation": "Propisi",
+      "tips": "Savjeti i vodiči"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay pokrenut: Pomažemo putnicima zatražiti kompenzaciju za letove",
+        "summary": "Sa zadovoljstvom objavljujemo pokretanje Jet2Pay — platforme posvećene pomaganju putnicima da zatraže kompenzaciju za zakašnjele, otkazane ili prebukurane letove prema Uredbi EU 261/2004 i UK261."
+      },
+      "ec261Update": {
+        "title": "Razumijevanje EC261: Vaš kompletni vodič za kompenzaciju letova",
+        "summary": "Uredba EU 261/2004 ovlašćuje putnike na kompenzaciju od 250 do 600 € za poremećaje letova. Saznajte o svojim pravima i kako zatražiti kompenzaciju."
+      },
+      "knowYourRights": {
+        "title": "5 stvari koje svaki putnik treba znati o svojim pravima",
+        "summary": "Mnogi putnici ne znaju da su ovlašteni na kompenzaciju. Evo ključnih činjenica o vašim pravima kada letovi kasne ili budu otkazani."
+      },
+      "delayTips": {
+        "title": "Šta učiniti kada vaš let kasni: Vodič korak po korak",
+        "summary": "Let kasni? Bez panike. Slijedite naš praktični vodič za zaštitu vaših prava i maksimiziranje zahtjeva za kompenzaciju."
+      },
+      "uk261": {
+        "title": "UK261: Pravila o kompenzaciji letova nakon Brexita",
+        "summary": "Nakon Brexita, Ujedinjeno Kraljevstvo je usvojilo svoju verziju EC261 — poznatu kao UK261. Evo šta to znači za putnike koji lete u i iz Ujedinjenog Kraljevstva."
+      },
+      "partnerships": {
+        "title": "Jet2Pay uspostavlja partnerstvo sa vodećim pružaocima aviacionih podataka",
+        "summary": "Uspostavili smo partnerstvo sa vodećim pružaocima podataka o letovima za verifikaciju letova u realnom vremenu i bržu obradu zahtjeva za naše klijente."
+      }
+    },
+    "cta": {
+      "title": "Imali ste poremećaj leta?",
+      "text": "Provjerite da li ste ovlašteni na kompenzaciju — besplatno je i traje 2 minute.",
+      "button": "Provjeri kompenzaciju →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Upoznaj svoja prava",
+    "products": "Usluge",
+    "aboutCompany": "O kompaniji",
+    "legal": "Pravne informacije",
+    "description": "Kompenzacija za letove pojednostavljena. Pomažemo putnicima zatražiti do 600 € za zakašnjele, otkazane ili prebukurane letove.",
+    "copyright": "Sva prava zadržana.",
+    "links": {
+      "eu261": "Uredba EU 261/2004",
+      "uk261": "Uredba UK261",
+      "delayComp": "Kompenzacija za kašnjenje leta",
+      "cancelComp": "Kompenzacija za otkazan let",
+      "overbookedComp": "Kompenzacija za prebukiran let",
+      "deniedBoarding": "Odbijeno ukrcavanje",
+      "passengerRights": "Prava putnika",
+      "checkComp": "Provjeri kompenzaciju",
+      "howItWorks": "Kako funkcionira",
+      "pricing": "Cijene",
+      "claimStatus": "Provjeri status zahtjeva",
+      "aboutUs": "O Jet2Pay",
+      "reviews": "Recenzije",
+      "careers": "Karijere",
+      "partners": "Partneri",
+      "press": "Za medije",
+      "contact": "Kontaktirajte nas",
+      "news": "Vijesti",
+      "terms": "Uslovi korištenja",
+      "privacy": "Politika privatnosti",
+      "cookies": "Politika kolačića",
+      "imprint": "Impressum",
+      "complaints": "Žalbe"
+    },
+    "newsletter": {
+      "title": "Pretplatite se na naš bilten",
+      "text": "Dobijajte najnovije vijesti i savjete za putovanja direktno u vaše sanduče.",
+      "placeholder": "Vaša e-mail adresa",
+      "button": "Pretplati se"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "JEDNOSTAVAN PROCES", "title": "Kako funkcionira", "subtitle": "Dobijanje kompenzacije za let je jednostavno. Mi se brinemo o svemu — vi samo trebate reći šta se desilo." },
+      "steps": {
+        "title": "4 jednostavna koraka",
+        "s1": { "title": "Provjerite kvalifikovanost", "text": "Unesite detalje leta u naš besplatni alat. Naš sistem odmah provjerava Uredbu EU 261/2004 i UK261 da utvrdi da li ste ovlašteni na kompenzaciju do 600 €." },
+        "s2": { "title": "Pošaljite zahtjev", "text": "Popunite lične podatke, informacije o letu i uploadajte popratne dokumente. Cijeli proces traje manje od 5 minuta." },
+        "s3": { "title": "Mi se brinemo o svemu", "text": "Naši pravni i aviacioni stručnjaci preuzimaju vodstvo. Kontaktiramo avio-kompaniju, vodimo svu korespondenciju i pregovore te upravljamo pravnim procesom u vaše ime." },
+        "s4": { "title": "Dobijte kompenzaciju", "text": "Kada uspješno riješimo vaš zahtjev, kompenzacija se prenosi direktno na vaš bankovni račun. Od primljenog iznosa oduzimamo samo našu proviziju od 30%." }
+      },
+      "whyUs": {
+        "title": "Zašto odabrati Jet2Pay?",
+        "noRisk": { "title": "Bez uspjeha, bez naplate", "text": "Ne plaćate ništa unaprijed. Naša provizija od 30% se naplaćuje samo kada uspješno dobijemo vaš slučaj." },
+        "fast": { "title": "Stručni pravni tim", "text": "Naš tim je specijaliziran za prava putnika u EU i ima bogato iskustvo u pregovaranju sa avio-kompanijama." },
+        "expertise": { "title": "Brzo i jednostavno", "text": "Pošaljite zahtjev za manje od 5 minuta. Mi se brinemo o ostatku i obavještavamo vas na svakom koraku." }
+      },
+      "cta": { "title": "Spremni ste za početak?", "text": "Provjerite da li vaš let ispunjava uslove za kompenzaciju — besplatno je i traje samo 2 minute.", "button": "Provjeri kompenzaciju →" }
+    },
+    "pricing": {
+      "hero": { "badge": "TRANSPARENTNE CIJENE", "title": "Cijene", "subtitle": "Bez skrivenih naknada, bez unaprijednih troškova. Plaćate samo kada dobijemo." },
+      "noWinNoFee": { "title": "Bez uspjeha, bez naplate", "text": "Naša usluga je potpuno besplatna osim ako uspješno zatražimo kompenzaciju za vas. Naplaćujemo proviziju od 30% samo na vraćeni iznos.", "badge": "GARANTOVANO" },
+      "comparison": {
+        "title": "Kako se poredimo",
+        "option": "Opcija",
+        "cost": "Trošak",
+        "successRate": "Stopa uspješnosti",
+        "effort": "Vaš trud",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% pri uspjehu", "success": "98%", "effort": "5 minuta" },
+        "lawyer": { "name": "Advokat", "cost": "200 €+/sat", "success": "85%", "effort": "Sati" },
+        "diy": { "name": "Sami", "cost": "Besplatno", "success": "~10%", "effort": "Dani/Sedmice" }
+      },
+      "faq": {
+        "title": "Česta pitanja o cijenama",
+        "q1": { "q": "Kada plaćam?", "a": "Samo kada uspješno povratimo kompenzaciju za vas. Ako ne uspijemo, ne plaćate ništa." },
+        "q2": { "q": "Šta pokriva 30%?", "a": "Naša provizija pokriva sav pravni rad, pregovore sa avio-kompanijama, korespondenciju i obradu zahtjeva." },
+        "q3": { "q": "Ima li skrivenih naknada?", "a": "Apsolutno ne. Provizija od 30% je jedina naknada. Bez naknada za registraciju, bez naknada za obradu, bez naknada za otkazivanje." },
+        "q4": { "q": "Šta ako moj zahtjev ne uspije?", "a": "Ne plaćate ništa. Mi pokrivamo sve troškove i rizike povezane sa sprovođenjem vašeg zahtjeva." }
+      },
+      "cta": { "title": "Spremni za zahtjev?", "text": "Provjerite svoju kvalifikovanost besplatno — bez obaveza.", "button": "Provjeri kompenzaciju →" }
+    },
+    "reviews": {
+      "hero": { "badge": "RECENZIJE KLIJENATA", "title": "Šta kažu naši klijenti", "subtitle": "Hiljade putnika je povjerilo Jet2Pay da vodi njihove zahtjeve za kompenzaciju." },
+      "stats": {
+        "avgRating": "Prosječna ocjena",
+        "totalReviews": "Obrađenih zahtjeva",
+        "recommend": "Bi preporučilo",
+        "avgPayout": "Maksimalna kompenzacija"
+      },
+      "grid": {
+        "title": "Nedavne recenzije",
+        "r1": { "quote": "Jet2Pay je sve odradio savršeno. Dobio sam 400 € za zakašnjeli let iz Manchestera za Antaliju. Toplo preporučujem!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Bio sam skeptičan u početku, ali su isporučili. Dobio sam 250 € kompenzacije za 4-satno kašnjenje. Bez ikakvih komplikacija.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Odlična usluga! Moj otkazani let iz Birminghama je rezultirao kompenzacijom od 600 €. Tim me je obavještavao tokom cijelog procesa.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Brzo i profesionalno. Podnio sam zahtjev za 5 minuta i primio uplatu u roku od 8 sedmica.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Nakon što mi je odbijeno ukrcavanje, Jet2Pay mi je obezbijedio 400 € kompenzacije. Proces je bio nevjerovatno jednostavan.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantastično iskustvo. Nisam ni znao da sam ovlašten na kompenzaciju dok nisam pronašao Jet2Pay. Dobio sam 250 €!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Tim je bio vrlo odzivan i obavještavao me na svakom koraku. Kompenzaciju sam primio za samo 6 sedmica.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Koristio sam Jet2Pay dva puta — oba puta uspješno. Zaista znaju šta rade sa zahtjevima prema avio-kompanijama.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Pridružite se hiljadama zadovoljnih klijenata", "text": "Provjerite da li vaš let ispunjava uslove za kompenzaciju.", "button": "Provjeri kompenzaciju →" }
+    },
+    "careers": {
+      "hero": { "badge": "PRIDRUŽITE SE TIMU", "title": "Karijere u Jet2Pay", "subtitle": "Pomozite nam boriti se za prava putnika širom Evrope. Pridružite se brzorastućem timu koji čini stvarnu razliku." },
+      "culture": {
+        "title": "Zašto raditi sa nama",
+        "text1": "U Jet2Pay gradimo nešto značajno — platformu koja pomaže svakodnevnim putnicima da dobiju kompenzaciju koju zaslužuju.",
+        "text2": "Cijenimo transparentnost, inovaciju i snažan osjećaj za pravdu. Naš tim radi na daljinu širom Evrope, ujedinjen zajedničkom misijom.",
+        "cardTitle": "Naša kultura",
+        "cardText": "Fleksibilan rad, konkurentna plata i zadovoljstvo pomaganja hiljadama putnika svaki mjesec."
+      },
+      "positions": {
+        "title": "Otvorene pozicije",
+        "apply": "Prijavi se sada →",
+        "claimsSpecialist": { "title": "Specijalista za zahtjeve", "location": "Na daljinu / Sofija", "type": "Puno radno vrijeme", "desc": "Obrađujte i upravljajte zahtjevima za kompenzaciju letova. Komunicirajte sa avio-kompanijama i obavještavajte putnike o statusu njihovog zahtjeva." },
+        "legalAdvisor": { "title": "Pravni savjetnik", "location": "Sofija, Bugarska", "type": "Puno radno vrijeme", "desc": "Pružajte pravnu stručnost o propisima EC261/UK261. Pregledajte složene slučajeve i pripremajte pravnu dokumentaciju za pregovore sa avio-kompanijama." },
+        "frontendDev": { "title": "Frontend programer", "location": "Na daljinu", "type": "Puno radno vrijeme", "desc": "Gradite i održavajte našu web platformu baziranu na Reactu. Radite na unapređenju iskustva podnošenja zahtjeva i administratorske kontrolne table." },
+        "customerSupport": { "title": "Korisnička podrška", "location": "Na daljinu", "type": "Skraćeno radno vrijeme", "desc": "Pomažite putnicima sa pitanjima o njihovim zahtjevima. Pružajte odličnu korisničku podršku putem e-maila i chata." }
+      },
+      "cta": { "title": "Ne vidite odgovarajuću poziciju?", "text": "Pošaljite nam svoj CV i recite nam kako biste željeli doprinijeti.", "button": "Kontaktirajte nas →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSTVA", "title": "Partnerstvo sa nama", "subtitle": "Pridružite se mreži Jet2Pay i pomozite putnicima da dobiju kompenzaciju koju zaslužuju." },
+      "types": {
+        "title": "Mogućnosti partnerstva",
+        "airlines": { "title": "Partnerstva sa avio-kompanijama", "text": "Sarađujte sa nama za pojednostavljenje procesa kompenzacije za vaše putnike." },
+        "travelAgency": { "title": "Turističke agencije", "text": "Ponudite kompenzaciju za letove kao dodatnu uslugu svojim klijentima. Mi obrađujemo zahtjeve, vi jačate lojalnost klijenata." },
+        "legal": { "title": "Pravna mreža", "text": "Pridružite se našoj mreži pravnih profesionalaca specijaliziranih za prava putnika širom Evrope." }
+      },
+      "benefits": {
+        "title": "Benefiti partnerstva",
+        "benefit1": { "title": "Posvećeni menadžer partnerstva", "text": "Jedna kontakt tačka za sve vaše partnerske potrebe." },
+        "benefit2": { "title": "Prilagođena integracija", "text": "Pristup API-ju i opcije prilagođene integracije za nesmetane radne tokove." },
+        "benefit3": { "title": "Konkurentna provizija", "text": "Atraktivna podjela prihoda za partnere velikog obima." },
+        "benefit4": { "title": "Kontrolna tabla u realnom vremenu", "text": "Pratite sve preporučene zahtjeve i zaradu u realnom vremenu." }
+      },
+      "contactUs": { "title": "Stupite u kontakt", "text": "Zainteresirani ste za partnerstvo sa Jet2Pay? Kontaktirajte naš tim za partnerstva:" },
+      "cta": { "title": "Zainteresirani za partnerstvo?", "text": "Stupite u kontakt sa našim timom za partnerstva.", "button": "Kontaktirajte nas →" }
+    },
+    "press": {
+      "hero": { "badge": "ŠTAMPA I MEDIJI", "title": "Medijska soba", "subtitle": "Najnovije vijesti, saopštenja za javnost i medijski resursi od Jet2Pay." },
+      "facts": {
+        "title": "Činjenice o kompaniji",
+        "fact1": { "value": "2024", "label": "Osnovana" },
+        "fact2": { "value": "Sofija, BG", "label": "Sjedište" },
+        "fact3": { "value": "10+", "label": "Veličina tima" },
+        "fact4": { "value": "10.000+", "label": "Obrađenih zahtjeva" }
+      },
+      "releases": {
+        "title": "Saopštenja za javnost",
+        "r1": { "date": "Mart 2026", "title": "Jet2Pay pokreće novu platformu za zahtjeve", "summary": "Jet2Pay objavljuje pokretanje platforme nove generacije za kompenzaciju letova, čineći lakšim nego ikad za putnike da zatraže do 600 €." },
+        "r2": { "date": "Februar 2026", "title": "Jet2Pay uspostavlja partnerstvo sa pružaocima aviacionih podataka", "summary": "Strateško partnerstvo sa vodećim pružaocima podataka o letovima omogućava verifikaciju letova u realnom vremenu i bržu obradu zahtjeva." },
+        "r3": { "date": "Januar 2026", "title": "Jet2Pay proširuje pokrivenost na 250+ avio-kompanija", "summary": "Jet2Pay sada pokriva preko 250 avio-kompanija širom svijeta, nudeći sveobuhvatne usluge kompenzacije letova širom Evrope." }
+      },
+      "mediaKit": { "title": "Medijski komplet", "text": "Preuzmite naš medijski komplet uključujući logotipe, smjernice brenda i pregled kompanije." },
+      "pressContact": { "title": "Kontakt za štampu", "text": "Za medijske upite, intervjue i medijske zahtjeve:" },
+      "cta": { "title": "Želite predstaviti Jet2Pay?", "text": "Sa zadovoljstvom pružamo intervjue, izjave i podatke za vašu priču.", "button": "Kontaktirajte tim za štampu →" }
+    },
+    "contact": {
+      "hero": { "badge": "STUPITE U KONTAKT", "title": "Kontaktirajte nas", "subtitle": "Imate pitanje? Tu smo da pomognemo. Javite nam se putem bilo kojeg od kanala ispod." },
+      "channels": {
+        "email": { "title": "Zahtjevi", "text": "Za pitanja o postojećim zahtjevima" },
+        "support": { "title": "Opća podrška", "text": "Za opće upite i podršku" },
+        "address": { "title": "Kancelarija", "text": "MITRANI CONSULT EOOD, Sofija, Bugarska" }
+      },
+      "form": { "title": "Pošaljite nam poruku", "placeholder": "Za upite, pišite nam na support@jet2pay.eu" },
+      "faq": {
+        "title": "Često postavljana pitanja",
+        "q1": { "q": "Koliko traje obrada zahtjeva?", "a": "Većina zahtjeva se rješava u roku od 6-12 sedmica, zavisno od vremena odgovora avio-kompanije." },
+        "q2": { "q": "Koji dokumenti su mi potrebni?", "a": "Vaša karta za ukrcavanje, potvrda rezervacije i važeći lični dokument. Provest ćemo vas kroz proces." },
+        "q3": { "q": "Mogu li zatražiti kompenzaciju za let od prije više godina?", "a": "Da! U većini EU zemalja, možete zatražiti kompenzaciju za letove do 3 godine unazad. U nekim zemljama, rok se produžava na 6 godina." }
+      },
+      "cta": { "title": "Spremni ste provjeriti svoj let?", "text": "Naša besplatna provjera kvalifikovanosti traje samo 2 minute.", "button": "Provjeri kompenzaciju →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "sl": "Slovenščina",
+    "bs": "Bosanski",
+    "et": "Eesti",
+    "lv": "Latviešu",
+    "lt": "Lietuvių"
+  }
+}

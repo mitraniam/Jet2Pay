@@ -1,0 +1,499 @@
+{
+  "header": {
+    "checkCompensation": "Kontrollo Kompensimin",
+    "knowYourRights": "Njihni të Drejtat Tuaja",
+    "aboutCompany": "Rreth Kompanisë",
+    "news": "Lajme",
+    "referAFriend": "Referoni një Mik",
+    "checkClaimStatus": "Kontrolloni Statusin e Kërkesës"
+  },
+  "hero": {
+    "titleDelayed": "I vonuar",
+    "titleCancelled": "I anuluar",
+    "titleFlight": "Fluturim",
+    "titleOr": "ose",
+    "subtitle": "Kërkoni deri në <strong>€600</strong> për një fluturim të vonuar ose të anuluar",
+    "whatHappened": "Çfarë ndodhi me fluturimin tuaj?",
+    "delayed": "I vonuar",
+    "cancelled": "I anuluar / Mbipopulluar",
+    "otherDisruptions": "Ndërprerje të tjera",
+    "departurePlaceholder": "Aeroporti i nisjes",
+    "arrivalPlaceholder": "Aeroporti i mbërritjes",
+    "checkCompensation": "Kontrollo Kompensimin",
+    "freeCheck": "Kontroll falas i kompensimit",
+    "hassleFree": "Pa telashe",
+    "claimsUpTo": "Kërkesa deri në 3 vjet të vjetra",
+    "compensatedCustomers": "klientë të kompensuar",
+    "airlines": "linja ajrore",
+    "yearsTrusted": "vite të besuara"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Kontroll i pranueshmërisë",
+      "waitTime": "Koha e pritjes",
+      "done": "Përfundoi!",
+      "flightItinerary": "Itinerari i fluturimit",
+      "disruptionType": "Lloji i ndërprerjes",
+      "timing": "Koha",
+      "reason": "Arsyeja",
+      "howLong": "Sa kohë pritët?",
+      "claimDetails": "Detajet e kërkesës",
+      "flightInfo": "Informacioni i fluturimit",
+      "passengerInfo": "Detajet tuaja",
+      "bookingConsent": "Rezervimi dhe pëlqimi"
+    },
+    "step1": {
+      "title": "Ku fluturuat?",
+      "departedFrom": "Nisja nga",
+      "finalDestination": "Aeroporti i destinacionit përfundimtar",
+      "airportPlaceholder": "Shkruani emrin e qytetit ose aeroportit",
+      "directFlight": "A ishte fluturim i drejtpërdrejtë?",
+      "yesDirect": "Po, ishte fluturim i drejtpërdrejtë",
+      "noConnecting": "Jo, kisha fluturime lidhjese"
+    },
+    "step2": {
+      "title": "Lloji i ndërprerjes",
+      "question": "Cili ishte lloji i ndërprerjes së fluturimit që hasët?",
+      "delayed": "Fluturimi i vonuar",
+      "cancelled": "Fluturimi i anuluar",
+      "denied": "Refuzim i imbarkimit / Mbipopullim"
+    },
+    "step3": {
+      "title": "Sa kohë u vonuat?",
+      "question": "Sa kohë u vonuat për të arritur në destinacionin tuaj përfundimtar?",
+      "less3": "Më pak se 3 orë",
+      "more3": "Më shumë se 3 orë",
+      "missed": "Humba fluturimin lidhës"
+    },
+    "step4": {
+      "title": "Arsyeja e ndërprerjes",
+      "question1": "A ju tha linja ajrore pse fluturimi u ndërpre?",
+      "yes": "Po",
+      "no": "Jo",
+      "dontRemember": "Nuk kujtoj",
+      "question2": "Cila ishte arsyeja e dhënë nga linja ajrore?",
+      "technical": "Problem teknik i avionit",
+      "weather": "Kushte të këqija atmosferike",
+      "strike": "Grevë",
+      "airport": "Probleme me aeroportin",
+      "other": "Arsye të tjera"
+    },
+    "step5": {
+      "title": "Na tregoni më shumë për situatën tuaj",
+      "question": "Sa kohë pritët për një fluturim zëvendësues ose zgjidhje?",
+      "less2": "Më pak se 2 orë",
+      "2to4": "2 deri në 4 orë",
+      "4to8": "4 deri në 8 orë",
+      "overnight": "Gjatë natës (8+ orë)",
+      "none": "Nuk u ofrua asnjë alternativë",
+      "describeLabel": "Përshkruani shkurtimisht çfarë ndodhi",
+      "describeOptional": "(opsionale)",
+      "describePlaceholder": "P.sh. Fluturimi im nga Londra në Paris u vonua 4 orë për shkak të një problemi teknik me avionin...",
+      "infoText": "Ndarja e detajeve rreth përvojës suaj mund të përmirësojë shumë shanset tuaja për një kërkesë të suksesshme. Sa më specifik të jeni, aq më të larta janë shanset tuaja për miratim."
+    },
+    "back": "Kthehu",
+    "continue": "Vazhdo",
+    "submitClaim": "Dërgo Kërkesën",
+    "checkAnotherFlight": "← Kontrollo një fluturim tjetër",
+    "freeCheck": "Kontrolloni kompensimin tuaj — <strong>100% falas</strong>, pa rrezik.",
+    "eligible": {
+      "title": "Lajm i mirë — mund të keni të drejtë!",
+      "description": "Bazuar në përgjigjet tuaja, mund të keni të drejtë për deri në <strong>€600</strong> kompensim sipas Rregullores së BE-së 261/2004. Filloni kërkesën tuaj falas tani!",
+      "descriptionDynamic": "Bazuar në përgjigjet tuaja, mund të keni të drejtë për deri në <strong>€{{amount}}</strong> kompensim sipas Rregullores së BE-së 261/2004. Filloni kërkesën tuaj falas tani!",
+      "startClaim": "Fillo Kërkesën Time Falas →"
+    },
+    "notEligible": {
+      "title": "Fatkeqësisht, mund të mos kualifikoheni",
+      "description": "Bazuar në përgjigjet tuaja, vonesa juaj duket se është nën pragun prej 3 orësh të kërkuar për kompensim sipas Rregullores së BE-së 261/2004."
+    },
+    "step6": {
+      "title": "Detajet e fluturimit",
+      "flightNumber": "Numri i fluturimit",
+      "flightNumberPlaceholder": "p.sh. LS123",
+      "flightDate": "Data e fluturimit",
+      "flightDateHelp": "Data e fluturimit të ndërprerë"
+    },
+    "step7": {
+      "title": "Detajet tuaja",
+      "firstName": "Emri",
+      "lastName": "Mbiemri",
+      "email": "Adresa e emailit",
+      "phone": "Numri i telefonit",
+      "phonePlaceholder": "+355 69 123 4567",
+      "nationality": "Kombësia",
+      "nationalityPlaceholder": "Zgjidhni vendin"
+    },
+    "step8": {
+      "title": "Rezervimi dhe pëlqimi",
+      "bookingReference": "Referenca e rezervimit",
+      "bookingReferencePlaceholder": "p.sh. ABC123",
+      "bookingReferenceHelp": "Gjendet në emailin e konfirmimit të rezervimit tuaj",
+      "consent": "Unë pranoj <a href='/terms' target='_blank'>Kushtet dhe Rregullat</a> dhe autorizoj Jet2Pay të veprojë në emrin tim. Unë kuptoj që komisioni 30% Pa Fitim Pa Pagesë zbatohet.",
+      "gdpr": "Unë jap pëlqimin për përpunimin e të dhënave të mia personale në përputhje me <a href='/privacy' target='_blank'>Politikën e Privatësisë</a> dhe GDPR.",
+      "submitClaim": "Dërgo Kërkesën Time"
+    },
+    "submitting": "Duke dërguar kërkesën tuaj...",
+    "submitted": {
+      "title": "Kërkesa u dërgua me sukses!",
+      "claimId": "Referenca e kërkesës",
+      "estimated": "Kompensimi i vlerësuar",
+      "emailSent": "Një email konfirmimi është dërguar në kutinë tuaj postare.",
+      "trackClaim": "Ndiqni statusin e kërkesës tuaj në çdo kohë duke përdorur referencën e kërkesës.",
+      "newClaim": "← Dërgo një kërkesë tjetër"
+    },
+    "error": {
+      "submissionFailed": "Dërgimi i kërkesës dështoi. Ju lutem provoni përsëri.",
+      "networkError": "Gabim rrjeti. Ju lutem kontrolloni lidhjen tuaj."
+    }
+  },
+  "claimStatus": {
+    "title": "Kontrolloni Statusin e Kërkesës",
+    "subtitle": "Vendosni numrin e referencës së kërkesës tuaj për të ndjekur progresin e kërkesës suaj për kompensim.",
+    "placeholder": "Vendosni referencën e kërkesës (p.sh. 35073ad8-6b02...)",
+    "search": "Ndiq Kërkesën",
+    "notFound": "Nuk u gjet asnjë kërkesë me këtë referencë. Ju lutem kontrolloni ID-në dhe provoni përsëri.",
+    "error": "Diçka shkoi keq. Ju lutem provoni përsëri më vonë.",
+    "progress": "Progresi i Kërkesës",
+    "flightDetails": "Detajet e Fluturimit",
+    "compensation": "Kompensimi",
+    "claimRef": "Referenca e Kërkesës",
+    "status": "Statusi",
+    "flight": "Fluturimi",
+    "date": "Data",
+    "route": "Itinerari",
+    "disruption": "Lloji i Ndërprerjes",
+    "estimatedAmount": "Kompensimi i Vlerësuar",
+    "distance": "Distanca e itinerarit",
+    "eligible": "I përshtatshëm për kompensim",
+    "notEligible": "Nuk është i përshtatshëm për kompensim",
+    "documents": "Dokumentet",
+    "noDocs": "Nuk janë ngarkuar ende dokumente.",
+    "missingDocs": "Dokumente që mungojnë",
+    "timeline": "Kronologjia e Statusit",
+    "steps": {
+      "submitted": "Dërguar",
+      "under_review": "Në Shqyrtim",
+      "airline_contacted": "Linja Ajrore e Kontaktuar",
+      "negotiating": "Në Negociata",
+      "resolved": "Zgjidhur",
+      "rejected": "Refuzuar",
+      "paid": "Paguar"
+    },
+    "disruptionTypes": {
+      "delay": "Vonesë",
+      "cancellation": "Anulim",
+      "denied_boarding": "Refuzim Imbarkimi",
+      "missed_connection": "Fluturim Lidhës i Humbur"
+    },
+    "docTypes": {
+      "boarding_pass": "Kartë Imbarkimi",
+      "booking_confirmation": "Konfirmim Rezervimi",
+      "id_document": "Dokument Identifikimi"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Luftojmë për të Drejtat Tuaja të Fluturimit",
+      "subtitle": "Ne ndihmojmë pasagjerët të marrin kompensimin që meritojnë kur fluturimet shkojnë keq. Pa Fitim, Pa Pagesë — është kaq e thjeshtë."
+    },
+    "stats": {
+      "customers": "Pasagjerë të Kompensuar",
+      "airlines": "Linja Ajrore të Mbuluara",
+      "successRate": "Shkalla e Suksesit",
+      "recovered": "Rikuperuar për Pasagjerët"
+    },
+    "mission": {
+      "title": "Misioni Ynë",
+      "text1": "Në Jet2Pay, ne besojmë se çdo pasagjer meriton trajtim të drejtë. Kur fluturimi juaj vonohet, anulohet, ose ju refuzohet imbarkimi, Rregullorja e BE-së 261/2004 dhe UK261 mbrojnë të drejtën tuaj për kompensim deri në €600.",
+      "text2": "Ekipi ynë i ekspertëve ligjorë dhe të aviacionit merret me të gjithë procesin e kërkesave — nga vlerësimi fillestar deri te negociatat me linjën ajrore — në mënyrë që ju të mos keni nevojë. Ne kërkojmë vetëm 30% komision nëse fitojmë çështjen tuaj.",
+      "cardTitle": "Të Drejtat Tuaja, Prioriteti Ynë",
+      "cardText": "Ne kemi ndihmuar mijëra pasagjerë në të gjithë Evropën të kërkojnë kompensimin e tyre të drejtë. Sistemi ynë i automatizuar dhe ekipi ekspert sigurojnë përpunim të shpejtë dhe pa telashe."
+    },
+    "values": {
+      "title": "Vlerat Tona",
+      "transparency": {
+        "title": "Transparencë e Plotë",
+        "text": "Pa tarifa të fshehura, pa surpriza. Ju paguani vetëm kur ne fitojmë çështjen tuaj — 30% komision mbi suksesin."
+      },
+      "noWinNoFee": {
+        "title": "Pa Fitim, Pa Pagesë",
+        "text": "Ne marrim të gjithë rrezikun. Nëse kërkesa juaj nuk është e suksesshme, ju nuk paguani absolutisht asgjë."
+      },
+      "speed": {
+        "title": "Përpunim i Shpejtë",
+        "text": "Motori ynë i automatizuar i pranueshmërisë ju jep një vlerësim të menjëhershëm. Shumica e kërkesave zgjidhen brenda javësh."
+      },
+      "expertise": {
+        "title": "Ekspertizë Ligjore",
+        "text": "Ekipi ynë ka njohuri të thella mbi rregulloret EC261/UK261 dhe përvojë të gjerë me linjat ajrore."
+      }
+    },
+    "howItWorks": {
+      "title": "Si Funksionon",
+      "step1": { "title": "Kontrolloni Pranueshmërinë", "text": "Vendosni detajet e fluturimit tuaj dhe ne do të vlerësojmë menjëherë kërkesën tuaj." },
+      "step2": { "title": "Dërgoni Kërkesën Tuaj", "text": "Plotësoni detajet tuaja dhe ngarkoni dokumentet tuaja. Zgjat vetëm 5 minuta." },
+      "step3": { "title": "Ne Menaxhojmë Gjithçka", "text": "Ekipi ynë kontakton linjën ajrore dhe merret me të gjitha proceset ligjore në emrin tuaj." },
+      "step4": { "title": "Merrni Kompensimin", "text": "Pasi të fitojmë, kompensimi juaj transferohet drejtpërdrejt në llogarinë tuaj bankare." }
+    },
+    "team": {
+      "title": "Ekipi Ynë",
+      "subtitle": "Një ekip i dedikuar profesionistësh i përkushtuar për mbrojtjen e të drejtave tuaja si pasagjer.",
+      "founder": "Themelues dhe CEO",
+      "legal": "Departamenti Ligjor",
+      "claims": "Përpunimi i Kërkesave",
+      "tech": "Teknologjia"
+    },
+    "legal": {
+      "title": "Informacioni i Kompanisë",
+      "company": {
+        "title": "Kompania",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "E regjistruar në Bullgari"
+      },
+      "address": {
+        "title": "Adresa",
+        "text": "Sofje, Bullgari"
+      },
+      "contact": {
+        "title": "Kontakti"
+      }
+    },
+    "cta": {
+      "title": "Gati të Kërkoni Kompensimin Tuaj?",
+      "text": "Kontrolloni nëse fluturimi juaj kualifikohet për deri në €600 kompensim. Është falas dhe zgjat vetëm 2 minuta.",
+      "button": "Kontrollo Kompensimin →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Lajme dhe Përditësime",
+      "subtitle": "Qëndroni të informuar rreth të drejtave të pasagjerëve, rregulloreve dhe zhvillimeve të Jet2Pay."
+    },
+    "featured": "Të veçuara",
+    "allArticles": "Të gjitha Artikujt",
+    "readMore": "Lexo më shumë",
+    "categories": {
+      "companyNews": "Lajme të Kompanisë",
+      "regulation": "Rregullore",
+      "tips": "Këshilla dhe Udhëzues"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay Lançohet: Duke Ndihmuar Pasagjerët të Kërkojnë Kompensim Fluturimi",
+        "summary": "Jemi të entuziazmuar të njoftojmë lançimin e Jet2Pay — një platformë e dedikuar që ndihmon pasagjerët të kërkojnë kompensim për fluturime të vonuara, të anuluara ose të mbipopulluara sipas Rregullores së BE-së 261/2004 dhe UK261."
+      },
+      "ec261Update": {
+        "title": "Kuptimi i EC261: Udhëzuesi Juaj i Plotë për Kompensimin e Fluturimeve",
+        "summary": "Rregullorja e BE-së 261/2004 u jep të drejtë pasagjerëve për kompensim prej €250–€600 për ndërprerje fluturimesh. Mësoni rreth të drejtave tuaja dhe si të kërkoni."
+      },
+      "knowYourRights": {
+        "title": "5 Gjëra që Çdo Pasagjer Ajror Duhet të Dijë Rreth të Drejtave të Tij",
+        "summary": "Shumë pasagjerë nuk e dinë se kanë të drejtë kompensimi. Ja faktet kryesore rreth të drejtave tuaja kur fluturimet vonohen ose anulohen."
+      },
+      "delayTips": {
+        "title": "Çfarë të Bëni Kur Fluturimi Juaj Vonohet: Udhëzues Hap pas Hapi",
+        "summary": "Fluturimi u vonua? Mos u shqetësoni. Ndiqni udhëzuesin tonë praktik për të mbrojtur të drejtat tuaja dhe maksimizuar kërkesën tuaj për kompensim."
+      },
+      "uk261": {
+        "title": "UK261: Rregullat e Kompensimit të Fluturimeve Pas Brexit-it të Shpjeguara",
+        "summary": "Pas Brexit-it, Mbretëria e Bashkuar miratoi versionin e vet të EC261 — të njohur si UK261. Ja çfarë do të thotë për pasagjerët që fluturojnë nga dhe drejt MB-së."
+      },
+      "partnerships": {
+        "title": "Jet2Pay Bashkëpunon me Ofruesit Kryesorë të të Dhënave të Aviacionit",
+        "summary": "Ne kemi bashkëpunuar me ofruesit kryesorë të të dhënave të fluturimeve për të ofruar verifikim të fluturimeve në kohë reale dhe përpunim më të shpejtë të kërkesave për klientët tanë."
+      }
+    },
+    "cta": {
+      "title": "Patët ndërprerje fluturimi?",
+      "text": "Kontrolloni nëse keni të drejtë kompensimi — është falas dhe zgjat 2 minuta.",
+      "button": "Kontrollo Kompensimin →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Njihni të Drejtat Tuaja",
+    "products": "Produktet",
+    "aboutCompany": "Rreth Kompanisë",
+    "legal": "Ligjore",
+    "description": "Kompensimi i fluturimeve i thjeshtuar. Ne ndihmojmë pasagjerët të kërkojnë deri në €600 për fluturime të vonuara, të anuluara ose të mbipopulluara.",
+    "copyright": "Të gjitha të drejtat e rezervuara.",
+    "links": {
+      "eu261": "Rregullorja e BE-së 261/2004",
+      "uk261": "Rregullorja e MB-së UK261",
+      "delayComp": "Kompensimi për Vonesë Fluturimi",
+      "cancelComp": "Kompensimi për Fluturim të Anuluar",
+      "overbookedComp": "Kompensimi për Fluturim të Mbipopulluar",
+      "deniedBoarding": "Refuzim Imbarkimi",
+      "passengerRights": "Të Drejtat e Pasagjerëve Ajrorë",
+      "checkComp": "Kontrollo Kompensimin",
+      "howItWorks": "Si Funksionon",
+      "pricing": "Çmimet",
+      "claimStatus": "Kontrolloni Statusin e Kërkesës",
+      "aboutUs": "Rreth Jet2Pay",
+      "reviews": "Vlerësime",
+      "careers": "Karriera",
+      "partners": "Partnerë",
+      "press": "Shtypi",
+      "contact": "Na Kontaktoni",
+      "news": "Lajme",
+      "terms": "Kushtet dhe Rregullat",
+      "privacy": "Politika e Privatësisë",
+      "cookies": "Politika e Cookie-ve",
+      "imprint": "Impresi",
+      "complaints": "Ankesa"
+    },
+    "newsletter": {
+      "title": "Abonohuni në buletinin tonë",
+      "text": "Merrni lajmet e fundit dhe këshillat e udhëtimit drejtpërdrejt në kutinë tuaj postare.",
+      "placeholder": "Adresa juaj e emailit",
+      "button": "Abonohu"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "PROCES I THJESHTË", "title": "Si Funksionon", "subtitle": "Marrja e kompensimit tuaj të fluturimit është e lehtë. Ne menaxhojmë gjithçka — ju vetëm duhet të na tregoni çfarë ndodhi." },
+      "steps": {
+        "title": "4 Hapa të Thjeshtë",
+        "s1": { "title": "Kontrolloni Pranueshmërinë", "text": "Vendosni detajet e fluturimit tuaj në mjetin tonë falas. Sistemi ynë kontrollon menjëherë Rregulloren e BE-së 261/2004 dhe UK261 për të përcaktuar nëse keni të drejtë kompensimi deri në €600." },
+        "s2": { "title": "Dërgoni Kërkesën Tuaj", "text": "Plotësoni detajet tuaja personale, informacionin e fluturimit dhe ngarkoni çdo dokument mbështetës. I gjithë procesi zgjat më pak se 5 minuta." },
+        "s3": { "title": "Ne Menaxhojmë Gjithçka", "text": "Ekspertët tanë ligjorë dhe të aviacionit marrin përsipër. Ne kontaktojmë linjën ajrore, menaxhojmë të gjithë korrespondencën dhe negociatat, dhe drejtojmë procesin ligjor në emrin tuaj." },
+        "s4": { "title": "Merrni Kompensimin", "text": "Pasi ta zgjidhim me sukses kërkesën tuaj, kompensimi transferohet drejtpërdrejt në llogarinë tuaj bankare. Ne zbresim vetëm komisionin tonë 30% nga shuma e marrë." }
+      },
+      "whyUs": {
+        "title": "Pse të Zgjidhni Jet2Pay?",
+        "noRisk": { "title": "Pa Fitim, Pa Pagesë", "text": "Ju nuk paguani asgjë paraprakisht. Komisioni ynë 30% ngarkohet vetëm kur fitojmë me sukses çështjen tuaj." },
+        "fast": { "title": "Ekip Ligjor Ekspert", "text": "Ekipi ynë specializohet në të drejtat e pasagjerëve ajrorë të BE-së dhe ka përvojë të gjerë në negocimin me linjat ajrore." },
+        "expertise": { "title": "I Shpejtë dhe i Lehtë", "text": "Dërgoni kërkesën tuaj në më pak se 5 minuta. Ne menaxhojmë pjesën tjetër dhe ju mbajmë të informuar në çdo hap." }
+      },
+      "cta": { "title": "Gati për të filluar?", "text": "Kontrolloni nëse fluturimi juaj kualifikohet për kompensim — është falas dhe zgjat vetëm 2 minuta.", "button": "Kontrollo Kompensimin →" }
+    },
+    "pricing": {
+      "hero": { "badge": "ÇMIME TRANSPARENTE", "title": "Çmimet", "subtitle": "Pa tarifa të fshehura, pa kosto paraprake. Ju paguani vetëm kur ne fitojmë." },
+      "noWinNoFee": { "title": "Pa Fitim, Pa Pagesë", "text": "Shërbimi ynë është plotësisht falas përveçse nëse ne kërkojmë me sukses kompensim për ju. Ne kërkojmë 30% komision vetëm mbi shumën e rikuperuar.", "badge": "E GARANTUAR" },
+      "comparison": {
+        "title": "Si Krahasohemi",
+        "option": "Opsioni",
+        "cost": "Kostoja",
+        "successRate": "Shkalla e Suksesit",
+        "effort": "Përpjekja Juaj",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% mbi suksesin", "success": "98%", "effort": "5 minuta" },
+        "lawyer": { "name": "Avokat", "cost": "€200+/orë", "success": "85%", "effort": "Orë" },
+        "diy": { "name": "Vetë", "cost": "Falas", "success": "~10%", "effort": "Ditë/Javë" }
+      },
+      "faq": {
+        "title": "Pyetje të Shpeshta mbi Çmimet",
+        "q1": { "q": "Kur paguaj?", "a": "Vetëm kur rikuperojmë me sukses kompensim për ju. Nëse nuk fitojmë, ju nuk paguani asgjë." },
+        "q2": { "q": "Çfarë mbulon 30%?", "a": "Komisioni ynë mbulon të gjithë punën ligjore, negociatat me linjën ajrore, korrespondencën dhe përpunimin e kërkesave." },
+        "q3": { "q": "Ka tarifa të fshehura?", "a": "Absolutisht jo. Komisioni 30% është tarifa e vetme. Pa tarifa regjistrimi, pa tarifa përpunimi, pa tarifa anulimi." },
+        "q4": { "q": "Çfarë nëse kërkesa ime nuk ka sukses?", "a": "Ju nuk paguani asgjë. Ne përthithim të gjitha kostot dhe rreziqet që lidhen me ndjekjen e kërkesës suaj." }
+      },
+      "cta": { "title": "Gati për të kërkuar?", "text": "Kontrolloni pranueshmërinë tuaj falas — pa detyrim.", "button": "Kontrollo Kompensimin →" }
+    },
+    "reviews": {
+      "hero": { "badge": "VLERËSIMET E KLIENTËVE", "title": "Çfarë Thonë Klientët Tanë", "subtitle": "Mijëra pasagjerë i kanë besuar Jet2Pay për të menaxhuar kërkesat e tyre për kompensim." },
+      "stats": {
+        "avgRating": "Vlerësimi Mesatar",
+        "totalReviews": "Kërkesa të Përpunuara",
+        "recommend": "Do të Rekomandonin",
+        "avgPayout": "Kompensimi Maksimal"
+      },
+      "grid": {
+        "title": "Vlerësimet e Fundit",
+        "r1": { "quote": "Jet2Pay menaxhoi gjithçka në mënyrë perfekte. Mora €400 për fluturimin tim të vonuar nga Manchester në Antalya. E rekomandoj shumë!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Isha skeptik në fillim, por ata e realizuan. Mora €250 kompensim për një vonesë 4-orëshe. Pa asnjë telashe.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Shërbim i shkëlqyer! Fluturimi im i anuluar nga Birmingham rezultoi në €600 kompensim. Ekipi më mbajti të informuar gjatë gjithë kohës.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "I shpejtë dhe profesional. Dorëzova kërkesën time në 5 minuta dhe mora pagesën brenda 8 javësh.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Pasi fluturimi im u mbipopullua, Jet2Pay më mori €400 kompensim. Procesi ishte jashtëzakonisht i thjeshtë.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Përvojë fantastike. Nuk e dija as që kisha të drejtë kompensimi derisa gjeta Jet2Pay. Mora €250!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Ekipi ishte shumë i përgjegjshëm dhe më mbajti të përditësuar në çdo fazë. Mora kompensimin tim në vetëm 6 javë.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "E kam përdorur Jet2Pay dy herë — të dy herët me sukses. Ata vërtet e dinë çfarë bëjnë me kërkesat e linjave ajrore.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Bashkohuni me mijëra klientë të kënaqur", "text": "Kontrolloni nëse fluturimi juaj kualifikohet për kompensim.", "button": "Kontrollo Kompensimin →" }
+    },
+    "careers": {
+      "hero": { "badge": "BASHKOHUNI ME EKIPIN TONË", "title": "Karriera në Jet2Pay", "subtitle": "Na ndihmoni të luftojmë për të drejtat e pasagjerëve në të gjithë Evropën. Bashkohuni me një ekip në rritje të shpejtë që bën ndryshim të vërtetë." },
+      "culture": {
+        "title": "Pse të Punoni me Ne",
+        "text1": "Në Jet2Pay, ne po ndërtojmë diçka domethënëse — një platformë që ndihmon udhëtarët e përditshëm të marrin kompensimin që meritojnë.",
+        "text2": "Ne vlerësojmë transparencën, inovacionin dhe një ndjenjë të fortë drejtësie. Ekipi ynë punon në distancë në të gjithë Evropën, i bashkuar nga një mision i përbashkët.",
+        "cardTitle": "Kultura Jonë",
+        "cardText": "Punë fleksibël, pagë konkurruese dhe kënaqësia e ndihmës së mijëra pasagjerëve çdo muaj."
+      },
+      "positions": {
+        "title": "Pozicione të Hapura",
+        "apply": "Apliko Tani →",
+        "claimsSpecialist": { "title": "Specialist Kërkesash", "location": "Në distancë / Sofje", "type": "Kohë e plotë", "desc": "Përpunoni dhe menaxhoni kërkesat për kompensim fluturimesh. Komunikoni me linjat ajrore dhe mbani pasagjerët të informuar rreth statusit të kërkesës së tyre." },
+        "legalAdvisor": { "title": "Këshilltar Ligjor", "location": "Sofje, Bullgari", "type": "Kohë e plotë", "desc": "Ofroni ekspertizë ligjore mbi rregulloret EC261/UK261. Rishikoni raste komplekse dhe përgatitni dokumentacionin ligjor për negociatat me linjat ajrore." },
+        "frontendDev": { "title": "Zhvillues Frontend", "location": "Në distancë", "type": "Kohë e plotë", "desc": "Ndërtoni dhe mirëmbani platformën tonë web të bazuar në React. Punoni në përmirësimin e përvojës së dorëzimit të kërkesave dhe panelit administrativ." },
+        "customerSupport": { "title": "Mbështetje Klientësh", "location": "Në distancë", "type": "Kohë e pjesshme", "desc": "Ndihmoni pasagjerët me pyetje rreth kërkesave të tyre. Ofroni shërbim të shkëlqyer ndaj klientëve përmes emailit dhe kanaleve të bisedës." }
+      },
+      "cta": { "title": "Nuk shihni përshtatjen perfekte?", "text": "Na dërgoni CV-në tuaj dhe na tregoni si dëshironi të kontribuoni.", "button": "Na Kontaktoni →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERITETE", "title": "Bashkëpunoni me Ne", "subtitle": "Bashkohuni me rrjetin e Jet2Pay dhe ndihmoni pasagjerët të marrin kompensimin që meritojnë." },
+      "types": {
+        "title": "Mundësi Partneriteti",
+        "airlines": { "title": "Partneritete me Linja Ajrore", "text": "Bashkëpunoni me ne për të thjeshtuar procesin e kompensimit për pasagjerët tuaj." },
+        "travelAgency": { "title": "Agjenci Udhëtimi", "text": "Ofroni kompensimin e fluturimeve si shërbim shtesë për klientët tuaj. Ne menaxhojmë kërkesat, ju rritni besnikërinë e klientëve." },
+        "legal": { "title": "Rrjeti Ligjor", "text": "Bashkohuni me rrjetin tonë të profesionistëve ligjorë të specializuar në të drejtat e pasagjerëve ajrorë në të gjithë Evropën." }
+      },
+      "benefits": {
+        "title": "Përfitimet e Partneritetit",
+        "benefit1": { "title": "Menaxher i Dedikuar Partneriteti", "text": "Një pikë e vetme kontakti për të gjitha nevojat tuaja të partneritetit." },
+        "benefit2": { "title": "Integrim i Personalizuar", "text": "Akses API dhe opsione integrimi të personalizuara për rrjedha pune pa ndërprerje." },
+        "benefit3": { "title": "Komision Konkurrues", "text": "Ndarje tërheqëse e të ardhurave për partnerët me volum të lartë." },
+        "benefit4": { "title": "Panel në Kohë Reale", "text": "Ndiqni të gjitha kërkesat e referuara dhe fitimet në kohë reale." }
+      },
+      "contactUs": { "title": "Na Kontaktoni", "text": "Të interesuar për partneritet me Jet2Pay? Kontaktoni ekipin tonë të partneriteteve:" },
+      "cta": { "title": "Të interesuar për partneritet?", "text": "Kontaktoni ekipin tonë të partneriteteve.", "button": "Na Kontaktoni →" }
+    },
+    "press": {
+      "hero": { "badge": "SHTYPI DHE MEDIA", "title": "Dhoma e Shtypit", "subtitle": "Lajmet e fundit, njoftimet për shtypin dhe burimet mediatike nga Jet2Pay." },
+      "facts": {
+        "title": "Faktet e Kompanisë",
+        "fact1": { "value": "2024", "label": "Themeluar" },
+        "fact2": { "value": "Sofje, BG", "label": "Selia" },
+        "fact3": { "value": "10+", "label": "Madhësia e Ekipit" },
+        "fact4": { "value": "10,000+", "label": "Kërkesa të Përpunuara" }
+      },
+      "releases": {
+        "title": "Njoftime për Shtypin",
+        "r1": { "date": "Mars 2026", "title": "Jet2Pay Lançon Platformën e Re të Kërkesave", "summary": "Jet2Pay njofton lançimin e platformës së gjeneratës së re të kompensimit të fluturimeve, duke e bërë më të lehtë se kurrë për pasagjerët të kërkojnë deri në €600." },
+        "r2": { "date": "Shkurt 2026", "title": "Jet2Pay Bashkëpunon me Ofruesit e të Dhënave të Aviacionit", "summary": "Partneriteti strategjik me ofruesit kryesorë të të dhënave të fluturimeve mundëson verifikimin e fluturimeve në kohë reale dhe përpunimin më të shpejtë të kërkesave." },
+        "r3": { "date": "Janar 2026", "title": "Jet2Pay Zgjeron Mbulimin në 250+ Linja Ajrore", "summary": "Jet2Pay tani mbulon mbi 250 linja ajrore në mbarë botën, duke ofruar shërbime gjithëpërfshirëse kompensimi fluturimesh në të gjithë Evropën." }
+      },
+      "mediaKit": { "title": "Kit Mediatik", "text": "Shkarkoni kitin tonë për shtypin duke përfshirë logot, udhëzimet e markës dhe pasqyrën e kompanisë." },
+      "pressContact": { "title": "Kontakti për Shtypin", "text": "Për pyetje nga shtypi, intervista dhe kërkesa mediatike:" },
+      "cta": { "title": "Dëshironi të prezantoni Jet2Pay?", "text": "Jemi të lumtur t'ju ofrojmë intervista, citime dhe të dhëna për historinë tuaj.", "button": "Kontaktoni Ekipin e Shtypit →" }
+    },
+    "contact": {
+      "hero": { "badge": "NA KONTAKTONI", "title": "Na Kontaktoni", "subtitle": "Keni një pyetje? Jemi këtu për t'ju ndihmuar. Na kontaktoni përmes çdo kanali më poshtë." },
+      "channels": {
+        "email": { "title": "Kërkesat", "text": "Për pyetje rreth kërkesave ekzistuese" },
+        "support": { "title": "Mbështetje e Përgjithshme", "text": "Për pyetje dhe mbështetje të përgjithshme" },
+        "address": { "title": "Zyra", "text": "MITRANI CONSULT EOOD, Sofje, Bullgari" }
+      },
+      "form": { "title": "Na Dërgoni një Mesazh", "placeholder": "Për pyetje, ju lutem na dërgoni email në support@jet2pay.eu" },
+      "faq": {
+        "title": "Pyetje të Shpeshta",
+        "q1": { "q": "Sa kohë zgjat një kërkesë?", "a": "Shumica e kërkesave zgjidhen brenda 6-12 javësh, në varësi të kohës së përgjigjes së linjës ajrore." },
+        "q2": { "q": "Çfarë dokumentesh më duhen?", "a": "Karta juaj e imbarkimit, konfirmimi i rezervimit dhe një ID e vlefshme. Ne do t'ju udhëheqim gjatë procesit." },
+        "q3": { "q": "A mund të kërkoj për një fluturim nga vite më parë?", "a": "Po! Në shumicën e vendeve të BE-së, mund të kërkoni për fluturime deri në 3 vjet të vjetra. Në disa vende, kufiri shtrihet deri në 6 vjet." }
+      },
+      "cta": { "title": "Gati të kontrolloni fluturimin tuaj?", "text": "Kontrolli ynë falas i pranueshmërisë zgjat vetëm 2 minuta.", "button": "Kontrollo Kompensimin →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "sq": "Shqip",
+    "hy": "Հայերեն",
+    "ka": "ქართული",
+    "he": "עברית",
+    "ar": "العربية",
+    "zh": "中文"
+  }
+}

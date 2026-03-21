@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Verifica risarcimento",
+    "knowYourRights": "Conosci i tuoi diritti",
+    "aboutCompany": "Chi siamo",
+    "news": "Notizie",
+    "referAFriend": "Invita un amico",
+    "checkClaimStatus": "Stato del reclamo"
+  },
+  "hero": {
+    "titleDelayed": "In ritardo",
+    "titleCancelled": "Cancellato",
+    "titleFlight": "Volo",
+    "titleOr": "o",
+    "subtitle": "Richiedi fino a <strong>€600</strong> per un volo in ritardo o cancellato",
+    "whatHappened": "Cosa è successo con il tuo volo?",
+    "delayed": "In ritardo",
+    "cancelled": "Cancellato / Overbooking",
+    "otherDisruptions": "Altre interruzioni",
+    "departurePlaceholder": "Aeroporto di partenza",
+    "arrivalPlaceholder": "Aeroporto di arrivo",
+    "checkCompensation": "Verifica risarcimento",
+    "freeCheck": "Verifica gratuita del risarcimento",
+    "hassleFree": "Senza complicazioni",
+    "claimsUpTo": "Reclami fino a 3 anni",
+    "compensatedCustomers": "clienti risarciti",
+    "airlines": "compagnie aeree",
+    "yearsTrusted": "anni di fiducia"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Verifica idoneità",
+      "waitTime": "Tempo di attesa",
+      "done": "Fatto!",
+      "flightItinerary": "Itinerario di volo",
+      "disruptionType": "Tipo di disservizio",
+      "timing": "Tempistica",
+      "reason": "Motivo",
+      "howLong": "Quanto hai aspettato?",
+      "claimDetails": "Dettagli del reclamo",
+      "flightInfo": "Info volo",
+      "passengerInfo": "I tuoi dati",
+      "bookingConsent": "Prenotazione e consenso"
+    },
+    "step1": {
+      "title": "Dove hai volato?",
+      "departedFrom": "Partito da",
+      "finalDestination": "Aeroporto di destinazione finale",
+      "airportPlaceholder": "Inserisci la città o il nome dell'aeroporto",
+      "directFlight": "Era un volo diretto?",
+      "yesDirect": "Sì, era un volo diretto",
+      "noConnecting": "No, avevo voli in coincidenza"
+    },
+    "step2": {
+      "title": "Tipo di disservizio",
+      "question": "Qual è stata la natura del disservizio del volo?",
+      "delayed": "Volo in ritardo",
+      "cancelled": "Volo cancellato",
+      "denied": "Imbarco negato / Overbooking"
+    },
+    "step3": {
+      "title": "Quanto ritardo hai subito?",
+      "question": "Con quanto ritardo sei arrivato alla tua destinazione finale?",
+      "less3": "Meno di 3 ore",
+      "more3": "Più di 3 ore",
+      "missed": "Coincidenza persa"
+    },
+    "step4": {
+      "title": "Motivo del disservizio",
+      "question1": "La compagnia aerea ti ha comunicato il motivo del disservizio?",
+      "yes": "Sì",
+      "no": "No",
+      "dontRemember": "Non ricordo",
+      "question2": "Qual è stato il motivo fornito dalla compagnia aerea?",
+      "technical": "Problema tecnico dell'aeromobile",
+      "weather": "Cattive condizioni meteorologiche",
+      "strike": "Sciopero",
+      "airport": "Problemi aeroportuali",
+      "other": "Altri motivi"
+    },
+    "step5": {
+      "title": "Raccontaci di più sulla tua situazione",
+      "question": "Quanto tempo hai aspettato per un volo sostitutivo o una soluzione?",
+      "less2": "Meno di 2 ore",
+      "2to4": "Da 2 a 4 ore",
+      "4to8": "Da 4 a 8 ore",
+      "overnight": "Tutta la notte (8+ ore)",
+      "none": "Non è stata offerta alcuna alternativa",
+      "describeLabel": "Descrivi brevemente cos'è successo",
+      "describeOptional": "(facoltativo)",
+      "describePlaceholder": "Es. Il mio volo da Londra a Parigi ha subito un ritardo di 4 ore a causa di un problema tecnico dell'aeromobile...",
+      "infoText": "Condividere i dettagli della tua esperienza può migliorare notevolmente le possibilità di successo del reclamo. Più sei specifico, maggiori sono le probabilità di approvazione."
+    },
+    "back": "Indietro",
+    "continue": "Continua",
+    "submitClaim": "Invia reclamo",
+    "checkAnotherFlight": "← Verifica un altro volo",
+    "freeCheck": "Verifica il tuo risarcimento — <strong>100% gratuito</strong>, senza rischi.",
+    "eligible": {
+      "title": "Ottime notizie — potresti avere diritto!",
+      "description": "In base alle tue risposte, potresti avere diritto a un risarcimento fino a <strong>€600</strong> ai sensi del Regolamento UE 261/2004. Avvia subito il tuo reclamo gratuito!",
+      "descriptionDynamic": "In base alle tue risposte, potresti avere diritto a un risarcimento fino a <strong>€{{amount}}</strong> ai sensi del Regolamento UE 261/2004. Avvia subito il tuo reclamo gratuito!",
+      "startClaim": "Avvia il mio reclamo gratuito →"
+    },
+    "notEligible": {
+      "title": "Purtroppo potresti non avere diritto",
+      "description": "In base alle tue risposte, il tuo ritardo sembra essere inferiore alla soglia di 3 ore richiesta per il risarcimento UE ai sensi del Regolamento 261/2004."
+    },
+    "step6": {
+      "title": "Dettagli del volo",
+      "flightNumber": "Numero del volo",
+      "flightNumberPlaceholder": "es. LS123",
+      "flightDate": "Data del volo",
+      "flightDateHelp": "Data del volo con disservizio"
+    },
+    "step7": {
+      "title": "I tuoi dati",
+      "firstName": "Nome",
+      "lastName": "Cognome",
+      "email": "Indirizzo email",
+      "phone": "Numero di telefono",
+      "phonePlaceholder": "+39 320 123 4567",
+      "nationality": "Nazionalità",
+      "nationalityPlaceholder": "Seleziona il paese"
+    },
+    "step8": {
+      "title": "Prenotazione e consenso",
+      "bookingReference": "Riferimento prenotazione",
+      "bookingReferencePlaceholder": "es. ABC123",
+      "bookingReferenceHelp": "Si trova nell'email di conferma della prenotazione",
+      "consent": "Accetto i <a href='/terms' target='_blank'>Termini e condizioni</a> e autorizzo Jet2Pay ad agire per mio conto. Comprendo che si applica la commissione del 30% con formula No Win No Fee.",
+      "gdpr": "Acconsento al trattamento dei miei dati personali in conformità con l'<a href='/privacy' target='_blank'>Informativa sulla privacy</a> e il GDPR.",
+      "submitClaim": "Invia il mio reclamo"
+    },
+    "submitting": "Invio del reclamo in corso...",
+    "submitted": {
+      "title": "Reclamo inviato con successo!",
+      "claimId": "Riferimento reclamo",
+      "estimated": "Risarcimento stimato",
+      "emailSent": "Un'email di conferma è stata inviata alla tua casella di posta.",
+      "trackClaim": "Puoi monitorare lo stato del tuo reclamo in qualsiasi momento utilizzando il riferimento.",
+      "newClaim": "← Invia un altro reclamo"
+    },
+    "error": {
+      "submissionFailed": "Invio del reclamo non riuscito. Riprova.",
+      "networkError": "Errore di rete. Verifica la tua connessione."
+    }
+  },
+  "claimStatus": {
+    "title": "Stato del reclamo",
+    "subtitle": "Inserisci il numero di riferimento del reclamo per monitorare l'avanzamento della tua richiesta di risarcimento.",
+    "placeholder": "Inserisci il riferimento del reclamo (es. 35073ad8-6b02...)",
+    "search": "Cerca reclamo",
+    "notFound": "Nessun reclamo trovato con questo riferimento. Verifica l'ID e riprova.",
+    "error": "Qualcosa è andato storto. Riprova più tardi.",
+    "progress": "Avanzamento del reclamo",
+    "flightDetails": "Dettagli del volo",
+    "compensation": "Risarcimento",
+    "claimRef": "Riferimento reclamo",
+    "status": "Stato",
+    "flight": "Volo",
+    "date": "Data",
+    "route": "Tratta",
+    "disruption": "Tipo di disservizio",
+    "estimatedAmount": "Risarcimento stimato",
+    "distance": "Distanza della tratta",
+    "eligible": "Idoneo al risarcimento",
+    "notEligible": "Non idoneo al risarcimento",
+    "documents": "Documenti",
+    "noDocs": "Nessun documento caricato.",
+    "missingDocs": "Documenti mancanti",
+    "timeline": "Cronologia stato",
+    "steps": {
+      "submitted": "Inviato",
+      "under_review": "In revisione",
+      "airline_contacted": "Compagnia aerea contattata",
+      "negotiating": "In negoziazione",
+      "resolved": "Risolto",
+      "rejected": "Respinto",
+      "paid": "Pagato"
+    },
+    "disruptionTypes": {
+      "delay": "Ritardo",
+      "cancellation": "Cancellazione",
+      "denied_boarding": "Imbarco negato",
+      "missed_connection": "Coincidenza persa"
+    },
+    "docTypes": {
+      "boarding_pass": "Carta d'imbarco",
+      "booking_confirmation": "Conferma prenotazione",
+      "id_document": "Documento d'identità"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Lottiamo per i tuoi diritti di volo",
+      "subtitle": "Aiutiamo i passeggeri a ottenere il risarcimento che meritano quando i voli vanno male. No Win, No Fee — è così semplice."
+    },
+    "stats": {
+      "customers": "Passeggeri risarciti",
+      "airlines": "Compagnie aeree coperte",
+      "successRate": "Tasso di successo",
+      "recovered": "Recuperati per i passeggeri"
+    },
+    "mission": {
+      "title": "La nostra missione",
+      "text1": "In Jet2Pay, crediamo che ogni passeggero meriti un trattamento equo. Quando il tuo volo è in ritardo, cancellato o ti viene negato l'imbarco, il Regolamento UE 261/2004 e il UK261 tutelano il tuo diritto a un risarcimento fino a €600.",
+      "text2": "Il nostro team di esperti legali e dell'aviazione gestisce l'intero processo di reclamo — dalla valutazione iniziale alla negoziazione con la compagnia aerea — così non devi farlo tu. Addebitiamo solo una commissione del 30% se vinciamo il tuo caso.",
+      "cardTitle": "I tuoi diritti, la nostra priorità",
+      "cardText": "Abbiamo aiutato migliaia di passeggeri in tutta Europa a ottenere il risarcimento che spetta loro. Il nostro sistema automatizzato e il team di esperti garantiscono un'elaborazione rapida e senza complicazioni."
+    },
+    "values": {
+      "title": "I nostri valori",
+      "transparency": {
+        "title": "Totale trasparenza",
+        "text": "Nessuna spesa nascosta, nessun costo a sorpresa. Paghi solo quando vinciamo il tuo caso — commissione del 30% sul successo."
+      },
+      "noWinNoFee": {
+        "title": "No Win, No Fee",
+        "text": "Ci assumiamo noi tutto il rischio. Se il tuo reclamo non ha successo, non paghi assolutamente nulla."
+      },
+      "speed": {
+        "title": "Elaborazione rapida",
+        "text": "Il nostro motore automatico di idoneità ti fornisce una valutazione istantanea. La maggior parte dei reclami viene risolta entro poche settimane."
+      },
+      "expertise": {
+        "title": "Competenza legale",
+        "text": "Il nostro team ha una conoscenza approfondita delle normative EC261/UK261 e una vasta esperienza nel trattare con le compagnie aeree."
+      }
+    },
+    "howItWorks": {
+      "title": "Come funziona",
+      "step1": { "title": "Verifica l'idoneità", "text": "Inserisci i dettagli del tuo volo e valuteremo immediatamente il tuo reclamo." },
+      "step2": { "title": "Invia il tuo reclamo", "text": "Compila i tuoi dati e carica i documenti. Bastano solo 5 minuti." },
+      "step3": { "title": "Gestiamo tutto noi", "text": "Il nostro team contatta la compagnia aerea e gestisce tutti i processi legali per tuo conto." },
+      "step4": { "title": "Ottieni il risarcimento", "text": "Una volta vinto, il risarcimento viene trasferito direttamente sul tuo conto bancario." }
+    },
+    "team": {
+      "title": "Il nostro team",
+      "subtitle": "Un team dedicato di professionisti impegnati a proteggere i tuoi diritti di passeggero.",
+      "founder": "Fondatore e CEO",
+      "legal": "Dipartimento legale",
+      "claims": "Gestione reclami",
+      "tech": "Tecnologia"
+    },
+    "legal": {
+      "title": "Informazioni aziendali",
+      "company": {
+        "title": "Azienda",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registrata in Bulgaria"
+      },
+      "address": {
+        "title": "Indirizzo",
+        "text": "Sofia, Bulgaria"
+      },
+      "contact": {
+        "title": "Contatti"
+      }
+    },
+    "cta": {
+      "title": "Pronto a richiedere il tuo risarcimento?",
+      "text": "Verifica se il tuo volo ha diritto a un risarcimento fino a €600. È gratuito e richiede solo 2 minuti.",
+      "button": "Verifica risarcimento →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Notizie e aggiornamenti",
+      "subtitle": "Rimani informato sui diritti dei passeggeri, le normative e le novità di Jet2Pay."
+    },
+    "featured": "In evidenza",
+    "allArticles": "Tutti gli articoli",
+    "readMore": "Leggi di più",
+    "categories": {
+      "companyNews": "Notizie aziendali",
+      "regulation": "Normativa",
+      "tips": "Consigli e guide"
+    },
+    "articles": {
+      "launch": {
+        "title": "Nasce Jet2Pay: aiutiamo i passeggeri a ottenere il risarcimento per i voli",
+        "summary": "Siamo entusiasti di annunciare il lancio di Jet2Pay — una piattaforma dedicata ad aiutare i passeggeri a richiedere il risarcimento per voli in ritardo, cancellati o in overbooking ai sensi del Regolamento UE 261/2004 e UK261."
+      },
+      "ec261Update": {
+        "title": "Capire l'EC261: la guida completa al risarcimento dei voli",
+        "summary": "Il Regolamento UE 261/2004 dà diritto ai passeggeri a un risarcimento da €250 a €600 per disservizi aerei. Scopri i tuoi diritti e come fare reclamo."
+      },
+      "knowYourRights": {
+        "title": "5 cose che ogni passeggero aereo dovrebbe sapere sui propri diritti",
+        "summary": "Molti passeggeri non sanno di avere diritto a un risarcimento. Ecco i fatti principali sui tuoi diritti quando i voli subiscono ritardi o cancellazioni."
+      },
+      "delayTips": {
+        "title": "Cosa fare quando il tuo volo è in ritardo: guida passo passo",
+        "summary": "Volo in ritardo? Niente panico. Segui la nostra guida pratica per tutelare i tuoi diritti e massimizzare il tuo risarcimento."
+      },
+      "uk261": {
+        "title": "UK261: le regole di risarcimento voli dopo la Brexit",
+        "summary": "Dopo la Brexit, il Regno Unito ha adottato la propria versione dell'EC261 — nota come UK261. Ecco cosa significa per i passeggeri che volano da e verso il Regno Unito."
+      },
+      "partnerships": {
+        "title": "Jet2Pay collabora con i principali fornitori di dati aeronautici",
+        "summary": "Abbiamo stretto partnership con i migliori fornitori di dati di volo per offrire la verifica dei voli in tempo reale e un'elaborazione più rapida dei reclami."
+      }
+    },
+    "cta": {
+      "title": "Hai avuto un disservizio aereo?",
+      "text": "Verifica se hai diritto a un risarcimento — è gratuito e richiede 2 minuti.",
+      "button": "Verifica risarcimento →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Conosci i tuoi diritti",
+    "products": "Prodotti",
+    "aboutCompany": "Chi siamo",
+    "legal": "Legale",
+    "description": "Risarcimento voli reso semplice. Aiutiamo i passeggeri a richiedere fino a €600 per voli in ritardo, cancellati o in overbooking.",
+    "copyright": "Tutti i diritti riservati.",
+    "links": {
+      "eu261": "Regolamento UE 261/2004",
+      "uk261": "Regolamento UK261",
+      "delayComp": "Risarcimento ritardo volo",
+      "cancelComp": "Risarcimento volo cancellato",
+      "overbookedComp": "Risarcimento volo in overbooking",
+      "deniedBoarding": "Imbarco negato",
+      "passengerRights": "Diritti dei passeggeri aerei",
+      "checkComp": "Verifica risarcimento",
+      "howItWorks": "Come funziona",
+      "pricing": "Prezzi",
+      "claimStatus": "Stato del reclamo",
+      "aboutUs": "Chi è Jet2Pay",
+      "reviews": "Recensioni",
+      "careers": "Lavora con noi",
+      "partners": "Partner",
+      "press": "Stampa",
+      "contact": "Contattaci",
+      "news": "Notizie",
+      "terms": "Termini e condizioni",
+      "privacy": "Informativa sulla privacy",
+      "cookies": "Informativa sui cookie",
+      "imprint": "Note legali",
+      "complaints": "Reclami"
+    },
+    "newsletter": {
+      "title": "Iscriviti alla nostra newsletter",
+      "text": "Ricevi le ultime notizie e consigli di viaggio direttamente nella tua casella di posta.",
+      "placeholder": "Il tuo indirizzo email",
+      "button": "Iscriviti"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "PROCESSO SEMPLICE", "title": "Come funziona", "subtitle": "Ottenere il tuo risarcimento è facile. Gestiamo tutto noi — devi solo dirci cosa è successo." },
+      "steps": {
+        "title": "4 semplici passaggi",
+        "s1": { "title": "Verifica l'idoneità", "text": "Inserisci i dettagli del tuo volo nel nostro strumento gratuito. Il nostro sistema verifica istantaneamente il Regolamento UE 261/2004 e il UK261 per determinare se hai diritto a un risarcimento fino a €600." },
+        "s2": { "title": "Invia il tuo reclamo", "text": "Compila i tuoi dati personali, le informazioni sul volo e carica eventuali documenti di supporto. L'intero processo richiede meno di 5 minuti." },
+        "s3": { "title": "Gestiamo tutto noi", "text": "I nostri esperti legali e dell'aviazione prendono in carico il caso. Contattiamo la compagnia aerea, gestiamo tutta la corrispondenza e le negoziazioni, e ci occupiamo del processo legale per tuo conto." },
+        "s4": { "title": "Ottieni il risarcimento", "text": "Una volta risolto con successo il tuo reclamo, il risarcimento viene trasferito direttamente sul tuo conto bancario. Detraiamo solo la nostra commissione del 30% dall'importo ricevuto." }
+      },
+      "whyUs": {
+        "title": "Perché scegliere Jet2Pay?",
+        "noRisk": { "title": "No Win, No Fee", "text": "Non paghi nulla in anticipo. La nostra commissione del 30% viene addebitata solo quando vinciamo il tuo caso." },
+        "fast": { "title": "Team legale esperto", "text": "Il nostro team è specializzato nei diritti dei passeggeri aerei UE e ha una vasta esperienza nella negoziazione con le compagnie aeree." },
+        "expertise": { "title": "Veloce e facile", "text": "Invia il tuo reclamo in meno di 5 minuti. Ci occupiamo del resto e ti teniamo aggiornato ad ogni passo." }
+      },
+      "cta": { "title": "Pronto per iniziare?", "text": "Verifica se il tuo volo ha diritto a un risarcimento — è gratuito e richiede solo 2 minuti.", "button": "Verifica risarcimento →" }
+    },
+    "pricing": {
+      "hero": { "badge": "PREZZI TRASPARENTI", "title": "Prezzi", "subtitle": "Nessuna spesa nascosta, nessun costo iniziale. Paghi solo quando vinciamo." },
+      "noWinNoFee": { "title": "No Win, No Fee", "text": "Il nostro servizio è completamente gratuito a meno che non otteniamo con successo il risarcimento per te. Addebitiamo una commissione del 30% solo sull'importo recuperato.", "badge": "GARANTITO" },
+      "comparison": {
+        "title": "Come ci confrontiamo",
+        "option": "Opzione",
+        "cost": "Costo",
+        "successRate": "Tasso di successo",
+        "effort": "Il tuo impegno",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% sul successo", "success": "98%", "effort": "5 minuti" },
+        "lawyer": { "name": "Avvocato", "cost": "€200+/ora", "success": "85%", "effort": "Ore" },
+        "diy": { "name": "Fai da te", "cost": "Gratis", "success": "~10%", "effort": "Giorni/Settimane" }
+      },
+      "faq": {
+        "title": "FAQ sui prezzi",
+        "q1": { "q": "Quando pago?", "a": "Solo quando recuperiamo con successo il risarcimento per te. Se non vinciamo, non paghi nulla." },
+        "q2": { "q": "Cosa copre il 30%?", "a": "La nostra commissione copre tutto il lavoro legale, le negoziazioni con la compagnia aerea, la corrispondenza e l'elaborazione del reclamo." },
+        "q3": { "q": "Ci sono spese nascoste?", "a": "Assolutamente no. La commissione del 30% è l'unico costo. Nessun costo di iscrizione, elaborazione o cancellazione." },
+        "q4": { "q": "Cosa succede se il mio reclamo non ha successo?", "a": "Non paghi nulla. Ci assumiamo tutti i costi e i rischi associati alla gestione del tuo reclamo." }
+      },
+      "cta": { "title": "Pronto a fare reclamo?", "text": "Verifica gratuitamente la tua idoneità — senza impegno.", "button": "Verifica risarcimento →" }
+    },
+    "reviews": {
+      "hero": { "badge": "RECENSIONI CLIENTI", "title": "Cosa dicono i nostri clienti", "subtitle": "Migliaia di passeggeri si sono affidati a Jet2Pay per gestire le loro richieste di risarcimento." },
+      "stats": {
+        "avgRating": "Valutazione media",
+        "totalReviews": "Reclami elaborati",
+        "recommend": "Consiglierebbero",
+        "avgPayout": "Risarcimento massimo"
+      },
+      "grid": {
+        "title": "Recensioni recenti",
+        "r1": { "quote": "Jet2Pay ha gestito tutto perfettamente. Ho ricevuto €400 per il mio volo in ritardo da Manchester ad Antalya. Lo consiglio vivamente!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "All'inizio ero scettico, ma hanno mantenuto le promesse. Ho ottenuto €250 di risarcimento per un ritardo di 4 ore. Nessuna complicazione.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Servizio eccellente! Il mio volo cancellato da Birmingham ha portato a un risarcimento di €600. Il team mi ha tenuto informato durante tutto il processo.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Veloci e professionali. Ho inviato il reclamo in 5 minuti e ricevuto il pagamento entro 8 settimane.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Dopo che il mio volo è stato sovraprenotato, Jet2Pay mi ha ottenuto €400 di risarcimento. Il processo è stato incredibilmente semplice.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Esperienza fantastica. Non sapevo nemmeno di avere diritto a un risarcimento finché non ho trovato Jet2Pay. Ho ottenuto €250!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Il team è stato molto reattivo e mi ha tenuto aggiornato ad ogni fase. Ho ricevuto il risarcimento in sole 6 settimane.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Ho usato Jet2Pay due volte — entrambe le volte con successo. Sanno davvero il fatto loro con i reclami alle compagnie aeree.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Unisciti a migliaia di clienti soddisfatti", "text": "Verifica se il tuo volo ha diritto a un risarcimento.", "button": "Verifica risarcimento →" }
+    },
+    "careers": {
+      "hero": { "badge": "UNISCITI AL TEAM", "title": "Lavora con Jet2Pay", "subtitle": "Aiutaci a lottare per i diritti dei passeggeri in tutta Europa. Unisciti a un team in rapida crescita che fa la differenza." },
+      "culture": {
+        "title": "Perché lavorare con noi",
+        "text1": "In Jet2Pay, stiamo costruendo qualcosa di significativo — una piattaforma che aiuta i viaggiatori di tutti i giorni a ottenere il risarcimento che meritano.",
+        "text2": "Apprezziamo la trasparenza, l'innovazione e un forte senso di giustizia. Il nostro team lavora da remoto in tutta Europa, unito da una missione condivisa.",
+        "cardTitle": "La nostra cultura",
+        "cardText": "Lavoro flessibile, retribuzione competitiva e la soddisfazione di aiutare migliaia di passeggeri ogni mese."
+      },
+      "positions": {
+        "title": "Posizioni aperte",
+        "apply": "Candidati ora →",
+        "claimsSpecialist": { "title": "Specialista reclami", "location": "Remoto / Sofia", "type": "Tempo pieno", "desc": "Elaborare e gestire i reclami di risarcimento voli. Comunicare con le compagnie aeree e tenere informati i passeggeri sullo stato del reclamo." },
+        "legalAdvisor": { "title": "Consulente legale", "location": "Sofia, Bulgaria", "type": "Tempo pieno", "desc": "Fornire competenza legale sulle normative EC261/UK261. Esaminare casi complessi e preparare la documentazione legale per le negoziazioni con le compagnie aeree." },
+        "frontendDev": { "title": "Sviluppatore Frontend", "location": "Remoto", "type": "Tempo pieno", "desc": "Costruire e mantenere la nostra piattaforma web basata su React. Lavorare al miglioramento dell'esperienza di invio reclami e della dashboard amministrativa." },
+        "customerSupport": { "title": "Assistenza clienti", "location": "Remoto", "type": "Part-time", "desc": "Aiutare i passeggeri con domande sui loro reclami. Fornire un eccellente servizio clienti tramite email e chat." }
+      },
+      "cta": { "title": "Non trovi la posizione ideale?", "text": "Inviaci il tuo CV e dicci come vorresti contribuire.", "button": "Contattaci →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSHIP", "title": "Diventa partner", "subtitle": "Unisciti alla rete Jet2Pay e aiuta i passeggeri a ottenere il risarcimento che meritano." },
+      "types": {
+        "title": "Opportunità di partnership",
+        "airlines": { "title": "Partnership con compagnie aeree", "text": "Collabora con noi per semplificare il processo di risarcimento per i tuoi passeggeri." },
+        "travelAgency": { "title": "Agenzie di viaggio", "text": "Offri il risarcimento voli come servizio aggiuntivo ai tuoi clienti. Noi gestiamo i reclami, tu rafforzi la fidelizzazione dei clienti." },
+        "legal": { "title": "Rete legale", "text": "Unisciti alla nostra rete di professionisti legali specializzati nei diritti dei passeggeri aerei in tutta Europa." }
+      },
+      "benefits": {
+        "title": "Vantaggi della partnership",
+        "benefit1": { "title": "Partner Manager dedicato", "text": "Un unico punto di contatto per tutte le tue esigenze di partnership." },
+        "benefit2": { "title": "Integrazione personalizzata", "text": "Accesso API e opzioni di integrazione personalizzata per flussi di lavoro ottimali." },
+        "benefit3": { "title": "Commissione competitiva", "text": "Condivisione dei ricavi attrattiva per partner ad alto volume." },
+        "benefit4": { "title": "Dashboard in tempo reale", "text": "Monitora tutti i reclami segnalati e i guadagni in tempo reale." }
+      },
+      "contactUs": { "title": "Contattaci", "text": "Interessato a una partnership con Jet2Pay? Contatta il nostro team partnership:" },
+      "cta": { "title": "Interessato a una partnership?", "text": "Contatta il nostro team partnership.", "button": "Contattaci →" }
+    },
+    "press": {
+      "hero": { "badge": "STAMPA E MEDIA", "title": "Sala stampa", "subtitle": "Ultime notizie, comunicati stampa e risorse media da Jet2Pay." },
+      "facts": {
+        "title": "Dati aziendali",
+        "fact1": { "value": "2024", "label": "Fondazione" },
+        "fact2": { "value": "Sofia, BG", "label": "Sede centrale" },
+        "fact3": { "value": "10+", "label": "Dimensione del team" },
+        "fact4": { "value": "10.000+", "label": "Reclami elaborati" }
+      },
+      "releases": {
+        "title": "Comunicati stampa",
+        "r1": { "date": "Marzo 2026", "title": "Jet2Pay lancia la nuova piattaforma reclami", "summary": "Jet2Pay annuncia il lancio della sua piattaforma di risarcimento voli di nuova generazione, rendendo più facile che mai per i passeggeri richiedere fino a €600." },
+        "r2": { "date": "Febbraio 2026", "title": "Jet2Pay collabora con fornitori di dati aeronautici", "summary": "Partnership strategica con i principali fornitori di dati di volo per la verifica dei voli in tempo reale e un'elaborazione più rapida dei reclami." },
+        "r3": { "date": "Gennaio 2026", "title": "Jet2Pay estende la copertura a oltre 250 compagnie aeree", "summary": "Jet2Pay ora copre oltre 250 compagnie aeree in tutto il mondo, offrendo servizi completi di risarcimento voli in tutta Europa." }
+      },
+      "mediaKit": { "title": "Kit media", "text": "Scarica il nostro kit stampa con loghi, linee guida del brand e panoramica aziendale." },
+      "pressContact": { "title": "Contatto stampa", "text": "Per richieste stampa, interviste e richieste media:" },
+      "cta": { "title": "Vuoi parlare di Jet2Pay?", "text": "Siamo lieti di fornire interviste, dichiarazioni e dati per il tuo articolo.", "button": "Contatta il team stampa →" }
+    },
+    "contact": {
+      "hero": { "badge": "CONTATTACI", "title": "Contattaci", "subtitle": "Hai una domanda? Siamo qui per aiutarti. Contattaci attraverso uno dei canali qui sotto." },
+      "channels": {
+        "email": { "title": "Reclami", "text": "Per domande sui reclami esistenti" },
+        "support": { "title": "Supporto generale", "text": "Per richieste generiche e assistenza" },
+        "address": { "title": "Ufficio", "text": "MITRANI CONSULT EOOD, Sofia, Bulgaria" }
+      },
+      "form": { "title": "Inviaci un messaggio", "placeholder": "Per richieste, scrivici a support@jet2pay.eu" },
+      "faq": {
+        "title": "Domande frequenti",
+        "q1": { "q": "Quanto tempo richiede un reclamo?", "a": "La maggior parte dei reclami viene risolta entro 6-12 settimane, a seconda dei tempi di risposta della compagnia aerea." },
+        "q2": { "q": "Quali documenti servono?", "a": "La carta d'imbarco, la conferma della prenotazione e un documento d'identità valido. Ti guideremo durante il processo." },
+        "q3": { "q": "Posso fare reclamo per un volo di anni fa?", "a": "Sì! Nella maggior parte dei paesi UE, puoi fare reclamo per voli fino a 3 anni fa. In alcuni paesi, il limite si estende a 6 anni." }
+      },
+      "cta": { "title": "Pronto a verificare il tuo volo?", "text": "La nostra verifica di idoneità gratuita richiede solo 2 minuti.", "button": "Verifica risarcimento →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "pt-BR": "Português (BR)",
+    "ca": "Català",
+    "ro": "Română"
+  }
+}

@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Comprova la compensació",
+    "knowYourRights": "Coneix els teus drets",
+    "aboutCompany": "Sobre l'empresa",
+    "news": "Notícies",
+    "referAFriend": "Recomana a un amic",
+    "checkClaimStatus": "Estat de la reclamació"
+  },
+  "hero": {
+    "titleDelayed": "Retardat",
+    "titleCancelled": "Cancel·lat",
+    "titleFlight": "Vol",
+    "titleOr": "o",
+    "subtitle": "Reclama fins a <strong>€600</strong> per un vol retardat o cancel·lat",
+    "whatHappened": "Què ha passat amb el teu vol?",
+    "delayed": "Retardat",
+    "cancelled": "Cancel·lat / Overbooking",
+    "otherDisruptions": "Altres interrupcions",
+    "departurePlaceholder": "Aeroport de sortida",
+    "arrivalPlaceholder": "Aeroport d'arribada",
+    "checkCompensation": "Comprova la compensació",
+    "freeCheck": "Comprovació gratuïta de la compensació",
+    "hassleFree": "Sense complicacions",
+    "claimsUpTo": "Reclamacions de fins a 3 anys",
+    "compensatedCustomers": "clients compensats",
+    "airlines": "aerolínies",
+    "yearsTrusted": "anys de confiança"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Comprovació d'elegibilitat",
+      "waitTime": "Temps d'espera",
+      "done": "Fet!",
+      "flightItinerary": "Itinerari de vol",
+      "disruptionType": "Tipus d'interrupció",
+      "timing": "Temporització",
+      "reason": "Motiu",
+      "howLong": "Quant de temps vas esperar?",
+      "claimDetails": "Detalls de la reclamació",
+      "flightInfo": "Info del vol",
+      "passengerInfo": "Les teves dades",
+      "bookingConsent": "Reserva i consentiment"
+    },
+    "step1": {
+      "title": "On vas volar?",
+      "departedFrom": "Va sortir de",
+      "finalDestination": "Aeroport de destinació final",
+      "airportPlaceholder": "Introdueix la ciutat o el nom de l'aeroport",
+      "directFlight": "Va ser un vol directe?",
+      "yesDirect": "Sí, va ser un vol directe",
+      "noConnecting": "No, vaig tenir vols de connexió"
+    },
+    "step2": {
+      "title": "Tipus d'interrupció",
+      "question": "Quina va ser la naturalesa de la interrupció del vol?",
+      "delayed": "Vol retardat",
+      "cancelled": "Vol cancel·lat",
+      "denied": "Embarcament denegat / Overbooking"
+    },
+    "step3": {
+      "title": "Quant de retard vas tenir?",
+      "question": "Quant de retard vas tenir per arribar a la teva destinació final?",
+      "less3": "Menys de 3 hores",
+      "more3": "Més de 3 hores",
+      "missed": "Connexió perduda"
+    },
+    "step4": {
+      "title": "Motiu de la interrupció",
+      "question1": "L'aerolínia et va dir per què el vol va ser interromput?",
+      "yes": "Sí",
+      "no": "No",
+      "dontRemember": "No ho recordo",
+      "question2": "Quin va ser el motiu proporcionat per l'aerolínia?",
+      "technical": "Problema tècnic de l'aeronau",
+      "weather": "Males condicions meteorològiques",
+      "strike": "Vaga",
+      "airport": "Problemes a l'aeroport",
+      "other": "Altres motius"
+    },
+    "step5": {
+      "title": "Explica'ns més sobre la teva situació",
+      "question": "Quant de temps vas esperar un vol de substitució o una solució?",
+      "less2": "Menys de 2 hores",
+      "2to4": "De 2 a 4 hores",
+      "4to8": "De 4 a 8 hores",
+      "overnight": "Tota la nit (8+ hores)",
+      "none": "No es va oferir cap alternativa",
+      "describeLabel": "Descriu breument què va passar",
+      "describeOptional": "(opcional)",
+      "describePlaceholder": "Ex.: El meu vol de Londres a París va patir un retard de 4 hores a causa d'un problema tècnic de l'aeronau...",
+      "infoText": "Compartir detalls sobre la teva experiència pot millorar significativament les possibilitats d'èxit de la reclamació. Com més específic siguis, més altes seran les probabilitats d'aprovació."
+    },
+    "back": "Enrere",
+    "continue": "Continua",
+    "submitClaim": "Envia la reclamació",
+    "checkAnotherFlight": "← Comprova un altre vol",
+    "freeCheck": "Comprova la teva compensació — <strong>100% gratuït</strong>, sense riscos.",
+    "eligible": {
+      "title": "Bones notícies — pots tenir dret!",
+      "description": "Segons les teves respostes, podries tenir dret a una compensació de fins a <strong>€600</strong> d'acord amb el Reglament UE 261/2004. Comença la teva reclamació gratuïta ara!",
+      "descriptionDynamic": "Segons les teves respostes, podries tenir dret a una compensació de fins a <strong>€{{amount}}</strong> d'acord amb el Reglament UE 261/2004. Comença la teva reclamació gratuïta ara!",
+      "startClaim": "Inicia la meva reclamació gratuïta →"
+    },
+    "notEligible": {
+      "title": "Malauradament, pot ser que no tinguis dret",
+      "description": "Segons les teves respostes, el teu retard sembla estar per sota del llindar de 3 hores requerit per a la compensació de la UE d'acord amb el Reglament 261/2004."
+    },
+    "step6": {
+      "title": "Detalls del vol",
+      "flightNumber": "Número de vol",
+      "flightNumberPlaceholder": "ex.: LS123",
+      "flightDate": "Data del vol",
+      "flightDateHelp": "Data del vol amb interrupció"
+    },
+    "step7": {
+      "title": "Les teves dades",
+      "firstName": "Nom",
+      "lastName": "Cognom",
+      "email": "Adreça electrònica",
+      "phone": "Número de telèfon",
+      "phonePlaceholder": "+34 612 345 678",
+      "nationality": "Nacionalitat",
+      "nationalityPlaceholder": "Selecciona el país"
+    },
+    "step8": {
+      "title": "Reserva i consentiment",
+      "bookingReference": "Referència de la reserva",
+      "bookingReferencePlaceholder": "ex.: ABC123",
+      "bookingReferenceHelp": "Es troba al correu de confirmació de la reserva",
+      "consent": "Accepto els <a href='/terms' target='_blank'>Termes i condicions</a> i autoritzo Jet2Pay a actuar en el meu nom. Entenc que s'aplica la comissió del 30% amb fórmula No Win No Fee.",
+      "gdpr": "Dono el meu consentiment al tractament de les meves dades personals d'acord amb la <a href='/privacy' target='_blank'>Política de privacitat</a> i el RGPD.",
+      "submitClaim": "Envia la meva reclamació"
+    },
+    "submitting": "Enviant la teva reclamació...",
+    "submitted": {
+      "title": "Reclamació enviada amb èxit!",
+      "claimId": "Referència de la reclamació",
+      "estimated": "Compensació estimada",
+      "emailSent": "S'ha enviat un correu de confirmació a la teva bústia.",
+      "trackClaim": "Pots seguir l'estat de la teva reclamació en qualsevol moment amb la teva referència.",
+      "newClaim": "← Envia una altra reclamació"
+    },
+    "error": {
+      "submissionFailed": "No s'ha pogut enviar la reclamació. Si us plau, torna-ho a intentar.",
+      "networkError": "Error de xarxa. Comprova la teva connexió."
+    }
+  },
+  "claimStatus": {
+    "title": "Estat de la reclamació",
+    "subtitle": "Introdueix el número de referència de la reclamació per seguir el progrés de la teva sol·licitud de compensació.",
+    "placeholder": "Introdueix la referència de la reclamació (ex.: 35073ad8-6b02...)",
+    "search": "Cerca la reclamació",
+    "notFound": "No s'ha trobat cap reclamació amb aquesta referència. Comprova l'ID i torna-ho a intentar.",
+    "error": "Alguna cosa ha anat malament. Si us plau, torna-ho a intentar més tard.",
+    "progress": "Progrés de la reclamació",
+    "flightDetails": "Detalls del vol",
+    "compensation": "Compensació",
+    "claimRef": "Referència de la reclamació",
+    "status": "Estat",
+    "flight": "Vol",
+    "date": "Data",
+    "route": "Ruta",
+    "disruption": "Tipus d'interrupció",
+    "estimatedAmount": "Compensació estimada",
+    "distance": "Distància de la ruta",
+    "eligible": "Elegible per a compensació",
+    "notEligible": "No elegible per a compensació",
+    "documents": "Documents",
+    "noDocs": "Encara no s'han pujat documents.",
+    "missingDocs": "Documents que falten",
+    "timeline": "Cronologia de l'estat",
+    "steps": {
+      "submitted": "Enviada",
+      "under_review": "En revisió",
+      "airline_contacted": "Aerolínia contactada",
+      "negotiating": "En negociació",
+      "resolved": "Resolta",
+      "rejected": "Rebutjada",
+      "paid": "Pagada"
+    },
+    "disruptionTypes": {
+      "delay": "Retard",
+      "cancellation": "Cancel·lació",
+      "denied_boarding": "Embarcament denegat",
+      "missed_connection": "Connexió perduda"
+    },
+    "docTypes": {
+      "boarding_pass": "Targeta d'embarcament",
+      "booking_confirmation": "Confirmació de reserva",
+      "id_document": "Document d'identitat"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Lluitem pels teus drets de vol",
+      "subtitle": "Ajudem els passatgers a obtenir la compensació que mereixen quan els vols van malament. No Win, No Fee — és així de senzill."
+    },
+    "stats": {
+      "customers": "Passatgers compensats",
+      "airlines": "Aerolínies cobertes",
+      "successRate": "Taxa d'èxit",
+      "recovered": "Recuperat per als passatgers"
+    },
+    "mission": {
+      "title": "La nostra missió",
+      "text1": "A Jet2Pay, creiem que cada passatger mereix un tractament just. Quan el teu vol es retarda, es cancel·la o et deneguen l'embarcament, el Reglament UE 261/2004 i el UK261 protegeixen el teu dret a una compensació de fins a €600.",
+      "text2": "El nostre equip d'experts legals i d'aviació gestiona tot el procés de reclamació — des de l'avaluació inicial fins a la negociació amb l'aerolínia — perquè tu no ho hagis de fer. Només cobrem una comissió del 30% si guanyem el teu cas.",
+      "cardTitle": "Els teus drets, la nostra prioritat",
+      "cardText": "Hem ajudat milers de passatgers a tota Europa a obtenir la compensació que els correspon. El nostre sistema automatitzat i equip d'experts garanteixen un processament ràpid i sense complicacions."
+    },
+    "values": {
+      "title": "Els nostres valors",
+      "transparency": {
+        "title": "Total transparència",
+        "text": "Sense comissions ocultes, sense càrrecs sorpresa. Només pagues quan guanyem el teu cas — comissió del 30% sobre l'èxit."
+      },
+      "noWinNoFee": {
+        "title": "No Win, No Fee",
+        "text": "Assumim tot el risc. Si la teva reclamació no té èxit, no pagues absolutament res."
+      },
+      "speed": {
+        "title": "Processament ràpid",
+        "text": "El nostre motor automàtic d'elegibilitat et dona una avaluació instantània. La majoria de reclamacions es resolen en poques setmanes."
+      },
+      "expertise": {
+        "title": "Competència legal",
+        "text": "El nostre equip té un coneixement profund dels reglaments EC261/UK261 i una àmplia experiència tractant amb aerolínies."
+      }
+    },
+    "howItWorks": {
+      "title": "Com funciona",
+      "step1": { "title": "Comprova l'elegibilitat", "text": "Introdueix els detalls del teu vol i avaluarem immediatament la teva reclamació." },
+      "step2": { "title": "Envia la teva reclamació", "text": "Omple les teves dades i puja els documents. Només calen 5 minuts." },
+      "step3": { "title": "Ho gestionem tot", "text": "El nostre equip contacta l'aerolínia i gestiona tots els processos legals en el teu nom." },
+      "step4": { "title": "Rep la compensació", "text": "Un cop guanyem, la compensació es transfereix directament al teu compte bancari." }
+    },
+    "team": {
+      "title": "El nostre equip",
+      "subtitle": "Un equip dedicat de professionals compromesos a protegir els teus drets de passatger.",
+      "founder": "Fundador i CEO",
+      "legal": "Departament legal",
+      "claims": "Processament de reclamacions",
+      "tech": "Tecnologia"
+    },
+    "legal": {
+      "title": "Informació de l'empresa",
+      "company": {
+        "title": "Empresa",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registrada a Bulgària"
+      },
+      "address": {
+        "title": "Adreça",
+        "text": "Sofia, Bulgària"
+      },
+      "contact": {
+        "title": "Contacte"
+      }
+    },
+    "cta": {
+      "title": "Preparat per reclamar la teva compensació?",
+      "text": "Comprova si el teu vol té dret a una compensació de fins a €600. És gratuït i només calen 2 minuts.",
+      "button": "Comprova la compensació →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Notícies i actualitzacions",
+      "subtitle": "Mantén-te informat sobre els drets dels passatgers, reglaments i novetats de Jet2Pay."
+    },
+    "featured": "Destacat",
+    "allArticles": "Tots els articles",
+    "readMore": "Llegeix més",
+    "categories": {
+      "companyNews": "Notícies de l'empresa",
+      "regulation": "Reglamentació",
+      "tips": "Consells i guies"
+    },
+    "articles": {
+      "launch": {
+        "title": "Neix Jet2Pay: ajudem els passatgers a obtenir compensació pels vols",
+        "summary": "Estem encantats d'anunciar el llançament de Jet2Pay — una plataforma dedicada a ajudar els passatgers a reclamar compensació per vols retardats, cancel·lats o amb overbooking d'acord amb el Reglament UE 261/2004 i UK261."
+      },
+      "ec261Update": {
+        "title": "Entendre l'EC261: la teva guia completa sobre compensació de vols",
+        "summary": "El Reglament UE 261/2004 dóna dret als passatgers a una compensació de €250 a €600 per interrupcions de vols. Coneix els teus drets i com reclamar."
+      },
+      "knowYourRights": {
+        "title": "5 coses que tot passatger aeri hauria de saber sobre els seus drets",
+        "summary": "Molts passatgers no saben que tenen dret a compensació. Aquí tens els fets clau sobre els teus drets quan els vols es retarden o cancel·len."
+      },
+      "delayTips": {
+        "title": "Què fer quan el teu vol es retarda: guia pas a pas",
+        "summary": "Vol retardat? No et preocupis. Segueix la nostra guia pràctica per protegir els teus drets i maximitzar la teva compensació."
+      },
+      "uk261": {
+        "title": "UK261: les normes de compensació de vols post-Brexit explicades",
+        "summary": "Després del Brexit, el Regne Unit va adoptar la seva pròpia versió de l'EC261 — coneguda com UK261. Aquí t'expliquem què significa per als passatgers que volen des de i cap al Regne Unit."
+      },
+      "partnerships": {
+        "title": "Jet2Pay col·labora amb els principals proveïdors de dades d'aviació",
+        "summary": "Hem establert aliances amb els millors proveïdors de dades de vol per oferir verificació de vols en temps real i un processament més ràpid de les reclamacions."
+      }
+    },
+    "cta": {
+      "title": "Has tingut una interrupció de vol?",
+      "text": "Comprova si tens dret a compensació — és gratuït i només calen 2 minuts.",
+      "button": "Comprova la compensació →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Coneix els teus drets",
+    "products": "Productes",
+    "aboutCompany": "Sobre l'empresa",
+    "legal": "Legal",
+    "description": "Compensació de vols feta senzilla. Ajudem els passatgers a reclamar fins a €600 per vols retardats, cancel·lats o amb overbooking.",
+    "copyright": "Tots els drets reservats.",
+    "links": {
+      "eu261": "Reglament UE 261/2004",
+      "uk261": "Reglament UK261",
+      "delayComp": "Compensació per retard de vol",
+      "cancelComp": "Compensació per vol cancel·lat",
+      "overbookedComp": "Compensació per overbooking",
+      "deniedBoarding": "Embarcament denegat",
+      "passengerRights": "Drets dels passatgers aeris",
+      "checkComp": "Comprova la compensació",
+      "howItWorks": "Com funciona",
+      "pricing": "Preus",
+      "claimStatus": "Estat de la reclamació",
+      "aboutUs": "Sobre Jet2Pay",
+      "reviews": "Valoracions",
+      "careers": "Feina",
+      "partners": "Socis",
+      "press": "Premsa",
+      "contact": "Contacta'ns",
+      "news": "Notícies",
+      "terms": "Termes i condicions",
+      "privacy": "Política de privacitat",
+      "cookies": "Política de galetes",
+      "imprint": "Avís legal",
+      "complaints": "Reclamacions"
+    },
+    "newsletter": {
+      "title": "Subscriu-te al nostre butlletí",
+      "text": "Rep les últimes notícies i consells de viatge directament a la teva bústia.",
+      "placeholder": "La teva adreça electrònica",
+      "button": "Subscriu-te"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "PROCÉS SENZILL", "title": "Com funciona", "subtitle": "Obtenir la teva compensació de vol és fàcil. Ho gestionem tot — només has de dir-nos què va passar." },
+      "steps": {
+        "title": "4 passos senzills",
+        "s1": { "title": "Comprova l'elegibilitat", "text": "Introdueix els detalls del teu vol a la nostra eina gratuïta. El nostre sistema comprova instantàniament el Reglament UE 261/2004 i el UK261 per determinar si tens dret a una compensació de fins a €600." },
+        "s2": { "title": "Envia la teva reclamació", "text": "Omple les teves dades personals, informació del vol i puja qualsevol document de suport. Tot el procés dura menys de 5 minuts." },
+        "s3": { "title": "Ho gestionem tot", "text": "Els nostres experts legals i d'aviació es fan càrrec del cas. Contactem l'aerolínia, gestionem tota la correspondència i negociacions, i ens ocupem del procés legal en el teu nom." },
+        "s4": { "title": "Rep la compensació", "text": "Un cop resolguem la teva reclamació amb èxit, la compensació es transfereix directament al teu compte bancari. Només deduïm la nostra comissió del 30% de l'import rebut." }
+      },
+      "whyUs": {
+        "title": "Per què triar Jet2Pay?",
+        "noRisk": { "title": "No Win, No Fee", "text": "No pagues res per avançat. La nostra comissió del 30% només es cobra quan guanyem el teu cas." },
+        "fast": { "title": "Equip legal expert", "text": "El nostre equip s'especialitza en drets dels passatgers aeris de la UE i té àmplia experiència negociant amb aerolínies." },
+        "expertise": { "title": "Ràpid i fàcil", "text": "Envia la teva reclamació en menys de 5 minuts. Ens ocupem de la resta i et mantenim informat a cada pas." }
+      },
+      "cta": { "title": "Preparat per començar?", "text": "Comprova si el teu vol té dret a compensació — és gratuït i només calen 2 minuts.", "button": "Comprova la compensació →" }
+    },
+    "pricing": {
+      "hero": { "badge": "PREUS TRANSPARENTS", "title": "Preus", "subtitle": "Sense comissions ocultes, sense costos inicials. Només pagues quan guanyem." },
+      "noWinNoFee": { "title": "No Win, No Fee", "text": "El nostre servei és completament gratuït llevat que obtinguem la compensació per a tu. Cobrem una comissió del 30% només sobre l'import recuperat.", "badge": "GARANTIT" },
+      "comparison": {
+        "title": "Com ens comparem",
+        "option": "Opció",
+        "cost": "Cost",
+        "successRate": "Taxa d'èxit",
+        "effort": "El teu esforç",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% sobre l'èxit", "success": "98%", "effort": "5 minuts" },
+        "lawyer": { "name": "Advocat", "cost": "€200+/hora", "success": "85%", "effort": "Hores" },
+        "diy": { "name": "Per tu mateix", "cost": "Gratuït", "success": "~10%", "effort": "Dies/Setmanes" }
+      },
+      "faq": {
+        "title": "FAQ de preus",
+        "q1": { "q": "Quan pago?", "a": "Només quan recuperem amb èxit la compensació per a tu. Si no guanyem, no pagues res." },
+        "q2": { "q": "Què cobreix el 30%?", "a": "La nostra comissió cobreix tot el treball legal, les negociacions amb l'aerolínia, la correspondència i el processament de la reclamació." },
+        "q3": { "q": "Hi ha comissions ocultes?", "a": "Absolutament no. La comissió del 30% és l'única tarifa. Sense costos d'inscripció, processament o cancel·lació." },
+        "q4": { "q": "Què passa si la meva reclamació no té èxit?", "a": "No pagues res. Assumim tots els costos i riscos associats a la gestió de la teva reclamació." }
+      },
+      "cta": { "title": "Preparat per reclamar?", "text": "Comprova gratuïtament la teva elegibilitat — sense compromís.", "button": "Comprova la compensació →" }
+    },
+    "reviews": {
+      "hero": { "badge": "VALORACIONS DELS CLIENTS", "title": "Què diuen els nostres clients", "subtitle": "Milers de passatgers han confiat en Jet2Pay per gestionar les seves reclamacions de compensació." },
+      "stats": {
+        "avgRating": "Valoració mitjana",
+        "totalReviews": "Reclamacions processades",
+        "recommend": "Recomanaria",
+        "avgPayout": "Compensació màxima"
+      },
+      "grid": {
+        "title": "Valoracions recents",
+        "r1": { "quote": "Jet2Pay ho va gestionar tot perfectament. Vaig rebre €400 pel meu vol retardat de Manchester a Antalya. Ho recomano molt!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Al principi era escèptic, però van complir. Vaig obtenir €250 de compensació per un retard de 4 hores. Sense complicacions.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Excel·lent servei! El meu vol cancel·lat de Birmingham va donar lloc a una compensació de €600. L'equip em va mantenir informat durant tot el procés.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Ràpid i professional. Vaig enviar la reclamació en 5 minuts i vaig rebre el pagament en 8 setmanes.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Després que el meu vol va tenir overbooking, Jet2Pay em va aconseguir €400 de compensació. El procés va ser increïblement senzill.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Experiència fantàstica. Ni tan sols sabia que tenia dret a compensació fins que vaig trobar Jet2Pay. Vaig obtenir €250!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "L'equip va ser molt atent i em va mantenir al dia en cada fase. Vaig rebre la meva compensació en només 6 setmanes.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "He utilitzat Jet2Pay dues vegades — ambdues amb èxit. Realment saben el que fan amb reclamacions d'aerolínies.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Uneix-te a milers de clients satisfets", "text": "Comprova si el teu vol té dret a compensació.", "button": "Comprova la compensació →" }
+    },
+    "careers": {
+      "hero": { "badge": "UNEIX-TE A L'EQUIP", "title": "Feina a Jet2Pay", "subtitle": "Ajuda'ns a lluitar pels drets dels passatgers a tota Europa. Uneix-te a un equip en ràpid creixement que marca la diferència." },
+      "culture": {
+        "title": "Per què treballar amb nosaltres",
+        "text1": "A Jet2Pay, estem construint alguna cosa significativa — una plataforma que ajuda els viatgers de cada dia a obtenir la compensació que mereixen.",
+        "text2": "Valorem la transparència, la innovació i un fort sentit de la justícia. El nostre equip treballa en remot a tota Europa, unit per una missió compartida.",
+        "cardTitle": "La nostra cultura",
+        "cardText": "Treball flexible, remuneració competitiva i la satisfacció d'ajudar milers de passatgers cada mes."
+      },
+      "positions": {
+        "title": "Posicions obertes",
+        "apply": "Aplica ara →",
+        "claimsSpecialist": { "title": "Especialista en reclamacions", "location": "Remot / Sofia", "type": "Temps complet", "desc": "Processar i gestionar reclamacions de compensació de vols. Comunicar-se amb aerolínies i mantenir els passatgers informats sobre l'estat de la reclamació." },
+        "legalAdvisor": { "title": "Assessor legal", "location": "Sofia, Bulgària", "type": "Temps complet", "desc": "Proporcionar competència legal sobre els reglaments EC261/UK261. Revisar casos complexos i preparar documentació legal per a negociacions amb aerolínies." },
+        "frontendDev": { "title": "Desenvolupador Frontend", "location": "Remot", "type": "Temps complet", "desc": "Construir i mantenir la nostra plataforma web basada en React. Treballar en la millora de l'experiència d'enviament de reclamacions i el tauler d'administració." },
+        "customerSupport": { "title": "Atenció al client", "location": "Remot", "type": "Temps parcial", "desc": "Ajudar els passatgers amb preguntes sobre les seves reclamacions. Proporcionar un excel·lent servei al client per correu electrònic i xat." }
+      },
+      "cta": { "title": "No trobes la posició ideal?", "text": "Envia'ns el teu CV i explica'ns com t'agradaria contribuir.", "button": "Contacta'ns →" }
+    },
+    "partners": {
+      "hero": { "badge": "COL·LABORACIONS", "title": "Col·labora amb nosaltres", "subtitle": "Uneix-te a la xarxa Jet2Pay i ajuda els passatgers a obtenir la compensació que mereixen." },
+      "types": {
+        "title": "Oportunitats de col·laboració",
+        "airlines": { "title": "Col·laboració amb aerolínies", "text": "Col·labora amb nosaltres per simplificar el procés de compensació per als teus passatgers." },
+        "travelAgency": { "title": "Agències de viatges", "text": "Ofereix compensació de vols com a servei addicional als teus clients. Nosaltres gestionem les reclamacions, tu enforteixis la fidelització dels clients." },
+        "legal": { "title": "Xarxa legal", "text": "Uneix-te a la nostra xarxa de professionals legals especialitzats en drets dels passatgers aeris a tota Europa." }
+      },
+      "benefits": {
+        "title": "Beneficis de la col·laboració",
+        "benefit1": { "title": "Gestor de col·laboració dedicat", "text": "Un únic punt de contacte per a totes les teves necessitats de col·laboració." },
+        "benefit2": { "title": "Integració personalitzada", "text": "Accés a API i opcions d'integració personalitzada per a fluxos de treball optimitzats." },
+        "benefit3": { "title": "Comissió competitiva", "text": "Repartiment d'ingressos atractiu per a socis d'alt volum." },
+        "benefit4": { "title": "Tauler en temps real", "text": "Segueix totes les reclamacions referides i els guanys en temps real." }
+      },
+      "contactUs": { "title": "Contacta'ns", "text": "Interessat en col·laborar amb Jet2Pay? Contacta el nostre equip de col·laboracions:" },
+      "cta": { "title": "Interessat en una col·laboració?", "text": "Contacta el nostre equip de col·laboracions.", "button": "Contacta'ns →" }
+    },
+    "press": {
+      "hero": { "badge": "PREMSA I MITJANS", "title": "Sala de premsa", "subtitle": "Últimes notícies, comunicats de premsa i recursos de mitjans de Jet2Pay." },
+      "facts": {
+        "title": "Dades de l'empresa",
+        "fact1": { "value": "2024", "label": "Fundació" },
+        "fact2": { "value": "Sofia, BG", "label": "Seu central" },
+        "fact3": { "value": "10+", "label": "Mida de l'equip" },
+        "fact4": { "value": "10.000+", "label": "Reclamacions processades" }
+      },
+      "releases": {
+        "title": "Comunicats de premsa",
+        "r1": { "date": "Març 2026", "title": "Jet2Pay llança la nova plataforma de reclamacions", "summary": "Jet2Pay anuncia el llançament de la seva plataforma de compensació de vols de nova generació, fent més fàcil que mai que els passatgers reclamin fins a €600." },
+        "r2": { "date": "Febrer 2026", "title": "Jet2Pay col·labora amb proveïdors de dades d'aviació", "summary": "Col·laboració estratègica amb els principals proveïdors de dades de vol per a la verificació de vols en temps real i un processament més ràpid de les reclamacions." },
+        "r3": { "date": "Gener 2026", "title": "Jet2Pay amplia la cobertura a més de 250 aerolínies", "summary": "Jet2Pay ara cobreix més de 250 aerolínies a tot el món, oferint serveis complets de compensació de vols a tota Europa." }
+      },
+      "mediaKit": { "title": "Kit de mitjans", "text": "Descarrega el nostre kit de premsa amb logotips, directrius de marca i visió general de l'empresa." },
+      "pressContact": { "title": "Contacte de premsa", "text": "Per a consultes de premsa, entrevistes i sol·licituds de mitjans:" },
+      "cta": { "title": "Vols parlar de Jet2Pay?", "text": "Estarem encantats de proporcionar entrevistes, declaracions i dades per al teu article.", "button": "Contacta l'equip de premsa →" }
+    },
+    "contact": {
+      "hero": { "badge": "CONTACTA'NS", "title": "Contacta'ns", "subtitle": "Tens alguna pregunta? Estem aquí per ajudar-te. Contacta'ns a través de qualsevol dels canals següents." },
+      "channels": {
+        "email": { "title": "Reclamacions", "text": "Per a preguntes sobre reclamacions existents" },
+        "support": { "title": "Suport general", "text": "Per a consultes generals i assistència" },
+        "address": { "title": "Oficina", "text": "MITRANI CONSULT EOOD, Sofia, Bulgària" }
+      },
+      "form": { "title": "Envia'ns un missatge", "placeholder": "Per a consultes, escriu-nos a support@jet2pay.eu" },
+      "faq": {
+        "title": "Preguntes freqüents",
+        "q1": { "q": "Quant de temps dura una reclamació?", "a": "La majoria de reclamacions es resolen en 6 a 12 setmanes, depenent del temps de resposta de l'aerolínia." },
+        "q2": { "q": "Quins documents necessito?", "a": "La teva targeta d'embarcament, confirmació de reserva i un document d'identitat vàlid. Et guiarem durant tot el procés." },
+        "q3": { "q": "Puc reclamar per un vol de fa anys?", "a": "Sí! A la majoria de països de la UE, pots reclamar per vols de fins a 3 anys enrere. En alguns països, el límit s'estén a 6 anys." }
+      },
+      "cta": { "title": "Preparat per comprovar el teu vol?", "text": "La nostra comprovació d'elegibilitat gratuïta només requereix 2 minuts.", "button": "Comprova la compensació →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "pt-BR": "Português (BR)",
+    "ca": "Català",
+    "ro": "Română"
+  }
+}

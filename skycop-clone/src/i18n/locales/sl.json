@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Preveri odškodnino",
+    "knowYourRights": "Poznaj svoje pravice",
+    "aboutCompany": "O podjetju",
+    "news": "Novice",
+    "referAFriend": "Priporoči prijatelju",
+    "checkClaimStatus": "Preveri status zahtevka"
+  },
+  "hero": {
+    "titleDelayed": "Zamujen",
+    "titleCancelled": "Odpovedan",
+    "titleFlight": "Let",
+    "titleOr": "ali",
+    "subtitle": "Zahtevajte do <strong>600 €</strong> za zamujen ali odpovedan let",
+    "whatHappened": "Kaj se je zgodilo z vašim letom?",
+    "delayed": "Zamujen",
+    "cancelled": "Odpovedan / Prezasedenost",
+    "otherDisruptions": "Druge motnje",
+    "departurePlaceholder": "Letališče odhoda",
+    "arrivalPlaceholder": "Letališče prihoda",
+    "checkCompensation": "Preveri odškodnino",
+    "freeCheck": "Brezplačno preverjanje odškodnine",
+    "hassleFree": "Brez zapletov",
+    "claimsUpTo": "Zahtevki do 3 leta stari",
+    "compensatedCustomers": "odškodovanih strank",
+    "airlines": "letalskih družb",
+    "yearsTrusted": "let zaupanja"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Preverjanje upravičenosti",
+      "waitTime": "Čakalni čas",
+      "done": "Končano!",
+      "flightItinerary": "Načrt leta",
+      "disruptionType": "Vrsta motnje",
+      "timing": "Časovnica",
+      "reason": "Razlog",
+      "howLong": "Kako dolgo ste čakali?",
+      "claimDetails": "Podrobnosti zahtevka",
+      "flightInfo": "Podatki o letu",
+      "passengerInfo": "Vaši podatki",
+      "bookingConsent": "Rezervacija in soglasje"
+    },
+    "step1": {
+      "title": "Kam ste leteli?",
+      "departedFrom": "Odleteli iz",
+      "finalDestination": "Končno ciljno letališče",
+      "airportPlaceholder": "Vnesite ime mesta ali letališča",
+      "directFlight": "Ali je bil to direkten let?",
+      "yesDirect": "Da, bil je direkten let",
+      "noConnecting": "Ne, imel/a sem prestopne lete"
+    },
+    "step2": {
+      "title": "Vrsta motnje",
+      "question": "Kakšna je bila narava motnje leta, ki ste jo doživeli?",
+      "delayed": "Zamujen let",
+      "cancelled": "Odpovedan let",
+      "denied": "Zavrnjen vstop / Prezasedenost"
+    },
+    "step3": {
+      "title": "Kako dolgo ste zamujali?",
+      "question": "Kako dolgo ste zamujali do prihoda na končni cilj?",
+      "less3": "Manj kot 3 ure",
+      "more3": "Več kot 3 ure",
+      "missed": "Zamujen prestopni let"
+    },
+    "step4": {
+      "title": "Razlog za motnjo",
+      "question1": "Ali vam je letalska družba sporočila razlog za motnjo leta?",
+      "yes": "Da",
+      "no": "Ne",
+      "dontRemember": "Ne spomnim se",
+      "question2": "Kakšen je bil razlog, ki ga je navedla letalska družba?",
+      "technical": "Tehnična težava z letalom",
+      "weather": "Slabe vremenske razmere",
+      "strike": "Stavka",
+      "airport": "Težave na letališču",
+      "other": "Drugi razlogi"
+    },
+    "step5": {
+      "title": "Povejte nam več o vaši situaciji",
+      "question": "Kako dolgo ste čakali na nadomestni let ali rešitev?",
+      "less2": "Manj kot 2 uri",
+      "2to4": "2 do 4 ure",
+      "4to8": "4 do 8 ur",
+      "overnight": "Čez noč (8+ ur)",
+      "none": "Nobena alternativa ni bila ponujena",
+      "describeLabel": "Na kratko opišite, kaj se je zgodilo",
+      "describeOptional": "(neobvezno)",
+      "describePlaceholder": "Npr. Moj let iz Londona v Pariz je zamujal 4 ure zaradi tehnične težave z letalom...",
+      "infoText": "Delitev podrobnosti o vaši izkušnji lahko znatno izboljša vaše možnosti za uspešen zahtevek. Bolj ko ste natančni, večje so vaše možnosti za odobritev."
+    },
+    "back": "Nazaj",
+    "continue": "Naprej",
+    "submitClaim": "Oddaj zahtevek",
+    "checkAnotherFlight": "← Preveri drug let",
+    "freeCheck": "Preverite vašo odškodnino — <strong>100 % brezplačno</strong>, brez tveganja.",
+    "eligible": {
+      "title": "Odlična novica — morda ste upravičeni!",
+      "description": "Na podlagi vaših odgovorov ste lahko upravičeni do <strong>600 €</strong> odškodnine po Uredbi EU 261/2004. Začnite svoj brezplačni zahtevek zdaj!",
+      "descriptionDynamic": "Na podlagi vaših odgovorov ste lahko upravičeni do <strong>{{amount}} €</strong> odškodnine po Uredbi EU 261/2004. Začnite svoj brezplačni zahtevek zdaj!",
+      "startClaim": "Začni moj brezplačni zahtevek →"
+    },
+    "notEligible": {
+      "title": "Žal morda niste upravičeni",
+      "description": "Na podlagi vaših odgovorov je vaša zamuda pod 3-urnim pragom, ki je potreben za odškodnino po Uredbi EU 261/2004."
+    },
+    "step6": {
+      "title": "Podrobnosti leta",
+      "flightNumber": "Številka leta",
+      "flightNumberPlaceholder": "npr. LS123",
+      "flightDate": "Datum leta",
+      "flightDateHelp": "Datum motenja leta"
+    },
+    "step7": {
+      "title": "Vaši podatki",
+      "firstName": "Ime",
+      "lastName": "Priimek",
+      "email": "E-poštni naslov",
+      "phone": "Telefonska številka",
+      "phonePlaceholder": "+386 1 234 5678",
+      "nationality": "Državljanstvo",
+      "nationalityPlaceholder": "Izberite državo"
+    },
+    "step8": {
+      "title": "Rezervacija in soglasje",
+      "bookingReference": "Referenčna številka rezervacije",
+      "bookingReferencePlaceholder": "npr. ABC123",
+      "bookingReferenceHelp": "Najdete jo v potrditvenem e-poštnem sporočilu rezervacije",
+      "consent": "Strinjam se s <a href='/terms' target='_blank'>pogoji in določili</a> ter pooblaščam Jet2Pay, da deluje v mojem imenu. Razumem, da se zaračuna 30 % provizija po načelu brez zmage, brez plačila.",
+      "gdpr": "Soglašam z obdelavo mojih osebnih podatkov v skladu s <a href='/privacy' target='_blank'>politiko zasebnosti</a> in GDPR.",
+      "submitClaim": "Oddaj moj zahtevek"
+    },
+    "submitting": "Oddajanje vašega zahtevka...",
+    "submitted": {
+      "title": "Zahtevek uspešno oddan!",
+      "claimId": "Referenčna številka zahtevka",
+      "estimated": "Ocenjena odškodnina",
+      "emailSent": "Potrditveno e-poštno sporočilo je bilo poslano v vaš nabiralnik.",
+      "trackClaim": "Sledite statusu svojega zahtevka kadar koli z uporabo referenčne številke.",
+      "newClaim": "← Oddaj nov zahtevek"
+    },
+    "error": {
+      "submissionFailed": "Oddaja zahtevka ni uspela. Prosimo, poskusite znova.",
+      "networkError": "Napaka omrežja. Prosimo, preverite svojo povezavo."
+    }
+  },
+  "claimStatus": {
+    "title": "Preveri status zahtevka",
+    "subtitle": "Vnesite referenčno številko zahtevka za sledenje napredka vaše zahteve za odškodnino.",
+    "placeholder": "Vnesite referenčno številko zahtevka (npr. 35073ad8-6b02...)",
+    "search": "Sledi zahtevku",
+    "notFound": "Zahtevek s to referenco ni bil najden. Prosimo, preverite ID in poskusite znova.",
+    "error": "Nekaj je šlo narobe. Prosimo, poskusite znova pozneje.",
+    "progress": "Napredek zahtevka",
+    "flightDetails": "Podrobnosti leta",
+    "compensation": "Odškodnina",
+    "claimRef": "Referenčna številka zahtevka",
+    "status": "Status",
+    "flight": "Let",
+    "date": "Datum",
+    "route": "Relacija",
+    "disruption": "Vrsta motnje",
+    "estimatedAmount": "Ocenjena odškodnina",
+    "distance": "Razdalja relacije",
+    "eligible": "Upravičen do odškodnine",
+    "notEligible": "Ni upravičen do odškodnine",
+    "documents": "Dokumenti",
+    "noDocs": "Dokumenti še niso bili naloženi.",
+    "missingDocs": "Manjkajoči dokumenti",
+    "timeline": "Časovnica statusa",
+    "steps": {
+      "submitted": "Oddano",
+      "under_review": "V pregledu",
+      "airline_contacted": "Letalska družba kontaktirana",
+      "negotiating": "Pogajanje",
+      "resolved": "Rešeno",
+      "rejected": "Zavrnjeno",
+      "paid": "Plačano"
+    },
+    "disruptionTypes": {
+      "delay": "Zamuda",
+      "cancellation": "Odpoved",
+      "denied_boarding": "Zavrnjen vstop",
+      "missed_connection": "Zamujen prestop"
+    },
+    "docTypes": {
+      "boarding_pass": "Vstopna karta",
+      "booking_confirmation": "Potrditev rezervacije",
+      "id_document": "Osebni dokument"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Borimo se za vaše pravice potnikov",
+      "subtitle": "Pomagamo potnikom pridobiti odškodnino, ki jim pripada, ko gre pri letu kaj narobe. Brez zmage, brez plačila — tako preprosto je."
+    },
+    "stats": {
+      "customers": "Odškodovanih potnikov",
+      "airlines": "Pokritih letalskih družb",
+      "successRate": "Stopnja uspešnosti",
+      "recovered": "Pridobljeno za potnike"
+    },
+    "mission": {
+      "title": "Naše poslanstvo",
+      "text1": "Pri Jet2Pay verjamemo, da si vsak potnik zasluži pošteno obravnavo. Ko je vaš let zamujen, odpovedan ali vam je zavrnjen vstop, vas Uredba EU 261/2004 in UK261 ščitita z odškodnino do 600 €.",
+      "text2": "Naša ekipa pravnih in letalskih strokovnjakov prevzame celoten postopek zahtevka — od začetne ocene do pogajanja z letalsko družbo — tako da vam ni treba. Zaračunamo le 30 % provizijo, če pridobimo vaš primer.",
+      "cardTitle": "Vaše pravice, naša prioriteta",
+      "cardText": "Pomagali smo tisočim potnikom po Evropi uveljavljati odškodnino, ki jim pripada. Naš avtomatiziran sistem in strokovna ekipa zagotavljata hitro obdelavo brez zapletov."
+    },
+    "values": {
+      "title": "Naše vrednote",
+      "transparency": {
+        "title": "Popolna preglednost",
+        "text": "Brez skritih stroškov, brez nepričakovanih doplačil. Plačate samo, ko pridobimo vaš primer — 30 % provizija ob uspehu."
+      },
+      "noWinNoFee": {
+        "title": "Brez zmage, brez plačila",
+        "text": "Prevzamemo vse tveganje. Če vaš zahtevek ni uspešen, ne plačate ničesar."
+      },
+      "speed": {
+        "title": "Hitra obdelava",
+        "text": "Naš avtomatizirani mehanizem upravičenosti vam zagotovi takojšnjo oceno. Večina zahtevkov je rešena v nekaj tednih."
+      },
+      "expertise": {
+        "title": "Pravno strokovno znanje",
+        "text": "Naša ekipa ima poglobljeno znanje o predpisih EC261/UK261 in obsežne izkušnje z letalskimi družbami."
+      }
+    },
+    "howItWorks": {
+      "title": "Kako deluje",
+      "step1": { "title": "Preverite upravičenost", "text": "Vnesite podatke o letu in takoj bomo ocenili vaš zahtevek." },
+      "step2": { "title": "Oddajte zahtevek", "text": "Izpolnite svoje podatke in naložite dokumente. Traja le 5 minut." },
+      "step3": { "title": "Mi poskrbimo za vse", "text": "Naša ekipa kontaktira letalsko družbo in vodi vse pravne postopke v vašem imenu." },
+      "step4": { "title": "Pridobite odškodnino", "text": "Ko pridobimo primer, se odškodnina nakaže neposredno na vaš bančni račun." }
+    },
+    "team": {
+      "title": "Naša ekipa",
+      "subtitle": "Predana ekipa strokovnjakov, ki se zavzema za zaščito vaših pravic potnikov.",
+      "founder": "Ustanovitelj in direktor",
+      "legal": "Pravni oddelek",
+      "claims": "Obdelava zahtevkov",
+      "tech": "Tehnologija"
+    },
+    "legal": {
+      "title": "Podatki o podjetju",
+      "company": {
+        "title": "Podjetje",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registrirano v Bolgariji"
+      },
+      "address": {
+        "title": "Naslov",
+        "text": "Sofija, Bolgarija"
+      },
+      "contact": {
+        "title": "Kontakt"
+      }
+    },
+    "cta": {
+      "title": "Ste pripravljeni zahtevati odškodnino?",
+      "text": "Preverite, ali je vaš let upravičen do odškodnine do 600 €. Brezplačno in traja le 2 minuti.",
+      "button": "Preveri odškodnino →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Novice in posodobitve",
+      "subtitle": "Bodite obveščeni o pravicah potnikov, predpisih in novostih Jet2Pay."
+    },
+    "featured": "Izpostavljeno",
+    "allArticles": "Vsi članki",
+    "readMore": "Preberi več",
+    "categories": {
+      "companyNews": "Novice podjetja",
+      "regulation": "Predpisi",
+      "tips": "Nasveti in vodniki"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay se predstavlja: Pomagamo potnikom uveljavljati odškodnino za lete",
+        "summary": "Z veseljem naznanjamo zagon Jet2Pay — platforme, namenjene pomoči potnikom pri uveljavljanju odškodnin za zamujene, odpovedane ali prezasedene lete po Uredbi EU 261/2004 in UK261."
+      },
+      "ec261Update": {
+        "title": "Razumevanje EC261: Vaš popolni vodnik po odškodninah za lete",
+        "summary": "Uredba EU 261/2004 daje potnikom pravico do odškodnine od 250 € do 600 € za motnje letov. Spoznajte svoje pravice in kako uveljavljati zahtevek."
+      },
+      "knowYourRights": {
+        "title": "5 stvari, ki bi jih moral vedeti vsak letalski potnik o svojih pravicah",
+        "summary": "Mnogi potniki ne vedo, da so upravičeni do odškodnine. Tukaj so ključna dejstva o vaših pravicah ob zamudah ali odpovedih letov."
+      },
+      "delayTips": {
+        "title": "Kaj storiti, ko vaš let zamuja: Vodnik po korakih",
+        "summary": "Let zamuja? Brez panike. Sledite našemu praktičnemu vodniku za zaščito vaših pravic in povečanje odškodninskega zahtevka."
+      },
+      "uk261": {
+        "title": "UK261: Pravila odškodnin za lete po Brexitu",
+        "summary": "Po Brexitu je Združeno kraljestvo sprejelo svojo različico EC261 — znano kot UK261. Tukaj je, kaj to pomeni za potnike, ki letijo v in iz Združenega kraljestva."
+      },
+      "partnerships": {
+        "title": "Jet2Pay sklene partnerstvo z vodilnimi ponudniki letalskih podatkov",
+        "summary": "Partnerstvo z vodilnimi ponudniki letalskih podatkov za preverjanje letov v realnem času in hitrejšo obdelavo zahtevkov za naše stranke."
+      }
+    },
+    "cta": {
+      "title": "Ste imeli motnjo leta?",
+      "text": "Preverite, ali ste upravičeni do odškodnine — brezplačno in traja 2 minuti.",
+      "button": "Preveri odškodnino →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Poznaj svoje pravice",
+    "products": "Izdelki",
+    "aboutCompany": "O podjetju",
+    "legal": "Pravne informacije",
+    "description": "Odškodnina za lete, poenostavljena. Pomagamo potnikom zahtevati do 600 € za zamujene, odpovedane ali prezasedene lete.",
+    "copyright": "Vse pravice pridržane.",
+    "links": {
+      "eu261": "Uredba EU 261/2004",
+      "uk261": "Uredba UK UK261",
+      "delayComp": "Odškodnina za zamudo leta",
+      "cancelComp": "Odškodnina za odpovedan let",
+      "overbookedComp": "Odškodnina za prezasedenost",
+      "deniedBoarding": "Zavrnjen vstop",
+      "passengerRights": "Pravice letalskih potnikov",
+      "checkComp": "Preveri odškodnino",
+      "howItWorks": "Kako deluje",
+      "pricing": "Cenik",
+      "claimStatus": "Preveri status zahtevka",
+      "aboutUs": "O Jet2Pay",
+      "reviews": "Ocene",
+      "careers": "Kariera",
+      "partners": "Partnerji",
+      "press": "Za medije",
+      "contact": "Kontaktirajte nas",
+      "news": "Novice",
+      "terms": "Pogoji in določila",
+      "privacy": "Politika zasebnosti",
+      "cookies": "Politika piškotkov",
+      "imprint": "Impresum",
+      "complaints": "Pritožbe"
+    },
+    "newsletter": {
+      "title": "Prijavite se na naše novice",
+      "text": "Prejmite najnovejše novice in potovalne nasvete neposredno v vaš nabiralnik.",
+      "placeholder": "Vaš e-poštni naslov",
+      "button": "Naroči se"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "PREPROST POSTOPEK", "title": "Kako deluje", "subtitle": "Pridobitev odškodnine za let je enostavna. Mi poskrbimo za vse — vi nam le povejte, kaj se je zgodilo." },
+      "steps": {
+        "title": "4 preprosti koraki",
+        "s1": { "title": "Preverite upravičenost", "text": "Vnesite podatke o letu v naše brezplačno orodje. Naš sistem takoj preveri Uredbo EU 261/2004 in UK261, da ugotovi, ali ste upravičeni do odškodnine do 600 €." },
+        "s2": { "title": "Oddajte zahtevek", "text": "Izpolnite svoje osebne podatke, podatke o letu in naložite morebitne podporne dokumente. Celoten postopek traja manj kot 5 minut." },
+        "s3": { "title": "Mi poskrbimo za vse", "text": "Naši pravni in letalski strokovnjaki prevzamejo. Kontaktiramo letalsko družbo, vodimo vso korespondenco in pogajanja ter upravljamo pravni postopek v vašem imenu." },
+        "s4": { "title": "Pridobite odškodnino", "text": "Ko uspešno rešimo vaš zahtevek, se odškodnina nakaže neposredno na vaš bančni račun. Od prejetega zneska odštejemo le 30 % provizijo." }
+      },
+      "whyUs": {
+        "title": "Zakaj izbrati Jet2Pay?",
+        "noRisk": { "title": "Brez zmage, brez plačila", "text": "Vnaprej ne plačate ničesar. Naša 30 % provizija se zaračuna samo, ko uspešno pridobimo vaš primer." },
+        "fast": { "title": "Strokovna pravna ekipa", "text": "Naša ekipa je specializirana za pravice letalskih potnikov v EU in ima obsežne izkušnje s pogajanji z letalskimi družbami." },
+        "expertise": { "title": "Hitro in enostavno", "text": "Oddajte zahtevek v manj kot 5 minutah. Mi poskrbimo za ostalo in vas obveščamo na vsakem koraku." }
+      },
+      "cta": { "title": "Ste pripravljeni začeti?", "text": "Preverite, ali je vaš let upravičen do odškodnine — brezplačno in traja le 2 minuti.", "button": "Preveri odškodnino →" }
+    },
+    "pricing": {
+      "hero": { "badge": "PREGLEDNE CENE", "title": "Cenik", "subtitle": "Brez skritih stroškov, brez vnaprejšnjih plačil. Plačate samo, ko pridobimo." },
+      "noWinNoFee": { "title": "Brez zmage, brez plačila", "text": "Naša storitev je popolnoma brezplačna, razen če uspešno pridobimo odškodnino za vas. Zaračunamo 30 % provizijo samo od pridobljenega zneska.", "badge": "ZAGOTOVLJENO" },
+      "comparison": {
+        "title": "Kako se primerjamo",
+        "option": "Možnost",
+        "cost": "Strošek",
+        "successRate": "Stopnja uspešnosti",
+        "effort": "Vaš trud",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30 % ob uspehu", "success": "98 %", "effort": "5 minut" },
+        "lawyer": { "name": "Odvetnik", "cost": "200 €+/uro", "success": "85 %", "effort": "Ure" },
+        "diy": { "name": "Sam/a", "cost": "Brezplačno", "success": "~10 %", "effort": "Dnevi/tedni" }
+      },
+      "faq": {
+        "title": "Pogosta vprašanja o cenah",
+        "q1": { "q": "Kdaj plačam?", "a": "Samo ko uspešno pridobimo odškodnino za vas. Če ne pridobimo, ne plačate ničesar." },
+        "q2": { "q": "Kaj pokriva 30 %?", "a": "Naša provizija pokriva vse pravno delo, pogajanja z letalskimi družbami, korespondenco in obdelavo zahtevkov." },
+        "q3": { "q": "Ali so kakšni skriti stroški?", "a": "Nikakor ne. 30 % provizija je edini strošek. Brez prijavnin, brez stroškov obdelave, brez stroškov odpovedi." },
+        "q4": { "q": "Kaj če moj zahtevek ni uspešen?", "a": "Ne plačate ničesar. Mi prevzamemo vse stroške in tveganja, povezana z uveljavljanjem vašega zahtevka." }
+      },
+      "cta": { "title": "Ste pripravljeni zahtevati?", "text": "Brezplačno preverite svojo upravičenost — brez obveznosti.", "button": "Preveri odškodnino →" }
+    },
+    "reviews": {
+      "hero": { "badge": "OCENE STRANK", "title": "Kaj pravijo naše stranke", "subtitle": "Tisočice potnikov je zaupalo Jet2Pay pri obravnavi njihovih zahtevkov za odškodnino." },
+      "stats": {
+        "avgRating": "Povprečna ocena",
+        "totalReviews": "Obdelanih zahtevkov",
+        "recommend": "Bi priporočili",
+        "avgPayout": "Največja odškodnina"
+      },
+      "grid": {
+        "title": "Nedavne ocene",
+        "r1": { "quote": "Jet2Pay je vse obravnaval brezhibno. Prejel/a sem 400 € za zamujen let iz Manchestera v Antalyo. Toplo priporočam!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Sprva sem bil/a skeptičen/na, a so dostavili. Prejel/a sem 250 € odškodnine za 4-urno zamudo. Brez zapletov.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Odlična storitev! Moj odpovedan let iz Birminghama je prinesel 600 € odškodnine. Ekipa me je obveščala skozi celoten postopek.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Hitro in profesionalno. Zahtevek sem oddal/a v 5 minutah in prejel/a plačilo v 8 tednih.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Po prezasedenosti mojega leta mi je Jet2Pay pridobil 400 € odškodnine. Postopek je bil neverjetno preprost.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantastična izkušnja. Niti vedel/a nisem, da sem upravičen/a do odškodnine, dokler nisem našel/la Jet2Pay. Prejel/a sem 250 €!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Ekipa je bila zelo odzivna in me je obveščala na vsakem koraku. Odškodnino sem prejel/a v samo 6 tednih.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Jet2Pay sem uporabil/a že dvakrat — oba primera uspešno. Res vedo, kaj delajo z zahtevki do letalskih družb.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Pridružite se tisočicam zadovoljnih strank", "text": "Preverite, ali je vaš let upravičen do odškodnine.", "button": "Preveri odškodnino →" }
+    },
+    "careers": {
+      "hero": { "badge": "PRIDRUŽITE SE NAM", "title": "Kariera pri Jet2Pay", "subtitle": "Pomagajte nam boriti se za pravice potnikov po Evropi. Pridružite se hitro rastoči ekipi, ki resnično spreminja svet." },
+      "culture": {
+        "title": "Zakaj delati z nami",
+        "text1": "Pri Jet2Pay gradimo nekaj smiselnega — platformo, ki pomaga vsakodnevnim popotnikom pridobiti odškodnino, ki jim pripada.",
+        "text2": "Cenimo preglednost, inovativnost in občutek za pravičnost. Naša ekipa dela na daljavo po Evropi, združena s skupnim poslanstvom.",
+        "cardTitle": "Naša kultura",
+        "cardText": "Prilagodljivo delo, konkurenčno plačilo in zadovoljstvo, da vsak mesec pomagate tisočim potnikom."
+      },
+      "positions": {
+        "title": "Odprta delovna mesta",
+        "apply": "Prijavi se zdaj →",
+        "claimsSpecialist": { "title": "Specialist za zahtevke", "location": "Na daljavo / Sofija", "type": "Polni delovni čas", "desc": "Obdelava in upravljanje zahtevkov za odškodnine letov. Komunikacija z letalskimi družbami in obveščanje potnikov o statusu zahtevkov." },
+        "legalAdvisor": { "title": "Pravni svetovalec", "location": "Sofija, Bolgarija", "type": "Polni delovni čas", "desc": "Zagotavljanje pravnega strokovnega znanja o predpisih EC261/UK261. Pregled kompleksnih primerov in priprava pravne dokumentacije za pogajanja z letalskimi družbami." },
+        "frontendDev": { "title": "Frontend razvijalec", "location": "Na daljavo", "type": "Polni delovni čas", "desc": "Gradnja in vzdrževanje naše spletne platforme na osnovi React. Delo na izboljšanju izkušnje oddaje zahtevkov in administrativne nadzorne plošče." },
+        "customerSupport": { "title": "Podpora strankam", "location": "Na daljavo", "type": "Krajši delovni čas", "desc": "Pomoč potnikom z vprašanji o njihovih zahtevkih. Zagotavljanje odlične storitve za stranke po e-pošti in klepetu." }
+      },
+      "cta": { "title": "Ne najdete idealnega delovnega mesta?", "text": "Pošljite nam svoj življenjepis in nam povejte, kako bi želeli prispevati.", "button": "Kontaktirajte nas →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSTVA", "title": "Sodelujte z nami", "subtitle": "Pridružite se mreži Jet2Pay in pomagajte potnikom pridobiti odškodnino, ki jim pripada." },
+      "types": {
+        "title": "Možnosti partnerstva",
+        "airlines": { "title": "Partnerstva z letalskimi družbami", "text": "Sodelujte z nami za poenostavitev postopka odškodnin za vaše potnike." },
+        "travelAgency": { "title": "Potovalne agencije", "text": "Ponudite odškodnino za lete kot dodatno storitev za vaše stranke. Mi obravnavamo zahtevke, vi krepite zvestobo strank." },
+        "legal": { "title": "Pravna mreža", "text": "Pridružite se naši mreži pravnih strokovnjakov, specializiranih za pravice letalskih potnikov po Evropi." }
+      },
+      "benefits": {
+        "title": "Prednosti partnerstva",
+        "benefit1": { "title": "Namenski vodja partnerstva", "text": "Ena kontaktna točka za vse vaše partnerske potrebe." },
+        "benefit2": { "title": "Prilagojena integracija", "text": "Dostop do API-ja in možnosti prilagojene integracije za nemotene delovne procese." },
+        "benefit3": { "title": "Konkurenčna provizija", "text": "Privlačno delitev prihodkov za partnerje z velikim obsegom." },
+        "benefit4": { "title": "Nadzorna plošča v realnem času", "text": "Sledite vsem priporočenim zahtevkom in zaslužkom v realnem času." }
+      },
+      "contactUs": { "title": "Stopite v stik", "text": "Vas zanima partnerstvo z Jet2Pay? Kontaktirajte našo partnersko ekipo:" },
+      "cta": { "title": "Vas zanima partnerstvo?", "text": "Stopite v stik z našo partnersko ekipo.", "button": "Kontaktirajte nas →" }
+    },
+    "press": {
+      "hero": { "badge": "ZA MEDIJE", "title": "Medijska soba", "subtitle": "Najnovejše novice, sporočila za javnost in medijski viri Jet2Pay." },
+      "facts": {
+        "title": "Podatki o podjetju",
+        "fact1": { "value": "2024", "label": "Ustanovljeno" },
+        "fact2": { "value": "Sofija, BG", "label": "Sedež" },
+        "fact3": { "value": "10+", "label": "Velikost ekipe" },
+        "fact4": { "value": "10.000+", "label": "Obdelanih zahtevkov" }
+      },
+      "releases": {
+        "title": "Sporočila za javnost",
+        "r1": { "date": "Marec 2026", "title": "Jet2Pay lansira novo platformo za zahtevke", "summary": "Jet2Pay naznanja zagon platforme naslednje generacije za odškodnine za lete, ki potnikom olajša zahtevanje do 600 €." },
+        "r2": { "date": "Februar 2026", "title": "Jet2Pay sklene partnerstvo s ponudniki letalskih podatkov", "summary": "Strateško partnerstvo z vodilnimi ponudniki letalskih podatkov omogoča preverjanje letov v realnem času in hitrejšo obdelavo zahtevkov." },
+        "r3": { "date": "Januar 2026", "title": "Jet2Pay razširi pokritost na 250+ letalskih družb", "summary": "Jet2Pay zdaj pokriva več kot 250 letalskih družb po svetu in ponuja celovite storitve odškodnin za lete po Evropi." }
+      },
+      "mediaKit": { "title": "Medijski komplet", "text": "Prenesite naš medijski komplet z logotipi, smernicami blagovne znamke in pregledom podjetja." },
+      "pressContact": { "title": "Kontakt za medije", "text": "Za medijska vprašanja, intervjuje in medijske zahtevke:" },
+      "cta": { "title": "Želite predstaviti Jet2Pay?", "text": "Z veseljem zagotovimo intervjuje, izjave in podatke za vašo zgodbo.", "button": "Kontaktirajte medijsko ekipo →" }
+    },
+    "contact": {
+      "hero": { "badge": "STOPITE V STIK", "title": "Kontaktirajte nas", "subtitle": "Imate vprašanje? Tu smo, da pomagamo. Pišite nam po katerem koli spodnjem kanalu." },
+      "channels": {
+        "email": { "title": "Zahtevki", "text": "Za vprašanja o obstoječih zahtevkih" },
+        "support": { "title": "Splošna podpora", "text": "Za splošna vprašanja in podporo" },
+        "address": { "title": "Pisarna", "text": "MITRANI CONSULT EOOD, Sofija, Bolgarija" }
+      },
+      "form": { "title": "Pošljite nam sporočilo", "placeholder": "Za vprašanja nam pišite na support@jet2pay.eu" },
+      "faq": {
+        "title": "Pogosta vprašanja",
+        "q1": { "q": "Kako dolgo traja zahtevek?", "a": "Večina zahtevkov je rešena v 6–12 tednih, odvisno od odzivnega časa letalske družbe." },
+        "q2": { "q": "Katere dokumente potrebujem?", "a": "Vstopno karto, potrditev rezervacije in veljaven osebni dokument. Vodili vas bomo skozi postopek." },
+        "q3": { "q": "Ali lahko zahtevam za let izpred več let?", "a": "Da! V večini držav EU lahko zahtevate za lete do 3 leta stare. V nekaterih državah je rok podaljšan na 6 let." }
+      },
+      "cta": { "title": "Ste pripravljeni preveriti svoj let?", "text": "Naše brezplačno preverjanje upravičenosti traja le 2 minuti.", "button": "Preveri odškodnino →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "sl": "Slovenščina",
+    "bs": "Bosanski",
+    "et": "Eesti",
+    "lv": "Latviešu",
+    "lt": "Lietuvių"
+  }
+}

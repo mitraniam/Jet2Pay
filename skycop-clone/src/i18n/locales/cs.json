@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Zkontrolovat náhradu",
+    "knowYourRights": "Poznejte svá práva",
+    "aboutCompany": "O společnosti",
+    "news": "Novinky",
+    "referAFriend": "Doporučte příteli",
+    "checkClaimStatus": "Zkontrolovat stav nároku"
+  },
+  "hero": {
+    "titleDelayed": "Zpožděný",
+    "titleCancelled": "Zrušený",
+    "titleFlight": "Let",
+    "titleOr": "nebo",
+    "subtitle": "Získejte až <strong>600 €</strong> za zpožděný nebo zrušený let",
+    "whatHappened": "Co se stalo s vaším letem?",
+    "delayed": "Zpožděný",
+    "cancelled": "Zrušený / Přebukovany",
+    "otherDisruptions": "Jiná narušení",
+    "departurePlaceholder": "Letiště odletu",
+    "arrivalPlaceholder": "Letiště příletu",
+    "checkCompensation": "Zkontrolovat náhradu",
+    "freeCheck": "Bezplatná kontrola náhrady",
+    "hassleFree": "Bez starostí",
+    "claimsUpTo": "Nároky až 3 roky staré",
+    "compensatedCustomers": "spokojených zákazníků",
+    "airlines": "leteckých společností",
+    "yearsTrusted": "let důvěry"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Kontrola oprávněnosti",
+      "waitTime": "Doba čekání",
+      "done": "Hotovo!",
+      "flightItinerary": "Trasa letu",
+      "disruptionType": "Typ narušení",
+      "timing": "Časování",
+      "reason": "Důvod",
+      "howLong": "Jak dlouho jste čekali?",
+      "claimDetails": "Podrobnosti nároku",
+      "flightInfo": "Informace o letu",
+      "passengerInfo": "Vaše údaje",
+      "bookingConsent": "Rezervace a souhlas"
+    },
+    "step1": {
+      "title": "Kam jste letěli?",
+      "departedFrom": "Odlet z",
+      "finalDestination": "Cílové letiště",
+      "airportPlaceholder": "Zadejte název města nebo letiště",
+      "directFlight": "Byl to přímý let?",
+      "yesDirect": "Ano, byl to přímý let",
+      "noConnecting": "Ne, měl/a jsem přestup"
+    },
+    "step2": {
+      "title": "Typ narušení",
+      "question": "Jaký typ narušení letu jste zažili?",
+      "delayed": "Let zpožděn",
+      "cancelled": "Let zrušen",
+      "denied": "Odmítnutí nástupu / Přebukování"
+    },
+    "step3": {
+      "title": "Jak dlouho jste byli zpožděni?",
+      "question": "Jak dlouho trvalo zpoždění do vaší cílové destinace?",
+      "less3": "Méně než 3 hodiny",
+      "more3": "Více než 3 hodiny",
+      "missed": "Zmeškaný navazující let"
+    },
+    "step4": {
+      "title": "Důvod narušení",
+      "question1": "Sdělila vám letecká společnost důvod narušení letu?",
+      "yes": "Ano",
+      "no": "Ne",
+      "dontRemember": "Nepamatuji si",
+      "question2": "Jaký byl důvod uvedený leteckou společností?",
+      "technical": "Technický problém letadla",
+      "weather": "Špatné počasí",
+      "strike": "Stávka",
+      "airport": "Problémy na letišti",
+      "other": "Jiné důvody"
+    },
+    "step5": {
+      "title": "Řekněte nám více o vaší situaci",
+      "question": "Jak dlouho jste čekali na náhradní let nebo řešení?",
+      "less2": "Méně než 2 hodiny",
+      "2to4": "2 až 4 hodiny",
+      "4to8": "4 až 8 hodin",
+      "overnight": "Přes noc (8+ hodin)",
+      "none": "Nebyla nabídnuta žádná alternativa",
+      "describeLabel": "Stručně popište, co se stalo",
+      "describeOptional": "(volitelné)",
+      "describePlaceholder": "Např. Můj let z Londýna do Paříže byl zpožděn o 4 hodiny kvůli technickému problému letadla...",
+      "infoText": "Sdílení podrobností o vaší zkušenosti může výrazně zvýšit šance na úspěšný nárok. Čím konkrétnější budete, tím vyšší budou vaše šance na schválení."
+    },
+    "back": "Zpět",
+    "continue": "Pokračovat",
+    "submitClaim": "Odeslat nárok",
+    "checkAnotherFlight": "← Zkontrolovat jiný let",
+    "freeCheck": "Zkontrolujte svou náhradu — <strong>100% zdarma</strong>, bez rizika.",
+    "eligible": {
+      "title": "Skvělá zpráva — můžete mít nárok!",
+      "description": "Na základě vašich odpovědí byste mohli mít nárok na náhradu až <strong>600 €</strong> podle nařízení EU 261/2004. Začněte svůj bezplatný nárok nyní!",
+      "descriptionDynamic": "Na základě vašich odpovědí byste mohli mít nárok na náhradu až <strong>€{{amount}}</strong> podle nařízení EU 261/2004. Začněte svůj bezplatný nárok nyní!",
+      "startClaim": "Zahájit bezplatný nárok →"
+    },
+    "notEligible": {
+      "title": "Bohužel se pravděpodobně nekvalifikujete",
+      "description": "Na základě vašich odpovědí se zdá, že vaše zpoždění je pod 3hodinovým prahem požadovaným pro náhradu EU podle nařízení 261/2004."
+    },
+    "step6": {
+      "title": "Podrobnosti letu",
+      "flightNumber": "Číslo letu",
+      "flightNumberPlaceholder": "např. LS123",
+      "flightDate": "Datum letu",
+      "flightDateHelp": "Datum narušeného letu"
+    },
+    "step7": {
+      "title": "Vaše údaje",
+      "firstName": "Jméno",
+      "lastName": "Příjmení",
+      "email": "E-mailová adresa",
+      "phone": "Telefonní číslo",
+      "phonePlaceholder": "+420 600 000 000",
+      "nationality": "Státní příslušnost",
+      "nationalityPlaceholder": "Vyberte zemi"
+    },
+    "step8": {
+      "title": "Rezervace a souhlas",
+      "bookingReference": "Číslo rezervace",
+      "bookingReferencePlaceholder": "např. ABC123",
+      "bookingReferenceHelp": "Najdete ho v potvrzovacím e-mailu o rezervaci",
+      "consent": "Souhlasím s <a href='/terms' target='_blank'>Obchodními podmínkami</a> a pověřuji Jet2Pay, aby jednal v mém zastoupení. Rozumím, že se uplatňuje provize 30 % v modelu „Bez výhry bez poplatku".",
+      "gdpr": "Souhlasím se zpracováním svých osobních údajů v souladu se <a href='/privacy' target='_blank'>Zásadami ochrany osobních údajů</a> a GDPR.",
+      "submitClaim": "Odeslat můj nárok"
+    },
+    "submitting": "Odesílání vašeho nároku...",
+    "submitted": {
+      "title": "Nárok byl úspěšně odeslán!",
+      "claimId": "Číslo nároku",
+      "estimated": "Odhadovaná náhrada",
+      "emailSent": "Potvrzovací e-mail byl odeslán do vaší schránky.",
+      "trackClaim": "Stav svého nároku můžete kdykoli sledovat pomocí čísla nároku.",
+      "newClaim": "← Odeslat další nárok"
+    },
+    "error": {
+      "submissionFailed": "Nepodařilo se odeslat nárok. Zkuste to prosím znovu.",
+      "networkError": "Chyba sítě. Zkontrolujte prosím své připojení."
+    }
+  },
+  "claimStatus": {
+    "title": "Zkontrolovat stav nároku",
+    "subtitle": "Zadejte referenční číslo nároku a sledujte průběh vašeho odškodnění.",
+    "placeholder": "Zadejte číslo nároku (např. 35073ad8-6b02...)",
+    "search": "Sledovat nárok",
+    "notFound": "S tímto referenčním číslem nebyl nalezen žádný nárok. Zkontrolujte ID a zkuste to znovu.",
+    "error": "Něco se pokazilo. Zkuste to prosím později.",
+    "progress": "Průběh nároku",
+    "flightDetails": "Podrobnosti letu",
+    "compensation": "Náhrada",
+    "claimRef": "Číslo nároku",
+    "status": "Stav",
+    "flight": "Let",
+    "date": "Datum",
+    "route": "Trasa",
+    "disruption": "Typ narušení",
+    "estimatedAmount": "Odhadovaná náhrada",
+    "distance": "Vzdálenost trasy",
+    "eligible": "Oprávněn k náhradě",
+    "notEligible": "Neoprávněn k náhradě",
+    "documents": "Dokumenty",
+    "noDocs": "Zatím nebyly nahrány žádné dokumenty.",
+    "missingDocs": "Chybějící dokumenty",
+    "timeline": "Časová osa stavu",
+    "steps": {
+      "submitted": "Odesláno",
+      "under_review": "Ve zpracování",
+      "airline_contacted": "Letecká společnost kontaktována",
+      "negotiating": "Vyjednávání",
+      "resolved": "Vyřešeno",
+      "rejected": "Zamítnuto",
+      "paid": "Vyplaceno"
+    },
+    "disruptionTypes": {
+      "delay": "Zpoždění",
+      "cancellation": "Zrušení",
+      "denied_boarding": "Odmítnutí nástupu",
+      "missed_connection": "Zmeškaný navazující let"
+    },
+    "docTypes": {
+      "boarding_pass": "Palubní lístek",
+      "booking_confirmation": "Potvrzení rezervace",
+      "id_document": "Doklad totožnosti"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Bojujeme za vaše práva cestujících",
+      "subtitle": "Pomáháme cestujícím získat náhradu, na kterou mají nárok, když se s letem něco pokazí. Bez výhry bez poplatku — je to tak jednoduché."
+    },
+    "stats": {
+      "customers": "Spokojení cestující",
+      "airlines": "Pokryté letecké společnosti",
+      "successRate": "Míra úspěchu",
+      "recovered": "Získáno pro cestující"
+    },
+    "mission": {
+      "title": "Naše mise",
+      "text1": "V Jet2Pay věříme, že každý cestující si zaslouží spravedlivé zacházení. Když je váš let zpožděn, zrušen nebo vám je odmítnut nástup, nařízení EU 261/2004 a UK261 chrání vaše právo na náhradu až do výše 600 €.",
+      "text2": "Náš tým právních a leteckých expertů se postará o celý proces nároku — od počátečního posouzení po vyjednávání s leteckou společností — abyste to nemuseli řešit sami. Účtujeme pouze 30% provizi, pokud váš případ vyhrajeme.",
+      "cardTitle": "Vaše práva, naše priorita",
+      "cardText": "Pomohli jsme tisícům cestujících po celé Evropě získat jejich oprávněnou náhradu. Náš automatizovaný systém a odborný tým zajišťují rychlé a bezproblémové zpracování."
+    },
+    "values": {
+      "title": "Naše hodnoty",
+      "transparency": {
+        "title": "Plná transparentnost",
+        "text": "Žádné skryté poplatky, žádné nečekané náklady. Platíte pouze tehdy, když váš případ vyhrajeme — 30% provize z úspěchu."
+      },
+      "noWinNoFee": {
+        "title": "Bez výhry bez poplatku",
+        "text": "Přebíráme veškeré riziko. Pokud váš nárok nebude úspěšný, neplatíte absolutně nic."
+      },
+      "speed": {
+        "title": "Rychlé zpracování",
+        "text": "Náš automatizovaný systém kontroly oprávněnosti vám poskytne okamžité posouzení. Většina nároků je vyřešena během několika týdnů."
+      },
+      "expertise": {
+        "title": "Právní odbornost",
+        "text": "Náš tým má hluboké znalosti předpisů EC261/UK261 a rozsáhlé zkušenosti s jednáním s leteckými společnostmi."
+      }
+    },
+    "howItWorks": {
+      "title": "Jak to funguje",
+      "step1": { "title": "Zkontrolujte oprávněnost", "text": "Zadejte údaje o svém letu a my okamžitě posoudíme váš nárok." },
+      "step2": { "title": "Odešlete svůj nárok", "text": "Vyplňte své údaje a nahrajte dokumenty. Zabere to jen 5 minut." },
+      "step3": { "title": "My se postaráme o vše", "text": "Náš tým kontaktuje leteckou společnost a řeší veškeré právní procesy vaším jménem." },
+      "step4": { "title": "Získejte náhradu", "text": "Jakmile vyhrajeme, náhrada bude převedena přímo na váš bankovní účet." }
+    },
+    "team": {
+      "title": "Náš tým",
+      "subtitle": "Oddaný tým profesionálů odhodlaných chránit vaše práva cestujících.",
+      "founder": "Zakladatel a CEO",
+      "legal": "Právní oddělení",
+      "claims": "Zpracování nároků",
+      "tech": "Technologie"
+    },
+    "legal": {
+      "title": "Informace o společnosti",
+      "company": {
+        "title": "Společnost",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registrována v Bulharsku"
+      },
+      "address": {
+        "title": "Adresa",
+        "text": "Sofie, Bulharsko"
+      },
+      "contact": {
+        "title": "Kontakt"
+      }
+    },
+    "cta": {
+      "title": "Připraveni nárokovat svou náhradu?",
+      "text": "Zkontrolujte, zda váš let splňuje podmínky pro náhradu až 600 €. Je to zdarma a zabere to jen 2 minuty.",
+      "button": "Zkontrolovat náhradu →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Novinky a aktualizace",
+      "subtitle": "Buďte informováni o právech cestujících, předpisech a novinkách Jet2Pay."
+    },
+    "featured": "Doporučené",
+    "allArticles": "Všechny články",
+    "readMore": "Číst více",
+    "categories": {
+      "companyNews": "Firemní novinky",
+      "regulation": "Předpisy",
+      "tips": "Tipy a průvodce"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay startuje: Pomáháme cestujícím nárokovat náhradu za lety",
+        "summary": "S radostí oznamujeme spuštění Jet2Pay — platformy pomáhající cestujícím nárokovat náhradu za zpožděné, zrušené nebo přebukované lety podle nařízení EU 261/2004 a UK261."
+      },
+      "ec261Update": {
+        "title": "Porozumění EC261: Váš kompletní průvodce náhradou za lety",
+        "summary": "Nařízení EU 261/2004 opravňuje cestující k náhradě 250–600 € za narušení letů. Zjistěte svá práva a jak podat nárok."
+      },
+      "knowYourRights": {
+        "title": "5 věcí, které by měl každý cestující vědět o svých právech",
+        "summary": "Mnoho cestujících neví, že mají nárok na náhradu. Zde jsou klíčové fakty o vašich právech při zpoždění nebo zrušení letu."
+      },
+      "delayTips": {
+        "title": "Co dělat, když je váš let zpožděn: Průvodce krok za krokem",
+        "summary": "Máte zpožděný let? Nepanikařte. Postupujte podle našeho praktického průvodce, abyste ochránili svá práva a maximalizovali svůj nárok na náhradu."
+      },
+      "uk261": {
+        "title": "UK261: Pravidla náhrady za lety po Brexitu vysvětlena",
+        "summary": "Po Brexitu přijala Velká Británie vlastní verzi EC261 — známou jako UK261. Zde se dozvíte, co to znamená pro cestující letící do a z Velké Británie."
+      },
+      "partnerships": {
+        "title": "Jet2Pay spolupracuje s předními poskytovateli leteckých dat",
+        "summary": "Navázali jsme spolupráci s předními poskytovateli letových dat, abychom nabídli ověření letů v reálném čase a rychlejší zpracování nároků."
+      }
+    },
+    "cta": {
+      "title": "Měli jste narušení letu?",
+      "text": "Zjistěte, zda máte nárok na náhradu — je to zdarma a zabere to 2 minuty.",
+      "button": "Zkontrolovat náhradu →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Poznejte svá práva",
+    "products": "Produkty",
+    "aboutCompany": "O společnosti",
+    "legal": "Právní informace",
+    "description": "Náhrada za let jednoduše. Pomáháme cestujícím nárokovat až 600 € za zpožděné, zrušené nebo přebukované lety.",
+    "copyright": "Všechna práva vyhrazena.",
+    "links": {
+      "eu261": "Nařízení EU 261/2004",
+      "uk261": "Nařízení UK261",
+      "delayComp": "Náhrada za zpoždění letu",
+      "cancelComp": "Náhrada za zrušený let",
+      "overbookedComp": "Náhrada za přebukovaný let",
+      "deniedBoarding": "Odmítnutí nástupu",
+      "passengerRights": "Práva leteckých cestujících",
+      "checkComp": "Zkontrolovat náhradu",
+      "howItWorks": "Jak to funguje",
+      "pricing": "Ceník",
+      "claimStatus": "Zkontrolovat stav nároku",
+      "aboutUs": "O Jet2Pay",
+      "reviews": "Recenze",
+      "careers": "Kariéra",
+      "partners": "Partneři",
+      "press": "Tisk",
+      "contact": "Kontaktujte nás",
+      "news": "Novinky",
+      "terms": "Obchodní podmínky",
+      "privacy": "Zásady ochrany osobních údajů",
+      "cookies": "Zásady cookies",
+      "imprint": "Impresum",
+      "complaints": "Stížnosti"
+    },
+    "newsletter": {
+      "title": "Přihlaste se k odběru novinek",
+      "text": "Získejte nejnovější zprávy a cestovní tipy přímo do své schránky.",
+      "placeholder": "Vaše e-mailová adresa",
+      "button": "Přihlásit se"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "JEDNODUCHÝ PROCES", "title": "Jak to funguje", "subtitle": "Získání náhrady za let je snadné. My se postaráme o vše — stačí nám říct, co se stalo." },
+      "steps": {
+        "title": "4 jednoduché kroky",
+        "s1": { "title": "Zkontrolujte oprávněnost", "text": "Zadejte údaje o svém letu do našeho bezplatného nástroje. Náš systém okamžitě zkontroluje nařízení EU 261/2004 a UK261, aby zjistil, zda máte nárok na náhradu až do výše 600 €." },
+        "s2": { "title": "Odešlete svůj nárok", "text": "Vyplňte své osobní údaje, informace o letu a nahrajte podpůrné dokumenty. Celý proces trvá méně než 5 minut." },
+        "s3": { "title": "My se postaráme o vše", "text": "Naši právní a letečtí odborníci převezmou řízení. Kontaktujeme leteckou společnost, řešíme veškerou korespondenci a vyjednávání a spravujeme právní proces vaším jménem." },
+        "s4": { "title": "Získejte náhradu", "text": "Jakmile úspěšně vyřešíme váš nárok, náhrada bude převedena přímo na váš bankovní účet. Odečítáme pouze naši 30% provizi z přijaté částky." }
+      },
+      "whyUs": {
+        "title": "Proč si vybrat Jet2Pay?",
+        "noRisk": { "title": "Bez výhry bez poplatku", "text": "Neplatíte nic předem. Naše 30% provize je účtována pouze tehdy, když váš případ úspěšně vyhrajeme." },
+        "fast": { "title": "Odborný právní tým", "text": "Náš tým se specializuje na práva leteckých cestujících EU a má rozsáhlé zkušenosti s vyjednáváním s leteckými společnostmi." },
+        "expertise": { "title": "Rychle a snadno", "text": "Odešlete svůj nárok za méně než 5 minut. My se postaráme o zbytek a budeme vás informovat v každém kroku." }
+      },
+      "cta": { "title": "Připraveni začít?", "text": "Zkontrolujte, zda váš let splňuje podmínky pro náhradu — je to zdarma a zabere to jen 2 minuty.", "button": "Zkontrolovat náhradu →" }
+    },
+    "pricing": {
+      "hero": { "badge": "TRANSPARENTNÍ CENÍK", "title": "Ceník", "subtitle": "Žádné skryté poplatky, žádné předběžné náklady. Platíte pouze tehdy, když vyhrajeme." },
+      "noWinNoFee": { "title": "Bez výhry bez poplatku", "text": "Naše služba je zcela zdarma, pokud pro vás úspěšně nezískáme náhradu. Účtujeme 30% provizi pouze z vymožené částky.", "badge": "GARANTOVÁNO" },
+      "comparison": {
+        "title": "Jak si stojíme v porovnání",
+        "option": "Možnost",
+        "cost": "Náklady",
+        "successRate": "Míra úspěchu",
+        "effort": "Vaše úsilí",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30 % z úspěchu", "success": "98%", "effort": "5 minut" },
+        "lawyer": { "name": "Advokát", "cost": "200+ €/hod.", "success": "85%", "effort": "Hodiny" },
+        "diy": { "name": "Vlastními silami", "cost": "Zdarma", "success": "~10%", "effort": "Dny/Týdny" }
+      },
+      "faq": {
+        "title": "Často kladené dotazy k cenám",
+        "q1": { "q": "Kdy platím?", "a": "Pouze tehdy, když pro vás úspěšně získáme náhradu. Pokud nevyhrajeme, neplatíte nic." },
+        "q2": { "q": "Co pokrývá 30 %?", "a": "Naše provize pokrývá veškerou právní práci, vyjednávání s leteckými společnostmi, korespondenci a zpracování nároku." },
+        "q3": { "q": "Jsou zde nějaké skryté poplatky?", "a": "Rozhodně ne. 30% provize je jediný poplatek. Žádné registrační poplatky, žádné poplatky za zpracování, žádné poplatky za zrušení." },
+        "q4": { "q": "Co když můj nárok nebude úspěšný?", "a": "Neplatíte nic. Přebíráme veškeré náklady a rizika spojená s uplatněním vašeho nároku." }
+      },
+      "cta": { "title": "Připraveni podat nárok?", "text": "Zkontrolujte svou oprávněnost zdarma — bez závazků.", "button": "Zkontrolovat náhradu →" }
+    },
+    "reviews": {
+      "hero": { "badge": "RECENZE ZÁKAZNÍKŮ", "title": "Co říkají naši zákazníci", "subtitle": "Tisíce cestujících svěřily Jet2Pay zpracování svých nároků na náhradu." },
+      "stats": {
+        "avgRating": "Průměrné hodnocení",
+        "totalReviews": "Zpracované nároky",
+        "recommend": "Doporučilo by nás",
+        "avgPayout": "Maximální náhrada"
+      },
+      "grid": {
+        "title": "Poslední recenze",
+        "r1": { "quote": "Jet2Pay vše zvládl perfektně. Získala jsem 400 € za zpožděný let z Manchesteru do Antalye. Vřele doporučuji!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Zpočátku jsem byl skeptický, ale dodali. Dostal jsem 250 € náhrady za 4hodinové zpoždění. Žádné potíže.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Vynikající služba! Můj zrušený let z Birminghamu vedl k náhradě 600 €. Tým mě informoval po celou dobu.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Rychle a profesionálně. Podal jsem nárok za 5 minut a platbu jsem obdržel do 8 týdnů.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Po přebukování mého letu mi Jet2Pay získal 400 € náhrady. Proces byl neuvěřitelně jednoduchý.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantastická zkušenost. Ani jsem nevěděl, že mám nárok na náhradu, dokud jsem nenašel Jet2Pay. Dostal jsem 250 €!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Tým byl velmi vstřícný a informoval mě v každé fázi. Náhradu jsem obdržel za pouhých 6 týdnů.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Jet2Pay jsem využil už dvakrát — pokaždé úspěšně. Opravdu vědí, co dělají v oblasti nároků vůči leteckým společnostem.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Připojte se k tisícům spokojených zákazníků", "text": "Zjistěte, zda váš let splňuje podmínky pro náhradu.", "button": "Zkontrolovat náhradu →" }
+    },
+    "careers": {
+      "hero": { "badge": "PŘIDEJTE SE K TÝMU", "title": "Kariéra v Jet2Pay", "subtitle": "Pomozte nám bojovat za práva cestujících po celé Evropě. Připojte se k rychle rostoucímu týmu, který opravdu mění svět." },
+      "culture": {
+        "title": "Proč s námi pracovat",
+        "text1": "V Jet2Pay budujeme něco smysluplného — platformu, která pomáhá běžným cestujícím získat náhradu, na kterou mají nárok.",
+        "text2": "Ceníme si transparentnosti, inovací a silného smyslu pro spravedlnost. Náš tým pracuje vzdáleně po celé Evropě, sjednocen společnou misí.",
+        "cardTitle": "Naše kultura",
+        "cardText": "Flexibilní práce, konkurenční plat a uspokojení z pomáhání tisícům cestujících každý měsíc."
+      },
+      "positions": {
+        "title": "Otevřené pozice",
+        "apply": "Přihlásit se →",
+        "claimsSpecialist": { "title": "Specialista na nároky", "location": "Vzdáleně / Sofie", "type": "Plný úvazek", "desc": "Zpracování a správa nároků na náhradu za lety. Komunikace s leteckými společnostmi a informování cestujících o stavu jejich nároku." },
+        "legalAdvisor": { "title": "Právní poradce", "location": "Sofie, Bulharsko", "type": "Plný úvazek", "desc": "Právní poradenství v oblasti nařízení EC261/UK261. Přezkoumání složitých případů a příprava právní dokumentace pro vyjednávání s leteckými společnostmi." },
+        "frontendDev": { "title": "Frontend vývojář", "location": "Vzdáleně", "type": "Plný úvazek", "desc": "Vývoj a údržba naší webové platformy založené na Reactu. Práce na zlepšování procesu podávání nároků a administrátorského panelu." },
+        "customerSupport": { "title": "Zákaznická podpora", "location": "Vzdáleně", "type": "Částečný úvazek", "desc": "Pomoc cestujícím s dotazy k jejich nárokům. Poskytování vynikající zákaznické služby přes e-mail a chat." }
+      },
+      "cta": { "title": "Nevidíte vhodnou pozici?", "text": "Pošlete nám svůj životopis a sdělte nám, jak byste chtěli přispět.", "button": "Kontaktujte nás →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSTVÍ", "title": "Staňte se partnerem", "subtitle": "Přidejte se k síti Jet2Pay a pomozte cestujícím získat náhradu, na kterou mají nárok." },
+      "types": {
+        "title": "Možnosti partnerství",
+        "airlines": { "title": "Partnerství s leteckými společnostmi", "text": "Spolupracujte s námi na zefektivnění procesu náhrad pro vaše cestující." },
+        "travelAgency": { "title": "Cestovní kanceláře", "text": "Nabídněte náhradu za lety jako přidanou službu svým klientům. My řešíme nároky, vy posilujete loajalitu zákazníků." },
+        "legal": { "title": "Právní síť", "text": "Připojte se k naší síti právníků specializujících se na práva leteckých cestujících po celé Evropě." }
+      },
+      "benefits": {
+        "title": "Výhody partnerství",
+        "benefit1": { "title": "Dedikovaný partner manažer", "text": "Jediný kontaktní bod pro všechny vaše partnerské potřeby." },
+        "benefit2": { "title": "Vlastní integrace", "text": "Přístup k API a možnosti vlastní integrace pro bezproblémové pracovní postupy." },
+        "benefit3": { "title": "Konkurenční provize", "text": "Atraktivní sdílení příjmů pro partnery s vysokým objemem." },
+        "benefit4": { "title": "Panel v reálném čase", "text": "Sledujte všechny doporučené nároky a příjmy v reálném čase." }
+      },
+      "contactUs": { "title": "Kontaktujte nás", "text": "Máte zájem o partnerství s Jet2Pay? Kontaktujte náš tým pro partnerství:" },
+      "cta": { "title": "Máte zájem o partnerství?", "text": "Kontaktujte náš tým pro partnerství.", "button": "Kontaktujte nás →" }
+    },
+    "press": {
+      "hero": { "badge": "TISK A MÉDIA", "title": "Tiskové centrum", "subtitle": "Nejnovější zprávy, tiskové zprávy a mediální materiály od Jet2Pay." },
+      "facts": {
+        "title": "Fakta o společnosti",
+        "fact1": { "value": "2024", "label": "Založena" },
+        "fact2": { "value": "Sofia, BG", "label": "Sídlo" },
+        "fact3": { "value": "10+", "label": "Velikost týmu" },
+        "fact4": { "value": "10,000+", "label": "Zpracované nároky" }
+      },
+      "releases": {
+        "title": "Tiskové zprávy",
+        "r1": { "date": "Březen 2026", "title": "Jet2Pay spouští novou platformu nároků", "summary": "Jet2Pay oznamuje spuštění platformy nové generace pro náhradu za lety, která cestujícím usnadňuje nárokování až 600 €." },
+        "r2": { "date": "Únor 2026", "title": "Jet2Pay spolupracuje s poskytovateli leteckých dat", "summary": "Strategické partnerství s předními poskytovateli letových dat umožňuje ověření letů v reálném čase a rychlejší zpracování nároků." },
+        "r3": { "date": "Leden 2026", "title": "Jet2Pay rozšiřuje pokrytí na více než 250 leteckých společností", "summary": "Jet2Pay nyní pokrývá více než 250 leteckých společností po celém světě a nabízí komplexní služby náhrad po celé Evropě." }
+      },
+      "mediaKit": { "title": "Mediální balíček", "text": "Stáhněte si náš tiskový balíček obsahující loga, pokyny k značce a přehled společnosti." },
+      "pressContact": { "title": "Kontakt pro tisk", "text": "Pro tiskové dotazy, rozhovory a mediální požadavky:" },
+      "cta": { "title": "Chcete představit Jet2Pay?", "text": "Rádi poskytneme rozhovory, citace a data pro váš článek.", "button": "Kontaktovat tiskový tým →" }
+    },
+    "contact": {
+      "hero": { "badge": "KONTAKTUJTE NÁS", "title": "Kontakt", "subtitle": "Máte otázku? Jsme tu, abychom pomohli. Kontaktujte nás prostřednictvím některého z níže uvedených kanálů." },
+      "channels": {
+        "email": { "title": "Nároky", "text": "Pro dotazy k existujícím nárokům" },
+        "support": { "title": "Obecná podpora", "text": "Pro obecné dotazy a podporu" },
+        "address": { "title": "Kancelář", "text": "MITRANI CONSULT EOOD, Sofie, Bulharsko" }
+      },
+      "form": { "title": "Napište nám", "placeholder": "Pro dotazy nám napište na support@jet2pay.eu" },
+      "faq": {
+        "title": "Často kladené dotazy",
+        "q1": { "q": "Jak dlouho trvá zpracování nároku?", "a": "Většina nároků je vyřešena během 6–12 týdnů, v závislosti na době odezvy letecké společnosti." },
+        "q2": { "q": "Jaké dokumenty potřebuji?", "a": "Palubní lístek, potvrzení rezervace a platný doklad totožnosti. Provedeme vás celým procesem." },
+        "q3": { "q": "Mohu nárokovat za let z minulých let?", "a": "Ano! Ve většině zemí EU můžete nárokovat za lety staré až 3 roky. V některých zemích je lhůta až 6 let." }
+      },
+      "cta": { "title": "Připraveni zkontrolovat svůj let?", "text": "Naše bezplatná kontrola oprávněnosti zabere jen 2 minuty.", "button": "Zkontrolovat náhradu →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "pl": "Polski",
+    "cs": "Čeština",
+    "hu": "Magyar",
+    "hr": "Hrvatski",
+    "nl": "Nederlands"
+  }
+}

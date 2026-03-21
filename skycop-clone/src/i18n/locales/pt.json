@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Verificar compensação",
+    "knowYourRights": "Conheça os seus direitos",
+    "aboutCompany": "Sobre a empresa",
+    "news": "Notícias",
+    "referAFriend": "Recomendar a um amigo",
+    "checkClaimStatus": "Estado da reclamação"
+  },
+  "hero": {
+    "titleDelayed": "Atrasado",
+    "titleCancelled": "Cancelado",
+    "titleFlight": "Voo",
+    "titleOr": "ou",
+    "subtitle": "Reclame até <strong>€600</strong> por um voo atrasado ou cancelado",
+    "whatHappened": "O que aconteceu com o seu voo?",
+    "delayed": "Atrasado",
+    "cancelled": "Cancelado / Overbooking",
+    "otherDisruptions": "Outras perturbações",
+    "departurePlaceholder": "Aeroporto de partida",
+    "arrivalPlaceholder": "Aeroporto de chegada",
+    "checkCompensation": "Verificar compensação",
+    "freeCheck": "Verificação gratuita de compensação",
+    "hassleFree": "Sem complicações",
+    "claimsUpTo": "Reclamações até 3 anos",
+    "compensatedCustomers": "clientes compensados",
+    "airlines": "companhias aéreas",
+    "yearsTrusted": "anos de confiança"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Verificação de elegibilidade",
+      "waitTime": "Tempo de espera",
+      "done": "Concluído!",
+      "flightItinerary": "Itinerário de voo",
+      "disruptionType": "Tipo de perturbação",
+      "timing": "Tempo",
+      "reason": "Motivo",
+      "howLong": "Quanto tempo esperou?",
+      "claimDetails": "Detalhes da reclamação",
+      "flightInfo": "Informação do voo",
+      "passengerInfo": "Os seus dados",
+      "bookingConsent": "Reserva e consentimento"
+    },
+    "step1": {
+      "title": "Para onde voou?",
+      "departedFrom": "Partiu de",
+      "finalDestination": "Aeroporto de destino final",
+      "airportPlaceholder": "Introduza a cidade ou o nome do aeroporto",
+      "directFlight": "Foi um voo direto?",
+      "yesDirect": "Sim, foi um voo direto",
+      "noConnecting": "Não, tive voos de ligação"
+    },
+    "step2": {
+      "title": "Tipo de perturbação",
+      "question": "Qual foi a natureza da perturbação do voo?",
+      "delayed": "Voo atrasado",
+      "cancelled": "Voo cancelado",
+      "denied": "Embarque recusado / Overbooking"
+    },
+    "step3": {
+      "title": "Quanto tempo de atraso teve?",
+      "question": "Quanto tempo de atraso teve para chegar ao seu destino final?",
+      "less3": "Menos de 3 horas",
+      "more3": "Mais de 3 horas",
+      "missed": "Ligação perdida"
+    },
+    "step4": {
+      "title": "Motivo da perturbação",
+      "question1": "A companhia aérea informou-o do motivo da perturbação?",
+      "yes": "Sim",
+      "no": "Não",
+      "dontRemember": "Não me lembro",
+      "question2": "Qual foi o motivo indicado pela companhia aérea?",
+      "technical": "Problema técnico da aeronave",
+      "weather": "Más condições meteorológicas",
+      "strike": "Greve",
+      "airport": "Problemas no aeroporto",
+      "other": "Outros motivos"
+    },
+    "step5": {
+      "title": "Conte-nos mais sobre a sua situação",
+      "question": "Quanto tempo esperou por um voo de substituição ou uma solução?",
+      "less2": "Menos de 2 horas",
+      "2to4": "2 a 4 horas",
+      "4to8": "4 a 8 horas",
+      "overnight": "De noite (8+ horas)",
+      "none": "Não foi oferecida alternativa",
+      "describeLabel": "Descreva brevemente o que aconteceu",
+      "describeOptional": "(opcional)",
+      "describePlaceholder": "Ex.: O meu voo de Londres para Paris sofreu um atraso de 4 horas devido a um problema técnico na aeronave...",
+      "infoText": "Partilhar detalhes sobre a sua experiência pode melhorar significativamente as hipóteses de sucesso da reclamação. Quanto mais específico for, maiores são as probabilidades de aprovação."
+    },
+    "back": "Voltar",
+    "continue": "Continuar",
+    "submitClaim": "Submeter reclamação",
+    "checkAnotherFlight": "← Verificar outro voo",
+    "freeCheck": "Verifique a sua compensação — <strong>100% grátis</strong>, sem riscos.",
+    "eligible": {
+      "title": "Ótimas notícias — pode ter direito!",
+      "description": "Com base nas suas respostas, poderá ter direito a uma compensação de até <strong>€600</strong> ao abrigo do Regulamento UE 261/2004. Inicie já a sua reclamação gratuita!",
+      "descriptionDynamic": "Com base nas suas respostas, poderá ter direito a uma compensação de até <strong>€{{amount}}</strong> ao abrigo do Regulamento UE 261/2004. Inicie já a sua reclamação gratuita!",
+      "startClaim": "Iniciar a minha reclamação gratuita →"
+    },
+    "notEligible": {
+      "title": "Infelizmente, pode não ter direito",
+      "description": "Com base nas suas respostas, o seu atraso parece estar abaixo do limite de 3 horas exigido para a compensação UE ao abrigo do Regulamento 261/2004."
+    },
+    "step6": {
+      "title": "Detalhes do voo",
+      "flightNumber": "Número do voo",
+      "flightNumberPlaceholder": "ex.: LS123",
+      "flightDate": "Data do voo",
+      "flightDateHelp": "Data do voo com perturbação"
+    },
+    "step7": {
+      "title": "Os seus dados",
+      "firstName": "Nome próprio",
+      "lastName": "Apelido",
+      "email": "Endereço de e-mail",
+      "phone": "Número de telefone",
+      "phonePlaceholder": "+351 912 345 678",
+      "nationality": "Nacionalidade",
+      "nationalityPlaceholder": "Selecione o país"
+    },
+    "step8": {
+      "title": "Reserva e consentimento",
+      "bookingReference": "Referência da reserva",
+      "bookingReferencePlaceholder": "ex.: ABC123",
+      "bookingReferenceHelp": "Encontra-se no e-mail de confirmação da reserva",
+      "consent": "Concordo com os <a href='/terms' target='_blank'>Termos e condições</a> e autorizo a Jet2Pay a agir em meu nome. Compreendo que se aplica a comissão de 30% na modalidade No Win No Fee.",
+      "gdpr": "Consinto o tratamento dos meus dados pessoais em conformidade com a <a href='/privacy' target='_blank'>Política de privacidade</a> e o RGPD.",
+      "submitClaim": "Submeter a minha reclamação"
+    },
+    "submitting": "A submeter a sua reclamação...",
+    "submitted": {
+      "title": "Reclamação submetida com sucesso!",
+      "claimId": "Referência da reclamação",
+      "estimated": "Compensação estimada",
+      "emailSent": "Foi enviado um e-mail de confirmação para a sua caixa de entrada.",
+      "trackClaim": "Acompanhe o estado da sua reclamação a qualquer momento usando a referência.",
+      "newClaim": "← Submeter outra reclamação"
+    },
+    "error": {
+      "submissionFailed": "Falha ao submeter a reclamação. Por favor, tente novamente.",
+      "networkError": "Erro de rede. Verifique a sua ligação."
+    }
+  },
+  "claimStatus": {
+    "title": "Estado da reclamação",
+    "subtitle": "Introduza o número de referência da reclamação para acompanhar o progresso do seu pedido de compensação.",
+    "placeholder": "Introduza a referência da reclamação (ex.: 35073ad8-6b02...)",
+    "search": "Pesquisar reclamação",
+    "notFound": "Nenhuma reclamação encontrada com esta referência. Verifique o ID e tente novamente.",
+    "error": "Ocorreu um erro. Por favor, tente novamente mais tarde.",
+    "progress": "Progresso da reclamação",
+    "flightDetails": "Detalhes do voo",
+    "compensation": "Compensação",
+    "claimRef": "Referência da reclamação",
+    "status": "Estado",
+    "flight": "Voo",
+    "date": "Data",
+    "route": "Rota",
+    "disruption": "Tipo de perturbação",
+    "estimatedAmount": "Compensação estimada",
+    "distance": "Distância da rota",
+    "eligible": "Elegível para compensação",
+    "notEligible": "Não elegível para compensação",
+    "documents": "Documentos",
+    "noDocs": "Ainda não foram carregados documentos.",
+    "missingDocs": "Documentos em falta",
+    "timeline": "Cronologia do estado",
+    "steps": {
+      "submitted": "Submetida",
+      "under_review": "Em análise",
+      "airline_contacted": "Companhia aérea contactada",
+      "negotiating": "Em negociação",
+      "resolved": "Resolvida",
+      "rejected": "Rejeitada",
+      "paid": "Paga"
+    },
+    "disruptionTypes": {
+      "delay": "Atraso",
+      "cancellation": "Cancelamento",
+      "denied_boarding": "Embarque recusado",
+      "missed_connection": "Ligação perdida"
+    },
+    "docTypes": {
+      "boarding_pass": "Cartão de embarque",
+      "booking_confirmation": "Confirmação de reserva",
+      "id_document": "Documento de identificação"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "A lutar pelos seus direitos de voo",
+      "subtitle": "Ajudamos os passageiros a obter a compensação que merecem quando os voos correm mal. No Win, No Fee — é assim tão simples."
+    },
+    "stats": {
+      "customers": "Passageiros compensados",
+      "airlines": "Companhias aéreas cobertas",
+      "successRate": "Taxa de sucesso",
+      "recovered": "Recuperado para passageiros"
+    },
+    "mission": {
+      "title": "A nossa missão",
+      "text1": "Na Jet2Pay, acreditamos que cada passageiro merece um tratamento justo. Quando o seu voo está atrasado, é cancelado ou lhe é recusado o embarque, o Regulamento UE 261/2004 e o UK261 protegem o seu direito a uma compensação de até €600.",
+      "text2": "A nossa equipa de especialistas jurídicos e de aviação trata de todo o processo de reclamação — desde a avaliação inicial até à negociação com a companhia aérea — para que não tenha de o fazer. Cobramos apenas uma comissão de 30% se ganharmos o seu caso.",
+      "cardTitle": "Os seus direitos, a nossa prioridade",
+      "cardText": "Ajudámos milhares de passageiros em toda a Europa a reclamar a compensação a que têm direito. O nosso sistema automatizado e equipa especializada garantem um processamento rápido e sem complicações."
+    },
+    "values": {
+      "title": "Os nossos valores",
+      "transparency": {
+        "title": "Total transparência",
+        "text": "Sem taxas ocultas, sem custos surpresa. Só paga quando ganharmos o seu caso — comissão de 30% sobre o sucesso."
+      },
+      "noWinNoFee": {
+        "title": "No Win, No Fee",
+        "text": "Assumimos todo o risco. Se a sua reclamação não tiver sucesso, não paga absolutamente nada."
+      },
+      "speed": {
+        "title": "Processamento rápido",
+        "text": "O nosso motor automático de elegibilidade dá-lhe uma avaliação instantânea. A maioria das reclamações é resolvida em poucas semanas."
+      },
+      "expertise": {
+        "title": "Competência jurídica",
+        "text": "A nossa equipa tem um conhecimento profundo dos regulamentos EC261/UK261 e vasta experiência em lidar com companhias aéreas."
+      }
+    },
+    "howItWorks": {
+      "title": "Como funciona",
+      "step1": { "title": "Verifique a elegibilidade", "text": "Introduza os detalhes do seu voo e avaliaremos imediatamente a sua reclamação." },
+      "step2": { "title": "Submeta a sua reclamação", "text": "Preencha os seus dados e carregue os documentos. Demora apenas 5 minutos." },
+      "step3": { "title": "Tratamos de tudo", "text": "A nossa equipa contacta a companhia aérea e trata de todos os processos legais em seu nome." },
+      "step4": { "title": "Receba a compensação", "text": "Quando ganharmos, a compensação é transferida diretamente para a sua conta bancária." }
+    },
+    "team": {
+      "title": "A nossa equipa",
+      "subtitle": "Uma equipa dedicada de profissionais empenhados em proteger os seus direitos de passageiro.",
+      "founder": "Fundador e CEO",
+      "legal": "Departamento jurídico",
+      "claims": "Processamento de reclamações",
+      "tech": "Tecnologia"
+    },
+    "legal": {
+      "title": "Informações da empresa",
+      "company": {
+        "title": "Empresa",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registada na Bulgária"
+      },
+      "address": {
+        "title": "Morada",
+        "text": "Sófia, Bulgária"
+      },
+      "contact": {
+        "title": "Contacto"
+      }
+    },
+    "cta": {
+      "title": "Pronto para reclamar a sua compensação?",
+      "text": "Verifique se o seu voo tem direito a uma compensação de até €600. É grátis e demora apenas 2 minutos.",
+      "button": "Verificar compensação →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Notícias e atualizações",
+      "subtitle": "Mantenha-se informado sobre os direitos dos passageiros, regulamentos e novidades da Jet2Pay."
+    },
+    "featured": "Destaque",
+    "allArticles": "Todos os artigos",
+    "readMore": "Ler mais",
+    "categories": {
+      "companyNews": "Notícias da empresa",
+      "regulation": "Regulamentação",
+      "tips": "Dicas e guias"
+    },
+    "articles": {
+      "launch": {
+        "title": "Lançamento da Jet2Pay: a ajudar passageiros a reclamar compensação por voos",
+        "summary": "Temos o prazer de anunciar o lançamento da Jet2Pay — uma plataforma dedicada a ajudar os passageiros a reclamar compensação por voos atrasados, cancelados ou em overbooking ao abrigo do Regulamento UE 261/2004 e UK261."
+      },
+      "ec261Update": {
+        "title": "Compreender o EC261: o seu guia completo sobre compensação de voos",
+        "summary": "O Regulamento UE 261/2004 dá direito aos passageiros a uma compensação de €250 a €600 por perturbações em voos. Conheça os seus direitos e como reclamar."
+      },
+      "knowYourRights": {
+        "title": "5 coisas que todo o passageiro aéreo deve saber sobre os seus direitos",
+        "summary": "Muitos passageiros não sabem que têm direito a compensação. Eis os factos principais sobre os seus direitos quando os voos são atrasados ou cancelados."
+      },
+      "delayTips": {
+        "title": "O que fazer quando o seu voo está atrasado: guia passo a passo",
+        "summary": "Voo atrasado? Não entre em pânico. Siga o nosso guia prático para proteger os seus direitos e maximizar a sua compensação."
+      },
+      "uk261": {
+        "title": "UK261: regras de compensação de voos pós-Brexit explicadas",
+        "summary": "Após o Brexit, o Reino Unido adotou a sua própria versão do EC261 — conhecida como UK261. Eis o que significa para os passageiros que voam de e para o Reino Unido."
+      },
+      "partnerships": {
+        "title": "Jet2Pay estabelece parcerias com os principais fornecedores de dados de aviação",
+        "summary": "Estabelecemos parcerias com os melhores fornecedores de dados de voo para oferecer verificação de voos em tempo real e processamento mais rápido de reclamações."
+      }
+    },
+    "cta": {
+      "title": "Teve uma perturbação no voo?",
+      "text": "Verifique se tem direito a compensação — é grátis e demora 2 minutos.",
+      "button": "Verificar compensação →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Conheça os seus direitos",
+    "products": "Produtos",
+    "aboutCompany": "Sobre a empresa",
+    "legal": "Legal",
+    "description": "Compensação de voos simplificada. Ajudamos os passageiros a reclamar até €600 por voos atrasados, cancelados ou em overbooking.",
+    "copyright": "Todos os direitos reservados.",
+    "links": {
+      "eu261": "Regulamento UE 261/2004",
+      "uk261": "Regulamento UK261",
+      "delayComp": "Compensação por atraso de voo",
+      "cancelComp": "Compensação por voo cancelado",
+      "overbookedComp": "Compensação por overbooking",
+      "deniedBoarding": "Embarque recusado",
+      "passengerRights": "Direitos dos passageiros aéreos",
+      "checkComp": "Verificar compensação",
+      "howItWorks": "Como funciona",
+      "pricing": "Preços",
+      "claimStatus": "Estado da reclamação",
+      "aboutUs": "Sobre a Jet2Pay",
+      "reviews": "Avaliações",
+      "careers": "Carreiras",
+      "partners": "Parceiros",
+      "press": "Imprensa",
+      "contact": "Contacte-nos",
+      "news": "Notícias",
+      "terms": "Termos e condições",
+      "privacy": "Política de privacidade",
+      "cookies": "Política de cookies",
+      "imprint": "Aviso legal",
+      "complaints": "Reclamações"
+    },
+    "newsletter": {
+      "title": "Subscreva a nossa newsletter",
+      "text": "Receba as últimas notícias e dicas de viagem diretamente na sua caixa de entrada.",
+      "placeholder": "O seu endereço de e-mail",
+      "button": "Subscrever"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "PROCESSO SIMPLES", "title": "Como funciona", "subtitle": "Obter a sua compensação de voo é fácil. Tratamos de tudo — só precisa de nos dizer o que aconteceu." },
+      "steps": {
+        "title": "4 passos simples",
+        "s1": { "title": "Verifique a elegibilidade", "text": "Introduza os detalhes do seu voo na nossa ferramenta gratuita. O nosso sistema verifica instantaneamente o Regulamento UE 261/2004 e o UK261 para determinar se tem direito a uma compensação de até €600." },
+        "s2": { "title": "Submeta a sua reclamação", "text": "Preencha os seus dados pessoais, informações do voo e carregue quaisquer documentos de apoio. Todo o processo demora menos de 5 minutos." },
+        "s3": { "title": "Tratamos de tudo", "text": "Os nossos especialistas jurídicos e de aviação assumem o caso. Contactamos a companhia aérea, tratamos de toda a correspondência e negociações, e gerimos o processo legal em seu nome." },
+        "s4": { "title": "Receba a compensação", "text": "Quando resolvermos a sua reclamação com sucesso, a compensação é transferida diretamente para a sua conta bancária. Apenas deduzimos a nossa comissão de 30% do montante recebido." }
+      },
+      "whyUs": {
+        "title": "Porquê escolher a Jet2Pay?",
+        "noRisk": { "title": "No Win, No Fee", "text": "Não paga nada adiantado. A nossa comissão de 30% só é cobrada quando ganharmos o seu caso." },
+        "fast": { "title": "Equipa jurídica especializada", "text": "A nossa equipa é especializada em direitos dos passageiros aéreos da UE e tem vasta experiência em negociação com companhias aéreas." },
+        "expertise": { "title": "Rápido e fácil", "text": "Submeta a sua reclamação em menos de 5 minutos. Tratamos do resto e mantemo-lo informado a cada passo." }
+      },
+      "cta": { "title": "Pronto para começar?", "text": "Verifique se o seu voo tem direito a compensação — é grátis e demora apenas 2 minutos.", "button": "Verificar compensação →" }
+    },
+    "pricing": {
+      "hero": { "badge": "PREÇOS TRANSPARENTES", "title": "Preços", "subtitle": "Sem taxas ocultas, sem custos iniciais. Só paga quando ganharmos." },
+      "noWinNoFee": { "title": "No Win, No Fee", "text": "O nosso serviço é completamente gratuito, a menos que consigamos obter compensação para si. Cobramos uma comissão de 30% apenas sobre o montante recuperado.", "badge": "GARANTIDO" },
+      "comparison": {
+        "title": "Como nos comparamos",
+        "option": "Opção",
+        "cost": "Custo",
+        "successRate": "Taxa de sucesso",
+        "effort": "O seu esforço",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% sobre o sucesso", "success": "98%", "effort": "5 minutos" },
+        "lawyer": { "name": "Advogado", "cost": "€200+/hora", "success": "85%", "effort": "Horas" },
+        "diy": { "name": "Por conta própria", "cost": "Grátis", "success": "~10%", "effort": "Dias/Semanas" }
+      },
+      "faq": {
+        "title": "FAQ de preços",
+        "q1": { "q": "Quando pago?", "a": "Apenas quando recuperarmos com sucesso a compensação para si. Se não ganharmos, não paga nada." },
+        "q2": { "q": "O que cobre os 30%?", "a": "A nossa comissão cobre todo o trabalho jurídico, negociações com a companhia aérea, correspondência e processamento da reclamação." },
+        "q3": { "q": "Existem taxas ocultas?", "a": "Absolutamente não. A comissão de 30% é a única taxa. Sem custos de inscrição, processamento ou cancelamento." },
+        "q4": { "q": "E se a minha reclamação não tiver sucesso?", "a": "Não paga nada. Assumimos todos os custos e riscos associados à prossecução da sua reclamação." }
+      },
+      "cta": { "title": "Pronto para reclamar?", "text": "Verifique gratuitamente a sua elegibilidade — sem compromisso.", "button": "Verificar compensação →" }
+    },
+    "reviews": {
+      "hero": { "badge": "AVALIAÇÕES DE CLIENTES", "title": "O que dizem os nossos clientes", "subtitle": "Milhares de passageiros confiaram na Jet2Pay para tratar das suas reclamações de compensação." },
+      "stats": {
+        "avgRating": "Avaliação média",
+        "totalReviews": "Reclamações processadas",
+        "recommend": "Recomendariam",
+        "avgPayout": "Compensação máxima"
+      },
+      "grid": {
+        "title": "Avaliações recentes",
+        "r1": { "quote": "A Jet2Pay tratou de tudo na perfeição. Recebi €400 pelo meu voo atrasado de Manchester para Antalya. Recomendo vivamente!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Estava cético no início, mas cumpriram. Obtive €250 de compensação por um atraso de 4 horas. Sem complicações.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Excelente serviço! O meu voo cancelado de Birmingham resultou numa compensação de €600. A equipa manteve-me informado durante todo o processo.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Rápido e profissional. Submeti a minha reclamação em 5 minutos e recebi o pagamento em 8 semanas.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Depois do meu voo ter sido sobrelotado, a Jet2Pay conseguiu-me €400 de compensação. O processo foi incrivelmente simples.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Experiência fantástica. Nem sabia que tinha direito a compensação até encontrar a Jet2Pay. Obtive €250!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "A equipa foi muito prestável e manteve-me atualizado em cada fase. Recebi a minha compensação em apenas 6 semanas.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Já usei a Jet2Pay duas vezes — ambas com sucesso. Sabem mesmo o que fazem com reclamações de companhias aéreas.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Junte-se a milhares de clientes satisfeitos", "text": "Verifique se o seu voo tem direito a compensação.", "button": "Verificar compensação →" }
+    },
+    "careers": {
+      "hero": { "badge": "JUNTE-SE À EQUIPA", "title": "Carreiras na Jet2Pay", "subtitle": "Ajude-nos a lutar pelos direitos dos passageiros em toda a Europa. Junte-se a uma equipa em rápido crescimento que faz a diferença." },
+      "culture": {
+        "title": "Porquê trabalhar connosco",
+        "text1": "Na Jet2Pay, estamos a construir algo significativo — uma plataforma que ajuda os viajantes do dia a dia a obter a compensação que merecem.",
+        "text2": "Valorizamos a transparência, a inovação e um forte sentido de justiça. A nossa equipa trabalha remotamente em toda a Europa, unida por uma missão partilhada.",
+        "cardTitle": "A nossa cultura",
+        "cardText": "Trabalho flexível, remuneração competitiva e a satisfação de ajudar milhares de passageiros todos os meses."
+      },
+      "positions": {
+        "title": "Posições abertas",
+        "apply": "Candidatar-se →",
+        "claimsSpecialist": { "title": "Especialista em reclamações", "location": "Remoto / Sófia", "type": "Tempo inteiro", "desc": "Processar e gerir reclamações de compensação de voos. Comunicar com companhias aéreas e manter os passageiros informados sobre o estado das reclamações." },
+        "legalAdvisor": { "title": "Consultor jurídico", "location": "Sófia, Bulgária", "type": "Tempo inteiro", "desc": "Fornecer competência jurídica sobre os regulamentos EC261/UK261. Analisar casos complexos e preparar documentação legal para negociações com companhias aéreas." },
+        "frontendDev": { "title": "Programador Frontend", "location": "Remoto", "type": "Tempo inteiro", "desc": "Construir e manter a nossa plataforma web baseada em React. Trabalhar na melhoria da experiência de submissão de reclamações e do painel de administração." },
+        "customerSupport": { "title": "Apoio ao cliente", "location": "Remoto", "type": "Part-time", "desc": "Ajudar os passageiros com questões sobre as suas reclamações. Prestar um excelente serviço ao cliente por e-mail e chat." }
+      },
+      "cta": { "title": "Não encontra a posição ideal?", "text": "Envie-nos o seu CV e diga-nos como gostaria de contribuir.", "button": "Contacte-nos →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARCERIAS", "title": "Seja nosso parceiro", "subtitle": "Junte-se à rede Jet2Pay e ajude os passageiros a obter a compensação que merecem." },
+      "types": {
+        "title": "Oportunidades de parceria",
+        "airlines": { "title": "Parcerias com companhias aéreas", "text": "Colabore connosco para simplificar o processo de compensação para os seus passageiros." },
+        "travelAgency": { "title": "Agências de viagens", "text": "Ofereça compensação de voos como serviço adicional aos seus clientes. Nós tratamos das reclamações, você melhora a fidelização dos clientes." },
+        "legal": { "title": "Rede jurídica", "text": "Junte-se à nossa rede de profissionais jurídicos especializados em direitos dos passageiros aéreos em toda a Europa." }
+      },
+      "benefits": {
+        "title": "Benefícios da parceria",
+        "benefit1": { "title": "Gestor de parceria dedicado", "text": "Um único ponto de contacto para todas as suas necessidades de parceria." },
+        "benefit2": { "title": "Integração personalizada", "text": "Acesso a API e opções de integração personalizada para fluxos de trabalho otimizados." },
+        "benefit3": { "title": "Comissão competitiva", "text": "Partilha de receitas atrativa para parceiros de alto volume." },
+        "benefit4": { "title": "Painel em tempo real", "text": "Acompanhe todas as reclamações referenciadas e os ganhos em tempo real." }
+      },
+      "contactUs": { "title": "Contacte-nos", "text": "Interessado em ser parceiro da Jet2Pay? Contacte a nossa equipa de parcerias:" },
+      "cta": { "title": "Interessado numa parceria?", "text": "Contacte a nossa equipa de parcerias.", "button": "Contacte-nos →" }
+    },
+    "press": {
+      "hero": { "badge": "IMPRENSA E MEDIA", "title": "Sala de imprensa", "subtitle": "Últimas notícias, comunicados de imprensa e recursos media da Jet2Pay." },
+      "facts": {
+        "title": "Factos da empresa",
+        "fact1": { "value": "2024", "label": "Fundação" },
+        "fact2": { "value": "Sófia, BG", "label": "Sede" },
+        "fact3": { "value": "10+", "label": "Tamanho da equipa" },
+        "fact4": { "value": "10.000+", "label": "Reclamações processadas" }
+      },
+      "releases": {
+        "title": "Comunicados de imprensa",
+        "r1": { "date": "Março de 2026", "title": "Jet2Pay lança nova plataforma de reclamações", "summary": "A Jet2Pay anuncia o lançamento da sua plataforma de compensação de voos de nova geração, tornando mais fácil do que nunca para os passageiros reclamarem até €600." },
+        "r2": { "date": "Fevereiro de 2026", "title": "Jet2Pay estabelece parcerias com fornecedores de dados de aviação", "summary": "Parceria estratégica com os principais fornecedores de dados de voo para verificação em tempo real e processamento mais rápido de reclamações." },
+        "r3": { "date": "Janeiro de 2026", "title": "Jet2Pay alarga a cobertura a mais de 250 companhias aéreas", "summary": "A Jet2Pay cobre agora mais de 250 companhias aéreas em todo o mundo, oferecendo serviços completos de compensação de voos em toda a Europa." }
+      },
+      "mediaKit": { "title": "Kit de media", "text": "Descarregue o nosso kit de imprensa incluindo logótipos, diretrizes de marca e visão geral da empresa." },
+      "pressContact": { "title": "Contacto de imprensa", "text": "Para questões de imprensa, entrevistas e pedidos de media:" },
+      "cta": { "title": "Quer destacar a Jet2Pay?", "text": "Teremos todo o prazer em fornecer entrevistas, citações e dados para a sua reportagem.", "button": "Contactar equipa de imprensa →" }
+    },
+    "contact": {
+      "hero": { "badge": "CONTACTE-NOS", "title": "Contacte-nos", "subtitle": "Tem alguma questão? Estamos aqui para ajudar. Contacte-nos através de qualquer um dos canais abaixo." },
+      "channels": {
+        "email": { "title": "Reclamações", "text": "Para questões sobre reclamações existentes" },
+        "support": { "title": "Apoio geral", "text": "Para questões gerais e assistência" },
+        "address": { "title": "Escritório", "text": "MITRANI CONSULT EOOD, Sófia, Bulgária" }
+      },
+      "form": { "title": "Envie-nos uma mensagem", "placeholder": "Para questões, envie-nos um e-mail para support@jet2pay.eu" },
+      "faq": {
+        "title": "Perguntas frequentes",
+        "q1": { "q": "Quanto tempo demora uma reclamação?", "a": "A maioria das reclamações é resolvida em 6 a 12 semanas, dependendo do tempo de resposta da companhia aérea." },
+        "q2": { "q": "Que documentos preciso?", "a": "O seu cartão de embarque, confirmação de reserva e um documento de identificação válido. Orientamo-lo durante todo o processo." },
+        "q3": { "q": "Posso reclamar por um voo de há anos?", "a": "Sim! Na maioria dos países da UE, pode reclamar por voos até 3 anos antes. Em alguns países, o limite estende-se a 6 anos." }
+      },
+      "cta": { "title": "Pronto para verificar o seu voo?", "text": "A nossa verificação gratuita de elegibilidade demora apenas 2 minutos.", "button": "Verificar compensação →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "it": "Italiano",
+    "pt": "Português",
+    "pt-BR": "Português (BR)",
+    "ca": "Català",
+    "ro": "Română"
+  }
+}

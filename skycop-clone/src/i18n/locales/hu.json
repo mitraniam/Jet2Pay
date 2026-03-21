@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Kártérítés ellenőrzése",
+    "knowYourRights": "Ismerje meg jogait",
+    "aboutCompany": "A cégről",
+    "news": "Hírek",
+    "referAFriend": "Ajánlás barátnak",
+    "checkClaimStatus": "Igény állapotának ellenőrzése"
+  },
+  "hero": {
+    "titleDelayed": "Késett",
+    "titleCancelled": "Törölt",
+    "titleFlight": "Járat",
+    "titleOr": "vagy",
+    "subtitle": "Igényeljen akár <strong>600 €</strong>-t késett vagy törölt járatért",
+    "whatHappened": "Mi történt a járatával?",
+    "delayed": "Késett",
+    "cancelled": "Törölt / Túlfoglalt",
+    "otherDisruptions": "Egyéb fennakadások",
+    "departurePlaceholder": "Indulási repülőtér",
+    "arrivalPlaceholder": "Érkezési repülőtér",
+    "checkCompensation": "Kártérítés ellenőrzése",
+    "freeCheck": "Ingyenes kártérítés-ellenőrzés",
+    "hassleFree": "Problémamentes",
+    "claimsUpTo": "Akár 3 éves igények",
+    "compensatedCustomers": "kártérített utas",
+    "airlines": "légitársaság",
+    "yearsTrusted": "év tapasztalat"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Jogosultság ellenőrzése",
+      "waitTime": "Várakozási idő",
+      "done": "Kész!",
+      "flightItinerary": "Repülési útvonal",
+      "disruptionType": "Fennakadás típusa",
+      "timing": "Időzítés",
+      "reason": "Ok",
+      "howLong": "Mennyi ideig várt?",
+      "claimDetails": "Igény részletei",
+      "flightInfo": "Járat információk",
+      "passengerInfo": "Az Ön adatai",
+      "bookingConsent": "Foglalás és hozzájárulás"
+    },
+    "step1": {
+      "title": "Hová repült?",
+      "departedFrom": "Indulás innen",
+      "finalDestination": "Végső célállomás repülőtere",
+      "airportPlaceholder": "Adja meg a város vagy repülőtér nevét",
+      "directFlight": "Közvetlen járat volt?",
+      "yesDirect": "Igen, közvetlen járat volt",
+      "noConnecting": "Nem, átszállással utaztam"
+    },
+    "step2": {
+      "title": "Fennakadás típusa",
+      "question": "Milyen típusú fennakadást tapasztalt a járattal kapcsolatban?",
+      "delayed": "Járat késett",
+      "cancelled": "Járat törölve",
+      "denied": "Beszállás megtagadva / Túlfoglalás"
+    },
+    "step3": {
+      "title": "Mekkora volt a késés?",
+      "question": "Mennyi késéssel érkezett meg a végső célállomásra?",
+      "less3": "Kevesebb mint 3 óra",
+      "more3": "Több mint 3 óra",
+      "missed": "Lekésett csatlakozó járat"
+    },
+    "step4": {
+      "title": "A fennakadás oka",
+      "question1": "Közölte Önnel a légitársaság a fennakadás okát?",
+      "yes": "Igen",
+      "no": "Nem",
+      "dontRemember": "Nem emlékszem",
+      "question2": "Mi volt a légitársaság által megadott ok?",
+      "technical": "Repülőgép műszaki hiba",
+      "weather": "Rossz időjárási viszonyok",
+      "strike": "Sztrájk",
+      "airport": "Repülőtéri problémák",
+      "other": "Egyéb okok"
+    },
+    "step5": {
+      "title": "Meséljen többet a helyzetéről",
+      "question": "Mennyi ideig várt a pótjáratra vagy megoldásra?",
+      "less2": "Kevesebb mint 2 óra",
+      "2to4": "2–4 óra",
+      "4to8": "4–8 óra",
+      "overnight": "Éjszakázás (8+ óra)",
+      "none": "Nem ajánlottak alternatívát",
+      "describeLabel": "Röviden írja le, mi történt",
+      "describeOptional": "(nem kötelező)",
+      "describePlaceholder": "Pl. A Londonból Párizsba tartó járatom 4 órát késett a repülőgép műszaki hibája miatt...",
+      "infoText": "A tapasztalatainak részletes megosztása jelentősen növelheti az igénye sikerességének esélyét. Minél pontosabb, annál nagyobb az esélye a jóváhagyásra."
+    },
+    "back": "Vissza",
+    "continue": "Tovább",
+    "submitClaim": "Igény benyújtása",
+    "checkAnotherFlight": "← Másik járat ellenőrzése",
+    "freeCheck": "Ellenőrizze kártérítését — <strong>100% ingyenes</strong>, kockázatmentes.",
+    "eligible": {
+      "title": "Remek hír — Ön jogosult lehet!",
+      "description": "Válaszai alapján akár <strong>600 €</strong> kártérítésre lehet jogosult az EU 261/2004 rendelet alapján. Indítsa el ingyenes igényét most!",
+      "descriptionDynamic": "Válaszai alapján akár <strong>€{{amount}}</strong> kártérítésre lehet jogosult az EU 261/2004 rendelet alapján. Indítsa el ingyenes igényét most!",
+      "startClaim": "Ingyenes igény indítása →"
+    },
+    "notEligible": {
+      "title": "Sajnos Ön valószínűleg nem jogosult",
+      "description": "Válaszai alapján a késés az EU 261/2004 rendelet szerinti kártérítéshez szükséges 3 órás küszöbérték alatt marad."
+    },
+    "step6": {
+      "title": "Járat részletei",
+      "flightNumber": "Járatszám",
+      "flightNumberPlaceholder": "pl. LS123",
+      "flightDate": "Járat dátuma",
+      "flightDateHelp": "A fennakadással érintett járat dátuma"
+    },
+    "step7": {
+      "title": "Az Ön adatai",
+      "firstName": "Keresztnév",
+      "lastName": "Vezetéknév",
+      "email": "E-mail cím",
+      "phone": "Telefonszám",
+      "phonePlaceholder": "+36 30 000 0000",
+      "nationality": "Állampolgárság",
+      "nationalityPlaceholder": "Válasszon országot"
+    },
+    "step8": {
+      "title": "Foglalás és hozzájárulás",
+      "bookingReference": "Foglalási hivatkozás",
+      "bookingReferencePlaceholder": "pl. ABC123",
+      "bookingReferenceHelp": "A foglalás visszaigazoló e-mailben található",
+      "consent": "Elfogadom az <a href='/terms' target='_blank'>Általános Szerződési Feltételeket</a> és felhatalmazom a Jet2Pay-t, hogy a nevemben járjon el. Tudomásul veszem, hogy a „Nincs nyeremény – nincs díj" modell szerint 30%-os jutalék érvényes.",
+      "gdpr": "Hozzájárulok személyes adataim kezeléséhez az <a href='/privacy' target='_blank'>Adatvédelmi Szabályzatnak</a> és a GDPR-nak megfelelően.",
+      "submitClaim": "Igényem benyújtása"
+    },
+    "submitting": "Igény benyújtása folyamatban...",
+    "submitted": {
+      "title": "Igény sikeresen benyújtva!",
+      "claimId": "Igény hivatkozási szám",
+      "estimated": "Becsült kártérítés",
+      "emailSent": "Visszaigazoló e-mailt küldtünk a postafiókjába.",
+      "trackClaim": "Igénye állapotát bármikor nyomon követheti a hivatkozási szám segítségével.",
+      "newClaim": "← Új igény benyújtása"
+    },
+    "error": {
+      "submissionFailed": "Az igény benyújtása sikertelen. Kérjük, próbálja újra.",
+      "networkError": "Hálózati hiba. Kérjük, ellenőrizze a kapcsolatot."
+    }
+  },
+  "claimStatus": {
+    "title": "Igény állapotának ellenőrzése",
+    "subtitle": "Adja meg igénye hivatkozási számát a kártérítési igénye előrehaladásának nyomon követéséhez.",
+    "placeholder": "Adja meg az igény hivatkozási számát (pl. 35073ad8-6b02...)",
+    "search": "Igény nyomon követése",
+    "notFound": "Ezzel a hivatkozási számmal nem található igény. Kérjük, ellenőrizze az azonosítót és próbálja újra.",
+    "error": "Valami hiba történt. Kérjük, próbálja újra később.",
+    "progress": "Igény előrehaladása",
+    "flightDetails": "Járat részletei",
+    "compensation": "Kártérítés",
+    "claimRef": "Igény hivatkozási szám",
+    "status": "Állapot",
+    "flight": "Járat",
+    "date": "Dátum",
+    "route": "Útvonal",
+    "disruption": "Fennakadás típusa",
+    "estimatedAmount": "Becsült kártérítés",
+    "distance": "Útvonal távolsága",
+    "eligible": "Kártérítésre jogosult",
+    "notEligible": "Nem jogosult kártérítésre",
+    "documents": "Dokumentumok",
+    "noDocs": "Még nem töltöttek fel dokumentumokat.",
+    "missingDocs": "Hiányzó dokumentumok",
+    "timeline": "Állapot idővonal",
+    "steps": {
+      "submitted": "Benyújtva",
+      "under_review": "Felülvizsgálat alatt",
+      "airline_contacted": "Légitársaság megkeresve",
+      "negotiating": "Tárgyalás",
+      "resolved": "Megoldva",
+      "rejected": "Elutasítva",
+      "paid": "Kifizetve"
+    },
+    "disruptionTypes": {
+      "delay": "Késés",
+      "cancellation": "Törlés",
+      "denied_boarding": "Beszállás megtagadva",
+      "missed_connection": "Lekésett csatlakozás"
+    },
+    "docTypes": {
+      "boarding_pass": "Beszállókártya",
+      "booking_confirmation": "Foglalás visszaigazolása",
+      "id_document": "Személyazonosító okmány"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Harcolunk az Ön utasjogaiért",
+      "subtitle": "Segítünk az utasoknak megkapni a megérdemelt kártérítést, ha a járattal probléma van. Nincs nyeremény – nincs díj — ilyen egyszerű."
+    },
+    "stats": {
+      "customers": "Kártérített utasok",
+      "airlines": "Lefedett légitársaságok",
+      "successRate": "Sikerességi arány",
+      "recovered": "Utasoknak visszaszerzett összeg"
+    },
+    "mission": {
+      "title": "Küldetésünk",
+      "text1": "A Jet2Pay-nél hiszünk abban, hogy minden utas megérdemli a méltányos bánásmódot. Ha járata késik, törlik, vagy megtagadják a beszállást, az EU 261/2004 rendelet és az UK261 védi az Ön jogát akár 600 € kártérítésre.",
+      "text2": "Jogi és repülési szakértőkből álló csapatunk az igényérvényesítés teljes folyamatát kezeli — a kezdeti értékeléstől a légitársasággal való tárgyalásig — hogy Önnek ne kelljen. Csak 30%-os jutalékot számítunk fel, ha megnyerjük az ügyét.",
+      "cardTitle": "Az Ön jogai, a mi prioritásunk",
+      "cardText": "Európa-szerte több ezer utasnak segítettünk jogos kártérítésüket érvényesíteni. Automatizált rendszerünk és szakértő csapatunk gyors, problémamentes feldolgozást biztosít."
+    },
+    "values": {
+      "title": "Értékeink",
+      "transparency": {
+        "title": "Teljes átláthatóság",
+        "text": "Nincsenek rejtett díjak, nincsenek meglepetés költségek. Csak akkor fizet, ha megnyerjük az ügyét — 30%-os sikerdíj."
+      },
+      "noWinNoFee": {
+        "title": "Nincs nyeremény – nincs díj",
+        "text": "Mi vállaljuk az összes kockázatot. Ha igénye sikertelen, Ön semmit sem fizet."
+      },
+      "speed": {
+        "title": "Gyors feldolgozás",
+        "text": "Automatizált jogosultság-ellenőrző rendszerünk azonnali értékelést ad. A legtöbb igényt heteken belül megoldjuk."
+      },
+      "expertise": {
+        "title": "Jogi szakértelem",
+        "text": "Csapatunk mélyreható ismeretekkel rendelkezik az EC261/UK261 rendeletekről és széleskörű tapasztalattal a légitársaságokkal való tárgyalásokban."
+      }
+    },
+    "howItWorks": {
+      "title": "Hogyan működik",
+      "step1": { "title": "Ellenőrizze jogosultságát", "text": "Adja meg járata adatait, és azonnal értékeljük igényét." },
+      "step2": { "title": "Nyújtsa be igényét", "text": "Töltse ki adatait és töltse fel dokumentumait. Mindössze 5 percet vesz igénybe." },
+      "step3": { "title": "Mi mindent elintézünk", "text": "Csapatunk felveszi a kapcsolatot a légitársasággal és az Ön nevében kezeli az összes jogi folyamatot." },
+      "step4": { "title": "Kapja meg a kártérítést", "text": "Ha nyerünk, a kártérítést közvetlenül az Ön bankszámlájára utaljuk." }
+    },
+    "team": {
+      "title": "Csapatunk",
+      "subtitle": "Elkötelezett szakemberekből álló csapat, akik az Ön utasjogainak védelme mellett állnak.",
+      "founder": "Alapító és vezérigazgató",
+      "legal": "Jogi osztály",
+      "claims": "Igényfeldolgozás",
+      "tech": "Technológia"
+    },
+    "legal": {
+      "title": "Céginformáció",
+      "company": {
+        "title": "Cég",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Bulgáriában bejegyezve"
+      },
+      "address": {
+        "title": "Cím",
+        "text": "Szófia, Bulgária"
+      },
+      "contact": {
+        "title": "Kapcsolat"
+      }
+    },
+    "cta": {
+      "title": "Készen áll a kártérítés igénylésére?",
+      "text": "Ellenőrizze, hogy járata jogosult-e akár 600 € kártérítésre. Ingyenes és mindössze 2 percet vesz igénybe.",
+      "button": "Kártérítés ellenőrzése →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Hírek és frissítések",
+      "subtitle": "Maradjon naprakész az utasjogokkal, szabályozásokkal és a Jet2Pay fejlesztéseivel kapcsolatban."
+    },
+    "featured": "Kiemelt",
+    "allArticles": "Összes cikk",
+    "readMore": "Tovább olvasom",
+    "categories": {
+      "companyNews": "Céghírek",
+      "regulation": "Szabályozás",
+      "tips": "Tippek és útmutatók"
+    },
+    "articles": {
+      "launch": {
+        "title": "Elindul a Jet2Pay: Segítünk az utasoknak a repülési kártérítés igénylésében",
+        "summary": "Örömmel jelentjük be a Jet2Pay elindítását — egy olyan platformot, amely segíti az utasokat a késett, törölt vagy túlfoglalt járatokért járó kártérítés igénylésében az EU 261/2004 rendelet és az UK261 alapján."
+      },
+      "ec261Update": {
+        "title": "Az EC261 megértése: Teljes útmutató a repülési kártérítéshez",
+        "summary": "Az EU 261/2004 rendelet 250–600 € kártérítésre jogosítja az utasokat járatkimaradás esetén. Ismerje meg jogait és az igénylés módját."
+      },
+      "knowYourRights": {
+        "title": "5 dolog, amit minden légi utasnak tudnia kell a jogairól",
+        "summary": "Sok utas nem is tudja, hogy kártérítésre jogosult. Íme a legfontosabb tudnivalók a jogairól, ha járata késik vagy törlik."
+      },
+      "delayTips": {
+        "title": "Mit tegyen, ha járata késik: Lépésről lépésre útmutató",
+        "summary": "Késik a járata? Ne essen pánikba. Kövesse gyakorlati útmutatónkat jogai védelméhez és kártérítési igénye maximalizálásához."
+      },
+      "uk261": {
+        "title": "UK261: A Brexit utáni repülési kártérítési szabályok magyarázata",
+        "summary": "A Brexit után az Egyesült Királyság elfogadta az EC261 saját verzióját — UK261 néven. Íme, mit jelent ez a brit járatokkal utazó utasok számára."
+      },
+      "partnerships": {
+        "title": "A Jet2Pay partnerségre lép vezető repülési adatszolgáltatókkal",
+        "summary": "Partnerséget kötöttünk vezető repülési adatszolgáltatókkal a valós idejű járatellenőrzés és a gyorsabb igényfeldolgozás érdekében."
+      }
+    },
+    "cta": {
+      "title": "Fennakadás volt a járatával?",
+      "text": "Ellenőrizze, jogosult-e kártérítésre — ingyenes és mindössze 2 percet vesz igénybe.",
+      "button": "Kártérítés ellenőrzése →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Ismerje meg jogait",
+    "products": "Termékek",
+    "aboutCompany": "A cégről",
+    "legal": "Jogi információk",
+    "description": "Repülési kártérítés egyszerűen. Segítünk az utasoknak akár 600 €-t igényelni késett, törölt vagy túlfoglalt járatokért.",
+    "copyright": "Minden jog fenntartva.",
+    "links": {
+      "eu261": "EU 261/2004 rendelet",
+      "uk261": "UK261 rendelet",
+      "delayComp": "Járatkésés kártérítés",
+      "cancelComp": "Járattörlés kártérítés",
+      "overbookedComp": "Túlfoglalt járat kártérítés",
+      "deniedBoarding": "Beszállás megtagadva",
+      "passengerRights": "Légi utasok jogai",
+      "checkComp": "Kártérítés ellenőrzése",
+      "howItWorks": "Hogyan működik",
+      "pricing": "Árak",
+      "claimStatus": "Igény állapota",
+      "aboutUs": "A Jet2Pay-ről",
+      "reviews": "Vélemények",
+      "careers": "Karrier",
+      "partners": "Partnerek",
+      "press": "Sajtó",
+      "contact": "Kapcsolat",
+      "news": "Hírek",
+      "terms": "Általános Szerződési Feltételek",
+      "privacy": "Adatvédelmi szabályzat",
+      "cookies": "Cookie szabályzat",
+      "imprint": "Impresszum",
+      "complaints": "Panaszok"
+    },
+    "newsletter": {
+      "title": "Iratkozzon fel hírlevelünkre",
+      "text": "Kapja meg a legújabb híreket és utazási tippeket közvetlenül a postafiókjába.",
+      "placeholder": "Az Ön e-mail címe",
+      "button": "Feliratkozás"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "EGYSZERŰ FOLYAMAT", "title": "Hogyan működik", "subtitle": "A repülési kártérítés megszerzése egyszerű. Mi mindent elintézünk — Önnek csak el kell mondania, mi történt." },
+      "steps": {
+        "title": "4 egyszerű lépés",
+        "s1": { "title": "Ellenőrizze jogosultságát", "text": "Adja meg járata adatait ingyenes eszközünkben. Rendszerünk azonnal ellenőrzi az EU 261/2004 rendeletet és az UK261-et, hogy megállapítsa, jogosult-e akár 600 € kártérítésre." },
+        "s2": { "title": "Nyújtsa be igényét", "text": "Töltse ki személyes adatait, járatinformációit, és töltse fel az igazoló dokumentumokat. Az egész folyamat kevesebb mint 5 percet vesz igénybe." },
+        "s3": { "title": "Mi mindent elintézünk", "text": "Jogi és repülési szakértőink átveszik az ügyet. Felvesszük a kapcsolatot a légitársasággal, kezeljük az összes levelezést és tárgyalást, és az Ön nevében intézzük a jogi folyamatot." },
+        "s4": { "title": "Kapja meg a kártérítést", "text": "Miután sikeresen megoldjuk igényét, a kártérítést közvetlenül az Ön bankszámlájára utaljuk. Csak a 30%-os jutalékot vonjuk le a kapott összegből." }
+      },
+      "whyUs": {
+        "title": "Miért válassza a Jet2Pay-t?",
+        "noRisk": { "title": "Nincs nyeremény – nincs díj", "text": "Nem fizet semmit előre. 30%-os jutalékunk csak akkor kerül felszámításra, ha sikeresen megnyerjük az ügyét." },
+        "fast": { "title": "Szakértő jogi csapat", "text": "Csapatunk az EU légi utasjogokra specializálódott, és széleskörű tapasztalattal rendelkezik a légitársaságokkal való tárgyalásokban." },
+        "expertise": { "title": "Gyors és egyszerű", "text": "Nyújtsa be igényét kevesebb mint 5 perc alatt. Mi intézzük a többit, és minden lépésről tájékoztatjuk." }
+      },
+      "cta": { "title": "Készen áll a kezdésre?", "text": "Ellenőrizze, hogy járata jogosult-e kártérítésre — ingyenes és mindössze 2 percet vesz igénybe.", "button": "Kártérítés ellenőrzése →" }
+    },
+    "pricing": {
+      "hero": { "badge": "ÁTLÁTHATÓ ÁRAZÁS", "title": "Árak", "subtitle": "Nincsenek rejtett díjak, nincsenek előzetes költségek. Csak akkor fizet, ha nyerünk." },
+      "noWinNoFee": { "title": "Nincs nyeremény – nincs díj", "text": "Szolgáltatásunk teljesen ingyenes, hacsak nem szerzünk sikeresen kártérítést az Ön számára. Csak a visszaszerzett összeg 30%-át számítjuk fel jutalékként.", "badge": "GARANTÁLT" },
+      "comparison": {
+        "title": "Összehasonlítás",
+        "option": "Lehetőség",
+        "cost": "Költség",
+        "successRate": "Sikerességi arány",
+        "effort": "Az Ön erőfeszítése",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% sikerdíj", "success": "98%", "effort": "5 perc" },
+        "lawyer": { "name": "Ügyvéd", "cost": "200+ €/óra", "success": "85%", "effort": "Órák" },
+        "diy": { "name": "Saját maga", "cost": "Ingyenes", "success": "~10%", "effort": "Napok/Hetek" }
+      },
+      "faq": {
+        "title": "Gyakori kérdések az árakról",
+        "q1": { "q": "Mikor fizetek?", "a": "Csak akkor, ha sikeresen visszaszerezzük az Ön kártérítését. Ha nem nyerünk, Ön nem fizet semmit." },
+        "q2": { "q": "Mit fed le a 30%?", "a": "Jutalékunk fedezi az összes jogi munkát, légitársasági tárgyalásokat, levelezést és igényfeldolgozást." },
+        "q3": { "q": "Vannak rejtett díjak?", "a": "Egyáltalán nincsenek. A 30%-os jutalék az egyetlen díj. Nincs regisztrációs díj, nincs feldolgozási díj, nincs lemondási díj." },
+        "q4": { "q": "Mi van, ha az igényem sikertelen?", "a": "Nem fizet semmit. Mi viseljük az igénye érvényesítésével járó összes költséget és kockázatot." }
+      },
+      "cta": { "title": "Készen áll az igénylésre?", "text": "Ellenőrizze jogosultságát ingyenesen — kötelezettség nélkül.", "button": "Kártérítés ellenőrzése →" }
+    },
+    "reviews": {
+      "hero": { "badge": "ÜGYFÉLVÉLEMÉNYEK", "title": "Mit mondanak ügyfeleink", "subtitle": "Több ezer utas bízta meg a Jet2Pay-t kártérítési igényeinek kezelésével." },
+      "stats": {
+        "avgRating": "Átlagos értékelés",
+        "totalReviews": "Feldolgozott igények",
+        "recommend": "Ajánlaná",
+        "avgPayout": "Maximális kártérítés"
+      },
+      "grid": {
+        "title": "Legutóbbi vélemények",
+        "r1": { "quote": "A Jet2Pay mindent tökéletesen intézett. 400 €-t kaptam a Manchesterből Antalyába tartó késett járatomért. Nagyon ajánlom!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Eleinte szkeptikus voltam, de teljesítettek. 250 € kártérítést kaptam egy 4 órás késésért. Semmi bonyodalom.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Kiváló szolgáltatás! A Birminghamből induló törölt járatom 600 € kártérítést eredményezett. A csapat végig tájékoztatott.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Gyors és profi. 5 perc alatt benyújtottam az igényemet, és 8 héten belül megkaptam a kifizetést.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Miután a járatomat túlfoglalták, a Jet2Pay 400 € kártérítést szerzett nekem. A folyamat hihetetlenül egyszerű volt.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantasztikus élmény. Nem is tudtam, hogy jogosult vagyok kártérítésre, amíg meg nem találtam a Jet2Pay-t. 250 €-t kaptam!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "A csapat nagyon rugalmas volt és minden szakaszban tájékoztatott. A kártérítést mindössze 6 hét alatt kaptam meg.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Már kétszer használtam a Jet2Pay-t — mindkétszer sikeresen. Tényleg tudják, mit csinálnak a légitársasági igényekkel.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Csatlakozzon több ezer elégedett ügyfélhez", "text": "Ellenőrizze, hogy járata jogosult-e kártérítésre.", "button": "Kártérítés ellenőrzése →" }
+    },
+    "careers": {
+      "hero": { "badge": "CSATLAKOZZON CSAPATUNKHOZ", "title": "Karrier a Jet2Pay-nél", "subtitle": "Segítsen nekünk harcolni az utasjogokért egész Európában. Csatlakozzon egy gyorsan növekvő csapathoz, amely valódi változást hoz." },
+      "culture": {
+        "title": "Miért érdemes nálunk dolgozni",
+        "text1": "A Jet2Pay-nél valami értelmeset építünk — egy platformot, amely segíti a hétköznapi utazókat a megérdemelt kártérítés megszerzésében.",
+        "text2": "Az átláthatóságot, az innovációt és az erős igazságérzetet értékeljük. Csapatunk távmunkában dolgozik egész Európából, közös küldetés által egyesítve.",
+        "cardTitle": "Kultúránk",
+        "cardText": "Rugalmas munka, versenyképes fizetés és az elégedettség, hogy havonta több ezer utasnak segítünk."
+      },
+      "positions": {
+        "title": "Nyitott pozíciók",
+        "apply": "Jelentkezés →",
+        "claimsSpecialist": { "title": "Igényérvényesítési specialista", "location": "Távmunka / Szófia", "type": "Teljes munkaidő", "desc": "Repülési kártérítési igények feldolgozása és kezelése. Kommunikáció a légitársaságokkal és az utasok tájékoztatása igényük állapotáról." },
+        "legalAdvisor": { "title": "Jogi tanácsadó", "location": "Szófia, Bulgária", "type": "Teljes munkaidő", "desc": "Jogi szakértelem az EC261/UK261 rendeletekben. Összetett esetek áttekintése és jogi dokumentáció készítése a légitársasági tárgyalásokhoz." },
+        "frontendDev": { "title": "Frontend fejlesztő", "location": "Távmunka", "type": "Teljes munkaidő", "desc": "React alapú webplatformunk építése és karbantartása. Az igénybenyújtási élmény és az admin felület fejlesztése." },
+        "customerSupport": { "title": "Ügyfélszolgálat", "location": "Távmunka", "type": "Részmunkaidő", "desc": "Utasok segítése igényeikkel kapcsolatos kérdésekben. Kiváló ügyfélszolgálat e-mailen és chaten." }
+      },
+      "cta": { "title": "Nem talál megfelelő pozíciót?", "text": "Küldje el önéletrajzát és mondja el, hogyan szeretne hozzájárulni.", "button": "Kapcsolat →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSÉG", "title": "Legyen partnerünk", "subtitle": "Csatlakozzon a Jet2Pay hálózatához és segítse az utasokat a jogos kártérítésük megszerzésében." },
+      "types": {
+        "title": "Partneri lehetőségek",
+        "airlines": { "title": "Légitársasági partnerségek", "text": "Működjön együtt velünk a kártérítési folyamat egyszerűsítésében az utasai számára." },
+        "travelAgency": { "title": "Utazási irodák", "text": "Kínálja a repülési kártérítést kiegészítő szolgáltatásként ügyfelei számára. Mi kezeljük az igényeket, Ön növeli az ügyfélhűséget." },
+        "legal": { "title": "Jogi hálózat", "text": "Csatlakozzon a légi utasjogokra specializálódott európai jogi szakemberek hálózatunkhoz." }
+      },
+      "benefits": {
+        "title": "Partneri előnyök",
+        "benefit1": { "title": "Dedikált partnermenedzser", "text": "Egyetlen kapcsolattartó minden partneri igényéhez." },
+        "benefit2": { "title": "Egyedi integráció", "text": "API hozzáférés és egyedi integrációs lehetőségek a zökkenőmentes munkafolyamatokhoz." },
+        "benefit3": { "title": "Versenyképes jutalék", "text": "Vonzó bevételmegosztás a nagy volumenű partnerek számára." },
+        "benefit4": { "title": "Valós idejű irányítópult", "text": "Kövesse nyomon az összes ajánlott igényt és bevételt valós időben." }
+      },
+      "contactUs": { "title": "Lépjen velünk kapcsolatba", "text": "Érdekli a Jet2Pay-jel való partnerség? Keresse partneri csapatunkat:" },
+      "cta": { "title": "Érdekli a partnerség?", "text": "Lépjen kapcsolatba partneri csapatunkkal.", "button": "Kapcsolat →" }
+    },
+    "press": {
+      "hero": { "badge": "SAJTÓ ÉS MÉDIA", "title": "Sajtószoba", "subtitle": "Legfrissebb hírek, sajtóközlemények és médianyagok a Jet2Pay-tól." },
+      "facts": {
+        "title": "Céginformációk",
+        "fact1": { "value": "2024", "label": "Alapítva" },
+        "fact2": { "value": "Sofia, BG", "label": "Központ" },
+        "fact3": { "value": "10+", "label": "Csapat mérete" },
+        "fact4": { "value": "10,000+", "label": "Feldolgozott igények" }
+      },
+      "releases": {
+        "title": "Sajtóközlemények",
+        "r1": { "date": "2026. március", "title": "A Jet2Pay elindítja új igénylési platformját", "summary": "A Jet2Pay bejelenti új generációs repülési kártérítési platformjának elindítását, amely minden eddiginél egyszerűbbé teszi az utasok számára az akár 600 €-s igénylést." },
+        "r2": { "date": "2026. február", "title": "A Jet2Pay partnerségre lép repülési adatszolgáltatókkal", "summary": "A vezető repülési adatszolgáltatókkal kötött stratégiai partnerség valós idejű járatellenőrzést és gyorsabb igényfeldolgozást tesz lehetővé." },
+        "r3": { "date": "2026. január", "title": "A Jet2Pay lefedettségét 250+ légitársaságra bővíti", "summary": "A Jet2Pay immár több mint 250 légitársaságot fed le világszerte, átfogó repülési kártérítési szolgáltatásokat kínálva egész Európában." }
+      },
+      "mediaKit": { "title": "Médiacsomag", "text": "Töltse le sajtócsomagunkat, amely logókat, márkaútmutatókat és cégáttekintést tartalmaz." },
+      "pressContact": { "title": "Sajtókapcsolat", "text": "Sajtómegkeresések, interjúk és médiakérések esetén:" },
+      "cta": { "title": "Szeretné bemutatni a Jet2Pay-t?", "text": "Szívesen adunk interjúkat, idézeteket és adatokat az Ön cikkéhez.", "button": "Sajtócsapat elérése →" }
+    },
+    "contact": {
+      "hero": { "badge": "LÉPJEN KAPCSOLATBA", "title": "Kapcsolat", "subtitle": "Van kérdése? Segítünk. Forduljon hozzánk az alábbi csatornák bármelyikén." },
+      "channels": {
+        "email": { "title": "Igények", "text": "Meglévő igényekkel kapcsolatos kérdésekhez" },
+        "support": { "title": "Általános támogatás", "text": "Általános kérdésekhez és támogatáshoz" },
+        "address": { "title": "Iroda", "text": "MITRANI CONSULT EOOD, Szófia, Bulgária" }
+      },
+      "form": { "title": "Írjon nekünk", "placeholder": "Kérdéseivel írjon nekünk a support@jet2pay.eu címre" },
+      "faq": {
+        "title": "Gyakran ismételt kérdések",
+        "q1": { "q": "Mennyi ideig tart egy igényérvényesítés?", "a": "A legtöbb igényt 6–12 héten belül megoldjuk, a légitársaság válaszidejétől függően." },
+        "q2": { "q": "Milyen dokumentumokra van szükségem?", "a": "Beszállókártyára, foglalási visszaigazolásra és érvényes személyazonosító okmányra. Végigvezetjük a folyamaton." },
+        "q3": { "q": "Igényelhetek-e kártérítést évekkel ezelőtti járatért?", "a": "Igen! A legtöbb EU-országban akár 3 éves járatokra is igényelhet. Egyes országokban ez a határidő 6 évre terjed ki." }
+      },
+      "cta": { "title": "Készen áll járata ellenőrzésére?", "text": "Ingyenes jogosultság-ellenőrzésünk mindössze 2 percet vesz igénybe.", "button": "Kártérítés ellenőrzése →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "pl": "Polski",
+    "cs": "Čeština",
+    "hu": "Magyar",
+    "hr": "Hrvatski",
+    "nl": "Nederlands"
+  }
+}

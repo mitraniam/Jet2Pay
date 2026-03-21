@@ -2,12 +2,46 @@ import { useState, useRef, useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import './Header.css'
 
+const POPULAR_LANGS = ['es', 'fr', 'de', 'pt', 'it', 'nl', 'ru', 'tr']
+
 const LANGUAGES = [
-  { code: 'en', label: 'English', flag: '🇬🇧' },
+  { code: 'en', label: 'English (UK)', flag: '🇬🇧' },
   { code: 'bg', label: 'Български', flag: '🇧🇬' },
   { code: 'de', label: 'Deutsch', flag: '🇩🇪' },
   { code: 'fr', label: 'Français', flag: '🇫🇷' },
   { code: 'es', label: 'Español', flag: '🇪🇸' },
+  { code: 'it', label: 'Italiano', flag: '🇮🇹' },
+  { code: 'pt', label: 'Português (PT)', flag: '🇵🇹' },
+  { code: 'pt-BR', label: 'Português (BR)', flag: '🇧🇷' },
+  { code: 'nl', label: 'Nederlands', flag: '🇳🇱' },
+  { code: 'da', label: 'Dansk', flag: '🇩🇰' },
+  { code: 'sv', label: 'Svenska', flag: '🇸🇪' },
+  { code: 'no', label: 'Norsk', flag: '🇳🇴' },
+  { code: 'fi', label: 'Suomi', flag: '🇫🇮' },
+  { code: 'is', label: 'Íslenska', flag: '🇮🇸' },
+  { code: 'pl', label: 'Polski', flag: '🇵🇱' },
+  { code: 'cs', label: 'Čeština', flag: '🇨🇿' },
+  { code: 'hu', label: 'Magyar', flag: '🇭🇺' },
+  { code: 'ro', label: 'Română', flag: '🇷🇴' },
+  { code: 'hr', label: 'Hrvatski', flag: '🇭🇷' },
+  { code: 'sl', label: 'Slovenščina', flag: '🇸🇮' },
+  { code: 'bs', label: 'Bosanski', flag: '🇧🇦' },
+  { code: 'sr', label: 'Српски', flag: '🇷🇸' },
+  { code: 'mk', label: 'Македонски', flag: '🇲🇰' },
+  { code: 'sq', label: 'Shqip', flag: '🇦🇱' },
+  { code: 'ca', label: 'Català', flag: '🏴' },
+  { code: 'et', label: 'Eesti', flag: '🇪🇪' },
+  { code: 'lv', label: 'Latviešu', flag: '🇱🇻' },
+  { code: 'lt', label: 'Lietuvių', flag: '🇱🇹' },
+  { code: 'el', label: 'Ελληνικά', flag: '🇬🇷' },
+  { code: 'tr', label: 'Türkçe', flag: '🇹🇷' },
+  { code: 'ru', label: 'Русский', flag: '🇷🇺' },
+  { code: 'uk', label: 'Українська', flag: '🇺🇦' },
+  { code: 'hy', label: 'Հայերեն', flag: '🇦🇲' },
+  { code: 'ka', label: 'ქართული', flag: '🇬🇪' },
+  { code: 'he', label: 'עברית', flag: '🇮🇱' },
+  { code: 'ar', label: 'العربية', flag: '🇸🇦' },
+  { code: 'zh', label: '中文 (中国)', flag: '🇨🇳' },
 ]
 
 const NAV_ICONS = {
@@ -131,15 +165,32 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, 
                 <path d="M2 3.5L5 6.5L8 3.5" stroke="#333" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
               </svg>
               {langOpen && (
-                <div className="header__lang-dropdown">
-                  {LANGUAGES.map(lang => (
-                    <button key={lang.code}
-                      className={`header__lang-option${lang.code === i18n.language ? ' header__lang-option--active' : ''}`}
-                      onClick={(e) => { e.stopPropagation(); changeLanguage(lang.code) }}>
-                      <span className="header__lang-flag">{lang.flag}</span>
-                      <span>{lang.label}</span>
-                    </button>
-                  ))}
+                <div className="header__lang-panel" onClick={e => e.stopPropagation()}>
+                  <div className="header__lang-panel-header">
+                    <h3 className="header__lang-panel-title">Popular Languages</h3>
+                    <button className="header__lang-panel-close" onClick={() => setLangOpen(false)}>&times;</button>
+                  </div>
+                  <div className="header__lang-popular">
+                    {LANGUAGES.filter(l => POPULAR_LANGS.includes(l.code)).map(lang => (
+                      <button key={lang.code}
+                        className={`header__lang-option${lang.code === i18n.language ? ' header__lang-option--active' : ''}`}
+                        onClick={() => changeLanguage(lang.code)}>
+                        <span className="header__lang-flag">{lang.flag}</span>
+                        <span>{lang.label}</span>
+                      </button>
+                    ))}
+                  </div>
+                  <h3 className="header__lang-panel-title" style={{ marginTop: 12 }}>Select Language</h3>
+                  <div className="header__lang-grid">
+                    {LANGUAGES.filter(l => !POPULAR_LANGS.includes(l.code)).map(lang => (
+                      <button key={lang.code}
+                        className={`header__lang-option${lang.code === i18n.language ? ' header__lang-option--active' : ''}`}
+                        onClick={() => changeLanguage(lang.code)}>
+                        <span className="header__lang-flag">{lang.flag}</span>
+                        <span>{lang.label}</span>
+                      </button>
+                    ))}
+                  </div>
                 </div>
               )}
             </div>

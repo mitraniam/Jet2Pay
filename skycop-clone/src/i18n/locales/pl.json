@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Sprawdź odszkodowanie",
+    "knowYourRights": "Poznaj swoje prawa",
+    "aboutCompany": "O firmie",
+    "news": "Aktualności",
+    "referAFriend": "Poleć znajomemu",
+    "checkClaimStatus": "Sprawdź status roszczenia"
+  },
+  "hero": {
+    "titleDelayed": "Opóźniony",
+    "titleCancelled": "Odwołany",
+    "titleFlight": "Lot",
+    "titleOr": "lub",
+    "subtitle": "Uzyskaj do <strong>600 €</strong> za opóźniony lub odwołany lot",
+    "whatHappened": "Co się stało z Twoim lotem?",
+    "delayed": "Opóźniony",
+    "cancelled": "Odwołany / Overbooking",
+    "otherDisruptions": "Inne zakłócenia",
+    "departurePlaceholder": "Lotnisko wylotu",
+    "arrivalPlaceholder": "Lotnisko przylotu",
+    "checkCompensation": "Sprawdź odszkodowanie",
+    "freeCheck": "Bezpłatna weryfikacja odszkodowania",
+    "hassleFree": "Bez komplikacji",
+    "claimsUpTo": "Roszczenia do 3 lat wstecz",
+    "compensatedCustomers": "zadowolonych klientów",
+    "airlines": "linii lotniczych",
+    "yearsTrusted": "lat zaufania"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Weryfikacja uprawnień",
+      "waitTime": "Czas oczekiwania",
+      "done": "Gotowe!",
+      "flightItinerary": "Trasa lotu",
+      "disruptionType": "Rodzaj zakłócenia",
+      "timing": "Czas",
+      "reason": "Przyczyna",
+      "howLong": "Jak długo czekałeś?",
+      "claimDetails": "Szczegóły roszczenia",
+      "flightInfo": "Informacje o locie",
+      "passengerInfo": "Twoje dane",
+      "bookingConsent": "Rezerwacja i zgoda"
+    },
+    "step1": {
+      "title": "Dokąd leciałeś?",
+      "departedFrom": "Wylot z",
+      "finalDestination": "Docelowe lotnisko",
+      "airportPlaceholder": "Wpisz nazwę miasta lub lotniska",
+      "directFlight": "Czy to był lot bezpośredni?",
+      "yesDirect": "Tak, to był lot bezpośredni",
+      "noConnecting": "Nie, miałem przesiadki"
+    },
+    "step2": {
+      "title": "Rodzaj zakłócenia",
+      "question": "Jaki rodzaj zakłócenia lotu napotkałeś?",
+      "delayed": "Lot opóźniony",
+      "cancelled": "Lot odwołany",
+      "denied": "Odmowa wejścia na pokład / Overbooking"
+    },
+    "step3": {
+      "title": "Jak długo trwało opóźnienie?",
+      "question": "Jak długo trwało opóźnienie dotarcia do celu podróży?",
+      "less3": "Mniej niż 3 godziny",
+      "more3": "Więcej niż 3 godziny",
+      "missed": "Nieudana przesiadka"
+    },
+    "step4": {
+      "title": "Przyczyna zakłócenia",
+      "question1": "Czy linia lotnicza podała przyczynę zakłócenia lotu?",
+      "yes": "Tak",
+      "no": "Nie",
+      "dontRemember": "Nie pamiętam",
+      "question2": "Jaka była przyczyna podana przez linię lotniczą?",
+      "technical": "Problem techniczny samolotu",
+      "weather": "Złe warunki pogodowe",
+      "strike": "Strajk",
+      "airport": "Problemy na lotnisku",
+      "other": "Inne przyczyny"
+    },
+    "step5": {
+      "title": "Opowiedz nam więcej o swojej sytuacji",
+      "question": "Jak długo czekałeś na lot zastępczy lub rozwiązanie?",
+      "less2": "Mniej niż 2 godziny",
+      "2to4": "Od 2 do 4 godzin",
+      "4to8": "Od 4 do 8 godzin",
+      "overnight": "Nocleg (ponad 8 godzin)",
+      "none": "Nie zaproponowano żadnej alternatywy",
+      "describeLabel": "Krótko opisz, co się stało",
+      "describeOptional": "(opcjonalnie)",
+      "describePlaceholder": "Np. Mój lot z Londynu do Paryża był opóźniony o 4 godziny z powodu problemu technicznego samolotu...",
+      "infoText": "Podzielenie się szczegółami dotyczącymi Twojego doświadczenia może znacznie zwiększyć szanse na pomyślne rozpatrzenie roszczenia. Im bardziej szczegółowy opis, tym większe szanse na akceptację."
+    },
+    "back": "Wstecz",
+    "continue": "Dalej",
+    "submitClaim": "Złóż roszczenie",
+    "checkAnotherFlight": "← Sprawdź inny lot",
+    "freeCheck": "Sprawdź swoje odszkodowanie — <strong>100% za darmo</strong>, bez ryzyka.",
+    "eligible": {
+      "title": "Świetna wiadomość — możesz mieć prawo do odszkodowania!",
+      "description": "Na podstawie Twoich odpowiedzi możesz mieć prawo do odszkodowania w wysokości do <strong>600 €</strong> na mocy rozporządzenia UE 261/2004. Rozpocznij bezpłatne roszczenie teraz!",
+      "descriptionDynamic": "Na podstawie Twoich odpowiedzi możesz mieć prawo do odszkodowania w wysokości do <strong>€{{amount}}</strong> na mocy rozporządzenia UE 261/2004. Rozpocznij bezpłatne roszczenie teraz!",
+      "startClaim": "Rozpocznij bezpłatne roszczenie →"
+    },
+    "notEligible": {
+      "title": "Niestety, możesz nie kwalifikować się",
+      "description": "Na podstawie Twoich odpowiedzi opóźnienie wydaje się być poniżej 3-godzinnego progu wymaganego do odszkodowania UE na mocy rozporządzenia 261/2004."
+    },
+    "step6": {
+      "title": "Szczegóły lotu",
+      "flightNumber": "Numer lotu",
+      "flightNumberPlaceholder": "np. LS123",
+      "flightDate": "Data lotu",
+      "flightDateHelp": "Data zakłóconego lotu"
+    },
+    "step7": {
+      "title": "Twoje dane",
+      "firstName": "Imię",
+      "lastName": "Nazwisko",
+      "email": "Adres e-mail",
+      "phone": "Numer telefonu",
+      "phonePlaceholder": "+48 500 000 000",
+      "nationality": "Narodowość",
+      "nationalityPlaceholder": "Wybierz kraj"
+    },
+    "step8": {
+      "title": "Rezerwacja i zgoda",
+      "bookingReference": "Numer rezerwacji",
+      "bookingReferencePlaceholder": "np. ABC123",
+      "bookingReferenceHelp": "Znajdziesz go w e-mailu z potwierdzeniem rezerwacji",
+      "consent": "Zgadzam się z <a href='/terms' target='_blank'>Regulaminem</a> i upoważniam Jet2Pay do działania w moim imieniu. Rozumiem, że obowiązuje prowizja 30% w modelu „Brak wygranej — brak opłat".",
+      "gdpr": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z <a href='/privacy' target='_blank'>Polityką prywatności</a> i RODO.",
+      "submitClaim": "Złóż roszczenie"
+    },
+    "submitting": "Wysyłanie roszczenia...",
+    "submitted": {
+      "title": "Roszczenie zostało złożone pomyślnie!",
+      "claimId": "Numer roszczenia",
+      "estimated": "Szacowane odszkodowanie",
+      "emailSent": "E-mail z potwierdzeniem został wysłany na Twoją skrzynkę.",
+      "trackClaim": "Możesz śledzić status roszczenia w każdej chwili, korzystając z numeru roszczenia.",
+      "newClaim": "← Złóż kolejne roszczenie"
+    },
+    "error": {
+      "submissionFailed": "Nie udało się złożyć roszczenia. Spróbuj ponownie.",
+      "networkError": "Błąd sieci. Sprawdź swoje połączenie."
+    }
+  },
+  "claimStatus": {
+    "title": "Sprawdź status roszczenia",
+    "subtitle": "Wpisz numer referencyjny roszczenia, aby śledzić postęp Twojego odszkodowania.",
+    "placeholder": "Wpisz numer roszczenia (np. 35073ad8-6b02...)",
+    "search": "Śledź roszczenie",
+    "notFound": "Nie znaleziono roszczenia o tym numerze. Sprawdź identyfikator i spróbuj ponownie.",
+    "error": "Coś poszło nie tak. Spróbuj ponownie później.",
+    "progress": "Postęp roszczenia",
+    "flightDetails": "Szczegóły lotu",
+    "compensation": "Odszkodowanie",
+    "claimRef": "Numer roszczenia",
+    "status": "Status",
+    "flight": "Lot",
+    "date": "Data",
+    "route": "Trasa",
+    "disruption": "Rodzaj zakłócenia",
+    "estimatedAmount": "Szacowane odszkodowanie",
+    "distance": "Odległość trasy",
+    "eligible": "Kwalifikuje się do odszkodowania",
+    "notEligible": "Nie kwalifikuje się do odszkodowania",
+    "documents": "Dokumenty",
+    "noDocs": "Brak przesłanych dokumentów.",
+    "missingDocs": "Brakujące dokumenty",
+    "timeline": "Oś czasu statusu",
+    "steps": {
+      "submitted": "Złożone",
+      "under_review": "W trakcie weryfikacji",
+      "airline_contacted": "Kontakt z linią lotniczą",
+      "negotiating": "Negocjacje",
+      "resolved": "Rozwiązane",
+      "rejected": "Odrzucone",
+      "paid": "Wypłacone"
+    },
+    "disruptionTypes": {
+      "delay": "Opóźnienie",
+      "cancellation": "Odwołanie",
+      "denied_boarding": "Odmowa wejścia na pokład",
+      "missed_connection": "Nieudana przesiadka"
+    },
+    "docTypes": {
+      "boarding_pass": "Karta pokładowa",
+      "booking_confirmation": "Potwierdzenie rezerwacji",
+      "id_document": "Dokument tożsamości"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Walczymy o Twoje prawa pasażera",
+      "subtitle": "Pomagamy pasażerom uzyskać odszkodowanie, które im się należy, gdy lot idzie nie tak. Brak wygranej — brak opłat — to takie proste."
+    },
+    "stats": {
+      "customers": "Zadowoleni pasażerowie",
+      "airlines": "Obsługiwane linie lotnicze",
+      "successRate": "Wskaźnik sukcesu",
+      "recovered": "Odzyskane dla pasażerów"
+    },
+    "mission": {
+      "title": "Nasza misja",
+      "text1": "W Jet2Pay wierzymy, że każdy pasażer zasługuje na sprawiedliwe traktowanie. Gdy Twój lot jest opóźniony, odwołany lub odmówiono Ci wejścia na pokład, rozporządzenie UE 261/2004 i UK261 chronią Twoje prawo do odszkodowania w wysokości do 600 €.",
+      "text2": "Nasz zespół ekspertów prawnych i lotniczych zajmuje się całym procesem roszczeniowym — od wstępnej oceny po negocjacje z linią lotniczą — abyś nie musiał tego robić sam. Pobieramy jedynie 30% prowizji, gdy wygramy Twoją sprawę.",
+      "cardTitle": "Twoje prawa, nasz priorytet",
+      "cardText": "Pomogliśmy tysiącom pasażerów w całej Europie uzyskać należne im odszkodowanie. Nasz zautomatyzowany system i zespół ekspertów zapewniają szybką i bezproblemową obsługę."
+    },
+    "values": {
+      "title": "Nasze wartości",
+      "transparency": {
+        "title": "Pełna przejrzystość",
+        "text": "Żadnych ukrytych opłat, żadnych niespodziewanych kosztów. Płacisz tylko wtedy, gdy wygramy Twoją sprawę — 30% prowizji od sukcesu."
+      },
+      "noWinNoFee": {
+        "title": "Brak wygranej — brak opłat",
+        "text": "Przejmujemy całe ryzyko. Jeśli Twoje roszczenie nie zostanie uwzględnione, nie płacisz absolutnie nic."
+      },
+      "speed": {
+        "title": "Szybka obsługa",
+        "text": "Nasz zautomatyzowany system weryfikacji uprawnień daje Ci natychmiastową ocenę. Większość roszczeń rozpatrywana jest w ciągu kilku tygodni."
+      },
+      "expertise": {
+        "title": "Wiedza prawna",
+        "text": "Nasz zespół posiada dogłębną wiedzę o rozporządzeniach EC261/UK261 i bogate doświadczenie w kontaktach z liniami lotniczymi."
+      }
+    },
+    "howItWorks": {
+      "title": "Jak to działa",
+      "step1": { "title": "Sprawdź uprawnienia", "text": "Wpisz dane lotu, a my natychmiast ocenimy Twoje roszczenie." },
+      "step2": { "title": "Złóż roszczenie", "text": "Podaj swoje dane i prześlij dokumenty. Zajmie to tylko 5 minut." },
+      "step3": { "title": "My zajmiemy się resztą", "text": "Nasz zespół kontaktuje się z linią lotniczą i prowadzi wszystkie procesy prawne w Twoim imieniu." },
+      "step4": { "title": "Otrzymaj odszkodowanie", "text": "Gdy wygramy, odszkodowanie zostanie przelane bezpośrednio na Twoje konto bankowe." }
+    },
+    "team": {
+      "title": "Nasz zespół",
+      "subtitle": "Oddany zespół profesjonalistów zobowiązanych do ochrony Twoich praw pasażera.",
+      "founder": "Założyciel i CEO",
+      "legal": "Dział prawny",
+      "claims": "Obsługa roszczeń",
+      "tech": "Technologia"
+    },
+    "legal": {
+      "title": "Informacje o firmie",
+      "company": {
+        "title": "Firma",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Zarejestrowana w Bułgarii"
+      },
+      "address": {
+        "title": "Adres",
+        "text": "Sofia, Bułgaria"
+      },
+      "contact": {
+        "title": "Kontakt"
+      }
+    },
+    "cta": {
+      "title": "Gotowy, by ubiegać się o odszkodowanie?",
+      "text": "Sprawdź, czy Twój lot kwalifikuje się do odszkodowania w wysokości do 600 €. To bezpłatne i zajmuje tylko 2 minuty.",
+      "button": "Sprawdź odszkodowanie →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Aktualności",
+      "subtitle": "Bądź na bieżąco z prawami pasażerów, przepisami i nowościami Jet2Pay."
+    },
+    "featured": "Wyróżnione",
+    "allArticles": "Wszystkie artykuły",
+    "readMore": "Czytaj więcej",
+    "categories": {
+      "companyNews": "Aktualności firmowe",
+      "regulation": "Przepisy",
+      "tips": "Porady i przewodniki"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay startuje: Pomagamy pasażerom uzyskać odszkodowanie za loty",
+        "summary": "Z przyjemnością ogłaszamy uruchomienie Jet2Pay — platformy pomagającej pasażerom uzyskać odszkodowanie za opóźnione, odwołane lub overbookowane loty na mocy rozporządzenia UE 261/2004 i UK261."
+      },
+      "ec261Update": {
+        "title": "Rozporządzenie EC261: Kompletny przewodnik po odszkodowaniach za loty",
+        "summary": "Rozporządzenie UE 261/2004 uprawnia pasażerów do odszkodowania w wysokości 250–600 € za zakłócenia lotów. Dowiedz się o swoich prawach i sposobie składania roszczeń."
+      },
+      "knowYourRights": {
+        "title": "5 rzeczy, które każdy pasażer powinien wiedzieć o swoich prawach",
+        "summary": "Wielu pasażerów nie wie, że przysługuje im odszkodowanie. Oto najważniejsze fakty dotyczące Twoich praw w przypadku opóźnienia lub odwołania lotu."
+      },
+      "delayTips": {
+        "title": "Co robić, gdy Twój lot jest opóźniony: Przewodnik krok po kroku",
+        "summary": "Lot opóźniony? Nie panikuj. Skorzystaj z naszego praktycznego przewodnika, aby chronić swoje prawa i zmaksymalizować odszkodowanie."
+      },
+      "uk261": {
+        "title": "UK261: Zasady odszkodowań za loty po Brexicie",
+        "summary": "Po Brexicie Wielka Brytania przyjęła własną wersję EC261 — znaną jako UK261. Oto co to oznacza dla pasażerów latających do i z Wielkiej Brytanii."
+      },
+      "partnerships": {
+        "title": "Jet2Pay nawiązuje partnerstwo z czołowymi dostawcami danych lotniczych",
+        "summary": "Nawiązaliśmy partnerstwo z wiodącymi dostawcami danych lotniczych, aby oferować weryfikację lotów w czasie rzeczywistym i szybszą obsługę roszczeń."
+      }
+    },
+    "cta": {
+      "title": "Miałeś zakłócenie lotu?",
+      "text": "Sprawdź, czy przysługuje Ci odszkodowanie — to bezpłatne i zajmuje 2 minuty.",
+      "button": "Sprawdź odszkodowanie →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Poznaj swoje prawa",
+    "products": "Produkty",
+    "aboutCompany": "O firmie",
+    "legal": "Informacje prawne",
+    "description": "Odszkodowanie za lot w prosty sposób. Pomagamy pasażerom uzyskać do 600 € za opóźnione, odwołane lub overbookowane loty.",
+    "copyright": "Wszelkie prawa zastrzeżone.",
+    "links": {
+      "eu261": "Rozporządzenie UE 261/2004",
+      "uk261": "Rozporządzenie UK261",
+      "delayComp": "Odszkodowanie za opóźnienie lotu",
+      "cancelComp": "Odszkodowanie za odwołany lot",
+      "overbookedComp": "Odszkodowanie za overbooking",
+      "deniedBoarding": "Odmowa wejścia na pokład",
+      "passengerRights": "Prawa pasażerów lotniczych",
+      "checkComp": "Sprawdź odszkodowanie",
+      "howItWorks": "Jak to działa",
+      "pricing": "Cennik",
+      "claimStatus": "Sprawdź status roszczenia",
+      "aboutUs": "O Jet2Pay",
+      "reviews": "Opinie",
+      "careers": "Kariera",
+      "partners": "Partnerzy",
+      "press": "Prasa",
+      "contact": "Kontakt",
+      "news": "Aktualności",
+      "terms": "Regulamin",
+      "privacy": "Polityka prywatności",
+      "cookies": "Polityka cookies",
+      "imprint": "Impressum",
+      "complaints": "Reklamacje"
+    },
+    "newsletter": {
+      "title": "Zapisz się do newslettera",
+      "text": "Otrzymuj najnowsze wiadomości i porady podróżnicze bezpośrednio na swoją skrzynkę.",
+      "placeholder": "Twój adres e-mail",
+      "button": "Zapisz się"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "PROSTY PROCES", "title": "Jak to działa", "subtitle": "Uzyskanie odszkodowania za lot jest proste. My zajmujemy się wszystkim — wystarczy, że opowiesz nam, co się stało." },
+      "steps": {
+        "title": "4 proste kroki",
+        "s1": { "title": "Sprawdź uprawnienia", "text": "Wpisz dane lotu w naszym bezpłatnym narzędziu. Nasz system natychmiast sprawdzi rozporządzenie UE 261/2004 i UK261, aby ustalić, czy przysługuje Ci odszkodowanie w wysokości do 600 €." },
+        "s2": { "title": "Złóż roszczenie", "text": "Podaj swoje dane osobowe, informacje o locie i prześlij dokumenty potwierdzające. Cały proces trwa mniej niż 5 minut." },
+        "s3": { "title": "My zajmiemy się resztą", "text": "Nasi eksperci prawni i lotniczy przejmują sprawę. Kontaktujemy się z linią lotniczą, prowadzimy całą korespondencję i negocjacje oraz zarządzamy procesem prawnym w Twoim imieniu." },
+        "s4": { "title": "Otrzymaj odszkodowanie", "text": "Gdy pomyślnie rozwiążemy Twoje roszczenie, odszkodowanie zostanie przelane bezpośrednio na Twoje konto bankowe. Potrącamy jedynie 30% prowizji od otrzymanej kwoty." }
+      },
+      "whyUs": {
+        "title": "Dlaczego warto wybrać Jet2Pay?",
+        "noRisk": { "title": "Brak wygranej — brak opłat", "text": "Nie płacisz nic z góry. Nasza 30% prowizja jest pobierana tylko wtedy, gdy pomyślnie wygramy Twoją sprawę." },
+        "fast": { "title": "Zespół ekspertów prawnych", "text": "Nasz zespół specjalizuje się w prawach pasażerów lotniczych UE i ma bogate doświadczenie w negocjacjach z liniami lotniczymi." },
+        "expertise": { "title": "Szybko i łatwo", "text": "Złóż roszczenie w mniej niż 5 minut. My zajmiemy się resztą i będziemy Cię informować na każdym etapie." }
+      },
+      "cta": { "title": "Gotowy, żeby zacząć?", "text": "Sprawdź, czy Twój lot kwalifikuje się do odszkodowania — to bezpłatne i zajmuje tylko 2 minuty.", "button": "Sprawdź odszkodowanie →" }
+    },
+    "pricing": {
+      "hero": { "badge": "PRZEJRZYSTY CENNIK", "title": "Cennik", "subtitle": "Żadnych ukrytych opłat, żadnych kosztów z góry. Płacisz tylko wtedy, gdy wygramy." },
+      "noWinNoFee": { "title": "Brak wygranej — brak opłat", "text": "Nasz serwis jest całkowicie bezpłatny, chyba że pomyślnie uzyskamy dla Ciebie odszkodowanie. Pobieramy 30% prowizji wyłącznie od odzyskanej kwoty.", "badge": "GWARANTOWANE" },
+      "comparison": {
+        "title": "Jak wypadamy na tle konkurencji",
+        "option": "Opcja",
+        "cost": "Koszt",
+        "successRate": "Wskaźnik sukcesu",
+        "effort": "Twój wysiłek",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% od sukcesu", "success": "98%", "effort": "5 minut" },
+        "lawyer": { "name": "Prawnik", "cost": "200+ €/godz.", "success": "85%", "effort": "Godziny" },
+        "diy": { "name": "Samodzielnie", "cost": "Bezpłatnie", "success": "~10%", "effort": "Dni/Tygodnie" }
+      },
+      "faq": {
+        "title": "Najczęściej zadawane pytania o cennik",
+        "q1": { "q": "Kiedy płacę?", "a": "Tylko wtedy, gdy pomyślnie odzyskamy dla Ciebie odszkodowanie. Jeśli nie wygramy, nie płacisz nic." },
+        "q2": { "q": "Co obejmuje 30%?", "a": "Nasza prowizja obejmuje całą pracę prawną, negocjacje z liniami lotniczymi, korespondencję i obsługę roszczenia." },
+        "q3": { "q": "Czy są jakieś ukryte opłaty?", "a": "Absolutnie nie. 30% prowizji to jedyna opłata. Bez opłat rejestracyjnych, bez opłat za przetwarzanie, bez opłat za anulowanie." },
+        "q4": { "q": "Co jeśli moje roszczenie nie zostanie uwzględnione?", "a": "Nie płacisz nic. Ponosimy wszystkie koszty i ryzyko związane z dochodzeniem Twojego roszczenia." }
+      },
+      "cta": { "title": "Gotowy, by złożyć roszczenie?", "text": "Sprawdź bezpłatnie, czy się kwalifikujesz — bez zobowiązań.", "button": "Sprawdź odszkodowanie →" }
+    },
+    "reviews": {
+      "hero": { "badge": "OPINIE KLIENTÓW", "title": "Co mówią nasi klienci", "subtitle": "Tysiące pasażerów zaufało Jet2Pay w obsłudze ich roszczeń odszkodowawczych." },
+      "stats": {
+        "avgRating": "Średnia ocena",
+        "totalReviews": "Obsłużone roszczenia",
+        "recommend": "Poleciliby nas",
+        "avgPayout": "Maksymalne odszkodowanie"
+      },
+      "grid": {
+        "title": "Ostatnie opinie",
+        "r1": { "quote": "Jet2Pay zajął się wszystkim perfekcyjnie. Otrzymałam 400 € za opóźniony lot z Manchesteru do Antalyi. Gorąco polecam!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Na początku byłem sceptyczny, ale dostarczyli. Dostałem 250 € odszkodowania za 4-godzinne opóźnienie. Żadnych problemów.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Doskonała obsługa! Mój odwołany lot z Birmingham przyniósł 600 € odszkodowania. Zespół informował mnie na bieżąco.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Szybko i profesjonalnie. Złożyłem roszczenie w 5 minut i otrzymałem wypłatę w ciągu 8 tygodni.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Po overbookingu mojego lotu Jet2Pay uzyskał dla mnie 400 € odszkodowania. Proces był niewiarygodnie prosty.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantastyczne doświadczenie. Nie wiedziałem nawet, że przysługuje mi odszkodowanie, dopóki nie znalazłem Jet2Pay. Dostałem 250 €!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Zespół był bardzo responsywny i informował mnie na każdym etapie. Odszkodowanie otrzymałem w zaledwie 6 tygodni.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Korzystałem z Jet2Pay już dwa razy — za każdym razem z sukcesem. Naprawdę wiedzą, co robią w sprawach linii lotniczych.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Dołącz do tysięcy zadowolonych klientów", "text": "Sprawdź, czy Twój lot kwalifikuje się do odszkodowania.", "button": "Sprawdź odszkodowanie →" }
+    },
+    "careers": {
+      "hero": { "badge": "DOŁĄCZ DO ZESPOŁU", "title": "Kariera w Jet2Pay", "subtitle": "Pomóż nam walczyć o prawa pasażerów w całej Europie. Dołącz do szybko rozwijającego się zespołu, który naprawdę zmienia rzeczywistość." },
+      "culture": {
+        "title": "Dlaczego warto z nami pracować",
+        "text1": "W Jet2Pay tworzymy coś wartościowego — platformę, która pomaga codziennym podróżnym uzyskać należne im odszkodowanie.",
+        "text2": "Cenimy przejrzystość, innowacje i silne poczucie sprawiedliwości. Nasz zespół pracuje zdalnie w całej Europie, zjednoczony wspólną misją.",
+        "cardTitle": "Nasza kultura",
+        "cardText": "Elastyczna praca, konkurencyjne wynagrodzenie i satysfakcja z pomagania tysiącom pasażerów każdego miesiąca."
+      },
+      "positions": {
+        "title": "Otwarte stanowiska",
+        "apply": "Aplikuj teraz →",
+        "claimsSpecialist": { "title": "Specjalista ds. roszczeń", "location": "Zdalnie / Sofia", "type": "Pełny etat", "desc": "Obsługa i zarządzanie roszczeniami odszkodowawczymi za loty. Komunikacja z liniami lotniczymi i informowanie pasażerów o statusie ich roszczeń." },
+        "legalAdvisor": { "title": "Doradca prawny", "location": "Sofia, Bułgaria", "type": "Pełny etat", "desc": "Doradztwo prawne w zakresie rozporządzeń EC261/UK261. Analiza złożonych spraw i przygotowywanie dokumentacji prawnej do negocjacji z liniami lotniczymi." },
+        "frontendDev": { "title": "Programista Frontend", "location": "Zdalnie", "type": "Pełny etat", "desc": "Budowa i utrzymanie naszej platformy webowej opartej na React. Praca nad ulepszaniem procesu składania roszczeń i panelu administracyjnego." },
+        "customerSupport": { "title": "Obsługa klienta", "location": "Zdalnie", "type": "Część etatu", "desc": "Pomoc pasażerom w pytaniach dotyczących ich roszczeń. Doskonała obsługa klienta przez e-mail i czat." }
+      },
+      "cta": { "title": "Nie widzisz idealnego stanowiska?", "text": "Wyślij nam swoje CV i powiedz, jak chciałbyś się zaangażować.", "button": "Skontaktuj się z nami →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSTWO", "title": "Zostań naszym partnerem", "subtitle": "Dołącz do sieci Jet2Pay i pomóż pasażerom uzyskać należne im odszkodowanie." },
+      "types": {
+        "title": "Możliwości partnerstwa",
+        "airlines": { "title": "Partnerstwo z liniami lotniczymi", "text": "Współpracuj z nami, aby usprawnić proces odszkodowawczy dla Twoich pasażerów." },
+        "travelAgency": { "title": "Biura podróży", "text": "Oferuj odszkodowanie za loty jako dodatkową usługę dla swoich klientów. My zajmujemy się roszczeniami, Ty budujesz lojalność klientów." },
+        "legal": { "title": "Sieć prawna", "text": "Dołącz do naszej sieci prawników specjalizujących się w prawach pasażerów lotniczych w całej Europie." }
+      },
+      "benefits": {
+        "title": "Korzyści z partnerstwa",
+        "benefit1": { "title": "Dedykowany opiekun partnera", "text": "Jeden punkt kontaktu dla wszystkich Twoich potrzeb partnerskich." },
+        "benefit2": { "title": "Integracja na zamówienie", "text": "Dostęp do API i opcje integracji dla płynnych procesów." },
+        "benefit3": { "title": "Konkurencyjna prowizja", "text": "Atrakcyjny podział przychodów dla partnerów o dużym wolumenie." },
+        "benefit4": { "title": "Panel w czasie rzeczywistym", "text": "Śledź wszystkie polecone roszczenia i zarobki w czasie rzeczywistym." }
+      },
+      "contactUs": { "title": "Skontaktuj się z nami", "text": "Zainteresowany partnerstwem z Jet2Pay? Skontaktuj się z naszym zespołem ds. partnerstwa:" },
+      "cta": { "title": "Zainteresowany partnerstwem?", "text": "Skontaktuj się z naszym zespołem ds. partnerstwa.", "button": "Skontaktuj się z nami →" }
+    },
+    "press": {
+      "hero": { "badge": "PRASA I MEDIA", "title": "Biuro prasowe", "subtitle": "Najnowsze wiadomości, komunikaty prasowe i materiały medialne od Jet2Pay." },
+      "facts": {
+        "title": "Fakty o firmie",
+        "fact1": { "value": "2024", "label": "Założona" },
+        "fact2": { "value": "Sofia, BG", "label": "Siedziba główna" },
+        "fact3": { "value": "10+", "label": "Wielkość zespołu" },
+        "fact4": { "value": "10,000+", "label": "Obsłużone roszczenia" }
+      },
+      "releases": {
+        "title": "Komunikaty prasowe",
+        "r1": { "date": "Marzec 2026", "title": "Jet2Pay uruchamia nową platformę roszczeń", "summary": "Jet2Pay ogłasza uruchomienie nowej generacji platformy odszkodowań za loty, ułatwiającej pasażerom ubieganie się o do 600 €." },
+        "r2": { "date": "Luty 2026", "title": "Jet2Pay nawiązuje partnerstwo z dostawcami danych lotniczych", "summary": "Strategiczne partnerstwo z wiodącymi dostawcami danych lotniczych umożliwia weryfikację lotów w czasie rzeczywistym i szybszą obsługę roszczeń." },
+        "r3": { "date": "Styczeń 2026", "title": "Jet2Pay rozszerza zasięg na ponad 250 linii lotniczych", "summary": "Jet2Pay obsługuje teraz ponad 250 linii lotniczych na całym świecie, oferując kompleksowe usługi odszkodowawcze w całej Europie." }
+      },
+      "mediaKit": { "title": "Pakiet medialny", "text": "Pobierz nasz pakiet prasowy zawierający logotypy, wytyczne marki i przegląd firmy." },
+      "pressContact": { "title": "Kontakt dla prasy", "text": "W sprawie zapytań prasowych, wywiadów i próśb medialnych:" },
+      "cta": { "title": "Chcesz napisać o Jet2Pay?", "text": "Chętnie udzielimy wywiadów, cytatów i danych do Twojego artykułu.", "button": "Kontakt z zespołem prasowym →" }
+    },
+    "contact": {
+      "hero": { "badge": "SKONTAKTUJ SIĘ", "title": "Kontakt", "subtitle": "Masz pytanie? Jesteśmy tu, aby pomóc. Skontaktuj się z nami jednym z poniższych kanałów." },
+      "channels": {
+        "email": { "title": "Roszczenia", "text": "W sprawie pytań o istniejące roszczenia" },
+        "support": { "title": "Ogólne wsparcie", "text": "W sprawie ogólnych pytań i wsparcia" },
+        "address": { "title": "Biuro", "text": "MITRANI CONSULT EOOD, Sofia, Bułgaria" }
+      },
+      "form": { "title": "Wyślij nam wiadomość", "placeholder": "W sprawie zapytań, napisz do nas na support@jet2pay.eu" },
+      "faq": {
+        "title": "Najczęściej zadawane pytania",
+        "q1": { "q": "Jak długo trwa roszczenie?", "a": "Większość roszczeń rozpatrywana jest w ciągu 6–12 tygodni, w zależności od czasu odpowiedzi linii lotniczej." },
+        "q2": { "q": "Jakich dokumentów potrzebuję?", "a": "Karty pokładowej, potwierdzenia rezerwacji i ważnego dokumentu tożsamości. Poprowadzimy Cię przez cały proces." },
+        "q3": { "q": "Czy mogę ubiegać się o odszkodowanie za lot sprzed lat?", "a": "Tak! W większości krajów UE możesz ubiegać się o odszkodowanie za loty do 3 lat wstecz. W niektórych krajach limit ten wynosi do 6 lat." }
+      },
+      "cta": { "title": "Gotowy, by sprawdzić swój lot?", "text": "Nasza bezpłatna weryfikacja uprawnień zajmuje tylko 2 minuty.", "button": "Sprawdź odszkodowanie →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "pl": "Polski",
+    "cs": "Čeština",
+    "hu": "Magyar",
+    "hr": "Hrvatski",
+    "nl": "Nederlands"
+  }
+}

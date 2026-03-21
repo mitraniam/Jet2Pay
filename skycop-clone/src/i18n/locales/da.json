@@ -1,0 +1,498 @@
+{
+  "header": {
+    "checkCompensation": "Tjek kompensation",
+    "knowYourRights": "Kend dine rettigheder",
+    "aboutCompany": "Om virksomheden",
+    "news": "Nyheder",
+    "referAFriend": "Anbefal en ven",
+    "checkClaimStatus": "Tjek kravstatus"
+  },
+  "hero": {
+    "titleDelayed": "Forsinket",
+    "titleCancelled": "Aflyst",
+    "titleFlight": "Fly",
+    "titleOr": "eller",
+    "subtitle": "Krav op til <strong>€600</strong> for et forsinket eller aflyst fly",
+    "whatHappened": "Hvad skete der med dit fly?",
+    "delayed": "Forsinket",
+    "cancelled": "Aflyst / Overbooket",
+    "otherDisruptions": "Andre forstyrrelser",
+    "departurePlaceholder": "Afgangslufthavn",
+    "arrivalPlaceholder": "Ankomstlufthavn",
+    "checkCompensation": "Tjek kompensation",
+    "freeCheck": "Gratis kompensationstjek",
+    "hassleFree": "Problemfrit",
+    "claimsUpTo": "Krav op til 3 år gamle",
+    "compensatedCustomers": "kompenserede kunder",
+    "airlines": "flyselskaber",
+    "yearsTrusted": "års tillid"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Berettigelsestjek",
+      "waitTime": "Ventetid",
+      "done": "Færdig!",
+      "flightItinerary": "Flyrejseplan",
+      "disruptionType": "Type forstyrrelse",
+      "timing": "Tidspunkt",
+      "reason": "Årsag",
+      "howLong": "Hvor længe ventede du?",
+      "claimDetails": "Kravoplysninger",
+      "flightInfo": "Flyoplysninger",
+      "passengerInfo": "Dine oplysninger",
+      "bookingConsent": "Booking & samtykke"
+    },
+    "step1": {
+      "title": "Hvor fløj du?",
+      "departedFrom": "Afrejse fra",
+      "finalDestination": "Endelig destinationslufthavn",
+      "airportPlaceholder": "Indtast by- eller lufthavnsnavn",
+      "directFlight": "Var det en direkte flyvning?",
+      "yesDirect": "Ja, det var en direkte flyvning",
+      "noConnecting": "Nej, jeg havde mellemlandinger"
+    },
+    "step2": {
+      "title": "Type forstyrrelse",
+      "question": "Hvad var årsagen til den forstyrrelse, du oplevede?",
+      "delayed": "Fly forsinket",
+      "cancelled": "Fly aflyst",
+      "denied": "Nægtet ombordstigning / Overbooket"
+    },
+    "step3": {
+      "title": "Hvor længe var du forsinket?",
+      "question": "Hvor længe var du forsinket med at nå din endelige destination?",
+      "less3": "Mindre end 3 timer",
+      "more3": "Mere end 3 timer",
+      "missed": "Mistet forbindelsesfly"
+    },
+    "step4": {
+      "title": "Årsag til forstyrrelse",
+      "question1": "Fortalte flyselskabet dig, hvorfor flyet blev forstyrret?",
+      "yes": "Ja",
+      "no": "Nej",
+      "dontRemember": "Husker ikke",
+      "question2": "Hvad var årsagen, flyselskabet gav?",
+      "technical": "Teknisk problem med flyet",
+      "weather": "Dårlige vejrforhold",
+      "strike": "Strejke",
+      "airport": "Lufthavnsproblemer",
+      "other": "Andre årsager"
+    },
+    "step5": {
+      "title": "Fortæl os mere om din situation",
+      "question": "Hvor længe ventede du på et erstatningsfly eller en løsning?",
+      "less2": "Mindre end 2 timer",
+      "2to4": "2 til 4 timer",
+      "4to8": "4 til 8 timer",
+      "overnight": "Overnatning (8+ timer)",
+      "none": "Intet alternativ blev tilbudt",
+      "describeLabel": "Beskriv kort, hvad der skete",
+      "describeOptional": "(valgfrit)",
+      "describePlaceholder": "F.eks. Mit fly fra London til Paris blev forsinket 4 timer på grund af et teknisk problem med flyet...",
+      "infoText": "At dele detaljer om din oplevelse kan markant forbedre dine chancer for et vellykket krav. Jo mere specifik du er, jo højere er dine chancer for godkendelse."
+    },
+    "back": "Tilbage",
+    "continue": "Fortsæt",
+    "submitClaim": "Indsend krav",
+    "checkAnotherFlight": "← Tjek et andet fly",
+    "freeCheck": "Tjek din kompensation — <strong>100% gratis</strong>, ingen risiko.",
+    "eligible": {
+      "title": "Gode nyheder — du kan være berettiget!",
+      "description": "Baseret på dine svar kan du have ret til op til <strong>€600</strong> i kompensation i henhold til EU-forordning 261/2004. Start dit gratis krav nu!",
+      "descriptionDynamic": "Baseret på dine svar kan du have ret til op til <strong>€{{amount}}</strong> i kompensation i henhold til EU-forordning 261/2004. Start dit gratis krav nu!",
+      "startClaim": "Start mit gratis krav →"
+    },
+    "notEligible": {
+      "title": "Desværre opfylder du muligvis ikke kravene",
+      "description": "Baseret på dine svar ser din forsinkelse ud til at være under 3-timers grænsen, der kræves for EU-kompensation i henhold til forordning 261/2004."
+    },
+    "step6": {
+      "title": "Flyoplysninger",
+      "flightNumber": "Flynummer",
+      "flightNumberPlaceholder": "f.eks. LS123",
+      "flightDate": "Flydato",
+      "flightDateHelp": "Dato for det forstyrrede fly"
+    },
+    "step7": {
+      "title": "Dine oplysninger",
+      "firstName": "Fornavn",
+      "lastName": "Efternavn",
+      "email": "E-mailadresse",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+45 12 34 56 78",
+      "nationality": "Nationalitet",
+      "nationalityPlaceholder": "Vælg land"
+    },
+    "step8": {
+      "title": "Booking & samtykke",
+      "bookingReference": "Bookingreference",
+      "bookingReferencePlaceholder": "f.eks. ABC123",
+      "bookingReferenceHelp": "Findes i din bookingbekræftelses-e-mail",
+      "consent": "Jeg accepterer <a href='/terms' target='_blank'>vilkår og betingelser</a> og giver Jet2Pay tilladelse til at handle på mine vegne. Jeg forstår, at der gælder 30% provision uden gevinst, ingen betaling.",
+      "gdpr": "Jeg giver samtykke til behandling af mine personoplysninger i overensstemmelse med <a href='/privacy' target='_blank'>privatlivspolitikken</a> og GDPR.",
+      "submitClaim": "Indsend mit krav"
+    },
+    "submitting": "Indsender dit krav...",
+    "submitted": {
+      "title": "Krav indsendt med succes!",
+      "claimId": "Kravsreference",
+      "estimated": "Estimeret kompensation",
+      "emailSent": "En bekræftelses-e-mail er sendt til din indbakke.",
+      "trackClaim": "Følg din kravstatus når som helst ved hjælp af din kravsreference.",
+      "newClaim": "← Indsend et nyt krav"
+    },
+    "error": {
+      "submissionFailed": "Indsendelse af krav mislykkedes. Prøv venligst igen.",
+      "networkError": "Netværksfejl. Tjek venligst din forbindelse."
+    }
+  },
+  "claimStatus": {
+    "title": "Tjek kravstatus",
+    "subtitle": "Indtast dit kravsreferencenummer for at følge fremskridtet af dit kompensationskrav.",
+    "placeholder": "Indtast kravsreference (f.eks. 35073ad8-6b02...)",
+    "search": "Spor krav",
+    "notFound": "Intet krav fundet med denne reference. Tjek venligst ID'et og prøv igen.",
+    "error": "Noget gik galt. Prøv venligst igen senere.",
+    "progress": "Kravfremskridt",
+    "flightDetails": "Flyoplysninger",
+    "compensation": "Kompensation",
+    "claimRef": "Kravsreference",
+    "status": "Status",
+    "flight": "Fly",
+    "date": "Dato",
+    "route": "Rute",
+    "disruption": "Type forstyrrelse",
+    "estimatedAmount": "Estimeret kompensation",
+    "distance": "Ruteafstand",
+    "eligible": "Berettiget til kompensation",
+    "notEligible": "Ikke berettiget til kompensation",
+    "documents": "Dokumenter",
+    "noDocs": "Ingen dokumenter uploadet endnu.",
+    "missingDocs": "Manglende dokumenter",
+    "timeline": "Statustidslinje",
+    "steps": {
+      "submitted": "Indsendt",
+      "under_review": "Under behandling",
+      "airline_contacted": "Flyselskab kontaktet",
+      "negotiating": "Forhandler",
+      "resolved": "Løst",
+      "rejected": "Afvist",
+      "paid": "Betalt"
+    },
+    "disruptionTypes": {
+      "delay": "Forsinkelse",
+      "cancellation": "Aflysning",
+      "denied_boarding": "Nægtet ombordstigning",
+      "missed_connection": "Mistet forbindelse"
+    },
+    "docTypes": {
+      "boarding_pass": "Boardingkort",
+      "booking_confirmation": "Bookingbekræftelse",
+      "id_document": "ID-dokument"
+    }
+  },
+  "about": {
+    "badge": "MITRANI CONSULT EOOD",
+    "hero": {
+      "title": "Vi kæmper for dine flyrettigheder",
+      "subtitle": "Vi hjælper passagerer med at få den kompensation, de fortjener, når flyrejser går galt. Ingen gevinst, ingen betaling — så enkelt er det."
+    },
+    "stats": {
+      "customers": "Kompenserede passagerer",
+      "airlines": "Flyselskaber dækket",
+      "successRate": "Succesrate",
+      "recovered": "Inddrevet for passagerer"
+    },
+    "mission": {
+      "title": "Vores mission",
+      "text1": "Hos Jet2Pay mener vi, at enhver passager fortjener retfærdig behandling. Når dit fly er forsinket, aflyst, eller du nægtes ombordstigning, beskytter EU-forordning 261/2004 og UK261 din ret til kompensation på op til €600.",
+      "text2": "Vores team af juridiske og luftfartseksperter håndterer hele kravsprocessen — fra indledende vurdering til forhandling med flyselskabet — så du ikke behøver at gøre det. Vi opkræver kun 30% provision, hvis vi vinder din sag.",
+      "cardTitle": "Dine rettigheder, vores prioritet",
+      "cardText": "Vi har hjulpet tusindvis af passagerer over hele Europa med at kræve deres retmæssige kompensation. Vores automatiserede system og ekspertteam sikrer hurtig, problemfri behandling."
+    },
+    "values": {
+      "title": "Vores værdier",
+      "transparency": {
+        "title": "Fuld gennemsigtighed",
+        "text": "Ingen skjulte gebyrer, ingen overraskelsesomkostninger. Du betaler kun, når vi vinder din sag — 30% provision ved succes."
+      },
+      "noWinNoFee": {
+        "title": "Ingen gevinst, ingen betaling",
+        "text": "Vi påtager os al risiko. Hvis dit krav er mislykket, betaler du absolut intet."
+      },
+      "speed": {
+        "title": "Hurtig behandling",
+        "text": "Vores automatiserede berettigelsessystem giver dig en øjeblikkelig vurdering. De fleste krav løses inden for uger."
+      },
+      "expertise": {
+        "title": "Juridisk ekspertise",
+        "text": "Vores team har dyb viden om EC261/UK261-reglerne og omfattende erfaring med flyselskaber."
+      }
+    },
+    "howItWorks": {
+      "title": "Sådan fungerer det",
+      "step1": { "title": "Tjek berettigelse", "text": "Indtast dine flyoplysninger, og vi vurderer dit krav med det samme." },
+      "step2": { "title": "Indsend dit krav", "text": "Udfyld dine oplysninger og upload dine dokumenter. Det tager kun 5 minutter." },
+      "step3": { "title": "Vi håndterer alt", "text": "Vores team kontakter flyselskabet og håndterer alle juridiske processer på dine vegne." },
+      "step4": { "title": "Få kompensation", "text": "Når vi vinder, overføres din kompensation direkte til din bankkonto." }
+    },
+    "team": {
+      "title": "Vores team",
+      "subtitle": "Et dedikeret team af fagfolk, der er forpligtet til at beskytte dine passagerrettigheder.",
+      "founder": "Grundlægger & CEO",
+      "legal": "Juridisk afdeling",
+      "claims": "Kravsbehandling",
+      "tech": "Teknologi"
+    },
+    "legal": {
+      "title": "Virksomhedsoplysninger",
+      "company": {
+        "title": "Virksomhed",
+        "name": "MITRANI CONSULT EOOD",
+        "registration": "Registreret i Bulgarien"
+      },
+      "address": {
+        "title": "Adresse",
+        "text": "Sofia, Bulgarien"
+      },
+      "contact": {
+        "title": "Kontakt"
+      }
+    },
+    "cta": {
+      "title": "Klar til at kræve din kompensation?",
+      "text": "Tjek om dit fly kvalificerer til op til €600 i kompensation. Det er gratis og tager kun 2 minutter.",
+      "button": "Tjek kompensation →"
+    }
+  },
+  "news": {
+    "hero": {
+      "title": "Nyheder & opdateringer",
+      "subtitle": "Hold dig informeret om passagerrettigheder, regler og Jet2Pay-nyheder."
+    },
+    "featured": "Udvalgt",
+    "allArticles": "Alle artikler",
+    "readMore": "Læs mere",
+    "categories": {
+      "companyNews": "Virksomhedsnyheder",
+      "regulation": "Regulering",
+      "tips": "Tips & guider"
+    },
+    "articles": {
+      "launch": {
+        "title": "Jet2Pay lancerer: Hjælper passagerer med at kræve flykompensation",
+        "summary": "Vi er begejstrede for at annoncere lanceringen af Jet2Pay — en dedikeret platform, der hjælper passagerer med at kræve kompensation for forsinkede, aflyste eller overbookede fly i henhold til EU-forordning 261/2004 og UK261."
+      },
+      "ec261Update": {
+        "title": "Forstå EC261: Din komplette guide til flykompensation",
+        "summary": "EU-forordning 261/2004 giver passagerer ret til kompensation på €250–€600 for flyforstyrrelser. Lær om dine rettigheder, og hvordan du kræver kompensation."
+      },
+      "knowYourRights": {
+        "title": "5 ting, enhver flypassager bør vide om sine rettigheder",
+        "summary": "Mange passagerer ved ikke, at de har ret til kompensation. Her er de vigtigste fakta om dine rettigheder, når fly er forsinkede eller aflyste."
+      },
+      "delayTips": {
+        "title": "Hvad du skal gøre, når dit fly er forsinket: En trin-for-trin guide",
+        "summary": "Fly forsinket? Gå ikke i panik. Følg vores praktiske guide for at beskytte dine rettigheder og maksimere dit kompensationskrav."
+      },
+      "uk261": {
+        "title": "UK261: Regler for flykompensation efter Brexit forklaret",
+        "summary": "Efter Brexit vedtog Storbritannien sin egen version af EC261 — kendt som UK261. Her er, hvad det betyder for passagerer, der flyver til og fra Storbritannien."
+      },
+      "partnerships": {
+        "title": "Jet2Pay indgår partnerskab med førende luftfartsdataudbydere",
+        "summary": "Vi har indgået partnerskab med førende flydataudbydere for at tilbyde flyverifikation i realtid og hurtigere kravsbehandling for vores kunder."
+      }
+    },
+    "cta": {
+      "title": "Har du oplevet en flyforstyrrelse?",
+      "text": "Tjek om du har ret til kompensation — det er gratis og tager 2 minutter.",
+      "button": "Tjek kompensation →"
+    }
+  },
+  "footer": {
+    "knowYourRights": "Kend dine rettigheder",
+    "products": "Produkter",
+    "aboutCompany": "Om virksomheden",
+    "legal": "Juridisk",
+    "description": "Flykompensation gjort enkelt. Vi hjælper passagerer med at kræve op til €600 for forsinkede, aflyste eller overbookede fly.",
+    "copyright": "Alle rettigheder forbeholdes.",
+    "links": {
+      "eu261": "EU-forordning 261/2004",
+      "uk261": "UK-regulering UK261",
+      "delayComp": "Kompensation for flyforsinkelse",
+      "cancelComp": "Kompensation for aflyst fly",
+      "overbookedComp": "Kompensation for overbooket fly",
+      "deniedBoarding": "Nægtet ombordstigning",
+      "passengerRights": "Flypassagerrettigheder",
+      "checkComp": "Tjek kompensation",
+      "howItWorks": "Sådan fungerer det",
+      "pricing": "Priser",
+      "claimStatus": "Tjek kravstatus",
+      "aboutUs": "Om Jet2Pay",
+      "reviews": "Anmeldelser",
+      "careers": "Karriere",
+      "partners": "Partnere",
+      "press": "Presse",
+      "contact": "Kontakt os",
+      "news": "Nyheder",
+      "terms": "Vilkår & betingelser",
+      "privacy": "Privatlivspolitik",
+      "cookies": "Cookiepolitik",
+      "imprint": "Impressum",
+      "complaints": "Klager"
+    },
+    "newsletter": {
+      "title": "Abonner på vores nyhedsbrev",
+      "text": "Få de seneste nyheder og rejsetips direkte i din indbakke.",
+      "placeholder": "Din e-mailadresse",
+      "button": "Abonner"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "ENKEL PROCES", "title": "Sådan fungerer det", "subtitle": "At få din flykompensation er nemt. Vi håndterer alt — du skal bare fortælle os, hvad der skete." },
+      "steps": {
+        "title": "4 enkle trin",
+        "s1": { "title": "Tjek berettigelse", "text": "Indtast dine flyoplysninger i vores gratis værktøj. Vores system tjekker øjeblikkeligt EU-forordning 261/2004 og UK261 for at afgøre, om du har ret til kompensation på op til €600." },
+        "s2": { "title": "Indsend dit krav", "text": "Udfyld dine personlige oplysninger, flyinformation og upload eventuelle dokumenter. Hele processen tager mindre end 5 minutter." },
+        "s3": { "title": "Vi håndterer alt", "text": "Vores juridiske og luftfartseksperter tager over. Vi kontakter flyselskabet, håndterer al korrespondance og forhandling og styrer den juridiske proces på dine vegne." },
+        "s4": { "title": "Få kompensation", "text": "Når vi har løst dit krav, overføres kompensationen direkte til din bankkonto. Vi fratrækker kun vores 30% provision af det modtagne beløb." }
+      },
+      "whyUs": {
+        "title": "Hvorfor vælge Jet2Pay?",
+        "noRisk": { "title": "Ingen gevinst, ingen betaling", "text": "Du betaler intet på forhånd. Vores 30% provision opkræves kun, når vi vinder din sag." },
+        "fast": { "title": "Ekspert juridisk team", "text": "Vores team er specialiseret i EU-flypassagerrettigheder og har omfattende erfaring med at forhandle med flyselskaber." },
+        "expertise": { "title": "Hurtigt & nemt", "text": "Indsend dit krav på under 5 minutter. Vi håndterer resten og holder dig opdateret hele vejen." }
+      },
+      "cta": { "title": "Klar til at komme i gang?", "text": "Tjek om dit fly kvalificerer til kompensation — det er gratis og tager kun 2 minutter.", "button": "Tjek kompensation →" }
+    },
+    "pricing": {
+      "hero": { "badge": "GENNEMSIGTIGE PRISER", "title": "Priser", "subtitle": "Ingen skjulte gebyrer, ingen forudbetalinger. Du betaler kun, når vi vinder." },
+      "noWinNoFee": { "title": "Ingen gevinst, ingen betaling", "text": "Vores service er helt gratis, medmindre vi med succes kræver kompensation for dig. Vi opkræver 30% provision kun af det inddrevne beløb.", "badge": "GARANTERET" },
+      "comparison": {
+        "title": "Sådan sammenligner vi os",
+        "option": "Mulighed",
+        "cost": "Omkostning",
+        "successRate": "Succesrate",
+        "effort": "Din indsats",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% ved succes", "success": "98%", "effort": "5 minutter" },
+        "lawyer": { "name": "Advokat", "cost": "€200+/time", "success": "85%", "effort": "Timer" },
+        "diy": { "name": "Gør det selv", "cost": "Gratis", "success": "~10%", "effort": "Dage/uger" }
+      },
+      "faq": {
+        "title": "Pris-FAQ",
+        "q1": { "q": "Hvornår betaler jeg?", "a": "Kun når vi med succes inddriver kompensation for dig. Hvis vi ikke vinder, betaler du intet." },
+        "q2": { "q": "Hvad dækker de 30%?", "a": "Vores provision dækker alt juridisk arbejde, flyselskabsforhandlinger, korrespondance og kravsbehandling." },
+        "q3": { "q": "Er der skjulte gebyrer?", "a": "Absolut ikke. 30% provision er det eneste gebyr. Ingen tilmeldingsgebyrer, ingen behandlingsgebyrer, ingen afbestillingsgebyrer." },
+        "q4": { "q": "Hvad hvis mit krav ikke lykkes?", "a": "Du betaler intet. Vi dækker alle omkostninger og risici forbundet med at forfølge dit krav." }
+      },
+      "cta": { "title": "Klar til at kræve kompensation?", "text": "Tjek din berettigelse gratis — ingen forpligtelse.", "button": "Tjek kompensation →" }
+    },
+    "reviews": {
+      "hero": { "badge": "KUNDEANMELDELSER", "title": "Hvad vores kunder siger", "subtitle": "Tusindvis af passagerer har stolet på Jet2Pay til at håndtere deres kompensationskrav." },
+      "stats": {
+        "avgRating": "Gennemsnitlig bedømmelse",
+        "totalReviews": "Behandlede krav",
+        "recommend": "Vil anbefale",
+        "avgPayout": "Maks. kompensation"
+      },
+      "grid": {
+        "title": "Seneste anmeldelser",
+        "r1": { "quote": "Jet2Pay håndterede alt perfekt. Jeg modtog €400 for mit forsinkede fly fra Manchester til Antalya. Kan varmt anbefales!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "Jeg var skeptisk i starten, men de leverede. Fik €250 i kompensation for en 4-timers forsinkelse. Ingen besvær overhovedet.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Fremragende service! Mit aflyste fly fra Birmingham resulterede i €600 i kompensation. Teamet holdt mig informeret hele vejen.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Hurtigt og professionelt. Indsendte mit krav på 5 minutter og modtog betaling inden for 8 uger.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "Efter mit fly blev overbooket, fik Jet2Pay mig €400 i kompensation. Processen var utrolig enkel.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantastisk oplevelse. Jeg vidste ikke engang, at jeg havde ret til kompensation, før jeg fandt Jet2Pay. Fik €250!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "Teamet var meget lydhørt og holdt mig opdateret på hvert trin. Modtog min kompensation på kun 6 uger.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "Jeg har brugt Jet2Pay to gange nu — begge gange med succes. De ved virkelig, hvad de laver med flykrav.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Slut dig til tusindvis af tilfredse kunder", "text": "Tjek om dit fly kvalificerer til kompensation.", "button": "Tjek kompensation →" }
+    },
+    "careers": {
+      "hero": { "badge": "BLIV EN DEL AF TEAMET", "title": "Karriere hos Jet2Pay", "subtitle": "Hjælp os med at kæmpe for passagerrettigheder i hele Europa. Bliv en del af et hurtigt voksende team, der gør en reel forskel." },
+      "culture": {
+        "title": "Hvorfor arbejde hos os",
+        "text1": "Hos Jet2Pay bygger vi noget meningsfuldt — en platform, der hjælper hverdagsrejsende med at få den kompensation, de fortjener.",
+        "text2": "Vi værdsætter gennemsigtighed, innovation og en stærk retfærdighedssans. Vores team arbejder hjemmefra over hele Europa, forenet af en fælles mission.",
+        "cardTitle": "Vores kultur",
+        "cardText": "Fleksibelt arbejde, konkurrencedygtig løn og tilfredsheden ved at hjælpe tusindvis af passagerer hver måned."
+      },
+      "positions": {
+        "title": "Ledige stillinger",
+        "apply": "Ansøg nu →",
+        "claimsSpecialist": { "title": "Kravsspecialist", "location": "Fjernarbejde / Sofia", "type": "Fuldtid", "desc": "Behandl og administrer flykompensationskrav. Kommuniker med flyselskaber og hold passagerer informeret om deres kravstatus." },
+        "legalAdvisor": { "title": "Juridisk rådgiver", "location": "Sofia, Bulgarien", "type": "Fuldtid", "desc": "Lever juridisk ekspertise om EC261/UK261-regler. Gennemgå komplekse sager og forbered juridisk dokumentation til flyselskabsforhandlinger." },
+        "frontendDev": { "title": "Frontend-udvikler", "location": "Fjernarbejde", "type": "Fuldtid", "desc": "Byg og vedligehold vores React-baserede webplatform. Arbejd med at forbedre kravsindsendelsesoplevelsen og administrationspanelet." },
+        "customerSupport": { "title": "Kundesupport", "location": "Fjernarbejde", "type": "Deltid", "desc": "Hjælp passagerer med spørgsmål om deres krav. Lever fremragende kundeservice via e-mail og chatkanaler." }
+      },
+      "cta": { "title": "Kan du ikke finde det perfekte match?", "text": "Send os dit CV og fortæl os, hvordan du gerne vil bidrage.", "button": "Kontakt os →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSKABER", "title": "Bliv partner", "subtitle": "Bliv en del af Jet2Pay-netværket og hjælp passagerer med at få den kompensation, de fortjener." },
+      "types": {
+        "title": "Partnerskabsmuligheder",
+        "airlines": { "title": "Flyselskabspartnerskaber", "text": "Samarbejd med os for at strømline kompensationsprocessen for dine passagerer." },
+        "travelAgency": { "title": "Rejsebureauer", "text": "Tilbyd flykompensation som en ekstra service til dine kunder. Vi håndterer kravene, du styrker kundeloyaliteten." },
+        "legal": { "title": "Juridisk netværk", "text": "Bliv en del af vores netværk af juridiske fagfolk, der specialiserer sig i flypassagerrettigheder i hele Europa." }
+      },
+      "benefits": {
+        "title": "Partnerskabsfordele",
+        "benefit1": { "title": "Dedikeret partnermanager", "text": "Et enkelt kontaktpunkt for alle dine partnerskabsbehov." },
+        "benefit2": { "title": "Tilpasset integration", "text": "API-adgang og tilpassede integrationsmuligheder for problemfri arbejdsgange." },
+        "benefit3": { "title": "Konkurrencedygtig provision", "text": "Attraktiv omsætningsdeling for partnere med stor volumen." },
+        "benefit4": { "title": "Realtidsdashboard", "text": "Følg alle henviste krav og indtjening i realtid." }
+      },
+      "contactUs": { "title": "Kontakt os", "text": "Interesseret i et partnerskab med Jet2Pay? Kontakt vores partnerskabsteam:" },
+      "cta": { "title": "Interesseret i et partnerskab?", "text": "Kontakt vores partnerskabsteam.", "button": "Kontakt os →" }
+    },
+    "press": {
+      "hero": { "badge": "PRESSE & MEDIER", "title": "Presserum", "subtitle": "Seneste nyheder, pressemeddelelser og medieressourcer fra Jet2Pay." },
+      "facts": {
+        "title": "Virksomhedsfakta",
+        "fact1": { "value": "2024", "label": "Grundlagt" },
+        "fact2": { "value": "Sofia, BG", "label": "Hovedkontor" },
+        "fact3": { "value": "10+", "label": "Teamstørrelse" },
+        "fact4": { "value": "10.000+", "label": "Behandlede krav" }
+      },
+      "releases": {
+        "title": "Pressemeddelelser",
+        "r1": { "date": "Marts 2026", "title": "Jet2Pay lancerer ny kravsplatform", "summary": "Jet2Pay annoncerer lanceringen af sin næste generations flykompensationsplatform, der gør det nemmere end nogensinde for passagerer at kræve op til €600." },
+        "r2": { "date": "Februar 2026", "title": "Jet2Pay indgår partnerskab med luftfartsdataudbydere", "summary": "Strategisk partnerskab med førende flydataudbydere muliggør flyverifikation i realtid og hurtigere kravsbehandling." },
+        "r3": { "date": "Januar 2026", "title": "Jet2Pay udvider dækning til 250+ flyselskaber", "summary": "Jet2Pay dækker nu over 250 flyselskaber verden over og tilbyder omfattende flykompensationstjenester i hele Europa." }
+      },
+      "mediaKit": { "title": "Mediepakke", "text": "Download vores pressepakke med logoer, brandretningslinjer og virksomhedsoversigt." },
+      "pressContact": { "title": "Pressekontakt", "text": "For pressehenvendelser, interviews og medieforespørgsler:" },
+      "cta": { "title": "Vil du omtale Jet2Pay?", "text": "Vi stiller gerne op til interviews, citater og data til din historie.", "button": "Kontakt presseteamet →" }
+    },
+    "contact": {
+      "hero": { "badge": "KONTAKT OS", "title": "Kontakt os", "subtitle": "Har du et spørgsmål? Vi er her for at hjælpe. Kontakt os via en af nedenstående kanaler." },
+      "channels": {
+        "email": { "title": "Krav", "text": "For spørgsmål om eksisterende krav" },
+        "support": { "title": "Generel support", "text": "For generelle henvendelser og support" },
+        "address": { "title": "Kontor", "text": "MITRANI CONSULT EOOD, Sofia, Bulgarien" }
+      },
+      "form": { "title": "Send os en besked", "placeholder": "For henvendelser, send venligst en e-mail til support@jet2pay.eu" },
+      "faq": {
+        "title": "Ofte stillede spørgsmål",
+        "q1": { "q": "Hvor lang tid tager et krav?", "a": "De fleste krav løses inden for 6-12 uger, afhængigt af flyselskabets svartid." },
+        "q2": { "q": "Hvilke dokumenter har jeg brug for?", "a": "Dit boardingkort, bookingbekræftelse og et gyldigt ID. Vi guider dig gennem processen." },
+        "q3": { "q": "Kan jeg kræve kompensation for et fly fra flere år siden?", "a": "Ja! I de fleste EU-lande kan du kræve kompensation for fly op til 3 år gamle. I nogle lande er grænsen op til 6 år." }
+      },
+      "cta": { "title": "Klar til at tjekke dit fly?", "text": "Vores gratis berettigelsestjek tager kun 2 minutter.", "button": "Tjek kompensation →" }
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español",
+    "da": "Dansk",
+    "sv": "Svenska",
+    "no": "Norsk",
+    "fi": "Suomi",
+    "is": "Íslenska"
+  }
+}
