@@ -36,7 +36,11 @@
       "disruptionType": "Tipo de interrupción",
       "timing": "Duración",
       "reason": "Motivo",
-      "howLong": "¿Cuánto tiempo esperó?"
+      "howLong": "¿Cuánto tiempo esperó?",
+      "claimDetails": "Detalles de reclamación",
+      "flightInfo": "Datos del vuelo",
+      "passengerInfo": "Sus datos",
+      "bookingConsent": "Reserva y consentimiento"
     },
     "step1": {
       "title": "¿A dónde voló?",
@@ -100,6 +104,45 @@
     "notEligible": {
       "title": "Lamentablemente, es posible que no cumpla los requisitos",
       "description": "Según sus respuestas, su retraso parece estar por debajo del umbral de 3 horas requerido para la compensación de la UE según el Reglamento 261/2004."
+    },
+    "step6": {
+      "title": "Detalles del vuelo",
+      "flightNumber": "Número de vuelo",
+      "flightNumberPlaceholder": "ej. LS123",
+      "flightDate": "Fecha del vuelo",
+      "flightDateHelp": "Fecha del vuelo afectado"
+    },
+    "step7": {
+      "title": "Sus datos",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "phone": "Número de teléfono",
+      "phonePlaceholder": "+34 612 345 678",
+      "nationality": "Nacionalidad",
+      "nationalityPlaceholder": "Seleccione un país"
+    },
+    "step8": {
+      "title": "Reserva y consentimiento",
+      "bookingReference": "Referencia de reserva",
+      "bookingReferencePlaceholder": "ej. ABC123",
+      "bookingReferenceHelp": "Disponible en su correo de confirmación de reserva",
+      "consent": "Acepto los <a href='/terms' target='_blank'>Términos y Condiciones</a> y autorizo a Jet2Pay a actuar en mi nombre. Entiendo la comisión del 30% sin cargo si no hay éxito.",
+      "gdpr": "Consiento el tratamiento de mis datos personales de acuerdo con la <a href='/privacy' target='_blank'>Política de Privacidad</a> y el RGPD.",
+      "submitClaim": "Enviar mi reclamación"
+    },
+    "submitting": "Enviando su reclamación...",
+    "submitted": {
+      "title": "¡Reclamación enviada con éxito!",
+      "claimId": "Referencia de reclamación",
+      "estimated": "Compensación estimada",
+      "emailSent": "Se ha enviado un correo de confirmación a su bandeja de entrada.",
+      "trackClaim": "Consulte el estado de su reclamación en cualquier momento con su referencia.",
+      "newClaim": "← Enviar otra reclamación"
+    },
+    "error": {
+      "submissionFailed": "Error al enviar la reclamación. Inténtelo de nuevo.",
+      "networkError": "Error de red. Compruebe su conexión."
     }
   },
   "languages": {

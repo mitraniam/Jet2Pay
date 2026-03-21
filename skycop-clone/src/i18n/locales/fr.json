@@ -36,7 +36,11 @@
       "disruptionType": "Type de perturbation",
       "timing": "Durée",
       "reason": "Raison",
-      "howLong": "Combien de temps avez-vous attendu ?"
+      "howLong": "Combien de temps avez-vous attendu ?",
+      "claimDetails": "Détails de la demande",
+      "flightInfo": "Infos du vol",
+      "passengerInfo": "Vos coordonnées",
+      "bookingConsent": "Réservation & consentement"
     },
     "step1": {
       "title": "Où avez-vous volé ?",
@@ -100,6 +104,45 @@
     "notEligible": {
       "title": "Malheureusement, vous ne semblez pas éligible",
       "description": "D'après vos réponses, votre retard semble inférieur au seuil de 3 heures requis pour une indemnisation UE selon le Règlement 261/2004."
+    },
+    "step6": {
+      "title": "Détails du vol",
+      "flightNumber": "Numéro de vol",
+      "flightNumberPlaceholder": "ex. LS123",
+      "flightDate": "Date du vol",
+      "flightDateHelp": "Date du vol perturbé"
+    },
+    "step7": {
+      "title": "Vos coordonnées",
+      "firstName": "Prénom",
+      "lastName": "Nom de famille",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "phonePlaceholder": "+33 6 12 34 56 78",
+      "nationality": "Nationalité",
+      "nationalityPlaceholder": "Sélectionnez un pays"
+    },
+    "step8": {
+      "title": "Réservation & consentement",
+      "bookingReference": "Référence de réservation",
+      "bookingReferencePlaceholder": "ex. ABC123",
+      "bookingReferenceHelp": "Disponible dans votre e-mail de confirmation de réservation",
+      "consent": "J'accepte les <a href='/terms' target='_blank'>Conditions Générales</a> et j'autorise Jet2Pay à agir en mon nom. Je comprends la commission de 30% sans frais si pas de gain.",
+      "gdpr": "Je consens au traitement de mes données personnelles conformément à la <a href='/privacy' target='_blank'>Politique de Confidentialité</a> et au RGPD.",
+      "submitClaim": "Soumettre ma demande"
+    },
+    "submitting": "Envoi de votre demande...",
+    "submitted": {
+      "title": "Demande soumise avec succès !",
+      "claimId": "Référence de demande",
+      "estimated": "Indemnisation estimée",
+      "emailSent": "Un e-mail de confirmation a été envoyé dans votre boîte de réception.",
+      "trackClaim": "Suivez le statut de votre demande à tout moment avec votre référence.",
+      "newClaim": "← Soumettre une autre demande"
+    },
+    "error": {
+      "submissionFailed": "Échec de la soumission. Veuillez réessayer.",
+      "networkError": "Erreur réseau. Veuillez vérifier votre connexion."
     }
   },
   "languages": {
