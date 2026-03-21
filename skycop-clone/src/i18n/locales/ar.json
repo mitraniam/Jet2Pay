@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "تحقق من التعويض",
+    "knowYourRights": "اعرف حقوقك",
+    "aboutCompany": "عن الشركة",
+    "news": "أخبار",
+    "referAFriend": "أحل صديقاً",
+    "checkClaimStatus": "تحقق من حالة المطالبة"
+  },
+  "hero": {
+    "titleDelayed": "تأخرت",
+    "titleCancelled": "ألغيت",
+    "titleFlight": "الرحلة",
+    "titleOr": "أو",
+    "subtitle": "طالب بما يصل إلى <strong>600€</strong> عن رحلة متأخرة أو ملغاة",
+    "whatHappened": "ماذا حدث لرحلتك؟",
+    "delayed": "تأخرت",
+    "cancelled": "ألغيت / حجز زائد",
+    "otherDisruptions": "اضطرابات أخرى",
+    "departurePlaceholder": "مطار المغادرة",
+    "arrivalPlaceholder": "مطار الوصول",
+    "checkCompensation": "تحقق من التعويض",
+    "freeCheck": "فحص تعويض مجاني",
+    "hassleFree": "بدون متاعب",
+    "claimsUpTo": "مطالبات حتى 3 سنوات",
+    "compensatedCustomers": "عملاء تم تعويضهم",
+    "airlines": "شركات طيران",
+    "yearsTrusted": "سنوات من الثقة"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "فحص الأهلية",
+      "waitTime": "وقت الانتظار",
+      "done": "تم!",
+      "flightItinerary": "مسار الرحلة",
+      "disruptionType": "نوع الاضطراب",
+      "timing": "التوقيت",
+      "reason": "السبب",
+      "howLong": "كم انتظرت؟",
+      "claimDetails": "تفاصيل المطالبة",
+      "flightInfo": "معلومات الرحلة",
+      "passengerInfo": "بياناتك",
+      "bookingConsent": "الحجز والموافقة"
+    },
+    "step1": {
+      "title": "إلى أين سافرت؟",
+      "departedFrom": "غادرت من",
+      "finalDestination": "مطار الوجهة النهائية",
+      "airportPlaceholder": "أدخل اسم المدينة أو المطار",
+      "directFlight": "هل كانت رحلة مباشرة؟",
+      "yesDirect": "نعم، كانت رحلة مباشرة",
+      "noConnecting": "لا، كانت لدي رحلات متصلة"
+    },
+    "step2": {
+      "title": "نوع الاضطراب",
+      "question": "ما طبيعة اضطراب الرحلة الذي واجهته؟",
+      "delayed": "تأخر الرحلة",
+      "cancelled": "إلغاء الرحلة",
+      "denied": "رفض الصعود / حجز زائد"
+    },
+    "step3": {
+      "title": "كم كانت مدة التأخير؟",
+      "question": "كم تأخرت في الوصول إلى وجهتك النهائية؟",
+      "less3": "أقل من 3 ساعات",
+      "more3": "أكثر من 3 ساعات",
+      "missed": "فاتتني رحلة الربط"
+    },
+    "step4": {
+      "title": "سبب الاضطراب",
+      "question1": "هل أخبرتك شركة الطيران بسبب اضطراب الرحلة؟",
+      "yes": "نعم",
+      "no": "لا",
+      "dontRemember": "لا أتذكر",
+      "question2": "ما السبب الذي قدمته شركة الطيران؟",
+      "technical": "مشكلة فنية في الطائرة",
+      "weather": "ظروف جوية سيئة",
+      "strike": "إضراب",
+      "airport": "مشاكل في المطار",
+      "other": "أسباب أخرى"
+    },
+    "step5": {
+      "title": "أخبرنا المزيد عن وضعك",
+      "question": "كم انتظرت للحصول على رحلة بديلة أو حل؟",
+      "less2": "أقل من ساعتين",
+      "2to4": "من 2 إلى 4 ساعات",
+      "4to8": "من 4 إلى 8 ساعات",
+      "overnight": "ليلة كاملة (أكثر من 8 ساعات)",
+      "none": "لم يُقدَّم أي بديل",
+      "describeLabel": "صف بإيجاز ما حدث",
+      "describeOptional": "(اختياري)",
+      "describePlaceholder": "مثال: تأخرت رحلتي من لندن إلى باريس 4 ساعات بسبب مشكلة فنية في الطائرة...",
+      "infoText": "مشاركة تفاصيل تجربتك يمكن أن تحسن بشكل كبير فرص نجاح مطالبتك."
+    },
+    "back": "رجوع",
+    "continue": "متابعة",
+    "submitClaim": "تقديم المطالبة",
+    "checkAnotherFlight": "← تحقق من رحلة أخرى",
+    "freeCheck": "تحقق من تعويضك — <strong>مجاني 100%</strong>، بدون مخاطر.",
+    "eligible": {
+      "title": "أخبار رائعة — قد تكون مؤهلاً!",
+      "description": "بناءً على إجاباتك، قد يحق لك الحصول على تعويض يصل إلى <strong>600€</strong> بموجب لائحة الاتحاد الأوروبي 261/2004. ابدأ مطالبتك المجانية الآن!",
+      "startClaim": "ابدأ مطالبتي المجانية →"
+    },
+    "notEligible": {
+      "title": "للأسف، قد لا تكون مؤهلاً",
+      "description": "بناءً على إجاباتك، يبدو أن تأخيرك أقل من حد الـ 3 ساعات المطلوب للتعويض الأوروبي بموجب اللائحة 261/2004."
+    },
+    "step6": {
+      "title": "تفاصيل الرحلة",
+      "flightNumber": "رقم الرحلة",
+      "flightNumberPlaceholder": "مثال LS123",
+      "flightDate": "تاريخ الرحلة",
+      "flightDateHelp": "تاريخ الرحلة المتأثرة"
+    },
+    "step7": {
+      "title": "بياناتك",
+      "firstName": "الاسم الأول",
+      "lastName": "اسم العائلة",
+      "email": "البريد الإلكتروني",
+      "phone": "رقم الهاتف",
+      "phonePlaceholder": "+966 50 000 0000",
+      "nationality": "الجنسية",
+      "nationalityPlaceholder": "اختر الدولة"
+    },
+    "step8": {
+      "title": "الحجز والموافقة",
+      "bookingReference": "مرجع الحجز",
+      "bookingReferencePlaceholder": "مثال ABC123",
+      "bookingReferenceHelp": "موجود في بريد تأكيد الحجز الإلكتروني",
+      "consent": "أوافق على <a href='/terms' target='_blank'>الشروط والأحكام</a> وأفوض Jet2Pay بالتصرف نيابة عني. أفهم أن عمولة 30% بنظام لا ربح لا عمولة تنطبق.",
+      "gdpr": "أوافق على معالجة بياناتي الشخصية وفقاً <a href='/privacy' target='_blank'>لسياسة الخصوصية</a> واللائحة العامة لحماية البيانات.",
+      "submitClaim": "تقديم مطالبتي"
+    },
+    "submitting": "جارٍ تقديم مطالبتك...",
+    "submitted": {
+      "title": "تم تقديم المطالبة بنجاح!",
+      "claimId": "مرجع المطالبة",
+      "estimated": "التعويض المقدر",
+      "emailSent": "تم إرسال بريد تأكيد إلى بريدك الوارد.",
+      "trackClaim": "تتبع حالة مطالبتك في أي وقت باستخدام مرجع المطالبة.",
+      "newClaim": "← تقديم مطالبة أخرى"
+    },
+    "error": {
+      "submissionFailed": "فشل تقديم المطالبة. يرجى المحاولة مرة أخرى.",
+      "networkError": "خطأ في الشبكة. يرجى التحقق من اتصالك."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

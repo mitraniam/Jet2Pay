@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Athuga bætur",
+    "knowYourRights": "Þekktu réttindi þín",
+    "aboutCompany": "Um fyrirtækið",
+    "news": "Fréttir",
+    "referAFriend": "Mæltu með vini",
+    "checkClaimStatus": "Athuga stöðu kröfu"
+  },
+  "hero": {
+    "titleDelayed": "Seinkað",
+    "titleCancelled": "Aflýst",
+    "titleFlight": "Flug",
+    "titleOr": "eða",
+    "subtitle": "Krefðu allt að <strong>€600</strong> fyrir seinkað eða aflýst flug",
+    "whatHappened": "Hvað gerðist með flugið þitt?",
+    "delayed": "Seinkað",
+    "cancelled": "Aflýst / Ofbókað",
+    "otherDisruptions": "Aðrar truflanir",
+    "departurePlaceholder": "Brottfararflugvöllur",
+    "arrivalPlaceholder": "Komuflugvöllur",
+    "checkCompensation": "Athuga bætur",
+    "freeCheck": "Ókeypis bótaathugun",
+    "hassleFree": "Vandræðalaust",
+    "claimsUpTo": "Kröfur allt að 3 ára gamlar",
+    "compensatedCustomers": "viðskiptavinir fengið bætur",
+    "airlines": "flugfélög",
+    "yearsTrusted": "ára traust"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Hæfnisathugun",
+      "waitTime": "Biðtími",
+      "done": "Búið!",
+      "flightItinerary": "Flugleiðaráætlun",
+      "disruptionType": "Tegund truflunar",
+      "timing": "Tímasetning",
+      "reason": "Ástæða",
+      "howLong": "Hversu lengi biðstú?",
+      "claimDetails": "Upplýsingar um kröfu",
+      "flightInfo": "Flugupplýsingar",
+      "passengerInfo": "Þínar upplýsingar",
+      "bookingConsent": "Bókun & samþykki"
+    },
+    "step1": {
+      "title": "Hvert flaugstu?",
+      "departedFrom": "Fór frá",
+      "finalDestination": "Lokaáfangastaðarflugvöllur",
+      "airportPlaceholder": "Sláðu inn borgar- eða flugvallarnafn",
+      "directFlight": "Var þetta beint flug?",
+      "yesDirect": "Já, þetta var beint flug",
+      "noConnecting": "Nei, ég átti tengiflug"
+    },
+    "step2": {
+      "title": "Tegund truflunar",
+      "question": "Hvers konar flugtruflun upplifðir þú?",
+      "delayed": "Flug seinkað",
+      "cancelled": "Flug aflýst",
+      "denied": "Neitað um far / Ofbókað"
+    },
+    "step3": {
+      "title": "Hversu lengi seinkastú?",
+      "question": "Hversu lengi seinkastú við að ná lokaáfangastað þínum?",
+      "less3": "Minna en 3 klukkustundir",
+      "more3": "Meira en 3 klukkustundir",
+      "missed": "Missti af tengiflug"
+    },
+    "step4": {
+      "title": "Ástæða truflunar",
+      "question1": "Sagði flugfélagið þér af hverju flugið var truflað?",
+      "yes": "Já",
+      "no": "Nei",
+      "dontRemember": "Man ekki",
+      "question2": "Hver var ástæðan sem flugfélagið gaf upp?",
+      "technical": "Tæknilegt vandamál með flugvélina",
+      "weather": "Slæmar veðuraðstæður",
+      "strike": "Verkfall",
+      "airport": "Vandamál á flugvelli",
+      "other": "Aðrar ástæður"
+    },
+    "step5": {
+      "title": "Segðu okkur meira um aðstæður þínar",
+      "question": "Hversu lengi biðstú eftir varaflug eða lausn?",
+      "less2": "Minna en 2 klukkustundir",
+      "2to4": "2 til 4 klukkustundir",
+      "4to8": "4 til 8 klukkustundir",
+      "overnight": "Yfir nótt (8+ klukkustundir)",
+      "none": "Enginn valkostur var boðinn",
+      "describeLabel": "Lýstu stuttlega því sem gerðist",
+      "describeOptional": "(valfrjálst)",
+      "describePlaceholder": "T.d. Flugið mitt frá London til Parísar seinkaðist um 4 klukkustundir vegna tæknilegs vandamáls...",
+      "infoText": "Að deila upplýsingum um reynslu þína getur mikið bætt líkur þínar á farsælli kröfu."
+    },
+    "back": "Til baka",
+    "continue": "Halda áfram",
+    "submitClaim": "Senda kröfu",
+    "checkAnotherFlight": "← Athuga annað flug",
+    "freeCheck": "Athugaðu bæturnar þínar — <strong>100% ókeypis</strong>, engin áhætta.",
+    "eligible": {
+      "title": "Góðar fréttir — þú gætir átt rétt á bótum!",
+      "description": "Miðað við svör þín gætirðu átt rétt á allt að <strong>€600</strong> í bætur samkvæmt ESB-reglugerð 261/2004. Byrjaðu ókeypis kröfu þína núna!",
+      "startClaim": "Byrja ókeypis kröfuna mína →"
+    },
+    "notEligible": {
+      "title": "Því miður uppfyllir þú kannski ekki skilyrðin",
+      "description": "Miðað við svör þín virðist seinkun þín vera undir 3 klukkustunda viðmiðinu sem krafist er fyrir ESB-bætur samkvæmt reglugerð 261/2004."
+    },
+    "step6": {
+      "title": "Flugupplýsingar",
+      "flightNumber": "Flugnúmer",
+      "flightNumberPlaceholder": "t.d. LS123",
+      "flightDate": "Flugdagsetning",
+      "flightDateHelp": "Dagsetning truflaðs flugs"
+    },
+    "step7": {
+      "title": "Þínar upplýsingar",
+      "firstName": "Fornafn",
+      "lastName": "Eftirnafn",
+      "email": "Netfang",
+      "phone": "Símanúmer",
+      "phonePlaceholder": "+354 123 4567",
+      "nationality": "Ríkisfang",
+      "nationalityPlaceholder": "Veldu land"
+    },
+    "step8": {
+      "title": "Bókun & samþykki",
+      "bookingReference": "Bókunartilvísun",
+      "bookingReferencePlaceholder": "t.d. ABC123",
+      "bookingReferenceHelp": "Finnst í staðfestingartölvupósti bókunar þinnar",
+      "consent": "Ég samþykki <a href='/terms' target='_blank'>skilmálana</a> og heimila Jet2Pay að koma fram fyrir mína hönd. Ég skil að 30% No Win No Fee þóknun gildir.",
+      "gdpr": "Ég samþykki vinnslu persónuupplýsinga minna í samræmi við <a href='/privacy' target='_blank'>persónuverndarstefnuna</a> og GDPR.",
+      "submitClaim": "Senda kröfuna mína"
+    },
+    "submitting": "Sendir kröfuna þína...",
+    "submitted": {
+      "title": "Krafa send inn!",
+      "claimId": "Kröfutilvísun",
+      "estimated": "Áætlaðar bætur",
+      "emailSent": "Staðfestingartölvupóstur hefur verið sendur í pósthólfið þitt.",
+      "trackClaim": "Fylgstu með stöðu kröfunnar þinnar hvenær sem er með kröfutilvísuninni þinni.",
+      "newClaim": "← Senda aðra kröfu"
+    },
+    "error": {
+      "submissionFailed": "Ekki tókst að senda kröfu. Vinsamlegast reyndu aftur.",
+      "networkError": "Netvilla. Vinsamlegast athugaðu tenginguna þína."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Kontrolli hüvitist",
+    "knowYourRights": "Tunne oma õigusi",
+    "aboutCompany": "Ettevõttest",
+    "news": "Uudised",
+    "referAFriend": "Soovita sõbrale",
+    "checkClaimStatus": "Kontrolli nõude staatust"
+  },
+  "hero": {
+    "titleDelayed": "Hilinenud",
+    "titleCancelled": "Tühistatud",
+    "titleFlight": "Lend",
+    "titleOr": "või",
+    "subtitle": "Nõua kuni <strong>600 €</strong> hüvitist hilinenud või tühistatud lennu eest",
+    "whatHappened": "Mis juhtus teie lennuga?",
+    "delayed": "Hilinenud",
+    "cancelled": "Tühistatud / Ülebroneeritud",
+    "otherDisruptions": "Muud häired",
+    "departurePlaceholder": "Väljumise lennujaam",
+    "arrivalPlaceholder": "Saabumise lennujaam",
+    "checkCompensation": "Kontrolli hüvitist",
+    "freeCheck": "Tasuta hüvitise kontroll",
+    "hassleFree": "Muretu",
+    "claimsUpTo": "Nõuded kuni 3 aastat vanad",
+    "compensatedCustomers": "hüvitatud klienti",
+    "airlines": "lennufirmat",
+    "yearsTrusted": "aastat usaldatud"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Sobivuse kontroll",
+      "waitTime": "Ooteaeg",
+      "done": "Valmis!",
+      "flightItinerary": "Lennumarsruut",
+      "disruptionType": "Häire tüüp",
+      "timing": "Aeg",
+      "reason": "Põhjus",
+      "howLong": "Kui kaua te ootasite?",
+      "claimDetails": "Nõude andmed",
+      "flightInfo": "Lennu andmed",
+      "passengerInfo": "Teie andmed",
+      "bookingConsent": "Broneering ja nõusolek"
+    },
+    "step1": {
+      "title": "Kuhu te lendasite?",
+      "departedFrom": "Väljusite",
+      "finalDestination": "Lõppsihtkoha lennujaam",
+      "airportPlaceholder": "Sisestage linna või lennujaama nimi",
+      "directFlight": "Kas see oli otselend?",
+      "yesDirect": "Jah, see oli otselend",
+      "noConnecting": "Ei, mul olid ühenduslennud"
+    },
+    "step2": {
+      "title": "Häire tüüp",
+      "question": "Millist tüüpi lennuhäiret te kogesite?",
+      "delayed": "Lend hilinenud",
+      "cancelled": "Lend tühistatud",
+      "denied": "Pardaletulek keelatud / Ülebroneeritud"
+    },
+    "step3": {
+      "title": "Kui kaua te hilinesite?",
+      "question": "Kui kaua te hilinesite lõppsihtkohta jõudmisega?",
+      "less3": "Vähem kui 3 tundi",
+      "more3": "Rohkem kui 3 tundi",
+      "missed": "Jäin ühenduslennust maha"
+    },
+    "step4": {
+      "title": "Häire põhjus",
+      "question1": "Kas lennufirma ütles teile, miks lend oli häiritud?",
+      "yes": "Jah",
+      "no": "Ei",
+      "dontRemember": "Ei mäleta",
+      "question2": "Mis põhjuse lennufirma esitas?",
+      "technical": "Lennuki tehniline probleem",
+      "weather": "Halvad ilmastikutingimused",
+      "strike": "Streik",
+      "airport": "Lennujaama probleemid",
+      "other": "Muud põhjused"
+    },
+    "step5": {
+      "title": "Rääkige meile oma olukorrast lähemalt",
+      "question": "Kui kaua te ootasite asenduslend või lahendust?",
+      "less2": "Vähem kui 2 tundi",
+      "2to4": "2 kuni 4 tundi",
+      "4to8": "4 kuni 8 tundi",
+      "overnight": "Üleöö (8+ tundi)",
+      "none": "Alternatiivi ei pakutud",
+      "describeLabel": "Kirjeldage lühidalt, mis juhtus",
+      "describeOptional": "(valikuline)",
+      "describePlaceholder": "Nt. Minu lend Londonist Pariisi hilines 4 tundi lennuki tehnilise probleemi tõttu...",
+      "infoText": "Oma kogemuse jagamine võib oluliselt parandada teie nõude edukuse võimalusi."
+    },
+    "back": "Tagasi",
+    "continue": "Jätka",
+    "submitClaim": "Esita nõue",
+    "checkAnotherFlight": "← Kontrolli teist lendu",
+    "freeCheck": "Kontrollige oma hüvitist — <strong>100% tasuta</strong>, riskivabalt.",
+    "eligible": {
+      "title": "Suurepärased uudised — teil võib olla õigus!",
+      "description": "Teie vastuste põhjal võite olla õigustatud saama kuni <strong>600 €</strong> hüvitist vastavalt EL-i määrusele 261/2004. Alustage oma tasuta nõuet kohe!",
+      "startClaim": "Alusta minu tasuta nõuet →"
+    },
+    "notEligible": {
+      "title": "Kahjuks ei pruugi te kvalifitseeruda",
+      "description": "Teie vastuste põhjal on teie hilinemine alla 3-tunnise künnise, mis on vajalik EL-i hüvitiseks vastavalt määrusele 261/2004."
+    },
+    "step6": {
+      "title": "Lennu andmed",
+      "flightNumber": "Lennu number",
+      "flightNumberPlaceholder": "nt. LS123",
+      "flightDate": "Lennu kuupäev",
+      "flightDateHelp": "Häiritud lennu kuupäev"
+    },
+    "step7": {
+      "title": "Teie andmed",
+      "firstName": "Eesnimi",
+      "lastName": "Perekonnanimi",
+      "email": "E-posti aadress",
+      "phone": "Telefoninumber",
+      "phonePlaceholder": "+372 5000 0000",
+      "nationality": "Kodakondsus",
+      "nationalityPlaceholder": "Valige riik"
+    },
+    "step8": {
+      "title": "Broneering ja nõusolek",
+      "bookingReference": "Broneeringu viide",
+      "bookingReferencePlaceholder": "nt. ABC123",
+      "bookingReferenceHelp": "Leiate oma broneeringu kinnituse e-kirjast",
+      "consent": "Nõustun <a href='/terms' target='_blank'>Tingimustega</a> ja volitan Jet2Pay tegutsema minu nimel. Mõistan, et kehtib 30% vahendustasu põhimõttel „Ei võida, ei maksa".",
+      "gdpr": "Nõustun oma isikuandmete töötlemisega vastavalt <a href='/privacy' target='_blank'>Privaatsuspoliitikale</a> ja GDPR-ile.",
+      "submitClaim": "Esita minu nõue"
+    },
+    "submitting": "Teie nõuet esitatakse...",
+    "submitted": {
+      "title": "Nõue edukalt esitatud!",
+      "claimId": "Nõude viide",
+      "estimated": "Hinnanguline hüvitis",
+      "emailSent": "Kinnitus e-kiri on saadetud teie postkasti.",
+      "trackClaim": "Jälgige oma nõude staatust igal ajal, kasutades nõude viidet.",
+      "newClaim": "← Esita teine nõue"
+    },
+    "error": {
+      "submissionFailed": "Nõude esitamine ebaõnnestus. Palun proovige uuesti.",
+      "networkError": "Võrgu viga. Palun kontrollige ühendust."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

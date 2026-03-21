@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Verifică compensația",
+    "knowYourRights": "Cunoaște-ți drepturile",
+    "aboutCompany": "Despre companie",
+    "news": "Știri",
+    "referAFriend": "Recomandă unui prieten",
+    "checkClaimStatus": "Verifică starea cererii"
+  },
+  "hero": {
+    "titleDelayed": "Zbor",
+    "titleCancelled": "Anulat",
+    "titleFlight": "întârziat",
+    "titleOr": "sau",
+    "subtitle": "Solicită până la <strong>€600</strong> pentru un zbor întârziat sau anulat",
+    "whatHappened": "Ce s-a întâmplat cu zborul tău?",
+    "delayed": "Întârziat",
+    "cancelled": "Anulat / Suprarezervat",
+    "otherDisruptions": "Alte perturbări",
+    "departurePlaceholder": "Aeroportul de plecare",
+    "arrivalPlaceholder": "Aeroportul de sosire",
+    "checkCompensation": "Verifică compensația",
+    "freeCheck": "Verificare gratuită a compensației",
+    "hassleFree": "Fără bătăi de cap",
+    "claimsUpTo": "Cereri de până la 3 ani",
+    "compensatedCustomers": "clienți compensați",
+    "airlines": "companii aeriene",
+    "yearsTrusted": "ani de încredere"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Verificare eligibilitate",
+      "waitTime": "Timp de așteptare",
+      "done": "Gata!",
+      "flightItinerary": "Itinerariul zborului",
+      "disruptionType": "Tipul perturbării",
+      "timing": "Durată",
+      "reason": "Motiv",
+      "howLong": "Cât timp ai așteptat?",
+      "claimDetails": "Detaliile cererii",
+      "flightInfo": "Informații despre zbor",
+      "passengerInfo": "Datele tale",
+      "bookingConsent": "Rezervare și consimțământ"
+    },
+    "step1": {
+      "title": "Unde ai zburat?",
+      "departedFrom": "Plecare din",
+      "finalDestination": "Aeroportul de destinație finală",
+      "airportPlaceholder": "Introdu orașul sau numele aeroportului",
+      "directFlight": "A fost un zbor direct?",
+      "yesDirect": "Da, a fost un zbor direct",
+      "noConnecting": "Nu, am avut zboruri de legătură"
+    },
+    "step2": {
+      "title": "Tipul perturbării",
+      "question": "Care a fost natura perturbării zborului pe care ai întâmpinat-o?",
+      "delayed": "Zbor întârziat",
+      "cancelled": "Zbor anulat",
+      "denied": "Îmbarcare refuzată / Suprarezervare"
+    },
+    "step3": {
+      "title": "Cât de mare a fost întârzierea?",
+      "question": "Cât de mult ai întârziat să ajungi la destinația finală?",
+      "less3": "Mai puțin de 3 ore",
+      "more3": "Mai mult de 3 ore",
+      "missed": "Pierderea zborului de legătură"
+    },
+    "step4": {
+      "title": "Motivul perturbării",
+      "question1": "Compania aeriană ți-a comunicat motivul perturbării?",
+      "yes": "Da",
+      "no": "Nu",
+      "dontRemember": "Nu îmi amintesc",
+      "question2": "Care a fost motivul oferit de compania aeriană?",
+      "technical": "Problemă tehnică a aeronavei",
+      "weather": "Condiții meteorologice nefavorabile",
+      "strike": "Grevă",
+      "airport": "Probleme la aeroport",
+      "other": "Alte motive"
+    },
+    "step5": {
+      "title": "Spune-ne mai multe despre situația ta",
+      "question": "Cât timp ai așteptat pentru un zbor de înlocuire sau o soluție?",
+      "less2": "Mai puțin de 2 ore",
+      "2to4": "2 până la 4 ore",
+      "4to8": "4 până la 8 ore",
+      "overnight": "Peste noapte (8+ ore)",
+      "none": "Nu a fost oferită nicio alternativă",
+      "describeLabel": "Descrie pe scurt ce s-a întâmplat",
+      "describeOptional": "(opțional)",
+      "describePlaceholder": "Ex. Zborul meu de la Londra la Paris a fost întârziat cu 4 ore din cauza unei probleme tehnice a aeronavei...",
+      "infoText": "Împărtășirea detaliilor despre experiența ta poate îmbunătăți semnificativ șansele de succes ale cererii tale."
+    },
+    "back": "Înapoi",
+    "continue": "Continuă",
+    "submitClaim": "Trimite cererea",
+    "checkAnotherFlight": "← Verifică un alt zbor",
+    "freeCheck": "Verifică-ți compensația — <strong>100% gratuit</strong>, fără risc.",
+    "eligible": {
+      "title": "Vești bune — ai putea fi eligibil!",
+      "description": "Pe baza răspunsurilor tale, ai putea avea dreptul la o compensație de până la <strong>€600</strong> conform Regulamentului UE 261/2004. Începe acum cererea ta gratuită!",
+      "startClaim": "Începe cererea mea gratuită →"
+    },
+    "notEligible": {
+      "title": "Din păcate, s-ar putea să nu fii eligibil",
+      "description": "Pe baza răspunsurilor tale, întârzierea ta pare să fie sub pragul de 3 ore necesar pentru compensația UE conform Regulamentului 261/2004."
+    },
+    "step6": {
+      "title": "Detaliile zborului",
+      "flightNumber": "Numărul zborului",
+      "flightNumberPlaceholder": "ex. LS123",
+      "flightDate": "Data zborului",
+      "flightDateHelp": "Data zborului cu perturbarea"
+    },
+    "step7": {
+      "title": "Datele tale",
+      "firstName": "Prenume",
+      "lastName": "Nume de familie",
+      "email": "Adresă de email",
+      "phone": "Număr de telefon",
+      "phonePlaceholder": "+40 721 234 567",
+      "nationality": "Naționalitate",
+      "nationalityPlaceholder": "Selectează țara"
+    },
+    "step8": {
+      "title": "Rezervare și consimțământ",
+      "bookingReference": "Referință rezervare",
+      "bookingReferencePlaceholder": "ex. ABC123",
+      "bookingReferenceHelp": "Se găsește în emailul de confirmare a rezervării",
+      "consent": "Sunt de acord cu <a href='/terms' target='_blank'>Termenii și Condițiile</a> și autorizez Jet2Pay să acționeze în numele meu. Înțeleg că se aplică comisionul de 30% No Win No Fee.",
+      "gdpr": "Îmi dau consimțământul pentru prelucrarea datelor mele personale în conformitate cu <a href='/privacy' target='_blank'>Politica de Confidențialitate</a> și GDPR.",
+      "submitClaim": "Trimite cererea mea"
+    },
+    "submitting": "Se trimite cererea ta...",
+    "submitted": {
+      "title": "Cerere trimisă cu succes!",
+      "claimId": "Referința cererii",
+      "estimated": "Compensație estimată",
+      "emailSent": "Un email de confirmare a fost trimis în căsuța ta de email.",
+      "trackClaim": "Urmărește starea cererii tale oricând folosind referința ta.",
+      "newClaim": "← Trimite o altă cerere"
+    },
+    "error": {
+      "submissionFailed": "Trimiterea cererii a eșuat. Te rugăm să încerci din nou.",
+      "networkError": "Eroare de rețea. Verifică-ți conexiunea."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

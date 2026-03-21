@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Patikrinti kompensaciją",
+    "knowYourRights": "Žinokite savo teises",
+    "aboutCompany": "Apie įmonę",
+    "news": "Naujienos",
+    "referAFriend": "Rekomenduokite draugui",
+    "checkClaimStatus": "Patikrinti pretenzijos būseną"
+  },
+  "hero": {
+    "titleDelayed": "Atidėtas",
+    "titleCancelled": "Atšauktas",
+    "titleFlight": "Skrydis",
+    "titleOr": "ar",
+    "subtitle": "Gaukite iki <strong>600 €</strong> kompensaciją už atidėtą ar atšauktą skrydį",
+    "whatHappened": "Kas nutiko su jūsų skrydžiu?",
+    "delayed": "Atidėtas",
+    "cancelled": "Atšauktas / Perpildytas",
+    "otherDisruptions": "Kiti trikdžiai",
+    "departurePlaceholder": "Išvykimo oro uostas",
+    "arrivalPlaceholder": "Atvykimo oro uostas",
+    "checkCompensation": "Patikrinti kompensaciją",
+    "freeCheck": "Nemokamas kompensacijos patikrinimas",
+    "hassleFree": "Be rūpesčių",
+    "claimsUpTo": "Pretenzijos iki 3 metų senumo",
+    "compensatedCustomers": "kompensuotų klientų",
+    "airlines": "aviakompanijų",
+    "yearsTrusted": "metų pasitikėjimo"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Tinkamumo patikrinimas",
+      "waitTime": "Laukimo laikas",
+      "done": "Atlikta!",
+      "flightItinerary": "Skrydžio maršrutas",
+      "disruptionType": "Trikdžio tipas",
+      "timing": "Laikas",
+      "reason": "Priežastis",
+      "howLong": "Kiek laiko laukėte?",
+      "claimDetails": "Pretenzijos informacija",
+      "flightInfo": "Skrydžio informacija",
+      "passengerInfo": "Jūsų duomenys",
+      "bookingConsent": "Rezervacija ir sutikimas"
+    },
+    "step1": {
+      "title": "Kur skridote?",
+      "departedFrom": "Išvykote iš",
+      "finalDestination": "Galutinio tikslo oro uostas",
+      "airportPlaceholder": "Įveskite miesto ar oro uosto pavadinimą",
+      "directFlight": "Ar tai buvo tiesioginis skrydis?",
+      "yesDirect": "Taip, tai buvo tiesioginis skrydis",
+      "noConnecting": "Ne, turėjau persėdimus"
+    },
+    "step2": {
+      "title": "Trikdžio tipas",
+      "question": "Kokio pobūdžio skrydžio trikdį patyrėte?",
+      "delayed": "Skrydis atidėtas",
+      "cancelled": "Skrydis atšauktas",
+      "denied": "Atsisakyta įlaipinti / Perpildytas"
+    },
+    "step3": {
+      "title": "Kiek laiko vėlavote?",
+      "question": "Kiek laiko vėlavote pasiekti galutinį tikslą?",
+      "less3": "Mažiau nei 3 valandas",
+      "more3": "Daugiau nei 3 valandas",
+      "missed": "Praleidau jungiamąjį skrydį"
+    },
+    "step4": {
+      "title": "Trikdžio priežastis",
+      "question1": "Ar aviakompanija pasakė, kodėl skrydis buvo sutrikdytas?",
+      "yes": "Taip",
+      "no": "Ne",
+      "dontRemember": "Nepamenu",
+      "question2": "Kokią priežastį nurodė aviakompanija?",
+      "technical": "Orlaivio techninė problema",
+      "weather": "Blogos oro sąlygos",
+      "strike": "Streikas",
+      "airport": "Oro uosto problemos",
+      "other": "Kitos priežastys"
+    },
+    "step5": {
+      "title": "Papasakokite daugiau apie savo situaciją",
+      "question": "Kiek laiko laukėte pakaitinio skrydžio ar sprendimo?",
+      "less2": "Mažiau nei 2 valandas",
+      "2to4": "Nuo 2 iki 4 valandų",
+      "4to8": "Nuo 4 iki 8 valandų",
+      "overnight": "Per naktį (8+ valandų)",
+      "none": "Jokia alternatyva nebuvo pasiūlyta",
+      "describeLabel": "Trumpai aprašykite, kas nutiko",
+      "describeOptional": "(neprivaloma)",
+      "describePlaceholder": "Pvz., Mano skrydis iš Londono į Paryžių vėlavo 4 valandas dėl orlaivio techninės problemos...",
+      "infoText": "Pasidalinę informacija apie savo patirtį, galite žymiai padidinti sėkmingos pretenzijos tikimybę."
+    },
+    "back": "Atgal",
+    "continue": "Tęsti",
+    "submitClaim": "Pateikti pretenziją",
+    "checkAnotherFlight": "← Patikrinti kitą skrydį",
+    "freeCheck": "Patikrinkite savo kompensaciją — <strong>100% nemokamai</strong>, be rizikos.",
+    "eligible": {
+      "title": "Puikios naujienos — galite turėti teisę!",
+      "description": "Remiantis jūsų atsakymais, galite turėti teisę į iki <strong>600 €</strong> kompensaciją pagal ES reglamentą 261/2004. Pradėkite nemokamą pretenziją dabar!",
+      "startClaim": "Pradėti nemokamą pretenziją →"
+    },
+    "notEligible": {
+      "title": "Deja, galite neatitikti reikalavimų",
+      "description": "Remiantis jūsų atsakymais, jūsų vėlavimas yra mažesnis nei 3 valandų riba, reikalinga ES kompensacijai pagal reglamentą 261/2004."
+    },
+    "step6": {
+      "title": "Skrydžio informacija",
+      "flightNumber": "Skrydžio numeris",
+      "flightNumberPlaceholder": "pvz., LS123",
+      "flightDate": "Skrydžio data",
+      "flightDateHelp": "Sutrikdyto skrydžio data"
+    },
+    "step7": {
+      "title": "Jūsų duomenys",
+      "firstName": "Vardas",
+      "lastName": "Pavardė",
+      "email": "El. pašto adresas",
+      "phone": "Telefono numeris",
+      "phonePlaceholder": "+370 600 00000",
+      "nationality": "Pilietybė",
+      "nationalityPlaceholder": "Pasirinkite šalį"
+    },
+    "step8": {
+      "title": "Rezervacija ir sutikimas",
+      "bookingReference": "Rezervacijos nuoroda",
+      "bookingReferencePlaceholder": "pvz., ABC123",
+      "bookingReferenceHelp": "Rasta jūsų rezervacijos patvirtinimo el. laiške",
+      "consent": "Sutinku su <a href='/terms' target='_blank'>Taisyklėmis ir sąlygomis</a> ir įgalioju Jet2Pay veikti mano vardu. Suprantu, kad taikomas 30% komisinis mokestis.",
+      "gdpr": "Sutinku, kad mano asmens duomenys būtų tvarkomi pagal <a href='/privacy' target='_blank'>Privatumo politiką</a> ir BDAR.",
+      "submitClaim": "Pateikti mano pretenziją"
+    },
+    "submitting": "Pateikiama jūsų pretenzija...",
+    "submitted": {
+      "title": "Pretenzija sėkmingai pateikta!",
+      "claimId": "Pretenzijos nuoroda",
+      "estimated": "Numatoma kompensacija",
+      "emailSent": "Patvirtinimo el. laiškas išsiųstas į jūsų pašto dėžutę.",
+      "trackClaim": "Sekite savo pretenzijos būseną bet kuriuo metu naudodami pretenzijos nuorodą.",
+      "newClaim": "← Pateikti kitą pretenziją"
+    },
+    "error": {
+      "submissionFailed": "Nepavyko pateikti pretenzijos. Bandykite dar kartą.",
+      "networkError": "Tinklo klaida. Patikrinkite savo ryšį."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

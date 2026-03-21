@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Controleer compensatie",
+    "knowYourRights": "Ken uw rechten",
+    "aboutCompany": "Over het bedrijf",
+    "news": "Nieuws",
+    "referAFriend": "Verwijs een vriend",
+    "checkClaimStatus": "Controleer claimstatus"
+  },
+  "hero": {
+    "titleDelayed": "Vertraagd",
+    "titleCancelled": "Geannuleerd",
+    "titleFlight": "Vlucht",
+    "titleOr": "of",
+    "subtitle": "Claim tot <strong>€600</strong> voor een vertraagde of geannuleerde vlucht",
+    "whatHappened": "Wat is er met uw vlucht gebeurd?",
+    "delayed": "Vertraagd",
+    "cancelled": "Geannuleerd / Overboekt",
+    "otherDisruptions": "Andere verstoringen",
+    "departurePlaceholder": "Vertrekluchthaven",
+    "arrivalPlaceholder": "Aankomstluchthaven",
+    "checkCompensation": "Controleer compensatie",
+    "freeCheck": "Gratis compensatiecheck",
+    "hassleFree": "Probleemloos",
+    "claimsUpTo": "Claims tot 3 jaar oud",
+    "compensatedCustomers": "gecompenseerde klanten",
+    "airlines": "luchtvaartmaatschappijen",
+    "yearsTrusted": "jaar vertrouwd"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Geschiktheidscontrole",
+      "waitTime": "Wachttijd",
+      "done": "Klaar!",
+      "flightItinerary": "Vluchtroute",
+      "disruptionType": "Type verstoring",
+      "timing": "Timing",
+      "reason": "Reden",
+      "howLong": "Hoe lang heeft u gewacht?",
+      "claimDetails": "Claimgegevens",
+      "flightInfo": "Vluchtinformatie",
+      "passengerInfo": "Uw gegevens",
+      "bookingConsent": "Boeking & toestemming"
+    },
+    "step1": {
+      "title": "Waar vloog u?",
+      "departedFrom": "Vertrokken van",
+      "finalDestination": "Eindbestemmingsluchthaven",
+      "airportPlaceholder": "Voer de stad of luchthavennaam in",
+      "directFlight": "Was het een directe vlucht?",
+      "yesDirect": "Ja, het was een directe vlucht",
+      "noConnecting": "Nee, ik had aansluitende vluchten"
+    },
+    "step2": {
+      "title": "Type verstoring",
+      "question": "Wat was de aard van de vluchtverstoring die u ondervond?",
+      "delayed": "Vlucht vertraagd",
+      "cancelled": "Vlucht geannuleerd",
+      "denied": "Instappen geweigerd / Overboekt"
+    },
+    "step3": {
+      "title": "Hoe lang was u vertraagd?",
+      "question": "Hoe lang was u vertraagd om uw eindbestemming te bereiken?",
+      "less3": "Minder dan 3 uur",
+      "more3": "Meer dan 3 uur",
+      "missed": "Aansluitende vlucht gemist"
+    },
+    "step4": {
+      "title": "Reden voor verstoring",
+      "question1": "Heeft de luchtvaartmaatschappij u verteld waarom de vlucht verstoord was?",
+      "yes": "Ja",
+      "no": "Nee",
+      "dontRemember": "Weet ik niet meer",
+      "question2": "Wat was de reden die de luchtvaartmaatschappij opgaf?",
+      "technical": "Technisch probleem met het vliegtuig",
+      "weather": "Slechte weersomstandigheden",
+      "strike": "Staking",
+      "airport": "Luchthavenproblemen",
+      "other": "Andere redenen"
+    },
+    "step5": {
+      "title": "Vertel ons meer over uw situatie",
+      "question": "Hoe lang heeft u gewacht op een vervangende vlucht of oplossing?",
+      "less2": "Minder dan 2 uur",
+      "2to4": "2 tot 4 uur",
+      "4to8": "4 tot 8 uur",
+      "overnight": "Overnachting (8+ uur)",
+      "none": "Er werd geen alternatief aangeboden",
+      "describeLabel": "Beschrijf kort wat er is gebeurd",
+      "describeOptional": "(optioneel)",
+      "describePlaceholder": "Bijv. Mijn vlucht van Londen naar Parijs was 4 uur vertraagd door een technisch probleem met het vliegtuig...",
+      "infoText": "Het delen van details over uw ervaring kan uw kansen op een succesvolle claim aanzienlijk verbeteren."
+    },
+    "back": "Terug",
+    "continue": "Doorgaan",
+    "submitClaim": "Claim indienen",
+    "checkAnotherFlight": "← Controleer een andere vlucht",
+    "freeCheck": "Controleer uw compensatie — <strong>100% gratis</strong>, geen risico.",
+    "eligible": {
+      "title": "Goed nieuws — u komt mogelijk in aanmerking!",
+      "description": "Op basis van uw antwoorden heeft u mogelijk recht op tot <strong>€600</strong> compensatie onder EU-verordening 261/2004. Start nu uw gratis claim!",
+      "startClaim": "Start mijn gratis claim →"
+    },
+    "notEligible": {
+      "title": "Helaas komt u mogelijk niet in aanmerking",
+      "description": "Op basis van uw antwoorden lijkt uw vertraging onder de 3-uursdrempel te liggen die vereist is voor EU-compensatie onder verordening 261/2004."
+    },
+    "step6": {
+      "title": "Vluchtgegevens",
+      "flightNumber": "Vluchtnummer",
+      "flightNumberPlaceholder": "bijv. LS123",
+      "flightDate": "Vluchtdatum",
+      "flightDateHelp": "Datum van de verstoorde vlucht"
+    },
+    "step7": {
+      "title": "Uw gegevens",
+      "firstName": "Voornaam",
+      "lastName": "Achternaam",
+      "email": "E-mailadres",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+31 6 12345678",
+      "nationality": "Nationaliteit",
+      "nationalityPlaceholder": "Selecteer land"
+    },
+    "step8": {
+      "title": "Boeking & toestemming",
+      "bookingReference": "Boekingsreferentie",
+      "bookingReferencePlaceholder": "bijv. ABC123",
+      "bookingReferenceHelp": "Te vinden in uw boekingsbevestigingsmail",
+      "consent": "Ik ga akkoord met de <a href='/terms' target='_blank'>Algemene Voorwaarden</a> en machtig Jet2Pay om namens mij te handelen. Ik begrijp dat de 30% No Win No Fee commissie van toepassing is.",
+      "gdpr": "Ik stem in met de verwerking van mijn persoonsgegevens in overeenstemming met het <a href='/privacy' target='_blank'>Privacybeleid</a> en de AVG.",
+      "submitClaim": "Mijn claim indienen"
+    },
+    "submitting": "Uw claim wordt ingediend...",
+    "submitted": {
+      "title": "Claim succesvol ingediend!",
+      "claimId": "Claimreferentie",
+      "estimated": "Geschatte compensatie",
+      "emailSent": "Een bevestigingsmail is naar uw inbox gestuurd.",
+      "trackClaim": "Volg uw claimstatus op elk moment met uw claimreferentie.",
+      "newClaim": "← Dien een nieuwe claim in"
+    },
+    "error": {
+      "submissionFailed": "Claim indienen mislukt. Probeer het opnieuw.",
+      "networkError": "Netwerkfout. Controleer uw verbinding."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

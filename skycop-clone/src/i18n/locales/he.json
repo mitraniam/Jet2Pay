@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "בדוק פיצוי",
+    "knowYourRights": "דע את זכויותיך",
+    "aboutCompany": "אודות החברה",
+    "news": "חדשות",
+    "referAFriend": "הפנה חבר",
+    "checkClaimStatus": "בדוק סטטוס תביעה"
+  },
+  "hero": {
+    "titleDelayed": "עוכבה",
+    "titleCancelled": "בוטלה",
+    "titleFlight": "טיסה",
+    "titleOr": "או",
+    "subtitle": "תבע עד <strong>€600</strong> עבור טיסה מעוכבת או מבוטלת",
+    "whatHappened": "מה קרה עם הטיסה שלך?",
+    "delayed": "עוכבה",
+    "cancelled": "בוטלה / הזמנת יתר",
+    "otherDisruptions": "שיבושים אחרים",
+    "departurePlaceholder": "שדה תעופה מוצא",
+    "arrivalPlaceholder": "שדה תעופה יעד",
+    "checkCompensation": "בדוק פיצוי",
+    "freeCheck": "בדיקת פיצוי חינם",
+    "hassleFree": "ללא טרחה",
+    "claimsUpTo": "תביעות עד 3 שנים",
+    "compensatedCustomers": "לקוחות שפוצו",
+    "airlines": "חברות תעופה",
+    "yearsTrusted": "שנות אמון"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "בדיקת זכאות",
+      "waitTime": "זמן המתנה",
+      "done": "סיום!",
+      "flightItinerary": "מסלול טיסה",
+      "disruptionType": "סוג השיבוש",
+      "timing": "תזמון",
+      "reason": "סיבה",
+      "howLong": "כמה זמן המתנת?",
+      "claimDetails": "פרטי התביעה",
+      "flightInfo": "מידע על הטיסה",
+      "passengerInfo": "הפרטים שלך",
+      "bookingConsent": "הזמנה והסכמה"
+    },
+    "step1": {
+      "title": "לאן טסת?",
+      "departedFrom": "המראה מ",
+      "finalDestination": "שדה תעופה יעד סופי",
+      "airportPlaceholder": "הזן את שם העיר או שדה התעופה",
+      "directFlight": "האם הייתה זו טיסה ישירה?",
+      "yesDirect": "כן, הייתה טיסה ישירה",
+      "noConnecting": "לא, היו לי טיסות מחברות"
+    },
+    "step2": {
+      "title": "סוג השיבוש",
+      "question": "מה היה אופי שיבוש הטיסה שחווית?",
+      "delayed": "טיסה עוכבה",
+      "cancelled": "טיסה בוטלה",
+      "denied": "סירוב עלייה / הזמנת יתר"
+    },
+    "step3": {
+      "title": "כמה זמן עוכבת?",
+      "question": "כמה זמן עוכבת בהגעה ליעדך הסופי?",
+      "less3": "פחות מ-3 שעות",
+      "more3": "יותר מ-3 שעות",
+      "missed": "החמצתי טיסת מחברת"
+    },
+    "step4": {
+      "title": "סיבת השיבוש",
+      "question1": "האם חברת התעופה סיפרה לך מדוע הטיסה שובשה?",
+      "yes": "כן",
+      "no": "לא",
+      "dontRemember": "לא זוכר",
+      "question2": "מה הייתה הסיבה שחברת התעופה סיפקה?",
+      "technical": "תקלה טכנית במטוס",
+      "weather": "תנאי מזג אוויר גרועים",
+      "strike": "שביתה",
+      "airport": "בעיות בשדה התעופה",
+      "other": "סיבות אחרות"
+    },
+    "step5": {
+      "title": "ספר לנו עוד על המצב שלך",
+      "question": "כמה זמן המתנת לטיסה חלופית או פתרון?",
+      "less2": "פחות משעתיים",
+      "2to4": "2 עד 4 שעות",
+      "4to8": "4 עד 8 שעות",
+      "overnight": "לילה שלם (8+ שעות)",
+      "none": "לא הוצע חלופה",
+      "describeLabel": "תאר בקצרה מה קרה",
+      "describeOptional": "(אופציונלי)",
+      "describePlaceholder": "לדוגמה: הטיסה שלי מלונדון לפריז עוכבה ב-4 שעות בגלל תקלה טכנית במטוס...",
+      "infoText": "שיתוף פרטים על החוויה שלך יכול לשפר מאוד את סיכויי התביעה שלך."
+    },
+    "back": "חזרה",
+    "continue": "המשך",
+    "submitClaim": "הגש תביעה",
+    "checkAnotherFlight": "← בדוק טיסה אחרת",
+    "freeCheck": "בדוק את הפיצוי שלך — <strong>חינם 100%</strong>, ללא סיכון.",
+    "eligible": {
+      "title": "חדשות מצוינות — ייתכן שאתה זכאי!",
+      "description": "בהתבסס על תשובותיך, ייתכן שמגיע לך פיצוי של עד <strong>€600</strong> בהתאם לתקנת האיחוד האירופי 261/2004. התחל את התביעה החינמית שלך עכשיו!",
+      "startClaim": "התחל את התביעה החינמית שלי →"
+    },
+    "notEligible": {
+      "title": "לצערנו, ייתכן שאינך זכאי",
+      "description": "בהתבסס על תשובותיך, נראה שהעיכוב שלך מתחת לסף 3 השעות הנדרש לפיצוי האיחוד האירופי בהתאם לתקנה 261/2004."
+    },
+    "step6": {
+      "title": "פרטי הטיסה",
+      "flightNumber": "מספר טיסה",
+      "flightNumberPlaceholder": "לדוגמה LS123",
+      "flightDate": "תאריך הטיסה",
+      "flightDateHelp": "תאריך הטיסה המשובשת"
+    },
+    "step7": {
+      "title": "הפרטים שלך",
+      "firstName": "שם פרטי",
+      "lastName": "שם משפחה",
+      "email": "כתובת אימייל",
+      "phone": "מספר טלפון",
+      "phonePlaceholder": "+972 50 000 0000",
+      "nationality": "לאום",
+      "nationalityPlaceholder": "בחר מדינה"
+    },
+    "step8": {
+      "title": "הזמנה והסכמה",
+      "bookingReference": "מספר הזמנה",
+      "bookingReferencePlaceholder": "לדוגמה ABC123",
+      "bookingReferenceHelp": "נמצא באימייל אישור ההזמנה שלך",
+      "consent": "אני מסכים ל<a href='/terms' target='_blank'>תנאים והגבלות</a> ומאשר ל-Jet2Pay לפעול בשמי. אני מבין שעמלה של 30% על בסיס ללא הצלחה ללא תשלום חלה.",
+      "gdpr": "אני מסכים לעיבוד הנתונים האישיים שלי בהתאם ל<a href='/privacy' target='_blank'>מדיניות הפרטיות</a> ו-GDPR.",
+      "submitClaim": "הגש את התביעה שלי"
+    },
+    "submitting": "מגיש את התביעה שלך...",
+    "submitted": {
+      "title": "התביעה הוגשה בהצלחה!",
+      "claimId": "מספר תביעה",
+      "estimated": "פיצוי משוער",
+      "emailSent": "אימייל אישור נשלח לתיבת הדואר שלך.",
+      "trackClaim": "עקוב אחר סטטוס התביעה בכל עת באמצעות מספר התביעה שלך.",
+      "newClaim": "← הגש תביעה נוספת"
+    },
+    "error": {
+      "submissionFailed": "הגשת התביעה נכשלה. אנא נסה שוב.",
+      "networkError": "שגיאת רשת. אנא בדוק את החיבור שלך."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Sjekk kompensasjon",
+    "knowYourRights": "Kjenn dine rettigheter",
+    "aboutCompany": "Om selskapet",
+    "news": "Nyheter",
+    "referAFriend": "Anbefal en venn",
+    "checkClaimStatus": "Sjekk kravstatus"
+  },
+  "hero": {
+    "titleDelayed": "Forsinket",
+    "titleCancelled": "Kansellert",
+    "titleFlight": "Fly",
+    "titleOr": "eller",
+    "subtitle": "Krev opptil <strong>€600</strong> for et forsinket eller kansellert fly",
+    "whatHappened": "Hva skjedde med flyet ditt?",
+    "delayed": "Forsinket",
+    "cancelled": "Kansellert / Overbooket",
+    "otherDisruptions": "Andre forstyrrelser",
+    "departurePlaceholder": "Avreiseflyplass",
+    "arrivalPlaceholder": "Ankomstflyplass",
+    "checkCompensation": "Sjekk kompensasjon",
+    "freeCheck": "Gratis kompensasjonssjekk",
+    "hassleFree": "Problemfritt",
+    "claimsUpTo": "Krav opptil 3 år gamle",
+    "compensatedCustomers": "kompenserte kunder",
+    "airlines": "flyselskaper",
+    "yearsTrusted": "års tillit"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Kvalifiseringssjekk",
+      "waitTime": "Ventetid",
+      "done": "Ferdig!",
+      "flightItinerary": "Flyreiserute",
+      "disruptionType": "Type forstyrrelse",
+      "timing": "Tidspunkt",
+      "reason": "Årsak",
+      "howLong": "Hvor lenge ventet du?",
+      "claimDetails": "Kravdetaljer",
+      "flightInfo": "Flyinformasjon",
+      "passengerInfo": "Dine opplysninger",
+      "bookingConsent": "Bestilling & samtykke"
+    },
+    "step1": {
+      "title": "Hvor fløy du?",
+      "departedFrom": "Avreise fra",
+      "finalDestination": "Endelig destinasjonsflyplass",
+      "airportPlaceholder": "Skriv inn by- eller flyplassnavn",
+      "directFlight": "Var det en direkteflyvning?",
+      "yesDirect": "Ja, det var en direkteflyvning",
+      "noConnecting": "Nei, jeg hadde mellomlanding"
+    },
+    "step2": {
+      "title": "Type forstyrrelse",
+      "question": "Hva var arten av flyforstyrrelsen du opplevde?",
+      "delayed": "Fly forsinket",
+      "cancelled": "Fly kansellert",
+      "denied": "Nektet ombordstigning / Overbooket"
+    },
+    "step3": {
+      "title": "Hvor lenge var du forsinket?",
+      "question": "Hvor lenge var du forsinket med å nå din endelige destinasjon?",
+      "less3": "Mindre enn 3 timer",
+      "more3": "Mer enn 3 timer",
+      "missed": "Mistet tilknytningsfly"
+    },
+    "step4": {
+      "title": "Årsak til forstyrrelse",
+      "question1": "Fortalte flyselskapet deg hvorfor flyet ble forstyrret?",
+      "yes": "Ja",
+      "no": "Nei",
+      "dontRemember": "Husker ikke",
+      "question2": "Hva var årsaken oppgitt av flyselskapet?",
+      "technical": "Teknisk problem med flyet",
+      "weather": "Dårlige værforhold",
+      "strike": "Streik",
+      "airport": "Flyplassproblemer",
+      "other": "Andre årsaker"
+    },
+    "step5": {
+      "title": "Fortell oss mer om din situasjon",
+      "question": "Hvor lenge ventet du på et erstatningsfly eller en løsning?",
+      "less2": "Mindre enn 2 timer",
+      "2to4": "2 til 4 timer",
+      "4to8": "4 til 8 timer",
+      "overnight": "Over natten (8+ timer)",
+      "none": "Ingen alternativ ble tilbudt",
+      "describeLabel": "Beskriv kort hva som skjedde",
+      "describeOptional": "(valgfritt)",
+      "describePlaceholder": "F.eks. Flyet mitt fra London til Paris var forsinket 4 timer på grunn av et teknisk problem med flyet...",
+      "infoText": "Å dele detaljer om din opplevelse kan i stor grad forbedre sjansene dine for et vellykket krav."
+    },
+    "back": "Tilbake",
+    "continue": "Fortsett",
+    "submitClaim": "Send inn krav",
+    "checkAnotherFlight": "← Sjekk et annet fly",
+    "freeCheck": "Sjekk kompensasjonen din — <strong>100% gratis</strong>, ingen risiko.",
+    "eligible": {
+      "title": "Gode nyheter — du kan være kvalifisert!",
+      "description": "Basert på svarene dine kan du ha rett til opptil <strong>€600</strong> i kompensasjon under EU-forordning 261/2004. Start ditt gratis krav nå!",
+      "startClaim": "Start mitt gratis krav →"
+    },
+    "notEligible": {
+      "title": "Dessverre er du kanskje ikke kvalifisert",
+      "description": "Basert på svarene dine ser forsinkelsen din ut til å være under 3-timersgrensen som kreves for EU-kompensasjon under forordning 261/2004."
+    },
+    "step6": {
+      "title": "Flydetaljer",
+      "flightNumber": "Flynummer",
+      "flightNumberPlaceholder": "f.eks. LS123",
+      "flightDate": "Flydato",
+      "flightDateHelp": "Dato for det forstyrrede flyet"
+    },
+    "step7": {
+      "title": "Dine opplysninger",
+      "firstName": "Fornavn",
+      "lastName": "Etternavn",
+      "email": "E-postadresse",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+47 123 45 678",
+      "nationality": "Nasjonalitet",
+      "nationalityPlaceholder": "Velg land"
+    },
+    "step8": {
+      "title": "Bestilling & samtykke",
+      "bookingReference": "Bestillingsreferanse",
+      "bookingReferencePlaceholder": "f.eks. ABC123",
+      "bookingReferenceHelp": "Finnes i e-posten med bestillingsbekreftelsen",
+      "consent": "Jeg godtar <a href='/terms' target='_blank'>vilkårene og betingelsene</a> og gir Jet2Pay fullmakt til å handle på mine vegne. Jeg forstår at 30% No Win No Fee provisjon gjelder.",
+      "gdpr": "Jeg samtykker til behandling av mine personopplysninger i samsvar med <a href='/privacy' target='_blank'>personvernreglene</a> og GDPR.",
+      "submitClaim": "Send inn mitt krav"
+    },
+    "submitting": "Sender inn kravet ditt...",
+    "submitted": {
+      "title": "Krav sendt inn!",
+      "claimId": "Kravreferanse",
+      "estimated": "Estimert kompensasjon",
+      "emailSent": "En bekreftelses-e-post er sendt til innboksen din.",
+      "trackClaim": "Følg kravstatusen din når som helst med kravreferansen din.",
+      "newClaim": "← Send inn et nytt krav"
+    },
+    "error": {
+      "submissionFailed": "Kunne ikke sende inn krav. Vennligst prøv igjen.",
+      "networkError": "Nettverksfeil. Vennligst sjekk tilkoblingen din."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

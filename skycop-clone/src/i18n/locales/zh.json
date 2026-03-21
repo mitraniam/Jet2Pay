@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "查看赔偿",
+    "knowYourRights": "了解您的权利",
+    "aboutCompany": "关于公司",
+    "news": "新闻",
+    "referAFriend": "推荐朋友",
+    "checkClaimStatus": "查看索赔状态"
+  },
+  "hero": {
+    "titleDelayed": "延误",
+    "titleCancelled": "取消",
+    "titleFlight": "航班",
+    "titleOr": "或",
+    "subtitle": "因航班延误或取消，索赔高达 <strong>€600</strong>",
+    "whatHappened": "您的航班发生了什么？",
+    "delayed": "延误",
+    "cancelled": "取消 / 超售",
+    "otherDisruptions": "其他干扰",
+    "departurePlaceholder": "出发机场",
+    "arrivalPlaceholder": "到达机场",
+    "checkCompensation": "查看赔偿",
+    "freeCheck": "免费赔偿检查",
+    "hassleFree": "省心无忧",
+    "claimsUpTo": "索赔可追溯3年",
+    "compensatedCustomers": "已获赔客户",
+    "airlines": "航空公司",
+    "yearsTrusted": "年信赖"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "资格检查",
+      "waitTime": "等待时间",
+      "done": "完成！",
+      "flightItinerary": "航班行程",
+      "disruptionType": "干扰类型",
+      "timing": "时间",
+      "reason": "原因",
+      "howLong": "您等了多久？",
+      "claimDetails": "索赔详情",
+      "flightInfo": "航班信息",
+      "passengerInfo": "您的信息",
+      "bookingConsent": "预订与同意"
+    },
+    "step1": {
+      "title": "您飞往哪里？",
+      "departedFrom": "出发自",
+      "finalDestination": "最终目的地机场",
+      "airportPlaceholder": "输入城市或机场名称",
+      "directFlight": "这是直飞航班吗？",
+      "yesDirect": "是的，这是直飞航班",
+      "noConnecting": "不是，我有转机航班"
+    },
+    "step2": {
+      "title": "干扰类型",
+      "question": "您遇到了什么类型的航班干扰？",
+      "delayed": "航班延误",
+      "cancelled": "航班取消",
+      "denied": "拒绝登机 / 超售"
+    },
+    "step3": {
+      "title": "您延误了多长时间？",
+      "question": "您到达最终目的地延误了多长时间？",
+      "less3": "少于3小时",
+      "more3": "超过3小时",
+      "missed": "错过了转机航班"
+    },
+    "step4": {
+      "title": "干扰原因",
+      "question1": "航空公司有告诉您航班干扰的原因吗？",
+      "yes": "是",
+      "no": "否",
+      "dontRemember": "不记得了",
+      "question2": "航空公司提供的原因是什么？",
+      "technical": "飞机技术问题",
+      "weather": "恶劣天气条件",
+      "strike": "罢工",
+      "airport": "机场问题",
+      "other": "其他原因"
+    },
+    "step5": {
+      "title": "请告诉我们更多关于您的情况",
+      "question": "您等了多久才获得替代航班或解决方案？",
+      "less2": "少于2小时",
+      "2to4": "2至4小时",
+      "4to8": "4至8小时",
+      "overnight": "过夜（8小时以上）",
+      "none": "未提供替代方案",
+      "describeLabel": "简要描述发生了什么",
+      "describeOptional": "（可选）",
+      "describePlaceholder": "例如：我从伦敦飞往巴黎的航班因飞机技术问题延误了4小时...",
+      "infoText": "分享您的经历细节可以大大提高您索赔成功的机会。描述越具体，获批的可能性越高。"
+    },
+    "back": "返回",
+    "continue": "继续",
+    "submitClaim": "提交索赔",
+    "checkAnotherFlight": "← 查看其他航班",
+    "freeCheck": "查看您的赔偿 — <strong>100%免费</strong>，无风险。",
+    "eligible": {
+      "title": "好消息 — 您可能符合条件！",
+      "description": "根据您的回答，您可能有权根据欧盟法规261/2004获得高达 <strong>€600</strong> 的赔偿。立即开始您的免费索赔！",
+      "startClaim": "开始我的免费索赔 →"
+    },
+    "notEligible": {
+      "title": "很遗憾，您可能不符合条件",
+      "description": "根据您的回答，您的延误似乎低于欧盟法规261/2004规定的3小时赔偿门槛。"
+    },
+    "step6": {
+      "title": "航班详情",
+      "flightNumber": "航班号",
+      "flightNumberPlaceholder": "例如 LS123",
+      "flightDate": "航班日期",
+      "flightDateHelp": "受影响航班的日期"
+    },
+    "step7": {
+      "title": "您的信息",
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "电子邮箱",
+      "phone": "电话号码",
+      "phonePlaceholder": "+86 138 0000 0000",
+      "nationality": "国籍",
+      "nationalityPlaceholder": "选择国家"
+    },
+    "step8": {
+      "title": "预订与同意",
+      "bookingReference": "预订参考号",
+      "bookingReferencePlaceholder": "例如 ABC123",
+      "bookingReferenceHelp": "可在您的预订确认邮件中找到",
+      "consent": "我同意<a href='/terms' target='_blank'>条款与条件</a>，并授权Jet2Pay代表我行事。我了解30%的无赢不收费佣金适用。",
+      "gdpr": "我同意根据<a href='/privacy' target='_blank'>隐私政策</a>和GDPR处理我的个人数据。",
+      "submitClaim": "提交我的索赔"
+    },
+    "submitting": "正在提交您的索赔...",
+    "submitted": {
+      "title": "索赔提交成功！",
+      "claimId": "索赔参考号",
+      "estimated": "预计赔偿金额",
+      "emailSent": "确认邮件已发送至您的邮箱。",
+      "trackClaim": "您可以随时使用索赔参考号追踪索赔状态。",
+      "newClaim": "← 提交新的索赔"
+    },
+    "error": {
+      "submissionFailed": "索赔提交失败。请重试。",
+      "networkError": "网络错误。请检查您的连接。"
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

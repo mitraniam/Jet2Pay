@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Tazminat Kontrol Et",
+    "knowYourRights": "Haklarını Bil",
+    "aboutCompany": "Şirket Hakkında",
+    "news": "Haberler",
+    "referAFriend": "Arkadaşına Öner",
+    "checkClaimStatus": "Talep Durumunu Kontrol Et"
+  },
+  "hero": {
+    "titleDelayed": "Geciken",
+    "titleCancelled": "İptal Edilen",
+    "titleFlight": "Uçuş",
+    "titleOr": "veya",
+    "subtitle": "Geciken veya iptal edilen uçuşunuz için <strong>€600</strong>'ya kadar tazminat talep edin",
+    "whatHappened": "Uçuşunuza ne oldu?",
+    "delayed": "Gecikme",
+    "cancelled": "İptal / Fazla Rezervasyon",
+    "otherDisruptions": "Diğer aksaklıklar",
+    "departurePlaceholder": "Kalkış havalimanı",
+    "arrivalPlaceholder": "Varış havalimanı",
+    "checkCompensation": "Tazminat Kontrol Et",
+    "freeCheck": "Ücretsiz tazminat kontrolü",
+    "hassleFree": "Zahmetsiz",
+    "claimsUpTo": "3 yıla kadar eski talepler",
+    "compensatedCustomers": "tazminat alan yolcu",
+    "airlines": "havayolu şirketi",
+    "yearsTrusted": "yıllık güven"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Uygunluk kontrolü",
+      "waitTime": "Bekleme süresi",
+      "done": "Tamamlandı!",
+      "flightItinerary": "Uçuş güzergahı",
+      "disruptionType": "Aksaklık türü",
+      "timing": "Zamanlama",
+      "reason": "Neden",
+      "howLong": "Ne kadar beklediniz?",
+      "claimDetails": "Talep detayları",
+      "flightInfo": "Uçuş bilgileri",
+      "passengerInfo": "Bilgileriniz",
+      "bookingConsent": "Rezervasyon ve onay"
+    },
+    "step1": {
+      "title": "Nereye uçtunuz?",
+      "departedFrom": "Kalkış noktası",
+      "finalDestination": "Son varış havalimanı",
+      "airportPlaceholder": "Şehir veya havalimanı adını girin",
+      "directFlight": "Direkt uçuş muydu?",
+      "yesDirect": "Evet, direkt uçuştu",
+      "noConnecting": "Hayır, aktarmalı uçuşum vardı"
+    },
+    "step2": {
+      "title": "Aksaklık türü",
+      "question": "Karşılaştığınız uçuş aksaklığının türü neydi?",
+      "delayed": "Uçuş gecikmesi",
+      "cancelled": "Uçuş iptali",
+      "denied": "Uçağa kabul edilmeme / Fazla rezervasyon"
+    },
+    "step3": {
+      "title": "Ne kadar gecikme oldu?",
+      "question": "Son varış noktanıza ne kadar geç ulaştınız?",
+      "less3": "3 saatten az",
+      "more3": "3 saatten fazla",
+      "missed": "Aktarma uçuşu kaçırıldı"
+    },
+    "step4": {
+      "title": "Aksaklık nedeni",
+      "question1": "Havayolu şirketi uçuş aksaklığının nedenini açıkladı mı?",
+      "yes": "Evet",
+      "no": "Hayır",
+      "dontRemember": "Hatırlamıyorum",
+      "question2": "Havayolu şirketi hangi nedeni bildirdi?",
+      "technical": "Uçak teknik arızası",
+      "weather": "Kötü hava koşulları",
+      "strike": "Grev",
+      "airport": "Havalimanı sorunları",
+      "other": "Diğer nedenler"
+    },
+    "step5": {
+      "title": "Durumunuz hakkında daha fazla bilgi verin",
+      "question": "Alternatif uçuş veya çözüm için ne kadar beklediniz?",
+      "less2": "2 saatten az",
+      "2to4": "2 ile 4 saat arası",
+      "4to8": "4 ile 8 saat arası",
+      "overnight": "Gecelik (8+ saat)",
+      "none": "Hiçbir alternatif sunulmadı",
+      "describeLabel": "Ne olduğunu kısaca açıklayın",
+      "describeOptional": "(isteğe bağlı)",
+      "describePlaceholder": "Örn. Londra'dan Paris'e uçuşum, uçağın teknik arızası nedeniyle 4 saat gecikti...",
+      "infoText": "Deneyiminiz hakkında ayrıntı paylaşmak, başarılı bir talep şansınızı önemli ölçüde artırabilir."
+    },
+    "back": "Geri",
+    "continue": "Devam Et",
+    "submitClaim": "Talep Gönder",
+    "checkAnotherFlight": "← Başka bir uçuş kontrol et",
+    "freeCheck": "Tazminatınızı kontrol edin — <strong>%100 ücretsiz</strong>, risk yok.",
+    "eligible": {
+      "title": "Harika haberler — tazminat almaya hak kazanabilirsiniz!",
+      "description": "Yanıtlarınıza göre, AB Yönetmeliği 261/2004 kapsamında <strong>€600</strong>'ya kadar tazminat almaya hak kazanabilirsiniz. Ücretsiz talebinizi şimdi başlatın!",
+      "startClaim": "Ücretsiz Talebimi Başlat →"
+    },
+    "notEligible": {
+      "title": "Maalesef, uygun olmayabilirsiniz",
+      "description": "Yanıtlarınıza göre, gecikmeniz AB Yönetmeliği 261/2004 kapsamında tazminat için gerekli olan 3 saatlik eşiğin altında görünmektedir."
+    },
+    "step6": {
+      "title": "Uçuş detayları",
+      "flightNumber": "Uçuş numarası",
+      "flightNumberPlaceholder": "örn. LS123",
+      "flightDate": "Uçuş tarihi",
+      "flightDateHelp": "Aksaklık yaşanan uçuşun tarihi"
+    },
+    "step7": {
+      "title": "Bilgileriniz",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta adresi",
+      "phone": "Telefon numarası",
+      "phonePlaceholder": "+90 532 123 4567",
+      "nationality": "Uyruk",
+      "nationalityPlaceholder": "Ülke seçin"
+    },
+    "step8": {
+      "title": "Rezervasyon ve onay",
+      "bookingReference": "Rezervasyon referansı",
+      "bookingReferencePlaceholder": "örn. ABC123",
+      "bookingReferenceHelp": "Rezervasyon onay e-postanızda bulunur",
+      "consent": "<a href='/terms' target='_blank'>Şartlar ve Koşulları</a> kabul ediyorum ve Jet2Pay'i adıma hareket etmesi için yetkilendiriyorum. %30 Kazanç Yoksa Ücret Yok komisyonunun geçerli olduğunu anlıyorum.",
+      "gdpr": "<a href='/privacy' target='_blank'>Gizlilik Politikası</a> ve GDPR uyarınca kişisel verilerimin işlenmesine onay veriyorum.",
+      "submitClaim": "Talebimi Gönder"
+    },
+    "submitting": "Talebiniz gönderiliyor...",
+    "submitted": {
+      "title": "Talep başarıyla gönderildi!",
+      "claimId": "Talep referansı",
+      "estimated": "Tahmini tazminat",
+      "emailSent": "Gelen kutunuza bir onay e-postası gönderildi.",
+      "trackClaim": "Talep referansınızı kullanarak talebinizin durumunu istediğiniz zaman takip edin.",
+      "newClaim": "← Başka bir talep gönder"
+    },
+    "error": {
+      "submissionFailed": "Talep gönderilemedi. Lütfen tekrar deneyin.",
+      "networkError": "Ağ hatası. Lütfen bağlantınızı kontrol edin."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

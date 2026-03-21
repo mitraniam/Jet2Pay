@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Pārbaudīt kompensāciju",
+    "knowYourRights": "Ziniet savas tiesības",
+    "aboutCompany": "Par uzņēmumu",
+    "news": "Jaunumi",
+    "referAFriend": "Ieteikt draugam",
+    "checkClaimStatus": "Pārbaudīt prasības statusu"
+  },
+  "hero": {
+    "titleDelayed": "Aizkavēts",
+    "titleCancelled": "Atcelts",
+    "titleFlight": "Lidojums",
+    "titleOr": "vai",
+    "subtitle": "Saņemiet līdz <strong>600 €</strong> kompensāciju par aizkavētu vai atceltu lidojumu",
+    "whatHappened": "Kas notika ar jūsu lidojumu?",
+    "delayed": "Aizkavēts",
+    "cancelled": "Atcelts / Pārpildīts",
+    "otherDisruptions": "Citi traucējumi",
+    "departurePlaceholder": "Izlidošanas lidosta",
+    "arrivalPlaceholder": "Ierašanās lidosta",
+    "checkCompensation": "Pārbaudīt kompensāciju",
+    "freeCheck": "Bezmaksas kompensācijas pārbaude",
+    "hassleFree": "Bez raizēm",
+    "claimsUpTo": "Prasības līdz 3 gadus vecas",
+    "compensatedCustomers": "kompensēto klientu",
+    "airlines": "aviokompāniju",
+    "yearsTrusted": "gadu uzticēšanās"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Atbilstības pārbaude",
+      "waitTime": "Gaidīšanas laiks",
+      "done": "Gatavs!",
+      "flightItinerary": "Lidojuma maršruts",
+      "disruptionType": "Traucējuma veids",
+      "timing": "Laiks",
+      "reason": "Iemesls",
+      "howLong": "Cik ilgi jūs gaidījāt?",
+      "claimDetails": "Prasības informācija",
+      "flightInfo": "Lidojuma informācija",
+      "passengerInfo": "Jūsu dati",
+      "bookingConsent": "Rezervācija un piekrišana"
+    },
+    "step1": {
+      "title": "Uz kurieni jūs lidojāt?",
+      "departedFrom": "Izlidojāt no",
+      "finalDestination": "Galamērķa lidosta",
+      "airportPlaceholder": "Ievadiet pilsētas vai lidostas nosaukumu",
+      "directFlight": "Vai tas bija tiešais lidojums?",
+      "yesDirect": "Jā, tas bija tiešais lidojums",
+      "noConnecting": "Nē, man bija pārsēšanās lidojumi"
+    },
+    "step2": {
+      "title": "Traucējuma veids",
+      "question": "Kāda veida lidojuma traucējumu jūs piedzīvojāt?",
+      "delayed": "Lidojums aizkavēts",
+      "cancelled": "Lidojums atcelts",
+      "denied": "Atteikta iekāpšana / Pārpildīts"
+    },
+    "step3": {
+      "title": "Cik ilgi jūs kavējāties?",
+      "question": "Cik ilgi jūs kavējāties, lai sasniegtu galamērķi?",
+      "less3": "Mazāk nekā 3 stundas",
+      "more3": "Vairāk nekā 3 stundas",
+      "missed": "Nokavēju savienojuma lidojumu"
+    },
+    "step4": {
+      "title": "Traucējuma iemesls",
+      "question1": "Vai aviokompānija paskaidroja, kāpēc lidojums tika traucēts?",
+      "yes": "Jā",
+      "no": "Nē",
+      "dontRemember": "Neatceros",
+      "question2": "Kādu iemeslu norādīja aviokompānija?",
+      "technical": "Lidmašīnas tehniskā problēma",
+      "weather": "Slikti laika apstākļi",
+      "strike": "Streiks",
+      "airport": "Lidostas problēmas",
+      "other": "Citi iemesli"
+    },
+    "step5": {
+      "title": "Pastāstiet vairāk par savu situāciju",
+      "question": "Cik ilgi jūs gaidījāt aizvietojošo lidojumu vai risinājumu?",
+      "less2": "Mazāk nekā 2 stundas",
+      "2to4": "No 2 līdz 4 stundām",
+      "4to8": "No 4 līdz 8 stundām",
+      "overnight": "Pa nakti (8+ stundas)",
+      "none": "Neviena alternatīva netika piedāvāta",
+      "describeLabel": "Īsi aprakstiet, kas notika",
+      "describeOptional": "(neobligāti)",
+      "describePlaceholder": "Piem., Mans lidojums no Londonas uz Parīzi kavējās 4 stundas lidmašīnas tehniskas problēmas dēļ...",
+      "infoText": "Dalīšanās ar informāciju par jūsu pieredzi var ievērojami uzlabot jūsu prasības veiksmīgu izskatīšanu."
+    },
+    "back": "Atpakaļ",
+    "continue": "Turpināt",
+    "submitClaim": "Iesniegt prasību",
+    "checkAnotherFlight": "← Pārbaudīt citu lidojumu",
+    "freeCheck": "Pārbaudiet savu kompensāciju — <strong>100% bezmaksas</strong>, bez riska.",
+    "eligible": {
+      "title": "Lieliskas ziņas — jūs varētu būt tiesīgs!",
+      "description": "Pamatojoties uz jūsu atbildēm, jūs varētu būt tiesīgs saņemt līdz <strong>600 €</strong> kompensāciju saskaņā ar ES Regulu 261/2004. Sāciet savu bezmaksas prasību tagad!",
+      "startClaim": "Sākt manu bezmaksas prasību →"
+    },
+    "notEligible": {
+      "title": "Diemžēl jūs varētu neatbilst prasībām",
+      "description": "Pamatojoties uz jūsu atbildēm, jūsų kavēšanās ir zem 3 stundu sliekšņa, kas nepieciešams ES kompensācijai saskaņā ar Regulu 261/2004."
+    },
+    "step6": {
+      "title": "Lidojuma informācija",
+      "flightNumber": "Lidojuma numurs",
+      "flightNumberPlaceholder": "piem., LS123",
+      "flightDate": "Lidojuma datums",
+      "flightDateHelp": "Traucētā lidojuma datums"
+    },
+    "step7": {
+      "title": "Jūsu dati",
+      "firstName": "Vārds",
+      "lastName": "Uzvārds",
+      "email": "E-pasta adrese",
+      "phone": "Tālruņa numurs",
+      "phonePlaceholder": "+371 20 000 000",
+      "nationality": "Pilsonība",
+      "nationalityPlaceholder": "Izvēlieties valsti"
+    },
+    "step8": {
+      "title": "Rezervācija un piekrišana",
+      "bookingReference": "Rezervācijas atsauce",
+      "bookingReferencePlaceholder": "piem., ABC123",
+      "bookingReferenceHelp": "Atrodama jūsu rezervācijas apstiprinājuma e-pastā",
+      "consent": "Es piekrītu <a href='/terms' target='_blank'>Noteikumiem un nosacījumiem</a> un pilnvaroju Jet2Pay rīkoties manā vārdā. Es saprotu, ka tiek piemērota 30% komisijas maksa.",
+      "gdpr": "Es piekrītu manu personas datu apstrādei saskaņā ar <a href='/privacy' target='_blank'>Privātuma politiku</a> un VDAR.",
+      "submitClaim": "Iesniegt manu prasību"
+    },
+    "submitting": "Jūsu prasība tiek iesniegta...",
+    "submitted": {
+      "title": "Prasība veiksmīgi iesniegta!",
+      "claimId": "Prasības atsauce",
+      "estimated": "Aplēstā kompensācija",
+      "emailSent": "Apstiprinājuma e-pasts ir nosūtīts uz jūsu pastkasti.",
+      "trackClaim": "Sekojiet savas prasības statusam jebkurā laikā, izmantojot prasības atsauci.",
+      "newClaim": "← Iesniegt citu prasību"
+    },
+    "error": {
+      "submissionFailed": "Neizdevās iesniegt prasību. Lūdzu, mēģiniet vēlreiz.",
+      "networkError": "Tīkla kļūda. Lūdzu, pārbaudiet savienojumu."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}

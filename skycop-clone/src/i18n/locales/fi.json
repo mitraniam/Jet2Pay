@@ -1,0 +1,155 @@
+{
+  "header": {
+    "checkCompensation": "Tarkista korvaus",
+    "knowYourRights": "Tunne oikeutesi",
+    "aboutCompany": "Tietoa yrityksestä",
+    "news": "Uutiset",
+    "referAFriend": "Suosittele ystävälle",
+    "checkClaimStatus": "Tarkista vaatimuksen tila"
+  },
+  "hero": {
+    "titleDelayed": "Viivästynyt",
+    "titleCancelled": "Peruttu",
+    "titleFlight": "Lento",
+    "titleOr": "tai",
+    "subtitle": "Vaadi jopa <strong>€600</strong> viivästyneestä tai perutusta lennosta",
+    "whatHappened": "Mitä lennolle tapahtui?",
+    "delayed": "Viivästynyt",
+    "cancelled": "Peruttu / Ylibuukattu",
+    "otherDisruptions": "Muut häiriöt",
+    "departurePlaceholder": "Lähtölentoasema",
+    "arrivalPlaceholder": "Saapumislentoasema",
+    "checkCompensation": "Tarkista korvaus",
+    "freeCheck": "Ilmainen korvaustarkistus",
+    "hassleFree": "Vaivatonta",
+    "claimsUpTo": "Vaatimukset jopa 3 vuotta vanhat",
+    "compensatedCustomers": "korvattua asiakasta",
+    "airlines": "lentoyhtiötä",
+    "yearsTrusted": "vuotta luotettuna"
+  },
+  "form": {
+    "sidebar": {
+      "eligibilityCheck": "Kelpoisuustarkistus",
+      "waitTime": "Odotusaika",
+      "done": "Valmis!",
+      "flightItinerary": "Lentoreitti",
+      "disruptionType": "Häiriötyyppi",
+      "timing": "Ajoitus",
+      "reason": "Syy",
+      "howLong": "Kuinka kauan odotit?",
+      "claimDetails": "Vaatimuksen tiedot",
+      "flightInfo": "Lentotiedot",
+      "passengerInfo": "Tietosi",
+      "bookingConsent": "Varaus & suostumus"
+    },
+    "step1": {
+      "title": "Minne lensit?",
+      "departedFrom": "Lähtö",
+      "finalDestination": "Lopullinen kohdelentoasema",
+      "airportPlaceholder": "Syötä kaupungin tai lentoaseman nimi",
+      "directFlight": "Oliko se suora lento?",
+      "yesDirect": "Kyllä, se oli suora lento",
+      "noConnecting": "Ei, minulla oli jatkolentoja"
+    },
+    "step2": {
+      "title": "Häiriötyyppi",
+      "question": "Millaisen lentohäiriön kohtasit?",
+      "delayed": "Lento viivästyi",
+      "cancelled": "Lento peruttu",
+      "denied": "Kielletty pääsy koneeseen / Ylibuukattu"
+    },
+    "step3": {
+      "title": "Kuinka kauan olit myöhässä?",
+      "question": "Kuinka kauan olit myöhässä lopulliseen määränpäähän saapumisessa?",
+      "less3": "Alle 3 tuntia",
+      "more3": "Yli 3 tuntia",
+      "missed": "Jatkolento jäi väliin"
+    },
+    "step4": {
+      "title": "Häiriön syy",
+      "question1": "Kertoiko lentoyhtiö miksi lento häiriintyi?",
+      "yes": "Kyllä",
+      "no": "Ei",
+      "dontRemember": "En muista",
+      "question2": "Mikä oli lentoyhtiön ilmoittama syy?",
+      "technical": "Lentokoneen tekninen ongelma",
+      "weather": "Huonot sääolosuhteet",
+      "strike": "Lakko",
+      "airport": "Lentoasemaongelmat",
+      "other": "Muut syyt"
+    },
+    "step5": {
+      "title": "Kerro lisää tilanteestasi",
+      "question": "Kuinka kauan odotit korvaavaa lentoa tai ratkaisua?",
+      "less2": "Alle 2 tuntia",
+      "2to4": "2–4 tuntia",
+      "4to8": "4–8 tuntia",
+      "overnight": "Yön yli (8+ tuntia)",
+      "none": "Vaihtoehtoa ei tarjottu",
+      "describeLabel": "Kuvaile lyhyesti mitä tapahtui",
+      "describeOptional": "(valinnainen)",
+      "describePlaceholder": "Esim. Lentoni Lontoosta Pariisiin viivästyi 4 tuntia lentokoneen teknisen ongelman vuoksi...",
+      "infoText": "Kokemuksesi yksityiskohtien jakaminen voi merkittävästi parantaa onnistuneen vaatimuksen mahdollisuuksiasi."
+    },
+    "back": "Takaisin",
+    "continue": "Jatka",
+    "submitClaim": "Lähetä vaatimus",
+    "checkAnotherFlight": "← Tarkista toinen lento",
+    "freeCheck": "Tarkista korvauksesi — <strong>100% ilmainen</strong>, ei riskiä.",
+    "eligible": {
+      "title": "Hyviä uutisia — saatat olla oikeutettu!",
+      "description": "Vastaustesi perusteella sinulla voi olla oikeus jopa <strong>€600</strong> korvaukseen EU-asetuksen 261/2004 mukaisesti. Aloita ilmainen vaatimuksesi nyt!",
+      "startClaim": "Aloita ilmainen vaatimukseni →"
+    },
+    "notEligible": {
+      "title": "Valitettavasti et ehkä ole oikeutettu",
+      "description": "Vastaustesi perusteella viivästymisesi näyttää olevan alle 3 tunnin rajan, joka vaaditaan EU-korvaukseen asetuksen 261/2004 mukaisesti."
+    },
+    "step6": {
+      "title": "Lentotiedot",
+      "flightNumber": "Lennon numero",
+      "flightNumberPlaceholder": "esim. LS123",
+      "flightDate": "Lennon päivämäärä",
+      "flightDateHelp": "Häiriintyneen lennon päivämäärä"
+    },
+    "step7": {
+      "title": "Tietosi",
+      "firstName": "Etunimi",
+      "lastName": "Sukunimi",
+      "email": "Sähköpostiosoite",
+      "phone": "Puhelinnumero",
+      "phonePlaceholder": "+358 40 123 4567",
+      "nationality": "Kansalaisuus",
+      "nationalityPlaceholder": "Valitse maa"
+    },
+    "step8": {
+      "title": "Varaus & suostumus",
+      "bookingReference": "Varausviite",
+      "bookingReferencePlaceholder": "esim. ABC123",
+      "bookingReferenceHelp": "Löytyy varausvahvistussähköpostistasi",
+      "consent": "Hyväksyn <a href='/terms' target='_blank'>käyttöehdot</a> ja valtuutan Jet2Payn toimimaan puolestani. Ymmärrän, että 30% No Win No Fee -provisio on voimassa.",
+      "gdpr": "Suostun henkilötietojeni käsittelyyn <a href='/privacy' target='_blank'>tietosuojakäytännön</a> ja GDPR:n mukaisesti.",
+      "submitClaim": "Lähetä vaatimukseni"
+    },
+    "submitting": "Lähetetään vaatimustasi...",
+    "submitted": {
+      "title": "Vaatimus lähetetty onnistuneesti!",
+      "claimId": "Vaatimusviite",
+      "estimated": "Arvioitu korvaus",
+      "emailSent": "Vahvistussähköposti on lähetetty postilaatikkoosi.",
+      "trackClaim": "Seuraa vaatimuksesi tilaa milloin tahansa vaatimusviitteelläsi.",
+      "newClaim": "← Lähetä uusi vaatimus"
+    },
+    "error": {
+      "submissionFailed": "Vaatimuksen lähettäminen epäonnistui. Yritä uudelleen.",
+      "networkError": "Verkkovirhe. Tarkista yhteytesi."
+    }
+  },
+  "languages": {
+    "en": "English",
+    "bg": "Български",
+    "de": "Deutsch",
+    "fr": "Français",
+    "es": "Español"
+  }
+}
