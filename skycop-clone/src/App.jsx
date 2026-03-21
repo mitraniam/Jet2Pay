@@ -17,9 +17,12 @@ import Footer from './components/Footer'
 import CheckCompensationForm from './components/CheckCompensationForm'
 import KnowYourRights from './components/KnowYourRights'
 import ClaimStatusPage from './components/ClaimStatusPage'
+import AdminDashboard from './components/AdminDashboard'
 
 function App() {
-  const [page, setPage] = useState('home')
+  // Check if URL has ?admin or #admin
+  const isAdmin = window.location.search.includes('admin') || window.location.hash.includes('admin')
+  const [page, setPage] = useState(isAdmin ? 'admin' : 'home')
 
   const navigate = (p) => {
     setPage(p)
@@ -49,6 +52,10 @@ function App() {
         <Footer />
       </>
     )
+  }
+
+  if (page === 'admin') {
+    return <AdminDashboard />
   }
 
   if (page === 'status') {
