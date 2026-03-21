@@ -310,6 +310,179 @@
       "button": "Check Compensation →"
     }
   },
+  "footer": {
+    "knowYourRights": "Know Your Rights",
+    "products": "Products",
+    "aboutCompany": "About Company",
+    "legal": "Legal",
+    "description": "Flight compensation made simple. We help passengers claim up to €600 for delayed, cancelled, or overbooked flights.",
+    "copyright": "All rights reserved.",
+    "links": {
+      "eu261": "EU Regulation 261/2004",
+      "uk261": "UK Regulation UK261",
+      "delayComp": "Flight Delay Compensation",
+      "cancelComp": "Cancelled Flight Compensation",
+      "overbookedComp": "Overbooked Flight Compensation",
+      "deniedBoarding": "Denied Boarding",
+      "passengerRights": "Air Passenger Rights",
+      "checkComp": "Check Compensation",
+      "howItWorks": "How It Works",
+      "pricing": "Pricing",
+      "claimStatus": "Check Claim Status",
+      "aboutUs": "About Jet2Pay",
+      "reviews": "Reviews",
+      "careers": "Careers",
+      "partners": "Partners",
+      "press": "Press",
+      "contact": "Contact Us",
+      "news": "News",
+      "terms": "Terms & Conditions",
+      "privacy": "Privacy Policy",
+      "cookies": "Cookie Policy",
+      "imprint": "Imprint",
+      "complaints": "Complaints"
+    },
+    "newsletter": {
+      "title": "Subscribe to our newsletter",
+      "text": "Get the latest news and travel tips directly to your inbox.",
+      "placeholder": "Your email address",
+      "button": "Subscribe"
+    }
+  },
+  "footerPages": {
+    "howItWorks": {
+      "hero": { "badge": "SIMPLE PROCESS", "title": "How It Works", "subtitle": "Getting your flight compensation is easy. We handle everything — you just need to tell us what happened." },
+      "steps": {
+        "title": "4 Simple Steps",
+        "s1": { "title": "Check Eligibility", "text": "Enter your flight details into our free tool. Our system instantly checks EU Regulation 261/2004 and UK261 to determine if you're entitled to compensation of up to €600." },
+        "s2": { "title": "Submit Your Claim", "text": "Fill in your personal details, flight information, and upload any supporting documents. The entire process takes less than 5 minutes." },
+        "s3": { "title": "We Handle Everything", "text": "Our legal and aviation experts take over. We contact the airline, handle all correspondence and negotiations, and manage the legal process on your behalf." },
+        "s4": { "title": "Get Compensated", "text": "Once we successfully resolve your claim, the compensation is transferred directly to your bank account. We only deduct our 30% commission from the amount received." }
+      },
+      "whyUs": {
+        "title": "Why Choose Jet2Pay?",
+        "noRisk": { "title": "No Win, No Fee", "text": "You pay nothing upfront. Our 30% commission is only charged when we successfully win your case." },
+        "fast": { "title": "Expert Legal Team", "text": "Our team specializes in EU air passenger rights and has extensive experience negotiating with airlines." },
+        "expertise": { "title": "Fast & Easy", "text": "Submit your claim in under 5 minutes. We handle the rest and keep you updated at every step." }
+      },
+      "cta": { "title": "Ready to get started?", "text": "Check if your flight qualifies for compensation — it's free and takes just 2 minutes.", "button": "Check Compensation →" }
+    },
+    "pricing": {
+      "hero": { "badge": "TRANSPARENT PRICING", "title": "Pricing", "subtitle": "No hidden fees, no upfront costs. You only pay when we win." },
+      "noWinNoFee": { "title": "No Win, No Fee", "text": "Our service is completely free unless we successfully claim compensation for you. We charge a 30% commission only on the amount recovered.", "badge": "GUARANTEED" },
+      "comparison": {
+        "title": "How We Compare",
+        "option": "Option",
+        "cost": "Cost",
+        "successRate": "Success Rate",
+        "effort": "Your Effort",
+        "jet2pay": { "name": "Jet2Pay", "cost": "30% on success", "success": "98%", "effort": "5 minutes" },
+        "lawyer": { "name": "Lawyer", "cost": "€200+/hour", "success": "85%", "effort": "Hours" },
+        "diy": { "name": "Do It Yourself", "cost": "Free", "success": "~10%", "effort": "Days/Weeks" }
+      },
+      "faq": {
+        "title": "Pricing FAQ",
+        "q1": { "q": "When do I pay?", "a": "Only when we successfully recover compensation for you. If we don't win, you pay nothing." },
+        "q2": { "q": "What does the 30% cover?", "a": "Our commission covers all legal work, airline negotiations, correspondence, and claim processing." },
+        "q3": { "q": "Are there any hidden fees?", "a": "Absolutely not. The 30% commission is the only fee. No signup fees, no processing fees, no cancellation fees." },
+        "q4": { "q": "What if my claim is unsuccessful?", "a": "You pay nothing. We absorb all costs and risks associated with pursuing your claim." }
+      },
+      "cta": { "title": "Ready to claim?", "text": "Check your eligibility for free — no obligation.", "button": "Check Compensation →" }
+    },
+    "reviews": {
+      "hero": { "badge": "CUSTOMER REVIEWS", "title": "What Our Customers Say", "subtitle": "Thousands of passengers have trusted Jet2Pay to handle their compensation claims." },
+      "stats": {
+        "avgRating": "Average Rating",
+        "totalReviews": "Claims Processed",
+        "recommend": "Would Recommend",
+        "avgPayout": "Max Compensation"
+      },
+      "grid": {
+        "title": "Recent Reviews",
+        "r1": { "quote": "Jet2Pay handled everything perfectly. I received €400 for my delayed flight from Manchester to Antalya. Highly recommend!", "name": "Sarah M.", "route": "MAN → AYT" },
+        "r2": { "quote": "I was skeptical at first, but they delivered. Got €250 compensation for a 4-hour delay. No hassle at all.", "name": "David K.", "route": "LBA → PMI" },
+        "r3": { "quote": "Excellent service! My cancelled flight from Birmingham resulted in €600 compensation. The team kept me informed throughout.", "name": "Emma T.", "route": "BHX → FAO" },
+        "r4": { "quote": "Quick and professional. Filed my claim in 5 minutes and received payment within 8 weeks.", "name": "James W.", "route": "NCL → AGP" },
+        "r5": { "quote": "After my flight was overbooked, Jet2Pay got me €400 in compensation. The process was incredibly simple.", "name": "Lisa R.", "route": "EMA → TFS" },
+        "r6": { "quote": "Fantastic experience. I didn't even know I was entitled to compensation until I found Jet2Pay. Got €250!", "name": "Michael B.", "route": "MAN → DLM" },
+        "r7": { "quote": "The team was very responsive and kept me updated at every stage. Received my compensation in just 6 weeks.", "name": "Rachel H.", "route": "LBA → HER" },
+        "r8": { "quote": "I've used Jet2Pay twice now — both times successful. They really know what they're doing with airline claims.", "name": "Tom S.", "route": "BHX → AYT" }
+      },
+      "cta": { "title": "Join thousands of satisfied customers", "text": "Check if your flight qualifies for compensation.", "button": "Check Compensation →" }
+    },
+    "careers": {
+      "hero": { "badge": "JOIN OUR TEAM", "title": "Careers at Jet2Pay", "subtitle": "Help us fight for passenger rights across Europe. Join a fast-growing team making a real difference." },
+      "culture": {
+        "title": "Why Work With Us",
+        "text1": "At Jet2Pay, we're building something meaningful — a platform that helps everyday travelers get the compensation they deserve.",
+        "text2": "We value transparency, innovation, and a strong sense of justice. Our team works remotely across Europe, united by a shared mission.",
+        "cardTitle": "Our Culture",
+        "cardText": "Flexible work, competitive pay, and the satisfaction of helping thousands of passengers every month."
+      },
+      "positions": {
+        "title": "Open Positions",
+        "apply": "Apply Now →",
+        "claimsSpecialist": { "title": "Claims Specialist", "location": "Remote / Sofia", "type": "Full-time", "desc": "Process and manage flight compensation claims. Communicate with airlines and keep passengers informed about their claim status." },
+        "legalAdvisor": { "title": "Legal Advisor", "location": "Sofia, Bulgaria", "type": "Full-time", "desc": "Provide legal expertise on EC261/UK261 regulations. Review complex cases and prepare legal documentation for airline negotiations." },
+        "frontendDev": { "title": "Frontend Developer", "location": "Remote", "type": "Full-time", "desc": "Build and maintain our React-based web platform. Work on improving the claims submission experience and admin dashboard." },
+        "customerSupport": { "title": "Customer Support", "location": "Remote", "type": "Part-time", "desc": "Help passengers with questions about their claims. Provide excellent customer service across email and chat channels." }
+      },
+      "cta": { "title": "Don't see a perfect fit?", "text": "Send us your CV and tell us how you'd like to contribute.", "button": "Contact Us →" }
+    },
+    "partners": {
+      "hero": { "badge": "PARTNERSHIPS", "title": "Partner With Us", "subtitle": "Join the Jet2Pay network and help passengers get the compensation they deserve." },
+      "types": {
+        "title": "Partnership Opportunities",
+        "airlines": { "title": "Airline Partnerships", "text": "Collaborate with us to streamline the compensation process for your passengers." },
+        "travelAgency": { "title": "Travel Agencies", "text": "Offer flight compensation as an added service to your clients. We handle the claims, you enhance customer loyalty." },
+        "legal": { "title": "Legal Network", "text": "Join our network of legal professionals specializing in air passenger rights across Europe." }
+      },
+      "benefits": {
+        "title": "Partnership Benefits",
+        "benefit1": { "title": "Dedicated Partner Manager", "text": "A single point of contact for all your partnership needs." },
+        "benefit2": { "title": "Custom Integration", "text": "API access and custom integration options for seamless workflows." },
+        "benefit3": { "title": "Competitive Commission", "text": "Attractive revenue sharing for high-volume partners." },
+        "benefit4": { "title": "Real-time Dashboard", "text": "Track all referred claims and earnings in real-time." }
+      },
+      "contactUs": { "title": "Get In Touch", "text": "Interested in partnering with Jet2Pay? Contact our partnerships team:" },
+      "cta": { "title": "Interested in partnering?", "text": "Get in touch with our partnerships team.", "button": "Contact Us →" }
+    },
+    "press": {
+      "hero": { "badge": "PRESS & MEDIA", "title": "Press Room", "subtitle": "Latest news, press releases, and media resources from Jet2Pay." },
+      "facts": {
+        "title": "Company Facts",
+        "fact1": { "value": "2024", "label": "Founded" },
+        "fact2": { "value": "Sofia, BG", "label": "Headquarters" },
+        "fact3": { "value": "10+", "label": "Team Size" },
+        "fact4": { "value": "10,000+", "label": "Claims Processed" }
+      },
+      "releases": {
+        "title": "Press Releases",
+        "r1": { "date": "March 2026", "title": "Jet2Pay Launches New Claims Platform", "summary": "Jet2Pay announces the launch of its next-generation flight compensation platform, making it easier than ever for passengers to claim up to €600." },
+        "r2": { "date": "February 2026", "title": "Jet2Pay Partners with Aviation Data Providers", "summary": "Strategic partnership with leading flight data providers enables real-time flight verification and faster claim processing." },
+        "r3": { "date": "January 2026", "title": "Jet2Pay Expands Coverage to 250+ Airlines", "summary": "Jet2Pay now covers over 250 airlines worldwide, offering comprehensive flight compensation services across Europe." }
+      },
+      "mediaKit": { "title": "Media Kit", "text": "Download our press kit including logos, brand guidelines, and company overview." },
+      "pressContact": { "title": "Press Contact", "text": "For press inquiries, interviews, and media requests:" },
+      "cta": { "title": "Want to feature Jet2Pay?", "text": "We're happy to provide interviews, quotes, and data for your story.", "button": "Contact Press Team →" }
+    },
+    "contact": {
+      "hero": { "badge": "GET IN TOUCH", "title": "Contact Us", "subtitle": "Have a question? We're here to help. Reach out through any of the channels below." },
+      "channels": {
+        "email": { "title": "Claims", "text": "For questions about existing claims" },
+        "support": { "title": "General Support", "text": "For general inquiries and support" },
+        "address": { "title": "Office", "text": "MITRANI CONSULT EOOD, Sofia, Bulgaria" }
+      },
+      "form": { "title": "Send Us a Message", "placeholder": "For inquiries, please email us at support@jet2pay.eu" },
+      "faq": {
+        "title": "Frequently Asked Questions",
+        "q1": { "q": "How long does a claim take?", "a": "Most claims are resolved within 6-12 weeks, depending on the airline's response time." },
+        "q2": { "q": "What documents do I need?", "a": "Your boarding pass, booking confirmation, and a valid ID. We'll guide you through the process." },
+        "q3": { "q": "Can I claim for a flight from years ago?", "a": "Yes! In most EU countries, you can claim for flights up to 3 years old. In some countries, the limit extends to 6 years." }
+      },
+      "cta": { "title": "Ready to check your flight?", "text": "Our free eligibility check takes just 2 minutes.", "button": "Check Compensation →" }
+    }
+  },
   "languages": {
     "en": "English",
     "bg": "Български",

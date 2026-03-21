@@ -191,13 +191,13 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, 
             <span className="header__drawer-chevron">›</span>
           </a>
           <a href="#" className="header__drawer-link"
-            onClick={e => e.preventDefault()}>
+            onClick={e => { e.preventDefault(); onAbout?.(); closeMenu() }}>
             <span className="header__drawer-icon">{NAV_ICONS.aboutCompany}</span>
             {t('header.aboutCompany')}
             <span className="header__drawer-chevron">›</span>
           </a>
           <a href="#" className="header__drawer-link"
-            onClick={e => e.preventDefault()}>
+            onClick={e => { e.preventDefault(); onNews?.(); closeMenu() }}>
             <span className="header__drawer-icon">{NAV_ICONS.news}</span>
             {t('header.news')}
             <span className="header__drawer-chevron">›</span>

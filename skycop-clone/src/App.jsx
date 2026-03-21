@@ -20,6 +20,8 @@ import ClaimStatusPage from './components/ClaimStatusPage'
 import AdminDashboard from './components/AdminDashboard'
 import AboutCompanyPage from './components/AboutCompanyPage'
 import NewsPage from './components/NewsPage'
+import FooterPages from './components/FooterPages'
+import LegalPage from './components/LegalPage'
 
 function App() {
   // Check if URL has ?admin or #admin
@@ -38,12 +40,56 @@ function App() {
   const goAbout    = () => navigate('about')
   const goNews     = () => navigate('news')
 
+  // Common header + footer props
+  const headerProps = {
+    onCheckCompensation: goToForm,
+    onKnowYourRights: goRights,
+    onHome: goHome,
+    onCheckStatus: goStatus,
+    onAbout: goAbout,
+    onNews: goNews,
+  }
+
+  const footerProps = {
+    onNavigate: navigate,
+  }
+
+  // Footer page types
+  const footerPageTypes = ['howItWorks', 'pricing', 'reviews', 'careers', 'partners', 'press', 'contact']
+  const legalPageTypes = ['terms', 'privacy', 'cookies', 'imprint', 'complaints']
+
+  if (page === 'admin') {
+    return <AdminDashboard />
+  }
+
+  // Footer content pages
+  if (footerPageTypes.includes(page)) {
+    return (
+      <>
+        <Header {...headerProps} />
+        <FooterPages type={page} onCheckCompensation={goToForm} />
+        <Footer {...footerProps} />
+      </>
+    )
+  }
+
+  // Legal pages
+  if (legalPageTypes.includes(page)) {
+    return (
+      <>
+        <Header {...headerProps} />
+        <LegalPage type={page} onCheckCompensation={goToForm} />
+        <Footer {...footerProps} />
+      </>
+    )
+  }
+
   if (page === 'compensation') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <Header {...headerProps} />
         <CheckCompensationForm onBack={goHome} />
-        <Footer />
+        <Footer {...footerProps} />
       </>
     )
   }
@@ -51,23 +97,19 @@ function App() {
   if (page === 'rights') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <Header {...headerProps} />
         <KnowYourRights onCheckCompensation={goToForm} />
-        <Footer />
+        <Footer {...footerProps} />
       </>
     )
-  }
-
-  if (page === 'admin') {
-    return <AdminDashboard />
   }
 
   if (page === 'about') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <Header {...headerProps} />
         <AboutCompanyPage onCheckCompensation={goToForm} />
-        <Footer />
+        <Footer {...footerProps} />
       </>
     )
   }
@@ -75,9 +117,9 @@ function App() {
   if (page === 'news') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <Header {...headerProps} />
         <NewsPage onCheckCompensation={goToForm} />
-        <Footer />
+        <Footer {...footerProps} />
       </>
     )
   }
@@ -85,16 +127,16 @@ function App() {
   if (page === 'status') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} onAbout={goAbout} onNews={goNews} />
+        <Header {...headerProps} />
         <ClaimStatusPage />
-        <Footer />
+        <Footer {...footerProps} />
       </>
     )
   }
 
   return (
     <>
-      <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
+      <Header {...headerProps} />
       <main>
         <Hero onCheckCompensation={goToForm} />
         <PressLogos />
@@ -110,7 +152,7 @@ function App() {
         <Airlines />
         <Airports />
       </main>
-      <Footer />
+      <Footer {...footerProps} />
     </>
   )
 }
