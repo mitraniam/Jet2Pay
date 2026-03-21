@@ -146,6 +146,51 @@
       "networkError": "Network error. Please check your connection."
     }
   },
+  "claimStatus": {
+    "title": "Check Claim Status",
+    "subtitle": "Enter your claim reference number to track the progress of your compensation claim.",
+    "placeholder": "Enter claim reference (e.g. 35073ad8-6b02...)",
+    "search": "Track Claim",
+    "notFound": "No claim found with this reference. Please check the ID and try again.",
+    "error": "Something went wrong. Please try again later.",
+    "progress": "Claim Progress",
+    "flightDetails": "Flight Details",
+    "compensation": "Compensation",
+    "claimRef": "Claim Reference",
+    "status": "Status",
+    "flight": "Flight",
+    "date": "Date",
+    "route": "Route",
+    "disruption": "Disruption Type",
+    "estimatedAmount": "Estimated Compensation",
+    "distance": "Route distance",
+    "eligible": "Eligible for compensation",
+    "notEligible": "Not eligible for compensation",
+    "documents": "Documents",
+    "noDocs": "No documents uploaded yet.",
+    "missingDocs": "Missing documents",
+    "timeline": "Status Timeline",
+    "steps": {
+      "submitted": "Submitted",
+      "under_review": "Under Review",
+      "airline_contacted": "Airline Contacted",
+      "negotiating": "Negotiating",
+      "resolved": "Resolved",
+      "rejected": "Rejected",
+      "paid": "Paid"
+    },
+    "disruptionTypes": {
+      "delay": "Delay",
+      "cancellation": "Cancellation",
+      "denied_boarding": "Denied Boarding",
+      "missed_connection": "Missed Connection"
+    },
+    "docTypes": {
+      "boarding_pass": "Boarding Pass",
+      "booking_confirmation": "Booking Confirmation",
+      "id_document": "ID Document"
+    }
+  },
   "languages": {
     "en": "English",
     "bg": "Български",

@@ -38,7 +38,7 @@ const NAV_ICONS = {
   ),
 }
 
-const Header = ({ onCheckCompensation, onKnowYourRights, onHome }) => {
+const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus }) => {
   const { t, i18n } = useTranslation()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -110,7 +110,7 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome }) => {
 
           {/* Desktop Actions */}
           <div className="header__actions">
-            <a href="#" className="header__claim-btn">{t('header.checkClaimStatus')}</a>
+            <a href="#" className="header__claim-btn" onClick={e => { e.preventDefault(); onCheckStatus?.() }}>{t('header.checkClaimStatus')}</a>
 
             {/* Desktop Language Switcher */}
             <div className="header__lang" ref={langRef} onClick={() => setLangOpen(!langOpen)}>

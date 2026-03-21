@@ -146,6 +146,51 @@
       "networkError": "Erreur réseau. Veuillez vérifier votre connexion."
     }
   },
+  "claimStatus": {
+    "title": "Vérifier le statut de la réclamation",
+    "subtitle": "Entrez votre numéro de référence pour suivre le progrès de votre demande d'indemnisation.",
+    "placeholder": "Entrez la référence (ex. 35073ad8-6b02...)",
+    "search": "Suivre la réclamation",
+    "notFound": "Aucune réclamation trouvée avec cette référence. Veuillez vérifier l'identifiant.",
+    "error": "Une erreur s'est produite. Veuillez réessayer plus tard.",
+    "progress": "Progrès de la réclamation",
+    "flightDetails": "Détails du vol",
+    "compensation": "Indemnisation",
+    "claimRef": "Référence",
+    "status": "Statut",
+    "flight": "Vol",
+    "date": "Date",
+    "route": "Itinéraire",
+    "disruption": "Type de perturbation",
+    "estimatedAmount": "Indemnisation estimée",
+    "distance": "Distance du trajet",
+    "eligible": "Éligible à l'indemnisation",
+    "notEligible": "Non éligible à l'indemnisation",
+    "documents": "Documents",
+    "noDocs": "Aucun document téléchargé pour le moment.",
+    "missingDocs": "Documents manquants",
+    "timeline": "Chronologie du statut",
+    "steps": {
+      "submitted": "Soumise",
+      "under_review": "En cours d'examen",
+      "airline_contacted": "Compagnie aérienne contactée",
+      "negotiating": "En négociation",
+      "resolved": "Résolue",
+      "rejected": "Rejetée",
+      "paid": "Payée"
+    },
+    "disruptionTypes": {
+      "delay": "Retard",
+      "cancellation": "Annulation",
+      "denied_boarding": "Embarquement refusé",
+      "missed_connection": "Correspondance manquée"
+    },
+    "docTypes": {
+      "boarding_pass": "Carte d'embarquement",
+      "booking_confirmation": "Confirmation de réservation",
+      "id_document": "Pièce d'identité"
+    }
+  },
   "languages": {
     "en": "English",
     "bg": "Български",

@@ -146,6 +146,51 @@
       "networkError": "Error de red. Compruebe su conexión."
     }
   },
+  "claimStatus": {
+    "title": "Verificar estado de reclamación",
+    "subtitle": "Ingrese su número de referencia para rastrear el progreso de su reclamación de compensación.",
+    "placeholder": "Ingrese la referencia (ej. 35073ad8-6b02...)",
+    "search": "Rastrear reclamación",
+    "notFound": "No se encontró ninguna reclamación con esta referencia. Verifique el ID.",
+    "error": "Algo salió mal. Por favor, inténtelo de nuevo más tarde.",
+    "progress": "Progreso de la reclamación",
+    "flightDetails": "Detalles del vuelo",
+    "compensation": "Compensación",
+    "claimRef": "Referencia",
+    "status": "Estado",
+    "flight": "Vuelo",
+    "date": "Fecha",
+    "route": "Ruta",
+    "disruption": "Tipo de interrupción",
+    "estimatedAmount": "Compensación estimada",
+    "distance": "Distancia de la ruta",
+    "eligible": "Elegible para compensación",
+    "notEligible": "No elegible para compensación",
+    "documents": "Documentos",
+    "noDocs": "Aún no se han subido documentos.",
+    "missingDocs": "Documentos faltantes",
+    "timeline": "Cronología del estado",
+    "steps": {
+      "submitted": "Enviada",
+      "under_review": "En revisión",
+      "airline_contacted": "Aerolínea contactada",
+      "negotiating": "En negociación",
+      "resolved": "Resuelta",
+      "rejected": "Rechazada",
+      "paid": "Pagada"
+    },
+    "disruptionTypes": {
+      "delay": "Retraso",
+      "cancellation": "Cancelación",
+      "denied_boarding": "Embarque denegado",
+      "missed_connection": "Conexión perdida"
+    },
+    "docTypes": {
+      "boarding_pass": "Tarjeta de embarque",
+      "booking_confirmation": "Confirmación de reserva",
+      "id_document": "Documento de identidad"
+    }
+  },
   "languages": {
     "en": "English",
     "bg": "Български",

@@ -146,6 +146,51 @@
       "networkError": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung."
     }
   },
+  "claimStatus": {
+    "title": "Anspruchsstatus prüfen",
+    "subtitle": "Geben Sie Ihre Referenznummer ein, um den Fortschritt Ihres Entschädigungsanspruchs zu verfolgen.",
+    "placeholder": "Referenznummer eingeben (z.B. 35073ad8-6b02...)",
+    "search": "Anspruch verfolgen",
+    "notFound": "Kein Anspruch mit dieser Referenz gefunden. Bitte überprüfen Sie die ID.",
+    "error": "Etwas ist schiefgelaufen. Bitte versuchen Sie es später erneut.",
+    "progress": "Fortschritt des Anspruchs",
+    "flightDetails": "Flugdetails",
+    "compensation": "Entschädigung",
+    "claimRef": "Referenznummer",
+    "status": "Status",
+    "flight": "Flug",
+    "date": "Datum",
+    "route": "Route",
+    "disruption": "Art der Störung",
+    "estimatedAmount": "Geschätzte Entschädigung",
+    "distance": "Routendistanz",
+    "eligible": "Anspruchsberechtigt",
+    "notEligible": "Nicht anspruchsberechtigt",
+    "documents": "Dokumente",
+    "noDocs": "Noch keine Dokumente hochgeladen.",
+    "missingDocs": "Fehlende Dokumente",
+    "timeline": "Statusverlauf",
+    "steps": {
+      "submitted": "Eingereicht",
+      "under_review": "In Prüfung",
+      "airline_contacted": "Fluggesellschaft kontaktiert",
+      "negotiating": "In Verhandlung",
+      "resolved": "Abgeschlossen",
+      "rejected": "Abgelehnt",
+      "paid": "Ausgezahlt"
+    },
+    "disruptionTypes": {
+      "delay": "Verspätung",
+      "cancellation": "Annullierung",
+      "denied_boarding": "Verweigertes Boarding",
+      "missed_connection": "Verpasster Anschluss"
+    },
+    "docTypes": {
+      "boarding_pass": "Bordkarte",
+      "booking_confirmation": "Buchungsbestätigung",
+      "id_document": "Ausweisdokument"
+    }
+  },
   "languages": {
     "en": "English",
     "bg": "Български",

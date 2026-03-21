@@ -16,6 +16,7 @@ import Airports from './components/Airports'
 import Footer from './components/Footer'
 import CheckCompensationForm from './components/CheckCompensationForm'
 import KnowYourRights from './components/KnowYourRights'
+import ClaimStatusPage from './components/ClaimStatusPage'
 
 function App() {
   const [page, setPage] = useState('home')
@@ -25,14 +26,15 @@ function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }
 
-  const goToForm = () => navigate('compensation')
-  const goHome   = () => navigate('home')
-  const goRights = () => navigate('rights')
+  const goToForm   = () => navigate('compensation')
+  const goHome     = () => navigate('home')
+  const goRights   = () => navigate('rights')
+  const goStatus   = () => navigate('status')
 
   if (page === 'compensation') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} />
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
         <CheckCompensationForm onBack={goHome} />
         <Footer />
       </>
@@ -42,8 +44,18 @@ function App() {
   if (page === 'rights') {
     return (
       <>
-        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} />
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
         <KnowYourRights onCheckCompensation={goToForm} />
+        <Footer />
+      </>
+    )
+  }
+
+  if (page === 'status') {
+    return (
+      <>
+        <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
+        <ClaimStatusPage />
         <Footer />
       </>
     )
@@ -51,7 +63,7 @@ function App() {
 
   return (
     <>
-      <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} />
+      <Header onCheckCompensation={goToForm} onKnowYourRights={goRights} onHome={goHome} onCheckStatus={goStatus} />
       <main>
         <Hero onCheckCompensation={goToForm} />
         <PressLogos />
