@@ -86,6 +86,7 @@ export const AIRPORTS: Record<string, AirportInfo> = {
   DLM: { iata: "DLM", name: "Dalaman", lat: 36.7131, lon: 28.7925, country: "TR", isEuEea: false },
   BJV: { iata: "BJV", name: "Bodrum", lat: 37.2506, lon: 27.6644, country: "TR", isEuEea: false },
   IST: { iata: "IST", name: "Istanbul", lat: 41.2608, lon: 28.7418, country: "TR", isEuEea: false },
+  SAW: { iata: "SAW", name: "Istanbul Sabiha Gökçen", lat: 40.8986, lon: 29.3092, country: "TR", isEuEea: false },
   ADB: { iata: "ADB", name: "Izmir", lat: 38.2924, lon: 27.1570, country: "TR", isEuEea: false },
 
   // ── Cyprus ───────────────────────────────────────────────────
