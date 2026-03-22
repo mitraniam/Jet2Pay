@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { SpeedInsights } from '@vercel/speed-insights/react'
 import Header from './components/Header'
 import Hero from './components/Hero'
 import PressLogos from './components/PressLogos'
@@ -59,7 +60,12 @@ function App() {
   const legalPageTypes = ['terms', 'privacy', 'cookies', 'imprint', 'complaints']
 
   if (page === 'admin') {
-    return <AdminDashboard />
+    return (
+      <>
+        <AdminDashboard />
+        <SpeedInsights />
+      </>
+    )
   }
 
   // Footer content pages
@@ -69,6 +75,7 @@ function App() {
         <Header {...headerProps} />
         <FooterPages type={page} onCheckCompensation={goToForm} />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -80,6 +87,7 @@ function App() {
         <Header {...headerProps} />
         <LegalPage type={page} onCheckCompensation={goToForm} />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -90,6 +98,7 @@ function App() {
         <Header {...headerProps} />
         <CheckCompensationForm onBack={goHome} />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -100,6 +109,7 @@ function App() {
         <Header {...headerProps} />
         <KnowYourRights onCheckCompensation={goToForm} />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -110,6 +120,7 @@ function App() {
         <Header {...headerProps} />
         <AboutCompanyPage onCheckCompensation={goToForm} />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -120,6 +131,7 @@ function App() {
         <Header {...headerProps} />
         <NewsPage onCheckCompensation={goToForm} />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -130,6 +142,7 @@ function App() {
         <Header {...headerProps} />
         <ClaimStatusPage />
         <Footer {...footerProps} />
+        <SpeedInsights />
       </>
     )
   }
@@ -153,6 +166,7 @@ function App() {
         <Airports />
       </main>
       <Footer {...footerProps} />
+      <SpeedInsights />
     </>
   )
 }

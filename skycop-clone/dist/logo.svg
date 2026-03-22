@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="420" height="120">
+  <defs>
+    <linearGradient id="grad-jet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#F07830;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E05040;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-two" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#D04060;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#9840A0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-pay" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7030A8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4428A0;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="grad-swoosh" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#E05040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7030A8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Swoosh line from behind "2" going up to plane -->
+  <path d="M 148 72 Q 200 50 265 18" stroke="url(#grad-swoosh)" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85"/>
+
+  <!-- Airplane at top-right, angled up-right -->
+  <g transform="translate(265, 10) rotate(-30)">
+    <!-- Body -->
+    <path d="M0,6 L28,0 L0,-6 Z" fill="#5030A8"/>
+    <!-- Left wing -->
+    <path d="M8,0 L16,12 L22,8 Z" fill="#5030A8"/>
+    <!-- Right wing -->
+    <path d="M8,0 L16,-12 L22,-8 Z" fill="#5030A8"/>
+    <!-- Tail -->
+    <path d="M0,0 L-6,6 L-2,4 Z" fill="#5030A8"/>
+    <path d="M0,0 L-6,-6 L-2,-4 Z" fill="#5030A8"/>
+  </g>
+
+  <!-- "Jet" text - orange, bold italic -->
+  <text
+    x="8"
+    y="94"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-style="italic"
+    font-size="78"
+    fill="url(#grad-jet)"
+    letter-spacing="-2"
+  >Jet</text>
+
+  <!-- "2" text - pink/magenta -->
+  <text
+    x="162"
+    y="94"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-style="italic"
+    font-size="78"
+    fill="url(#grad-two)"
+    letter-spacing="-2"
+  >2</text>
+
+  <!-- "Pay" text - purple -->
+  <text
+    x="207"
+    y="94"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-style="italic"
+    font-size="78"
+    fill="url(#grad-pay)"
+    letter-spacing="-2"
+  >Pay</text>
+</svg>
