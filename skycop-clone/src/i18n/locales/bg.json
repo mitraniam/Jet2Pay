@@ -25,7 +25,10 @@
     "claimsUpTo": "Искове до 3 години назад",
     "compensatedCustomers": "обезщетени клиенти",
     "airlines": "авиолинии",
-    "yearsTrusted": "години доверие"
+    "yearsTrusted": "години доверие",
+    "commissionBold": "Водеща на пазара 15% комисионна",
+    "commissionText": "— Автоматизирано и справедливо. Запазвате повече от обезщетението си.",
+    "commissionBadge": "Най-ниска в бранша"
   },
   "form": {
     "sidebar": {

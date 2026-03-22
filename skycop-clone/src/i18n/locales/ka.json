@@ -25,7 +25,10 @@
     "claimsUpTo": "პრეტენზიები 3 წლამდე",
     "compensatedCustomers": "კომპენსირებული მომხმარებლები",
     "airlines": "ავიაკომპანიები",
-    "yearsTrusted": "წლის ნდობა"
+    "yearsTrusted": "წლის ნდობა",
+    "commissionBold": "საბაზრო წამყვანი 15% საკომისიო",
+    "commissionText": "— ავტომატიზებული და სამართლიანი. თქვენ ინახავთ მეტს კომპენსაციიდან.",
+    "commissionBadge": "ყველაზე დაბალი ინდუსტრიაში"
   },
   "form": {
     "sidebar": {

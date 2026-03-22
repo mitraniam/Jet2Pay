@@ -25,7 +25,10 @@
     "claimsUpTo": "Reclamacions de fins a 3 anys",
     "compensatedCustomers": "clients compensats",
     "airlines": "aerolínies",
-    "yearsTrusted": "anys de confiança"
+    "yearsTrusted": "anys de confiança",
+    "commissionBold": "Comissió del 15% líder del mercat",
+    "commissionText": "— Automatitzat i just. Conserveu més de la vostra compensació.",
+    "commissionBadge": "La més baixa del sector"
   },
   "form": {
     "sidebar": {

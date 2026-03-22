@@ -25,7 +25,10 @@
     "claimsUpTo": "Krav opptil 3 år gamle",
     "compensatedCustomers": "kompenserte kunder",
     "airlines": "flyselskaper",
-    "yearsTrusted": "års tillit"
+    "yearsTrusted": "års tillit",
+    "commissionBold": "Markedsledende 15% provisjon",
+    "commissionText": "— Automatisert & rettferdig. Du beholder mer av erstatningen din.",
+    "commissionBadge": "Bransjens laveste"
   },
   "form": {
     "sidebar": {

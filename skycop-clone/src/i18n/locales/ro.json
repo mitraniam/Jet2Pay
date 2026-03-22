@@ -25,7 +25,10 @@
     "claimsUpTo": "Cereri de până la 3 ani",
     "compensatedCustomers": "clienți compensați",
     "airlines": "companii aeriene",
-    "yearsTrusted": "ani de încredere"
+    "yearsTrusted": "ani de încredere",
+    "commissionBold": "Comision de 15% lider de piață",
+    "commissionText": "— Automatizat & corect. Păstrați mai mult din compensația dvs.",
+    "commissionBadge": "Cea mai mică din industrie"
   },
   "form": {
     "sidebar": {

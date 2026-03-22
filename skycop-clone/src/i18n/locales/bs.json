@@ -25,7 +25,10 @@
     "claimsUpTo": "Zahtjevi do 3 godine unazad",
     "compensatedCustomers": "kompenziranih putnika",
     "airlines": "avio-kompanija",
-    "yearsTrusted": "godina povjerenja"
+    "yearsTrusted": "godina povjerenja",
+    "commissionBold": "Tržišno vodeća provizija 15%",
+    "commissionText": "— Automatizirano i pošteno. Zadržavate više naknade.",
+    "commissionBadge": "Najniža u industriji"
   },
   "form": {
     "sidebar": {

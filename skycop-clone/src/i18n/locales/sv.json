@@ -25,7 +25,10 @@
     "claimsUpTo": "Krav upp till 3 år gamla",
     "compensatedCustomers": "ersatta kunder",
     "airlines": "flygbolag",
-    "yearsTrusted": "års förtroende"
+    "yearsTrusted": "års förtroende",
+    "commissionBold": "Marknadsledande 15% provision",
+    "commissionText": "— Automatiserat & rättvist. Du behåller mer av din ersättning.",
+    "commissionBadge": "Branschens lägsta"
   },
   "form": {
     "sidebar": {

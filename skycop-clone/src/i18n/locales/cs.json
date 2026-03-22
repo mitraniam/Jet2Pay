@@ -25,7 +25,10 @@
     "claimsUpTo": "Nároky až 3 roky staré",
     "compensatedCustomers": "spokojených zákazníků",
     "airlines": "leteckých společností",
-    "yearsTrusted": "let důvěry"
+    "yearsTrusted": "let důvěry",
+    "commissionBold": "Tržní poplatek 15%",
+    "commissionText": "— Automatizované a spravedlivé. Uchováváte si více z náhrady.",
+    "commissionBadge": "Nejnižší v oboru"
   },
   "form": {
     "sidebar": {

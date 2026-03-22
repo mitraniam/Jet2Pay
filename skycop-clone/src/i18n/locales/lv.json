@@ -25,7 +25,10 @@
     "claimsUpTo": "Prasības līdz 3 gadus vecas",
     "compensatedCustomers": "kompensēto klientu",
     "airlines": "aviokompāniju",
-    "yearsTrusted": "gadu uzticēšanās"
+    "yearsTrusted": "gadu uzticēšanās",
+    "commissionBold": "Tirgū vadošā 15% komisija",
+    "commissionText": "— Automatizēts & godīgs. Jūs saņemat vairāk no kompensācijas.",
+    "commissionBadge": "Zemākā nozarē"
   },
   "form": {
     "sidebar": {

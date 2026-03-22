@@ -25,7 +25,10 @@
     "claimsUpTo": "Pretenzijos iki 3 metų senumo",
     "compensatedCustomers": "kompensuotų klientų",
     "airlines": "aviakompanijų",
-    "yearsTrusted": "metų pasitikėjimo"
+    "yearsTrusted": "metų pasitikėjimo",
+    "commissionBold": "Rinkos lyderė 15% komisinis",
+    "commissionText": "— Automatizuotas & sąžiningas. Jūs išlaikote daugiau kompensacijos.",
+    "commissionBadge": "Žemiausia pramonėje"
   },
   "form": {
     "sidebar": {

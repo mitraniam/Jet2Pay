@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "jet2pay-dev",
-      "runtimeExecutable": "cmd",
-      "runtimeArgs": ["/c", "cd skycop-clone && npm install && npm run dev"],
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["dev-launcher.js"],
       "port": 5173
     },
     {

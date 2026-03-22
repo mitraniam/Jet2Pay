@@ -26,9 +26,9 @@ const Hero = () => {
         <div className="hero__commission-inner">
           <span className="hero__commission-icon">🏆</span>
           <span className="hero__commission-text">
-            <strong>Market-leading 15% commission</strong> — Automated &amp; Fair. You keep more of your compensation.
+            <strong>{t('hero.commissionBold')}</strong> {t('hero.commissionText')}
           </span>
-          <span className="hero__commission-badge">Industry lowest</span>
+          <span className="hero__commission-badge">{t('hero.commissionBadge')}</span>
         </div>
       </div>
 

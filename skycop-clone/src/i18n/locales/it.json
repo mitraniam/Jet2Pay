@@ -25,7 +25,10 @@
     "claimsUpTo": "Reclami fino a 3 anni",
     "compensatedCustomers": "clienti risarciti",
     "airlines": "compagnie aeree",
-    "yearsTrusted": "anni di fiducia"
+    "yearsTrusted": "anni di fiducia",
+    "commissionBold": "Commissione del 15% leader di mercato",
+    "commissionText": "— Automatizzato e giusto. Mantieni di più del tuo risarcimento.",
+    "commissionBadge": "La più bassa del settore"
   },
   "form": {
     "sidebar": {

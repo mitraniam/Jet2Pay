@@ -25,7 +25,10 @@
     "claimsUpTo": "Roszczenia do 3 lat wstecz",
     "compensatedCustomers": "zadowolonych klientów",
     "airlines": "linii lotniczych",
-    "yearsTrusted": "lat zaufania"
+    "yearsTrusted": "lat zaufania",
+    "commissionBold": "Rynkowa prowizja 15%",
+    "commissionText": "— Zautomatyzowane i uczciwe. Zachowujesz więcej odszkodowania.",
+    "commissionBadge": "Najniższa w branży"
   },
   "form": {
     "sidebar": {
