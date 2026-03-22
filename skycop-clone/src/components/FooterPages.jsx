@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './FooterPages.css'
 
@@ -417,7 +418,8 @@ const RENDERERS = {
 
 /* ─── main component ─── */
 
-export default function FooterPages({ type, onCheckCompensation }) {
+export default function FooterPages({ type }) {
+  const navigate = useNavigate()
   const { t } = useTranslation()
   const p = `footerPages.${type}`
   const hero = HERO[type] || HERO.contact
@@ -444,7 +446,7 @@ export default function FooterPages({ type, onCheckCompensation }) {
         <div className="container">
           <h2 className="fp__cta-title">{t(`${p}.cta.title`)}</h2>
           <p className="fp__cta-text">{t(`${p}.cta.text`)}</p>
-          <button className="fp__cta-btn" onClick={onCheckCompensation}>
+          <button className="fp__cta-btn" onClick={() => navigate('/compensation')}>
             {t(`${p}.cta.button`)}
           </button>
         </div>

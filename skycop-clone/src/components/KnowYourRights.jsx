@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import './KnowYourRights.css'
 
 /* ── Icons ───────────────────────────────────────────────── */
@@ -57,7 +58,8 @@ const IconArrow = () => (
 /* ══════════════════════════════════════════════════════════
    MAIN COMPONENT
 ══════════════════════════════════════════════════════════ */
-const KnowYourRights = ({ onCheckCompensation }) => {
+const KnowYourRights = () => {
+  const navigate = useNavigate()
   return (
     <main className="kyr">
 
@@ -348,7 +350,7 @@ const KnowYourRights = ({ onCheckCompensation }) => {
             Check your eligibility in under 2 minutes. No win, no fee.
             Only 15% commission — the lowest in the market.
           </p>
-          <button className="kyr__cta-btn" onClick={onCheckCompensation}>
+          <button className="kyr__cta-btn" onClick={() => navigate('/compensation')}>
             Calculate Your Compensation
             <IconArrow />
           </button>

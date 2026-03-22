@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './Hero.css'
 import AirportSearch from './AirportSearch'
@@ -10,7 +11,8 @@ const SearchIcon = () => (
   </svg>
 )
 
-const Hero = ({ onCheckCompensation }) => {
+const Hero = () => {
+  const navigate = useNavigate()
   const { t } = useTranslation()
   const [departure, setDeparture] = useState(null)
   const [arrival, setArrival] = useState(null)
@@ -72,7 +74,7 @@ const Hero = ({ onCheckCompensation }) => {
               />
               <button
                 className="hero__submit btn-primary"
-                onClick={onCheckCompensation}
+                onClick={() => navigate('/compensation')}
               >
                 {t('hero.checkCompensation')}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">

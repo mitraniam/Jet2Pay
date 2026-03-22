@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './AboutCompanyPage.css'
 
@@ -22,7 +23,8 @@ const STATS = [
   { value: '€10M+', key: 'about.stats.recovered' },
 ]
 
-export default function AboutCompanyPage({ onCheckCompensation }) {
+export default function AboutCompanyPage() {
+  const navigate = useNavigate()
   const { t } = useTranslation()
 
   return (
@@ -152,7 +154,7 @@ export default function AboutCompanyPage({ onCheckCompensation }) {
         <div className="container">
           <h2 className="about__cta-title">{t('about.cta.title')}</h2>
           <p className="about__cta-text">{t('about.cta.text')}</p>
-          <button className="about__cta-btn" onClick={onCheckCompensation}>
+          <button className="about__cta-btn" onClick={() => navigate('/compensation')}>
             {t('about.cta.button')}
           </button>
         </div>

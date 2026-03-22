@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './LegalPage.css'
 
@@ -556,7 +557,8 @@ function getFallbackValue(key) {
   return FALLBACK[type]?.[section]?.[field] || key
 }
 
-export default function LegalPage({ type = 'terms', onCheckCompensation }) {
+export default function LegalPage({ type = 'terms' }) {
+  const navigate = useNavigate()
   const { t } = useTranslation()
   const config = LEGAL_CONTENT[type]
 
@@ -600,16 +602,14 @@ export default function LegalPage({ type = 'terms', onCheckCompensation }) {
             ))}
 
             {/* CTA */}
-            {onCheckCompensation && (
-              <div className="lp__cta">
-                <p className="lp__cta-text">
-                  {t('legal.cta.text', 'Have a flight compensation claim? Check your eligibility now.')}
-                </p>
-                <button className="btn-primary" onClick={onCheckCompensation}>
-                  {t('legal.cta.button', 'Check Compensation')}
-                </button>
-              </div>
-            )}
+            <div className="lp__cta">
+              <p className="lp__cta-text">
+                {t('legal.cta.text', 'Have a flight compensation claim? Check your eligibility now.')}
+              </p>
+              <button className="btn-primary" onClick={() => navigate('/compensation')}>
+                {t('legal.cta.button', 'Check Compensation')}
+              </button>
+            </div>
           </div>
         </div>
       </section>
