@@ -127,7 +127,7 @@
       "bookingReference": "Broneeringu viide",
       "bookingReferencePlaceholder": "nt. ABC123",
       "bookingReferenceHelp": "Leiate oma broneeringu kinnituse e-kirjast",
-      "consent": "Nõustun <a href='/terms' target='_blank'>Tingimustega</a> ja volitan Jet2Pay tegutsema minu nimel. Mõistan, et kehtib 30% vahendustasu põhimõttel „Ei võida, ei maksa".",
+      "consent": "Nõustun <a href='/terms' target='_blank'>Tingimustega</a> ja volitan Jet2Pay tegutsema minu nimel. Mõistan, et kehtib 30% vahendustasu põhimõttel 'Ei võida, ei maksa'.",
       "gdpr": "Nõustun oma isikuandmete töötlemisega vastavalt <a href='/privacy' target='_blank'>Privaatsuspoliitikale</a> ja GDPR-ile.",
       "submitClaim": "Esita minu nõue"
     },

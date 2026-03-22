@@ -128,7 +128,7 @@
       "bookingReference": "Číslo rezervace",
       "bookingReferencePlaceholder": "např. ABC123",
       "bookingReferenceHelp": "Najdete ho v potvrzovacím e-mailu o rezervaci",
-      "consent": "Souhlasím s <a href='/terms' target='_blank'>Obchodními podmínkami</a> a pověřuji Jet2Pay, aby jednal v mém zastoupení. Rozumím, že se uplatňuje provize 30 % v modelu „Bez výhry bez poplatku".",
+      "consent": "Souhlasím s <a href='/terms' target='_blank'>Obchodními podmínkami</a> a pověřuji Jet2Pay, aby jednal v mém zastoupení. Rozumím, že se uplatňuje provize 30 % v modelu 'Bez výhry bez poplatku'.",
       "gdpr": "Souhlasím se zpracováním svých osobních údajů v souladu se <a href='/privacy' target='_blank'>Zásadami ochrany osobních údajů</a> a GDPR.",
       "submitClaim": "Odeslat můj nárok"
     },

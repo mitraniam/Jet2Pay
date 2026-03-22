@@ -128,7 +128,7 @@
       "bookingReference": "Referenca rezervacije",
       "bookingReferencePlaceholder": "npr. ABC123",
       "bookingReferenceHelp": "Nalazi se u e-mailu s potvrdom rezervacije",
-      "consent": "Suglasan/na sam s <a href='/terms' target='_blank'>Uvjetima korištenja</a> i ovlašćujem Jet2Pay da djeluje u moje ime. Razumijem da se primjenjuje provizija od 30% po modelu „Nema pobjede – nema naknade".",
+      "consent": "Suglasan/na sam s <a href='/terms' target='_blank'>Uvjetima korištenja</a> i ovlašćujem Jet2Pay da djeluje u moje ime. Razumijem da se primjenjuje provizija od 30% po modelu 'Nema pobjede – nema naknade'.",
       "gdpr": "Suglasan/na sam s obradom mojih osobnih podataka u skladu s <a href='/privacy' target='_blank'>Politikom privatnosti</a> i GDPR-om.",
       "submitClaim": "Pošalji moj zahtjev"
     },

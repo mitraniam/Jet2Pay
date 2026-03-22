@@ -128,7 +128,7 @@
       "bookingReference": "Numer rezerwacji",
       "bookingReferencePlaceholder": "np. ABC123",
       "bookingReferenceHelp": "Znajdziesz go w e-mailu z potwierdzeniem rezerwacji",
-      "consent": "Zgadzam się z <a href='/terms' target='_blank'>Regulaminem</a> i upoważniam Jet2Pay do działania w moim imieniu. Rozumiem, że obowiązuje prowizja 30% w modelu „Brak wygranej — brak opłat".",
+      "consent": "Zgadzam się z <a href='/terms' target='_blank'>Regulaminem</a> i upoważniam Jet2Pay do działania w moim imieniu. Rozumiem, że obowiązuje prowizja 30% w modelu 'Brak wygranej — brak opłat'.",
       "gdpr": "Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z <a href='/privacy' target='_blank'>Polityką prywatności</a> i RODO.",
       "submitClaim": "Złóż roszczenie"
     },

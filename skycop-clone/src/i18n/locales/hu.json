@@ -128,7 +128,7 @@
       "bookingReference": "Foglalási hivatkozás",
       "bookingReferencePlaceholder": "pl. ABC123",
       "bookingReferenceHelp": "A foglalás visszaigazoló e-mailben található",
-      "consent": "Elfogadom az <a href='/terms' target='_blank'>Általános Szerződési Feltételeket</a> és felhatalmazom a Jet2Pay-t, hogy a nevemben járjon el. Tudomásul veszem, hogy a „Nincs nyeremény – nincs díj" modell szerint 30%-os jutalék érvényes.",
+      "consent": "Elfogadom az <a href='/terms' target='_blank'>Általános Szerződési Feltételeket</a> és felhatalmazom a Jet2Pay-t, hogy a nevemben járjon el. Tudomásul veszem, hogy a 'Nincs nyeremény – nincs díj' modell szerint 30%-os jutalék érvényes.",
       "gdpr": "Hozzájárulok személyes adataim kezeléséhez az <a href='/privacy' target='_blank'>Adatvédelmi Szabályzatnak</a> és a GDPR-nak megfelelően.",
       "submitClaim": "Igényem benyújtása"
     },
