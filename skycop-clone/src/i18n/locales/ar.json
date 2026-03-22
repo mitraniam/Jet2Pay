@@ -25,7 +25,10 @@
     "claimsUpTo": "مطالبات حتى 3 سنوات",
     "compensatedCustomers": "عملاء تم تعويضهم",
     "airlines": "شركات طيران",
-    "yearsTrusted": "سنوات من الثقة"
+    "yearsTrusted": "سنوات من الثقة",
+    "commissionBold": "عمولة رائدة في السوق 15%",
+    "commissionText": "— آلي وعادل. تحتفظ بمزيد من تعويضك.",
+    "commissionBadge": "الأدنى في الصناعة"
   },
   "form": {
     "sidebar": {

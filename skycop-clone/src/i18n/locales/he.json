@@ -25,7 +25,10 @@
     "claimsUpTo": "תביעות עד 3 שנים",
     "compensatedCustomers": "לקוחות שפוצו",
     "airlines": "חברות תעופה",
-    "yearsTrusted": "שנות אמון"
+    "yearsTrusted": "שנות אמון",
+    "commissionBold": "עמלה מובילה בשוק 15%",
+    "commissionText": "— אוטומטי והוגן. אתה שומר יותר מהפיצוי שלך.",
+    "commissionBadge": "הנמוכה ביותר בתעשייה"
   },
   "form": {
     "sidebar": {

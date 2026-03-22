@@ -25,7 +25,10 @@
     "claimsUpTo": "索赔可追溯3年",
     "compensatedCustomers": "已获赔客户",
     "airlines": "航空公司",
-    "yearsTrusted": "年信赖"
+    "yearsTrusted": "年信赖",
+    "commissionBold": "市场领先的15%佣金",
+    "commissionText": "— 自动化且公平。您保留更多补偿。",
+    "commissionBadge": "行业最低"
   },
   "form": {
     "sidebar": {

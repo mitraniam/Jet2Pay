@@ -25,7 +25,10 @@
     "claimsUpTo": "Захтеви до 3 године уназад",
     "compensatedCustomers": "компензованих путника",
     "airlines": "авиокомпанија",
-    "yearsTrusted": "година поверења"
+    "yearsTrusted": "година поверења",
+    "commissionBold": "Тржишно водећа провизија 15%",
+    "commissionText": "— Аутоматизовано и поштено. Задржавате више накнаде.",
+    "commissionBadge": "Најнижа у индустрији"
   },
   "form": {
     "sidebar": {

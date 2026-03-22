@@ -25,7 +25,10 @@
     "claimsUpTo": "Zahtevki do 3 leta stari",
     "compensatedCustomers": "odškodovanih strank",
     "airlines": "letalskih družb",
-    "yearsTrusted": "let zaupanja"
+    "yearsTrusted": "let zaupanja",
+    "commissionBold": "Tržno vodilna 15% provizija",
+    "commissionText": "— Avtomatizirano in pošteno. Obdržite več odškodnine.",
+    "commissionBadge": "Najnižja v panogi"
   },
   "form": {
     "sidebar": {

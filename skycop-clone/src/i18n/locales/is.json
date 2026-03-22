@@ -25,7 +25,10 @@
     "claimsUpTo": "Kröfur allt að 3 ára gamlar",
     "compensatedCustomers": "viðskiptavinir fengið bætur",
     "airlines": "flugfélög",
-    "yearsTrusted": "ára traust"
+    "yearsTrusted": "ára traust",
+    "commissionBold": "Markaðsleiðandi 15% þóknun",
+    "commissionText": "— Sjálfvirkur & sanngjarn. Þú heldur meira af bótum þínum.",
+    "commissionBadge": "Lægst í greininni"
   },
   "form": {
     "sidebar": {

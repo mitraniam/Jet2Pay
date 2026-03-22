@@ -25,7 +25,10 @@
     "claimsUpTo": "Барања до 3 години наназад",
     "compensatedCustomers": "компензирани патници",
     "airlines": "авиокомпании",
-    "yearsTrusted": "години доверба"
+    "yearsTrusted": "години доверба",
+    "commissionBold": "Пазарно водечка провизија 15%",
+    "commissionText": "— Автоматизирано и правично. Задржувате повеќе надомест.",
+    "commissionBadge": "Најниска во индустријата"
   },
   "form": {
     "sidebar": {

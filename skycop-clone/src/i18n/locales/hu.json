@@ -25,7 +25,10 @@
     "claimsUpTo": "Akár 3 éves igények",
     "compensatedCustomers": "kártérített utas",
     "airlines": "légitársaság",
-    "yearsTrusted": "év tapasztalat"
+    "yearsTrusted": "év tapasztalat",
+    "commissionBold": "Piacvezető 15%-os jutalék",
+    "commissionText": "— Automatizált & igazságos. Többet tart meg a kártalanításból.",
+    "commissionBadge": "Az iparág legalacsonyabb"
   },
   "form": {
     "sidebar": {

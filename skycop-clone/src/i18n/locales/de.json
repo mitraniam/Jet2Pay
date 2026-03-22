@@ -25,7 +25,10 @@
     "claimsUpTo": "Ansprüche bis zu 3 Jahre rückwirkend",
     "compensatedCustomers": "entschädigte Kunden",
     "airlines": "Fluggesellschaften",
-    "yearsTrusted": "Jahre Erfahrung"
+    "yearsTrusted": "Jahre Erfahrung",
+    "commissionBold": "Marktführende 15% Provision",
+    "commissionText": "— Automatisiert & fair. Sie behalten mehr von Ihrer Entschädigung.",
+    "commissionBadge": "Branchenniedrigste"
   },
   "form": {
     "sidebar": {

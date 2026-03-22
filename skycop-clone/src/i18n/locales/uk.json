@@ -25,7 +25,10 @@
     "claimsUpTo": "Заявки за останні 3 роки",
     "compensatedCustomers": "клієнтів отримали компенсацію",
     "airlines": "авіакомпаній",
-    "yearsTrusted": "років довіри"
+    "yearsTrusted": "років довіри",
+    "commissionBold": "Провідна на ринку комісія 15%",
+    "commissionText": "— Автоматизовано і справедливо. Ви зберігаєте більше компенсації.",
+    "commissionBadge": "Найнижча в галузі"
   },
   "form": {
     "sidebar": {

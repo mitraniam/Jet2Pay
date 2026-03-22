@@ -25,7 +25,10 @@
     "claimsUpTo": "Vaatimukset jopa 3 vuotta vanhat",
     "compensatedCustomers": "korvattua asiakasta",
     "airlines": "lentoyhtiötä",
-    "yearsTrusted": "vuotta luotettuna"
+    "yearsTrusted": "vuotta luotettuna",
+    "commissionBold": "Markkinoita johtava 15% komissio",
+    "commissionText": "— Automatisoitu & reilu. Säilytät enemmän korvauksestasi.",
+    "commissionBadge": "Alan alhaisin"
   },
   "form": {
     "sidebar": {

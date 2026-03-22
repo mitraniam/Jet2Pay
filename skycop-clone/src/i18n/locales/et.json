@@ -25,7 +25,10 @@
     "claimsUpTo": "Nõuded kuni 3 aastat vanad",
     "compensatedCustomers": "hüvitatud klienti",
     "airlines": "lennufirmat",
-    "yearsTrusted": "aastat usaldatud"
+    "yearsTrusted": "aastat usaldatud",
+    "commissionBold": "Turgu juhtiv 15% komisjon",
+    "commissionText": "— Automatiseeritud & õiglane. Saate rohkem hüvitisest.",
+    "commissionBadge": "Madalaim valdkonnas"
   },
   "form": {
     "sidebar": {

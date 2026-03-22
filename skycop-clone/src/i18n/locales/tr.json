@@ -25,7 +25,10 @@
     "claimsUpTo": "3 yıla kadar eski talepler",
     "compensatedCustomers": "tazminat alan yolcu",
     "airlines": "havayolu şirketi",
-    "yearsTrusted": "yıllık güven"
+    "yearsTrusted": "yıllık güven",
+    "commissionBold": "Pazar lideri %15 komisyon",
+    "commissionText": "— Otomatik & adil. Tazminatınızın daha fazlasını alırsınız.",
+    "commissionBadge": "Sektörün en düşüğü"
   },
   "form": {
     "sidebar": {

@@ -25,7 +25,10 @@
     "claimsUpTo": "Claims up to 3 years old",
     "compensatedCustomers": "compensated customers",
     "airlines": "airlines",
-    "yearsTrusted": "years trusted"
+    "yearsTrusted": "years trusted",
+    "commissionBold": "Market-leading 15% commission",
+    "commissionText": "— Automated & Fair. You keep more of your compensation.",
+    "commissionBadge": "Industry lowest"
   },
   "form": {
     "sidebar": {

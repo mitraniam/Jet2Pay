@@ -344,7 +344,7 @@ const KnowYourRights = () => {
       {/* ── CTA ── */}
       <section className="kyr__cta">
         <div className="container kyr__cta-inner">
-          <div className="kyr__cta-badge">🏆 Market-leading 15% Commission</div>
+          <div className="kyr__cta-badge">🏆 {t('hero.commissionBold')}</div>
           <h2 className="kyr__cta-title">Ready to Claim What You're Owed?</h2>
           <p className="kyr__cta-sub">
             Check your eligibility in under 2 minutes. No win, no fee.
