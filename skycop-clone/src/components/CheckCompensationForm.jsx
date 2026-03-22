@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import AirportSearch from './AirportSearch'
 import { submitClaim } from '../lib/api'
@@ -110,7 +111,8 @@ const Option = ({ selected, onClick, children }) => (
 /* ══════════════════════════════════════════════════════════
    MAIN COMPONENT
 ══════════════════════════════════════════════════════════ */
-const CheckCompensationForm = ({ onBack }) => {
+const CheckCompensationForm = () => {
+  const navigate = useNavigate()
   const { t } = useTranslation()
   const [step, setStep] = useState(1)
   const [phase, setPhase] = useState('eligibility') // 'eligibility' | 'claim' | 'submitted'
@@ -183,7 +185,7 @@ const CheckCompensationForm = ({ onBack }) => {
     } else if (step > 1) {
       setStep(s => s - 1)
     } else {
-      onBack?.()
+      navigate('/')
     }
   }
 
@@ -245,7 +247,7 @@ const CheckCompensationForm = ({ onBack }) => {
       email: '', phone: '', nationality: '', bookingReference: '',
       consentTerms: false, consentGdpr: false,
     })
-    onBack?.()
+    navigate('/')
   }
 
   /* ── Sidebar config ── */

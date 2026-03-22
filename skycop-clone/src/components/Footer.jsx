@@ -1,13 +1,30 @@
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './Footer.css'
 
-const Footer = ({ onNavigate }) => {
-  const { t } = useTranslation()
+const PAGE_URLS = {
+  home: '/',
+  compensation: '/compensation',
+  rights: '/rights',
+  status: '/status',
+  about: '/about',
+  news: '/news',
+  howItWorks: '/how-it-works',
+  pricing: '/pricing',
+  reviews: '/reviews',
+  careers: '/careers',
+  partners: '/partners',
+  press: '/press',
+  contact: '/contact',
+  terms: '/terms',
+  privacy: '/privacy',
+  cookies: '/cookies',
+  imprint: '/imprint',
+  complaints: '/complaints',
+}
 
-  const handleClick = (page) => (e) => {
-    e.preventDefault()
-    onNavigate?.(page)
-  }
+const Footer = () => {
+  const { t } = useTranslation()
 
   const columns = [
     {
@@ -60,9 +77,9 @@ const Footer = ({ onNavigate }) => {
       <div className="container">
         <div className="footer__top">
           <div className="footer__brand">
-            <a href="/" className="footer__logo" onClick={handleClick('home')}>
+            <Link to="/" className="footer__logo">
               <img src="/logo.webp" alt="Jet2Pay" className="footer__logo-img" />
-            </a>
+            </Link>
             <p className="footer__brand-desc">
               {t('footer.description', 'Flight compensation made simple. We help passengers claim up to €600 for delayed, cancelled, or overbooked flights.')}
             </p>
@@ -82,9 +99,9 @@ const Footer = ({ onNavigate }) => {
                 <ul className="footer__column-list">
                   {col.links.map((link, j) => (
                     <li key={j}>
-                      <a href="#" className="footer__column-link" onClick={handleClick(link.page)}>
+                      <Link to={PAGE_URLS[link.page] || '/'} className="footer__column-link">
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>

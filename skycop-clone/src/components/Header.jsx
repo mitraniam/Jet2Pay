@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './Header.css'
 
@@ -72,7 +73,7 @@ const NAV_ICONS = {
   ),
 }
 
-const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, onAbout, onNews }) => {
+const Header = () => {
   const { t, i18n } = useTranslation()
   const [mobileOpen, setMobileOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
@@ -111,36 +112,32 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, 
       <header className="header">
         <div className="header__inner container">
           {/* Logo */}
-          <a href="/" className="header__logo" onClick={e => { e.preventDefault(); onHome?.() }}>
+          <Link to="/" className="header__logo">
             <img src="/logo.webp" alt="Jet2Pay" className="header__logo-img" />
-          </a>
+          </Link>
 
           {/* Desktop Nav */}
           <nav className="header__nav">
             <ul className="header__nav-list">
               <li className="header__nav-item header__nav-item--cta">
-                <a href="#" className="header__nav-link header__nav-link--brand"
-                  onClick={e => { e.preventDefault(); onCheckCompensation?.() }}>
+                <Link to="/compensation" className="header__nav-link header__nav-link--brand">
                   {t('header.checkCompensation')}
-                </a>
+                </Link>
               </li>
               <li className="header__nav-item header__nav-item--dropdown">
-                <a href="#" className="header__nav-link"
-                  onClick={e => { e.preventDefault(); onKnowYourRights?.() }}>
+                <Link to="/rights" className="header__nav-link">
                   {t('header.knowYourRights')}
-                </a>
+                </Link>
               </li>
               <li className="header__nav-item">
-                <a href="#" className="header__nav-link"
-                  onClick={e => { e.preventDefault(); onAbout?.() }}>
+                <Link to="/about" className="header__nav-link">
                   {t('header.aboutCompany')}
-                </a>
+                </Link>
               </li>
               <li className="header__nav-item">
-                <a href="#" className="header__nav-link"
-                  onClick={e => { e.preventDefault(); onNews?.() }}>
+                <Link to="/news" className="header__nav-link">
                   {t('header.news')}
-                </a>
+                </Link>
               </li>
               <li className="header__nav-item">
                 <a href="#" className="header__nav-link">{t('header.referAFriend')}</a>
@@ -150,7 +147,7 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, 
 
           {/* Desktop Actions */}
           <div className="header__actions">
-            <a href="#" className="header__claim-btn" onClick={e => { e.preventDefault(); onCheckStatus?.() }}>{t('header.checkClaimStatus')}</a>
+            <Link to="/status" className="header__claim-btn">{t('header.checkClaimStatus')}</Link>
 
             {/* Desktop Language Switcher */}
             <div className="header__lang" ref={langRef} onClick={() => setLangOpen(!langOpen)}>
@@ -229,32 +226,27 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, 
 
         {/* Nav Links */}
         <nav className="header__drawer-nav">
-          <a href="#" className="header__drawer-link header__drawer-link--cta"
-            onClick={e => { e.preventDefault(); onCheckCompensation?.(); closeMenu() }}>
+          <Link to="/compensation" className="header__drawer-link header__drawer-link--cta" onClick={closeMenu}>
             <span className="header__drawer-icon">{NAV_ICONS.checkCompensation}</span>
             {t('header.checkCompensation')}
             <span className="header__drawer-chevron">›</span>
-          </a>
-          <a href="#" className="header__drawer-link"
-            onClick={e => { e.preventDefault(); onKnowYourRights?.(); closeMenu() }}>
+          </Link>
+          <Link to="/rights" className="header__drawer-link" onClick={closeMenu}>
             <span className="header__drawer-icon">{NAV_ICONS.knowYourRights}</span>
             {t('header.knowYourRights')}
             <span className="header__drawer-chevron">›</span>
-          </a>
-          <a href="#" className="header__drawer-link"
-            onClick={e => { e.preventDefault(); onAbout?.(); closeMenu() }}>
+          </Link>
+          <Link to="/about" className="header__drawer-link" onClick={closeMenu}>
             <span className="header__drawer-icon">{NAV_ICONS.aboutCompany}</span>
             {t('header.aboutCompany')}
             <span className="header__drawer-chevron">›</span>
-          </a>
-          <a href="#" className="header__drawer-link"
-            onClick={e => { e.preventDefault(); onNews?.(); closeMenu() }}>
+          </Link>
+          <Link to="/news" className="header__drawer-link" onClick={closeMenu}>
             <span className="header__drawer-icon">{NAV_ICONS.news}</span>
             {t('header.news')}
             <span className="header__drawer-chevron">›</span>
-          </a>
-          <a href="#" className="header__drawer-link"
-            onClick={e => e.preventDefault()}>
+          </Link>
+          <a href="#" className="header__drawer-link" onClick={e => e.preventDefault()}>
             <span className="header__drawer-icon">{NAV_ICONS.referAFriend}</span>
             {t('header.referAFriend')}
             <span className="header__drawer-chevron">›</span>
@@ -281,10 +273,9 @@ const Header = ({ onCheckCompensation, onKnowYourRights, onHome, onCheckStatus, 
 
         {/* CTA Button */}
         <div className="header__drawer-footer">
-          <a href="#" className="header__drawer-cta"
-            onClick={e => { e.preventDefault(); onCheckCompensation?.(); closeMenu() }}>
+          <Link to="/status" className="header__drawer-cta" onClick={closeMenu}>
             {t('header.checkClaimStatus')}
-          </a>
+          </Link>
         </div>
       </div>
     </>

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import './NewsPage.css'
 
@@ -52,7 +53,8 @@ const NEWS_ARTICLES = [
   },
 ]
 
-export default function NewsPage({ onCheckCompensation }) {
+export default function NewsPage() {
+  const navigate = useNavigate()
   const { t } = useTranslation()
 
   const formatDate = (dateStr) => {
@@ -118,7 +120,7 @@ export default function NewsPage({ onCheckCompensation }) {
               <h2>{t('news.cta.title')}</h2>
               <p>{t('news.cta.text')}</p>
             </div>
-            <button className="news__cta-btn" onClick={onCheckCompensation}>
+            <button className="news__cta-btn" onClick={() => navigate('/compensation')}>
               {t('news.cta.button')}
             </button>
           </div>
