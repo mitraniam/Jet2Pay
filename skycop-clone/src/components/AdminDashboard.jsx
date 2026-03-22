@@ -31,6 +31,32 @@ const STATUS_CONFIG = {
 
 const STATUSES = ['submitted', 'under_review', 'airline_contacted', 'negotiating', 'resolved', 'rejected', 'paid']
 
+const PAGE_SIZE = 25
+
+/* ── Export to CSV ──────────────────────────────────── */
+function exportCSV(claims) {
+  const headers = ['ID', 'Flight', 'Date', 'Type', 'Status', 'Amount (€)', 'Passengers', 'Docs', 'Submitted']
+  const rows = claims.map(c => [
+    c.id,
+    c.flightNumber,
+    new Date(c.flightDate).toLocaleDateString('en-GB'),
+    c.disruptionType,
+    STATUS_CONFIG[c.status]?.label || c.status,
+    c.estimatedCompensationEur || '',
+    c.passengerCount,
+    c.documentCount || 0,
+    new Date(c.submittedAt).toLocaleDateString('en-GB'),
+  ])
+  const csv = [headers, ...rows].map(r => r.map(v => `"${v}"`).join(',')).join('\n')
+  const blob = new Blob([csv], { type: 'text/csv' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  a.href = url
+  a.download = `jet2pay-claims-${new Date().toISOString().slice(0,10)}.csv`
+  a.click()
+  URL.revokeObjectURL(url)
+}
+
 /* ════════════════════════════════════════════════════════
    LOGIN SCREEN
 ════════════════════════════════════════════════════════ */
@@ -168,6 +194,9 @@ function ClaimDetail({ claim, token, onClose, onRefresh }) {
   const [newStatus, setNewStatus] = useState('')
   const [statusReason, setStatusReason] = useState('')
   const [loading, setLoading] = useState(false)
+  const [lbaLoading, setLbaLoading] = useState(false)
+  const [lbaSent, setLbaSent] = useState(false)
+  const [activeTab, setActiveTab] = useState('info')
 
   useEffect(() => {
     adminFetch(`/api/claims/${claim.id}`, token).then(setFullClaim).catch(() => {})
@@ -211,151 +240,271 @@ function ClaimDetail({ claim, token, onClose, onRefresh }) {
     }
   }
 
+  const sendLBA = async () => {
+    if (!window.confirm('Send Letter Before Action to the airline?')) return
+    setLbaLoading(true)
+    try {
+      await adminFetch(`/api/admin/claims/${claim.id}/lba`, token, { method: 'POST' })
+      setLbaSent(true)
+      onRefresh()
+    } catch (err) {
+      alert('Failed to send LBA: ' + err.message)
+    } finally {
+      setLbaLoading(false)
+    }
+  }
+
   const fc = fullClaim
   const cfg = STATUS_CONFIG[fc?.status] || { color: '#999', bg: '#f5f5f5', icon: '📋', label: fc?.status }
+
+  const tabs = [
+    { id: 'info', label: 'Info' },
+    { id: 'passengers', label: `Passengers${fc?.passengers?.length ? ` (${fc.passengers.length})` : ''}` },
+    { id: 'documents', label: `Docs${fc?.documents?.length ? ` (${fc.documents.length})` : ''}` },
+    { id: 'banking', label: 'Banking' },
+    { id: 'timeline', label: 'Timeline' },
+    { id: 'actions', label: 'Actions' },
+  ]
 
   return (
     <div className="adm-detail-overlay" onClick={onClose}>
       <div className="adm-detail" onClick={e => e.stopPropagation()}>
         <div className="adm-detail__header">
-          <h2>Claim Details</h2>
+          <div>
+            <h2>Claim Details</h2>
+            {fc && <span className="adm-mono adm-detail__id">{fc.claimId}</span>}
+          </div>
           <button className="adm-detail__close" onClick={onClose}>✕</button>
         </div>
 
         {fc ? (
-          <div className="adm-detail__body">
-            {/* Status Badge */}
-            <div className="adm-detail__status" style={{ background: cfg.bg, color: cfg.color }}>
-              {cfg.icon} {cfg.label}
+          <>
+            {/* Status + LBA */}
+            <div className="adm-detail__top-bar">
+              <div className="adm-detail__status" style={{ background: cfg.bg, color: cfg.color }}>
+                {cfg.icon} {cfg.label}
+              </div>
+              <button
+                className={`adm-lba-btn${lbaSent ? ' adm-lba-btn--sent' : ''}`}
+                onClick={sendLBA}
+                disabled={lbaLoading || lbaSent}
+              >
+                {lbaSent ? '✓ LBA Sent' : lbaLoading ? 'Sending...' : '✉️ Send LBA'}
+              </button>
             </div>
 
-            {/* Info Grid */}
-            <div className="adm-detail__grid">
-              <div className="adm-detail__field">
-                <label>Claim ID</label>
-                <span className="adm-mono">{fc.claimId}</span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Flight</label>
-                <span>{fc.flightNumber} — {new Date(fc.flightDate).toLocaleDateString()}</span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Route</label>
-                <span><strong>{fc.departureAirport}</strong> → <strong>{fc.arrivalAirport}</strong></span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Disruption</label>
-                <span>{fc.disruptionType} {fc.delayDuration ? `(${fc.delayDuration} min)` : ''}</span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Compensation</label>
-                <span className="adm-detail__amount">€{fc.estimatedAmount}</span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Distance</label>
-                <span>{fc.routeDistanceKm ? `${fc.routeDistanceKm} km` : 'Unknown'}</span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Passengers</label>
-                <span>{fc.passengerCount}</span>
-              </div>
-              <div className="adm-detail__field">
-                <label>Booking Ref</label>
-                <span className="adm-mono">{fc.bookingReference}</span>
-              </div>
+            {/* Tabs */}
+            <div className="adm-tabs">
+              {tabs.map(t => (
+                <button
+                  key={t.id}
+                  className={`adm-tab${activeTab === t.id ? ' adm-tab--active' : ''}`}
+                  onClick={() => setActiveTab(t.id)}
+                >
+                  {t.label}
+                </button>
+              ))}
             </div>
 
-            {/* Passengers */}
-            {fc.passengers?.length > 0 && (
-              <div className="adm-detail__section">
-                <h3>Passengers</h3>
-                {fc.passengers.map(p => (
-                  <div key={p.id} className="adm-detail__passenger">
-                    <span>👤 {p.firstName} {p.lastName}</span>
-                    <span>{p.email}</span>
-                    <span>{p.phone}</span>
-                    <span>{p.nationality}</span>
+            <div className="adm-detail__body">
+
+              {/* INFO TAB */}
+              {activeTab === 'info' && (
+                <div className="adm-detail__grid">
+                  <div className="adm-detail__field">
+                    <label>Claim ID</label>
+                    <span className="adm-mono">{fc.claimId}</span>
                   </div>
-                ))}
-              </div>
-            )}
-
-            {/* Eligibility */}
-            {fc.eligibility && (
-              <div className="adm-detail__section">
-                <h3>Eligibility</h3>
-                <div className={`adm-detail__elig ${fc.eligibility.eligible ? 'adm-detail__elig--yes' : 'adm-detail__elig--no'}`}>
-                  {fc.eligibility.eligible ? '✅ Eligible' : '❌ Not Eligible'}
-                  {fc.eligibility.requiresManualReview && <span className="adm-detail__review-badge">⚠️ Manual Review</span>}
+                  <div className="adm-detail__field">
+                    <label>Flight</label>
+                    <span>{fc.flightNumber} — {new Date(fc.flightDate).toLocaleDateString()}</span>
+                  </div>
+                  <div className="adm-detail__field">
+                    <label>Route</label>
+                    <span><strong>{fc.departureAirport}</strong> → <strong>{fc.arrivalAirport}</strong></span>
+                  </div>
+                  <div className="adm-detail__field">
+                    <label>Disruption</label>
+                    <span>{fc.disruptionType} {fc.delayDuration ? `(${fc.delayDuration} min)` : ''}</span>
+                  </div>
+                  <div className="adm-detail__field">
+                    <label>Compensation</label>
+                    <span className="adm-detail__amount">€{fc.estimatedAmount}</span>
+                  </div>
+                  <div className="adm-detail__field">
+                    <label>Distance</label>
+                    <span>{fc.routeDistanceKm ? `${fc.routeDistanceKm} km` : 'Unknown'}</span>
+                  </div>
+                  <div className="adm-detail__field">
+                    <label>Passengers</label>
+                    <span>{fc.passengerCount}</span>
+                  </div>
+                  <div className="adm-detail__field">
+                    <label>Booking Ref</label>
+                    <span className="adm-mono">{fc.bookingReference}</span>
+                  </div>
+                  {fc.eligibility && (
+                    <div className="adm-detail__field adm-detail__field--full">
+                      <label>Eligibility</label>
+                      <div className={`adm-detail__elig ${fc.eligibility.eligible ? 'adm-detail__elig--yes' : 'adm-detail__elig--no'}`}>
+                        {fc.eligibility.eligible ? '✅ Eligible' : '❌ Not Eligible'}
+                        {fc.eligibility.requiresManualReview && <span className="adm-detail__review-badge">⚠️ Manual Review</span>}
+                      </div>
+                      {fc.eligibility.flags?.length > 0 && (
+                        <div className="adm-detail__flags">
+                          {fc.eligibility.flags.map((f, i) => <span key={i} className="adm-detail__flag">{f}</span>)}
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
-                {fc.eligibility.flags?.length > 0 && (
-                  <div className="adm-detail__flags">
-                    {fc.eligibility.flags.map((f, i) => <span key={i} className="adm-detail__flag">{f}</span>)}
-                  </div>
-                )}
-              </div>
-            )}
+              )}
 
-            {/* Status Timeline */}
-            {fc.statusHistory?.length > 0 && (
-              <div className="adm-detail__section">
-                <h3>Timeline</h3>
-                <div className="adm-detail__timeline">
-                  {fc.statusHistory.map((h, i) => (
-                    <div key={i} className="adm-detail__tl-item">
-                      <div className="adm-detail__tl-dot" />
-                      <div>
-                        <strong>{STATUS_CONFIG[h.status]?.label || h.status}</strong>
-                        <span className="adm-detail__tl-date">{new Date(h.changedAt).toLocaleString()}</span>
-                        {h.reason && <p className="adm-detail__tl-reason">{h.reason}</p>}
+              {/* PASSENGERS TAB */}
+              {activeTab === 'passengers' && (
+                <div>
+                  {fc.passengers?.length > 0 ? fc.passengers.map(p => (
+                    <div key={p.id} className="adm-passenger-card">
+                      <div className="adm-passenger-card__name">👤 {p.firstName} {p.lastName}</div>
+                      <div className="adm-passenger-card__row">
+                        <span>✉️ {p.email}</span>
+                        <span>📞 {p.phone}</span>
+                        <span>🌍 {p.nationality}</span>
                       </div>
                     </div>
-                  ))}
+                  )) : <p className="adm-empty-msg">No passenger data</p>}
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* Update Status */}
-            <div className="adm-detail__section">
-              <h3>Update Status</h3>
-              <div className="adm-detail__action-row">
-                <select value={newStatus} onChange={e => setNewStatus(e.target.value)} className="adm-detail__select">
-                  <option value="">Select new status...</option>
-                  {STATUSES.filter(s => s !== fc.status).map(s => (
-                    <option key={s} value={s}>{STATUS_CONFIG[s]?.label || s}</option>
-                  ))}
-                </select>
-                <input
-                  type="text"
-                  placeholder="Reason (optional)"
-                  value={statusReason}
-                  onChange={e => setStatusReason(e.target.value)}
-                  className="adm-detail__input"
-                />
-                <button className="adm-detail__btn" onClick={updateStatus} disabled={!newStatus || loading}>
-                  Update
-                </button>
-              </div>
+              {/* DOCUMENTS TAB */}
+              {activeTab === 'documents' && (
+                <div>
+                  {fc.documents?.length > 0 ? fc.documents.map((doc, i) => (
+                    <div key={i} className="adm-doc-item">
+                      <span className="adm-doc-item__icon">📎</span>
+                      <div>
+                        <div className="adm-doc-item__name">{doc.fileName || doc.type || `Document ${i + 1}`}</div>
+                        <div className="adm-doc-item__meta">
+                          {doc.uploadedAt && new Date(doc.uploadedAt).toLocaleDateString('en-GB')}
+                          {doc.fileSize && ` · ${Math.round(doc.fileSize / 1024)} KB`}
+                        </div>
+                      </div>
+                      {doc.url && (
+                        <a href={doc.url} target="_blank" rel="noreferrer" className="adm-doc-item__link">View →</a>
+                      )}
+                    </div>
+                  )) : <p className="adm-empty-msg">No documents uploaded</p>}
+                </div>
+              )}
+
+              {/* BANKING TAB */}
+              {activeTab === 'banking' && (
+                <div>
+                  {fc.bankingDetails ? (
+                    <div className="adm-detail__grid">
+                      <div className="adm-detail__field">
+                        <label>Account Holder</label>
+                        <span>{fc.bankingDetails.accountHolder || '—'}</span>
+                      </div>
+                      <div className="adm-detail__field">
+                        <label>IBAN</label>
+                        <span className="adm-mono">{fc.bankingDetails.iban || '—'}</span>
+                      </div>
+                      <div className="adm-detail__field">
+                        <label>BIC / SWIFT</label>
+                        <span className="adm-mono">{fc.bankingDetails.bic || '—'}</span>
+                      </div>
+                      <div className="adm-detail__field">
+                        <label>Bank Name</label>
+                        <span>{fc.bankingDetails.bankName || '—'}</span>
+                      </div>
+                    </div>
+                  ) : <p className="adm-empty-msg">No banking details provided yet</p>}
+                </div>
+              )}
+
+              {/* TIMELINE TAB */}
+              {activeTab === 'timeline' && (
+                <div>
+                  {fc.statusHistory?.length > 0 ? (
+                    <div className="adm-detail__timeline">
+                      {fc.statusHistory.map((h, i) => (
+                        <div key={i} className="adm-detail__tl-item">
+                          <div className="adm-detail__tl-dot" />
+                          <div>
+                            <strong>{STATUS_CONFIG[h.status]?.label || h.status}</strong>
+                            <span className="adm-detail__tl-date">{new Date(h.changedAt).toLocaleString()}</span>
+                            {h.reason && <p className="adm-detail__tl-reason">{h.reason}</p>}
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  ) : <p className="adm-empty-msg">No history yet</p>}
+                </div>
+              )}
+
+              {/* ACTIONS TAB */}
+              {activeTab === 'actions' && (
+                <div>
+                  {/* Update Status */}
+                  <div className="adm-detail__section" style={{ paddingTop: 0, borderTop: 'none', marginTop: 0 }}>
+                    <h3>Update Status</h3>
+                    <div className="adm-detail__action-row">
+                      <select value={newStatus} onChange={e => setNewStatus(e.target.value)} className="adm-detail__select">
+                        <option value="">Select new status...</option>
+                        {STATUSES.filter(s => s !== fc.status).map(s => (
+                          <option key={s} value={s}>{STATUS_CONFIG[s]?.label || s}</option>
+                        ))}
+                      </select>
+                      <input
+                        type="text"
+                        placeholder="Reason (optional)"
+                        value={statusReason}
+                        onChange={e => setStatusReason(e.target.value)}
+                        className="adm-detail__input"
+                      />
+                      <button className="adm-detail__btn" onClick={updateStatus} disabled={!newStatus || loading}>
+                        Update
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Add Note */}
+                  <div className="adm-detail__section">
+                    <h3>Add Internal Note</h3>
+                    <div className="adm-detail__action-row">
+                      <textarea
+                        placeholder="Write a note..."
+                        value={note}
+                        onChange={e => setNote(e.target.value)}
+                        className="adm-detail__textarea"
+                        rows={3}
+                      />
+                      <button className="adm-detail__btn" onClick={addNote} disabled={!note.trim() || loading}>
+                        Add Note
+                      </button>
+                    </div>
+                  </div>
+
+                  {/* Existing Notes */}
+                  {fc.notes?.filter(n => n.internal)?.length > 0 && (
+                    <div className="adm-detail__section">
+                      <h3>Internal Notes</h3>
+                      {fc.notes.filter(n => n.internal).map((n, i) => (
+                        <div key={i} className="adm-note-item">
+                          <p className="adm-note-item__text">{n.content || n.note}</p>
+                          <span className="adm-note-item__meta">
+                            {n.createdBy || 'Admin'} · {new Date(n.createdAt).toLocaleString()}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+
             </div>
-
-            {/* Add Note */}
-            <div className="adm-detail__section">
-              <h3>Add Internal Note</h3>
-              <div className="adm-detail__action-row">
-                <textarea
-                  placeholder="Write a note..."
-                  value={note}
-                  onChange={e => setNote(e.target.value)}
-                  className="adm-detail__textarea"
-                  rows={3}
-                />
-                <button className="adm-detail__btn" onClick={addNote} disabled={!note.trim() || loading}>
-                  Add Note
-                </button>
-              </div>
-            </div>
-
-          </div>
+          </>
         ) : (
           <div className="adm-detail__loading">Loading claim details...</div>
         )}
@@ -374,8 +523,15 @@ export default function AdminDashboard() {
   const [claims, setClaims] = useState([])
   const [totalClaims, setTotalClaims] = useState(0)
   const [statusFilter, setStatusFilter] = useState('')
+  const [search, setSearch] = useState('')
+  const [searchInput, setSearchInput] = useState('')
+  const [page, setPage] = useState(1)
+  const [sortBy, setSortBy] = useState('submittedAt')
+  const [sortDir, setSortDir] = useState('desc')
   const [selectedClaim, setSelectedClaim] = useState(null)
   const [loading, setLoading] = useState(false)
+
+  const totalPages = Math.ceil(totalClaims / PAGE_SIZE)
 
   const loadStats = useCallback(async () => {
     try {
@@ -387,8 +543,14 @@ export default function AdminDashboard() {
   const loadClaims = useCallback(async () => {
     setLoading(true)
     try {
-      const params = new URLSearchParams({ limit: '50' })
+      const params = new URLSearchParams({
+        limit: String(PAGE_SIZE),
+        offset: String((page - 1) * PAGE_SIZE),
+        sortBy,
+        sortDir,
+      })
       if (statusFilter) params.set('status', statusFilter)
+      if (search) params.set('search', search)
       const data = await adminFetch(`/api/admin/claims?${params}`, token)
       setClaims(data.claims || [])
       setTotalClaims(data.total_count || 0)
@@ -399,7 +561,7 @@ export default function AdminDashboard() {
     } finally {
       setLoading(false)
     }
-  }, [token, statusFilter])
+  }, [token, statusFilter, search, page, sortBy, sortDir])
 
   useEffect(() => {
     if (!authenticated) return
@@ -429,6 +591,27 @@ export default function AdminDashboard() {
     }
   }, [])
 
+  const handleSearchSubmit = (e) => {
+    e.preventDefault()
+    setSearch(searchInput)
+    setPage(1)
+  }
+
+  const handleSort = (col) => {
+    if (sortBy === col) {
+      setSortDir(d => d === 'asc' ? 'desc' : 'asc')
+    } else {
+      setSortBy(col)
+      setSortDir('desc')
+    }
+    setPage(1)
+  }
+
+  const SortIcon = ({ col }) => {
+    if (sortBy !== col) return <span className="adm-sort-icon adm-sort-icon--idle">↕</span>
+    return <span className="adm-sort-icon">{sortDir === 'asc' ? '↑' : '↓'}</span>
+  }
+
   if (!authenticated) {
     return <LoginScreen onLogin={handleLogin} />
   }
@@ -453,61 +636,133 @@ export default function AdminDashboard() {
           <div className="adm-claims__header">
             <h3 className="adm-section-title">Claims ({totalClaims})</h3>
             <div className="adm-claims__filters">
-              <select value={statusFilter} onChange={e => setStatusFilter(e.target.value)} className="adm-claims__filter-select">
+              {/* Search */}
+              <form onSubmit={handleSearchSubmit} className="adm-search-form">
+                <input
+                  type="text"
+                  className="adm-search-input"
+                  placeholder="Search flight, ID, name..."
+                  value={searchInput}
+                  onChange={e => setSearchInput(e.target.value)}
+                />
+                <button type="submit" className="adm-search-btn">🔍</button>
+                {search && (
+                  <button type="button" className="adm-search-clear" onClick={() => { setSearch(''); setSearchInput(''); setPage(1) }}>✕</button>
+                )}
+              </form>
+
+              {/* Status filter */}
+              <select value={statusFilter} onChange={e => { setStatusFilter(e.target.value); setPage(1) }} className="adm-claims__filter-select">
                 <option value="">All Statuses</option>
                 {STATUSES.map(s => (
                   <option key={s} value={s}>{STATUS_CONFIG[s]?.label || s}</option>
                 ))}
               </select>
-              <button className="adm-claims__refresh" onClick={() => { loadStats(); loadClaims() }}>🔄 Refresh</button>
+
+              {/* Export */}
+              <button className="adm-claims__export" onClick={() => exportCSV(claims)} disabled={claims.length === 0} title="Export current page to CSV">
+                ⬇️ CSV
+              </button>
+
+              {/* Refresh */}
+              <button className="adm-claims__refresh" onClick={() => { loadStats(); loadClaims() }}>🔄</button>
             </div>
           </div>
 
           {loading ? (
             <div className="adm-claims__loading">Loading claims...</div>
           ) : (
-            <div className="adm-table-wrap">
-              <table className="adm-table">
-                <thead>
-                  <tr>
-                    <th>ID</th>
-                    <th>Flight</th>
-                    <th>Date</th>
-                    <th>Type</th>
-                    <th>Status</th>
-                    <th>Amount</th>
-                    <th>PAX</th>
-                    <th>Docs</th>
-                    <th>Submitted</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {claims.map(c => {
-                    const cfg = STATUS_CONFIG[c.status] || { color: '#999', bg: '#f5f5f5', label: c.status }
+            <>
+              <div className="adm-table-wrap">
+                <table className="adm-table">
+                  <thead>
+                    <tr>
+                      <th className="adm-th-sort" onClick={() => handleSort('id')}>ID <SortIcon col="id" /></th>
+                      <th className="adm-th-sort" onClick={() => handleSort('flightNumber')}>Flight <SortIcon col="flightNumber" /></th>
+                      <th className="adm-th-sort" onClick={() => handleSort('flightDate')}>Date <SortIcon col="flightDate" /></th>
+                      <th>Type</th>
+                      <th className="adm-th-sort" onClick={() => handleSort('status')}>Status <SortIcon col="status" /></th>
+                      <th className="adm-th-sort" onClick={() => handleSort('estimatedCompensationEur')}>Amount <SortIcon col="estimatedCompensationEur" /></th>
+                      <th>PAX</th>
+                      <th>Docs</th>
+                      <th className="adm-th-sort" onClick={() => handleSort('submittedAt')}>Submitted <SortIcon col="submittedAt" /></th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {claims.map(c => {
+                      const cfg = STATUS_CONFIG[c.status] || { color: '#999', bg: '#f5f5f5', label: c.status }
+                      return (
+                        <tr key={c.id} className="adm-table__row" onClick={() => setSelectedClaim(c)}>
+                          <td className="adm-mono">{c.id?.slice(0, 8)}</td>
+                          <td><strong>{c.flightNumber}</strong></td>
+                          <td>{new Date(c.flightDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short' })}</td>
+                          <td>{c.disruptionType}</td>
+                          <td>
+                            <span className="adm-badge" style={{ background: cfg.bg, color: cfg.color }}>
+                              {cfg.icon} {cfg.label}
+                            </span>
+                          </td>
+                          <td className="adm-table__amount">€{c.estimatedCompensationEur || '—'}</td>
+                          <td>{c.passengerCount}</td>
+                          <td>
+                            <span className={c.documentCount > 0 ? 'adm-docs-ok' : 'adm-docs-missing'}>
+                              {c.documentCount || 0}
+                            </span>
+                          </td>
+                          <td>{new Date(c.submittedAt).toLocaleDateString('en-GB')}</td>
+                        </tr>
+                      )
+                    })}
+                    {claims.length === 0 && (
+                      <tr><td colSpan={9} className="adm-table__empty">No claims found</td></tr>
+                    )}
+                  </tbody>
+                </table>
+              </div>
+
+              {/* Pagination */}
+              {totalPages > 1 && (
+                <div className="adm-pagination">
+                  <button
+                    className="adm-page-btn"
+                    onClick={() => setPage(1)}
+                    disabled={page === 1}
+                  >«</button>
+                  <button
+                    className="adm-page-btn"
+                    onClick={() => setPage(p => Math.max(1, p - 1))}
+                    disabled={page === 1}
+                  >‹</button>
+
+                  {Array.from({ length: Math.min(5, totalPages) }, (_, i) => {
+                    const start = Math.max(1, Math.min(page - 2, totalPages - 4))
+                    const p = start + i
                     return (
-                      <tr key={c.id} className="adm-table__row" onClick={() => setSelectedClaim(c)}>
-                        <td className="adm-mono">{c.id?.slice(0, 8)}</td>
-                        <td><strong>{c.flightNumber}</strong></td>
-                        <td>{new Date(c.flightDate).toLocaleDateString('en-GB', { day: '2-digit', month: 'short' })}</td>
-                        <td>{c.disruptionType}</td>
-                        <td>
-                          <span className="adm-badge" style={{ background: cfg.bg, color: cfg.color }}>
-                            {cfg.icon} {cfg.label}
-                          </span>
-                        </td>
-                        <td className="adm-table__amount">€{c.estimatedCompensationEur || '—'}</td>
-                        <td>{c.passengerCount}</td>
-                        <td>{c.documentCount || 0}</td>
-                        <td>{new Date(c.submittedAt).toLocaleDateString('en-GB')}</td>
-                      </tr>
+                      <button
+                        key={p}
+                        className={`adm-page-btn${page === p ? ' adm-page-btn--active' : ''}`}
+                        onClick={() => setPage(p)}
+                      >{p}</button>
                     )
                   })}
-                  {claims.length === 0 && (
-                    <tr><td colSpan={9} className="adm-table__empty">No claims found</td></tr>
-                  )}
-                </tbody>
-              </table>
-            </div>
+
+                  <button
+                    className="adm-page-btn"
+                    onClick={() => setPage(p => Math.min(totalPages, p + 1))}
+                    disabled={page === totalPages}
+                  >›</button>
+                  <button
+                    className="adm-page-btn"
+                    onClick={() => setPage(totalPages)}
+                    disabled={page === totalPages}
+                  >»</button>
+
+                  <span className="adm-pagination__info">
+                    Page {page} of {totalPages} · {totalClaims} total
+                  </span>
+                </div>
+              )}
+            </>
           )}
         </div>
       </div>
