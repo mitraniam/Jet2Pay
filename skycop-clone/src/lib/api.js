@@ -71,6 +71,16 @@ export async function uploadDocument(claimId, claimToken, file, documentType) {
 }
 
 /**
+ * Send referral invitations.
+ */
+export async function sendReferral({ emails, senderName }) {
+  return request("/api/referral", {
+    method: "POST",
+    body: JSON.stringify({ emails, senderName }),
+  });
+}
+
+/**
  * Check flight verification.
  */
 export async function verifyFlight(flightNumber, date) {
