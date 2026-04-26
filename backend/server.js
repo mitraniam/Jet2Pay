@@ -26,10 +26,12 @@ app.use('/uploads', express.static(uploadsDir))
 const claimsRouter = require('./routes/claims')
 const adminRouter = require('./routes/admin')
 const flightsRouter = require('./routes/flights')
+const referralRouter = require('./routes/referral')
 
 app.use('/api/claims', claimsRouter)
 app.use('/api/admin', adminRouter)
 app.use('/api/flights', flightsRouter)
+app.use('/api/referral', referralRouter)
 
 // Also mount status update on /api/claims/:id/status (called by admin dashboard)
 app.patch('/api/claims/:id/status', require('./middleware/auth'), (req, res) => {
