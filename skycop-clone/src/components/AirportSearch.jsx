@@ -2,6 +2,13 @@ import { useState, useRef, useEffect, useCallback } from 'react'
 import europeanAirports from '../data/airports'
 import './AirportSearch.css'
 
+const POPULAR_AIRPORTS = ['LHR', 'CDG', 'AMS', 'FRA', 'MAD', 'BCN', 'DXB', 'IST', 'JFK', 'SIN']
+
+const popularList = POPULAR_AIRPORTS
+  .map(iata => europeanAirports.find(a => a.iata === iata))
+  .filter(Boolean)
+  .slice(0, 5)
+
 const normalize = (str) =>
   str
     .toLowerCase()
@@ -139,6 +146,10 @@ const AirportSearch = ({ placeholder = 'Search airport...', value, onChange, ico
         setResults(matches)
         setIsOpen(true)
       }
+    } else {
+      // Show popular airports when input is empty
+      setResults(popularList)
+      setIsOpen(true)
     }
   }, [query])
 
@@ -209,6 +220,9 @@ const AirportSearch = ({ placeholder = 'Search airport...', value, onChange, ico
 
       {isOpen && results.length > 0 && (
         <ul className="airport-search__dropdown" role="listbox">
+          {query.length < 2 && (
+            <li className="airport-search__popular-label">Popular airports</li>
+          )}
           {results.map((airport, i) => (
             <li
               key={airport.iata + i}
