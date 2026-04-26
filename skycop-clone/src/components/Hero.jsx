@@ -16,6 +16,24 @@ const Hero = () => {
   const { t } = useTranslation()
   const [departure, setDeparture] = useState(null)
   const [arrival, setArrival] = useState(null)
+  const [error, setError] = useState('')
+
+  const handleCheck = () => {
+    if (!departure && !arrival) {
+      setError(t('hero.errorBothAirports') || 'Please select both departure and arrival airports.')
+      return
+    }
+    if (!departure) {
+      setError(t('hero.errorDeparture') || 'Please select a departure airport.')
+      return
+    }
+    if (!arrival) {
+      setError(t('hero.errorArrival') || 'Please select an arrival airport.')
+      return
+    }
+    setError('')
+    navigate('/compensation', { state: { departure, arrival } })
+  }
 
   return (
     <section className="hero">
@@ -72,9 +90,19 @@ const Hero = () => {
                 icon={<SearchIcon />}
                 onChange={setArrival}
               />
+              {error && (
+                <div className="hero__error">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <circle cx="8" cy="8" r="7" stroke="#E8672C" strokeWidth="1.5"/>
+                    <path d="M8 4.5V8.5" stroke="#E8672C" strokeWidth="1.5" strokeLinecap="round"/>
+                    <circle cx="8" cy="11" r="0.75" fill="#E8672C"/>
+                  </svg>
+                  {error}
+                </div>
+              )}
               <button
                 className="hero__submit btn-primary"
-                onClick={() => navigate('/compensation')}
+                onClick={handleCheck}
               >
                 {t('hero.checkCompensation')}
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
