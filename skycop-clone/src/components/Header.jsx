@@ -112,7 +112,7 @@ const Header = () => {
       <header className="header">
         <div className="header__inner container">
           {/* Logo */}
-          <Link to="/" className="header__logo">
+          <Link to="/" className="header__logo" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <img src="/logo.webp" alt="Jet2Pay" className="header__logo-img" />
           </Link>
 
