@@ -140,7 +140,7 @@ const Header = () => {
                 </Link>
               </li>
               <li className="header__nav-item">
-                <a href="#" className="header__nav-link">{t('header.referAFriend')}</a>
+                <Link to="/referral" className="header__nav-link">{t('header.referAFriend')}</Link>
               </li>
             </ul>
           </nav>
@@ -246,11 +246,11 @@ const Header = () => {
             {t('header.news')}
             <span className="header__drawer-chevron">›</span>
           </Link>
-          <a href="#" className="header__drawer-link" onClick={e => e.preventDefault()}>
+          <Link to="/referral" className="header__drawer-link" onClick={closeMenu}>
             <span className="header__drawer-icon">{NAV_ICONS.referAFriend}</span>
             {t('header.referAFriend')}
             <span className="header__drawer-chevron">›</span>
-          </a>
+          </Link>
         </nav>
 
         {/* Divider */}
