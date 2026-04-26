@@ -22,6 +22,7 @@ import AdminDashboard from './components/AdminDashboard'
 import AboutCompanyPage from './components/AboutCompanyPage'
 import NewsPage from './components/NewsPage'
 import FooterPages from './components/FooterPages'
+import ReferralPage from './components/ReferralPage'
 import LegalPage from './components/LegalPage'
 
 /* ── Scroll to top on route change ───────────────────── */
@@ -105,6 +106,7 @@ function App() {
         <Route path="/rights" element={<><PageTitle title="Know Your Passenger Rights" /><KnowYourRights /></>} />
         <Route path="/status" element={<><PageTitle title="Check Claim Status" /><ClaimStatusPage /></>} />
         <Route path="/about" element={<><PageTitle title="About Jet2Pay" /><AboutCompanyPage /></>} />
+        <Route path="/referral" element={<><PageTitle title="Refer a Friend" /><ReferralPage /></>} />
         <Route path="/news" element={<><PageTitle title="News" /><NewsPage /></>} />
 
         {/* Footer pages */}
