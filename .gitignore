@@ -1,2 +1,10 @@
 node_modules/
 .claude/worktrees/
+
+# Runtime configuration must remain outside source control.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
